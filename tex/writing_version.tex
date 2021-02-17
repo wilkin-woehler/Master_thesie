@@ -1,0 +1,69 @@
+\documentclass[a4paper, 11pt]{scrreprt}
+
+\input{header/head.tex}
+\input{header/commands.tex}
+
+
+%88888888888888888888888888888888888888888888888888888888888888888888888888
+\begin{document}
+	%set language
+	\selectlanguage{english}
+	
+	%sections
+	\renewcommand{\subsectionautorefname}{section\negthinspace}
+	\renewcommand{\subsubsectionautorefname}{section\negthinspace}	\renewcommand{\figureautorefname}{fig.\negthinspace}
+	\renewcommand{\tableautorefname}{tab.\negthinspace}
+	\renewcommand{\equationautorefname}{eq.\negthinspace}
+	
+	
+	\newcommand{\supervision}{Tanja Schilling}
+	\newcommand{\vauthor}{Wilkin Wöhler}
+	\newcommand{\vtitle}{Master Thesis}
+	\newcommand{\vgroup}{Institute for Soft Matter}
+	\newcommand{\vuniversity}{Albert-Ludwigs Universität}
+	\newcommand{\vplace}{Freiburg}
+
+	
+	
+	\newcommand{\presummary}{ A raw writing of hard sphere nucleation, a simulation to measure quantiteis, and a analysis of data generate by means of the simulation.}
+
+\input{header/title_page.tex}
+\pagenumbering{Roman}
+\tableofcontents
+\newpage
+
+\listoffigures
+\pagebreak
+
+\listoftables
+\newpage
+\pagenumbering{arabic} 
+
+\chapter{Theory}
+\input{text/theory.tex}
+\newpage
+
+\chapter{Simulation details}
+\input{text/simulation.tex}
+\newpage
+
+\chapter{Data Analysis}
+\input{text/analysis.tex}
+\newpage
+
+\chapter{Conclusion - Summary}
+\input{text/conclusion.tex}
+\newpage
+
+\input{text/appendix.tex}
+
+\printbibliography
+
+\end{document}
+
+
+
+
+
+
+
