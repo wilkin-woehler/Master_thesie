@@ -1,0 +1,74 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Heyes2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=dcfb685777f731a8f521232da974f223}{%
+           family={Heyes},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0cd08fc61529587e9b67c52c134e8507}{%
+           family={Cass},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=53674050e5b0d56c868c10e836bd3aad}{%
+           family={Powles},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=dfb5eb87d5e2ec5892fc5f67db7ed684}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={W.\bibnamedelimi A.B.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{fullhash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{bibnamehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{authorbibnamehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{authornamehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{authorfullhash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Molecular dynamics simulations have been used to calculate the self-diffusion coefficient, D, of the hard sphere fluid over a wide density range and for different numbers of particles, N, between 32 and 10 976. These data are fitted to the relationship D = D∞ - AN -$\alpha$ where the parameters D∞, A, and $\alpha$ are all density-dependent (the temperature dependence of D can be trivially scaled out in all cases). The value $\alpha$ = 1/3 has been predicted on the basis of hydrodynamic arguments. In the studied system size range, the best value of $\alpha$ is ∼1/3 at intermediate packing fractions of ∼0.35, but increases in the low- and high-density extremes. At high density, the scaling follows more closely that of the thermodynamic properties, that is, with an exponent of order unity. At low packing fractions (less than ∼0.1), the exponent increases again, appearing to approach a limiting value of unity in the zero-density limit. The origin of this strong N dependence at low density probably lies in the divergence in the mean path between collisions, as compared with the dimensions of the simulation cell. A new simple analytical fit formula based on fitting to previous simulation data is proposed for the density dependence of the shear viscosity. The Stokes-Einstein relationship and the dependence of D on the excess entropy were also explored. The product D$\eta$sp with p = 0.975 was found to be approximately constant, with a value of 0.15 in the packing fraction range between 0.2 and 0.5. {©} 2007 American Chemical Society.}
+      \field{issn}{15206106}
+      \field{journaltitle}{Journal of Physical Chemistry B}
+      \field{number}{6}
+      \field{title}{{Self-diffusion coefficient of the hard-sphere fluid: System size dependence and empirical correlations}}
+      \field{volume}{111}
+      \field{year}{2007}
+      \field{pages}{1455\bibrangedash 1464}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1021/jp067373s
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/diffusion/Self-Diffusion Coefficient of the Hard-Sphere Fluid$\backslash$: System Size Dependence and Empirical Correlations.pdf:pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

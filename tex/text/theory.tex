@@ -1,21 +1,59 @@
 % !TEX root = writing_version.tex
 
-\section{Theory and Background}
-\label{sec:theory}
+\label{chp:theory}
 
-\subsection{Hard sphere system}
-Explain the Hard sphere system and the first predictions of the phase transition
+\section{Hard sphere system}
+\label{sec:HS_system}
+%Explain the Hard sphere system and the first predictions of the phase transition\\ \\
 
-\subsection{metastable fluid/ phase diagram}
-maybe include disperisty of radii
+The Hard Sphere system is the simplest model of a fluid including interactions between the single particles. Its well known potential between particles i and j reads:
+\begin{equation}
+V(r_{ij})=\infty \cdot \Theta(\sigma - r_{ij})
+\end{equation}
+In this equation $r_{ij}$ indicates the distance between the two particles, $\sigma$ is the diameter of the Hard Spheres and $\Theta$ is the Heavyside function.\\
+While the ideal gas model without pair interactions already makes it possible to derive famous equations as $pV=NkT$, it does not include phase transitions yet. But these can be observed when granting the particles to take up space. Because it is the simplest model and it is well feasible for computer simulations the Hard Sphere system is very well suited to study basic properties of phase transitions.\\ 
 
-\subsection{Classical nucleation theory :/}
+Compared to experiments where similar systems can also be realized, general properties of the system at hand can be varied very precisely without much effort and position data of the single particles can be extracted easily as well, because they naturally are required for the simulation.\\
+
+On the downside computer simulations are much more constraint in their size, but with todays computational possibilites system of the order of 1 million particles become tractable, and such computer simulations become a powerfull tool to study also phase transitions in simple systems.\\
+
+The beginning of such simulations actually dates back to the beginning of electronic computer technology (cite Alder and Wainwright 1959). Since then more algorithms to increase efficency have been elaborated, and technology advanced giving today the possibility of studying large systems. 
+
+  
+\section{metastable fluid/ phase diagram}
+\label{sec:HS_phase_diagram}
+The equation of state for the simple Hard Sphere system has various approximations, (cite an overview paper), The probably most common approximation due to its simplicity is the Caranhan-Sterling approximation:
+\begin{equation}
+Z=\frac{1+\eta+\eta^2-\eta^3}{(1-\eta)^3}
+\end{equation}
+(cite https://aip.scitation.org/doi/10.1063/1.1672048)
+It approximates the compressibility factor Z depending on the packing fraction $\eta$ for the Hard Sphere fluid.\\
+
+For the stable brach after nucleation a common approximation is given by the Alamrza equation of state( cite https://aip.scitation.org/doi/full/10.1063/1.3133328 ).
+\begin{equation}
+\frac{p(v-v_0)}{k_B T} = 3 - 1.807846 y + 11.56350 y^2 + 141.6 y^3 - 2609.26 y^4 + 19328.09 y^5
+\end{equation}
+where p is the pressure, v is the volume per particle $v_0=\sigma^3/\sqrt{2}$ is the volume per particle at close packing, including the diameter of the spheres $\sigma$, and $y=p \sigma^3 / (k_B T)$, where $k_B$ is the Boltzman constant and T is the temperature of the crystal.\\
+
+From these two equations of state we can draw the phase diagram:
+(include grapic of phase diagram.)\\
+
+The chemical potential difference between the two equations of state can be calculate from the difference between the two equations of state.\\
+
+Eventhough not further discussed in this thesis it might be said that for polydisperse radii the phase diagram becomes even richer as show for example in 
+(https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.91.068301)
+
+\section{Classical nucleation theory :/}
+\label{sec:CNT}
 Estimate of $r_{crit}$ by $\Delta_{\mu}$\\
 SOmehow this wshould be doable ;)
 
-\subsection{Computer Precision}
+\section{Computer Precision}
+\label{sec:precision}
 Explain a little about what numerics does, compared to the real world.\\
 Maybe include the time evolution of minimal changes
 
-\subsection{Comparsion to Real world experiments} 
-Compare, regadring the solvent. Esspeically with Hajos finding.
+\section{Comparsion to Real world experiments} 
+\label{sec:comparison}
+Compare, regadring the solvent. Esspeically with Hajos finding.//
+Maybe connect it with the Computer precision part, to talk about what the s<ystem is and what the system is not

@@ -1,19 +1,52 @@
 % !TEX root = writing_version.tex
 
-\section{Simulation}
-\label{sec:simulation}
+\label{chp:simulation}
 
-\subsection{Algorithm explanation}
+\section{Algorithm and Simulation details}
+\label{sec:simulation}
+EDMD and Simulation details
+
+\subsection{Event driven molecular dynamics (EDMD)}
+\label{sec:EDMD}
 Explain the EDMD algorithm
 
-\subsection{Simulation}
+\subsection{Details of the Implementation} 
+\label{sec:implemetation}
 Add Details of for example FEL, and backupevent handling, double time precision, reset sim
 
-\subsection{Estimate of calculation times}
+\section{Probe of simulation code}
+\label{sec:probe}
+To probe we have to measure known quantities
+\subsection{Diffusive behaviour}
+\label{sec:diffusion_probe}
+Show the diffusive behavior of at least the fluid
+
+\subsection{Radial distribution function}
+\label{sec:RDF_prob}
+Show a RDF of the fluid , if possibible with the theoretical cervus-pevick approximation
+
+
+\section{Estimate of required resources}
+\label{sec:resources}
+
+\subsection{Calculation time estimates}
+\label{sec:calc_times}
 GIve some profiling numbers of the simulation
 Also conclude that missing q6q6 O($N^2$), broke the walltime.
 
-\subsection{Produced Data}
+\subsection{File sizes estimates}
+\label{sec:file_size}
+Show the estimate on the file size
+
+\section{Produced Data}
+\label{sec:data}
 Overview of produced data with visualized snapshot?
 
+\subsection{Equilibration steps}
+\label{sec:eq_steps}
+Show dependence of equilibration steps on simulation
+
+\subsection{Initial density}
+\label{sec:}
+Show dependence of initial density on simulation
 

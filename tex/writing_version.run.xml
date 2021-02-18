@@ -82,7 +82,7 @@
       <file>writing_version.bcf</file>
     </requires>
     <requires type="editable">
-      <file>bib/library.bib</file>
+      <file>../bib/library.bib</file>
     </requires>
   </external>
 </requests>

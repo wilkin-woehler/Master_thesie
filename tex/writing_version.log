@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.12)  14 FEB 2021 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.12)  18 FEB 2021 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2112,51 +2112,53 @@ Package biblatex Info: Automatic encoding selection.
 \openout6 = `writing_version.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'writing_version.bbl' not found.
-No file writing_version.bbl.
-Package biblatex Info: Reference section=0 on input line 8.
-Package biblatex Info: Reference segment=0 on input line 8.
-\c__siunitx_mathsf_int=\count516
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+Package biblatex Info: ... file 'writing_version.bbl' found.
+(./writing_version.bbl
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 70.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 70.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 70.
+
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 70.
+
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 8.
+(Font)              <10.95> on input line 70.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 70.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 8.
-LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+(Font)              <6> on input line 70.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 8.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
+))
+Package biblatex Info: Reference section=0 on input line 8.
+Package biblatex Info: Reference segment=0 on input line 8.
+\c__siunitx_mathsf_int=\count516
 LaTeX Font Info:    Try loading font information for OT1+lmss on input line 8.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
@@ -2171,24 +2173,24 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./writing_version.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./writing_version.toc [1
+
+])
 \tf@toc=\write8
 \openout8 = `writing_version.toc'.
 
- [1
 
-]
-(./writing_version.lof)
+[2] (./writing_version.lof)
 \tf@lof=\write9
 \openout9 = `writing_version.lof'.
 
- [2
+ [3
 
 ] (./writing_version.lot)
 \tf@lot=\write10
 \openout10 = `writing_version.lot'.
 
- [3
+ [4
 
 ]
 chapter 1.
@@ -2207,63 +2209,111 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-(./text/theory.tex)pdfTeX warning (ext4): destination with the same identifier 
-(name{page.1}) has been already used, duplicate ignored
+(./text/theory.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \newpage
-              [1
+l.28 \end{equation}
+                    [1
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Overfull \hbox (53.10402pt too wide) in paragraph at lines 43--45
+\T1/lmr/m/n/10.95 gram be-comes even richer as show for ex-am-ple in (https://j
+ournals.aps.org/prl/pdf/10.1103/PhysRevLett.91.068301) 
+ []
+
+) [2]
 chapter 2.
-(./text/simulation.tex) [2
+(./text/simulation.tex [3
+
+]) [4]
+chapter 3.
+(./text/analysis.tex [5
+
+]) [6]
+chapter 4.
+(./text/conclusion.tex) [7
 
 ]
-chapter 3.
-(./text/analysis.tex) [3
+chapter 5.
+(./text/appendix.tex) [8
 
-] [4]
-chapter 4.
-(./text/conclusion.tex) [5
+] [9
 
-] (./text/appendix.tex)
-
-LaTeX Warning: Empty bibliography on input line 60.
-
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (./writing_version.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `writing_version.out' has not changed.
-(rerunfilecheck)             Checksum: B2FE5F30E20D8F2EDB5355D895E06DB2;1871.
+(rerunfilecheck)             Checksum: 7A3FB302A89273B107C9F3FFB083C7E4;2276.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'writing_version.run.xml'.
 \openout1 = `writing_version.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 39977 strings out of 492982
- 779732 string characters out of 6134896
- 1287908 words of memory out of 5000000
- 42921 multiletter control sequences out of 15000+600000
- 598414 words of font info for 63 fonts, out of 8000000 for 9000
+ 40223 strings out of 492982
+ 784286 string characters out of 6134896
+ 1290365 words of memory out of 5000000
+ 43149 multiletter control sequences out of 15000+600000
+ 601406 words of font info for 64 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 58i,10n,66p,10381b,1889s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,11n,66p,10381b,2385s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share
-/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-mi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmro10.pfb>
-Output written on writing_version.pdf (10 pages, 215777 bytes).
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmc
+sc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on writing_version.pdf (14 pages, 234594 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 277 words of extra memory for PDF output out of 10000 (max. 10000000)
 
