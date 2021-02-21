@@ -7,32 +7,37 @@
 \contentsline {section}{\numberline {1.1}Hard sphere system}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}metastable fluid/ phase diagram}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Classical nucleation theory :/}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}Computer Precision}{2}{section.1.4}
-\contentsline {section}{\numberline {1.5}Comparsion to Real world experiments}{2}{section.1.5}
-\contentsline {chapter}{\numberline {2}Simulation details}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Algorithm and Simulation details}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Event driven molecular dynamics (EDMD)}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Details of the Implementation}{3}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Probe of simulation code}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Diffusive behaviour}{3}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Radial distribution function}{3}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Estimate of required resources}{3}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Calculation time estimates}{3}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}File sizes estimates}{3}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Produced Data}{4}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Equilibration steps}{4}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Initial density}{4}{subsection.2.4.2}
-\contentsline {chapter}{\numberline {3}Data Analysis}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Diffusion of the lqiuid}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Diffusion of the metastable liquid}{5}{section.3.2}
-\contentsline {section}{\numberline {3.3}Cluster growth}{5}{section.3.3}
-\contentsline {section}{\numberline {3.4}Tensor of Gyration properties}{5}{section.3.4}
-\contentsline {section}{\numberline {3.5}ACF largest cluster?}{5}{section.3.5}
-\contentsline {section}{\numberline {3.6}Nuclection time dilemma}{5}{section.3.6}
-\contentsline {section}{\numberline {3.7}Induction time by exponential distribution}{5}{section.3.7}
-\contentsline {section}{\numberline {3.8}Nucleation rate comparison}{6}{section.3.8}
-\contentsline {section}{\numberline {3.9}Memory Kernels}{6}{section.3.9}
-\contentsline {chapter}{\numberline {4}Conclusion - Summary}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusion}{7}{section.4.1}
-\contentsline {chapter}{\numberline {5}Appendix}{8}{chapter.5}
-\contentsline {section}{\numberline {.1}A}{8}{section.Alph0.1}
+\contentsline {section}{\numberline {1.4}Memory including approaches}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Computer Precision}{4}{section.1.5}
+\contentsline {section}{\numberline {1.6}Comparsion to Real world experiments}{4}{section.1.6}
+\contentsline {chapter}{\numberline {2}Simulation details}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Algorithm and Simulation details}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Event driven molecular dynamics (EDMD)}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Details of the Implementation}{7}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Probe of simulation code}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Diffusive behaviour}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Radial distribution function}{8}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Estimate of required resources}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Calculation time estimates}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}File sizes estimates}{8}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Produced Data}{8}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Equilibration steps}{8}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Initial density}{8}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Possible extensions}{8}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Varying radius}{8}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Varying mass}{8}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Muliprocessing}{9}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}Data Analysis}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Diffusion of the lqiuid}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Diffusion of the metastable liquid}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Cluster growth}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}Tensor of Gyration properties}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}ACF largest cluster?}{10}{section.3.5}
+\contentsline {section}{\numberline {3.6}Nuclection time dilemma}{10}{section.3.6}
+\contentsline {section}{\numberline {3.7}Induction time by exponential distribution}{10}{section.3.7}
+\contentsline {section}{\numberline {3.8}Nucleation rate comparison}{11}{section.3.8}
+\contentsline {section}{\numberline {3.9}Memory Kernels}{11}{section.3.9}
+\contentsline {chapter}{\numberline {4}Conclusion - Summary}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusion}{12}{section.4.1}
+\contentsline {chapter}{\numberline {5}Appendix}{13}{chapter.5}
+\contentsline {section}{\numberline {.1}A}{13}{section.Alph0.1}

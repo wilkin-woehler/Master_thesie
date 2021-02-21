@@ -67,25 +67,49 @@ Furthermore the height of this barrier can be calculated to be
 
 In the classical picture now we look at an activated process which has an rate given by the Arhenius law:
 \begin{align}
-k&=c \exp{-\frac{k_B T}{\Delta E}}
-\leftrightarrow &=c \exp{-\beta \Delta G (R_{crit})}
+k&=c \exp{(-\frac{k_B T}{\Delta E})}\\
+\Leftrightarrow \quad k &=c \exp{-\beta \Delta G (R_{crit})}
 \end{align}
 As the constant c is not further defined the absolute nucleation rate in this picture is not predicted but only set into realtion to ther rates. \todo{Check carefully in how far this is correct!}
 
 Given the equation of state for the liquid and fluid phase from \autoref{sec:HS_phase_diagram}, and taking a literature value for $\gamma$ \todo{cite the refernce to which the value corresponds} we can calculate $R_{crit}$ for various densities.
 
-\todo{Plot of r_crit for different densities}
+\todo{Plot of $r_{crit}$ for different densities}
 
 \section{Memory including approaches}
 \label{sec:memory_approach}
-CNT assumes that the system diffuses through a free energy landscape without granting it memory. But it has been shown by Kuhnbold ... \todo{cite Anjas Lennard-Jones System} that for a Lennard-Jones system memory effects can not be neglected if an acurate  desciption is desired. Such it must be assumed that also for the Hard Sphere system memory effects may be present.
+CNT assumes a Markovian system, which means that it diffuses through a free energy landscape without granting it memory. But it has been shown by Kuhnbold ... \todo{cite Anjas Lennard-Jones System} that for a Lennard-Jones system memory effects can not be neglected if an acurate  desciption is desired. Such it must be assumed that also for the Hard Sphere system memory effects may be present.\\
+
+To analyze such memory effects a framework by Hugues Meyer(\todo{cite Hugues}) has been elaborated. In it a memory kernel for coarse-grained observables by means of projection operators is defined together with an efficent algorithm to calculate such.\\
+With the derived memory kernel an equation of motion for the observable can be dervied, ressmbling mostly the Generalized Langevin equationbu is called non-stationary Generalized Langevin Equation because the memory kernel can depend not only on $K(t-\tau)$ but instead on two times $K(t,\tau)$:
+
+\begin{equation}
+\label{eqn:EOM_A}
+  \frac{d A_{t}}{dt} = \omega (t) A_{t} + \int_{0}^{t} d\tau  K(\tau, t) A_{\tau} + \eta_{t} \quad ,
+\end{equation}
+
+For the Markovian process the memory kernel is approximately given by a Dirac delta functional $\delta(\tau-t)$, in which case the Langevin equation is recovered.
+
 
 \section{Computer Precision}
 \label{sec:precision}
-Explain a little about what numerics does, compared to the real world.\\
-Maybe include the time evolution of minimal changes
+%Explain a little about what numerics does, compared to the real world.\\
+%Maybe include the time evolution of minimal changes
+The precision of computer certainly influences the outcome of simulations. (\todo{talk with fabian if he found any papers reagarding varying results fromvarying precision over time})\\
+And it should always be kept in mind that the simulation only approximates the real world. Even smallest variations in the last digits of positions, changes the simulation radical after a certain number of steps. This comes by the fact that we face a complex system with chaotic behaviour, which means that even small variations will grow exponentally until the system has nothing in common anymore.  
+\todo{Look if you can visulaize such an behaviour by}
+As it can be seen after x timesteps the two system have radicallly changed.
 
 \section{Comparsion to Real world experiments} 
 \label{sec:comparison}
-Compare, regadring the solvent. Esspeically with Hajos finding.//
-Maybe connect it with the Computer precision part, to talk about what the s<ystem is and what the system is not
+%Compare, regadring the solvent. Esspeically with Hajos finding.//
+%Maybe connect it with the Computer precision part, to talk about what the s<ystem is and what the system is not
+Since the \todo{1950s ?} people have systhesized hard sphere like systems in the lab. Today a whole zoo of systems is known. All of these system have in common, that the hard spheres are in a bath of a fluid, which surrounds them. This fluids density and optical refractive index shhould match the density and optical refractive index of the hard spheres to prevent segmentation and to enable optical measurements of the system. \todo{maybe elaborate a little more on why each of the two is necessary}\\
+
+The absence of the bath in simple hard sphere simulations is probably the largest difference to the hard sphere systems in the laboratory. It has been argued that the difference can be circumvented by normalizing with a diffusion length or time, but a discussion on the possibility of hydrondynamic effects changing the behaviour of the lab system compared to simulations is ongoing at the moment.\\ 
+
+For simulations it is much harder to include the bath becuase it introudces a multiple number of particles, making it very slow to simulate large systems.\\
+
+
+
+

@@ -1,14 +1,72 @@
 % !TEX root = writing_version.tex
 
 \label{chp:simulation}
+During the coarse of the master thesis an event driven molecular dynamic (EDMD) simulation code has been elaborated. The choice to use the EDMD approach is taken because interst in the actual dynamics of the system were desired. This means that simulations probing the phase space of the system instead of the dynamics, like Monte Carlo (MC) simulation schemes, are not suited.\\ 
+Furthermore the discontinous potential of the hard spheres is an obstacle not easy to face in regular molecular dynamics (MD) schemes, where the Newtonian equation of motion for the particles is numerically integrated.\\
+The EDMD approach on the other site actually requires these discontinuities as will be discussed in the following sections, together with some details of the program.\\
 
 \section{Algorithm and Simulation details}
 \label{sec:simulation}
-EDMD and Simulation details
+%EDMD and Simulation details
+In this section we will highlight the main differences to regular MD simulations, as they are the main tool to otherwise probe the dynamics of the system. Furthermore we will stick to the hard sphere example when discussing the EDMD simulations, but it can be kept in mind that the EDMD approach also allows to simulate particles with other potentials as long as the potentials are only containing step functions.\\
+ 
+The decisive difference between EDMD simulations and regular MD schemesis that, instead of evaluating all pair and external forces on each particle and then evolving the whole system to the next time step, EDMD simulations do not have a predefined time step, but the system is evolved from one event to the next one. An event in this context is defined as the time where the next collision in the whole system takes place.\\
+
+The event prediction algorithm is follows closely the approach proposed by Bannerman et. al \cite{Bannerman2014} which will be discussed in the next section.\\
 
 \subsection{Event driven molecular dynamics (EDMD)}
 \label{sec:EDMD}
-Explain the EDMD algorithm
+For the prediction of events in EDMD simulations an overlap function $f_{ij}(t)$ between particles i and j is defined, where the squared quantities are used merely because they are easily accessible.\\
+\begin{align}
+f_{ij}(t) & \coloneqq  | \vec{r}_j(t) - \vec{r}_i(t) |^2 - \sigma^2\\
+          & \; \; \, \vrule
+  \begin{aligned}[t]
+    \quad \text{with} \quad \vec{r}_i(t) &= \vec{r}_i(t_0) + (t-t_0) \; \vec{v}_i(t_0) \, \text{,}\\
+    \Delta t \coloneqq & \; t-t_0  \, \text{,} \\ 
+    \vec{v}_{ij}(t) &\coloneqq  \vec{v}_j(t) - \vec{v}_i(t) \, \text{,}\\
+    \vec{r}_{ij}(t) &\coloneqq  \vec{r}_j(t) - \vec{r}_i(t) \, \text{,}\\
+    \Leftrightarrow \quad \vec{r}_{ij}(t) &= \vec{r}_{ij}(t_0) + \Delta t \; \vec{v}_{ij}(t_0)
+  \end{aligned}\\
+f(t)  & = ( \vec{r}_{ij}(t_0) +  \Delta t \;  \vec{v}_{ij}(t_0))^2 -\sigma^2 \\
+\label{eqn:overlap_f}
+f(t)  & = |\vec{r}_{ij}(t_0)|^2 + \Delta t ^2 \; |\vec{v}_{ij}(t_0)|^2 - 2 \Delta t \; \vec{r}_{ij}(t_0) \cdot \vec{v}_{ij}(t_0)  -\sigma^2
+\end{align}  
+
+The overlap function has the property that it is negative for two particles being closer than their diameter, 0 for at collision and positive if neither overlapping nor touching. The calculation of the next collison thus is to calculate the roots of \autoref{eqn:overlap_f}.\\
+
+%Solving it \todo{go to the library and take again the book to write from it the solution}
+Solving for $\Delta t$ with $|\vec{r}_{ij}(t_0)|^2 \coloneqq rr $, $|\vec{v}_{ij}(t_0)|^2 \coloneqq vv $ and  $\vec{r}_{ij}(t_0) \cdot \vec{v}_{ij}(t_0) \coloneqq rv $ is rather trivial:
+\begin{align}
+0 &= rr + vv \; \Delta t ^2  - 2 rv \; \Delta t  -\sigma^2\\
+\Leftrightarrow \quad 0 &= \Delta t ^2 - \frac{2rv}{vv} \; \Delta t + \frac{rr - \sigma^2 }{vv}\\
+\Leftrightarrow \, \, \Delta t &= - \frac{rv}{vv} \pm \sqrt{\left(\frac{rv}{vv}\right)^2 - \frac{rr - \sigma^2 }{vv}}
+%\label{eqn:collision_prediction_pre}
+%\Leftrightarrow \, \, \Delta t &= \frac{ - rv \pm \sqrt{ (rv)^2  - vv (rr - \sigma^2 )} }{vv}\\
+%\Leftrightarrow \, \, \Delta t &= \frac{rv \pm \sqrt{ (rv)^2  - vv (rr - \sigma^2 )} }{vv} \; \frac{ - rv \mp \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}}{ - rv \mp \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}}\\
+%\label{eqn:collision_prediction}
+%\Leftrightarrow \, \, \Delta t &= \frac{(rr - \sigma^2 )}{ - rv \mp \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}}
+\end{align}
+%To circumvent a caveat when executing on a floating point machine, \autoref{eqn:collision_prediction_pre} is rewritten as in \autoref{eqn:collision_prediction}.\\ 
+
+But a caveat when executing on a floating point machine is present as can be seen when considering which solution is of interest. As for a possible collision it is necessary that the two particles move towards each other we can conclude that the scalar product is required to be positive $rv>0$, because otherwise the particles are already moving away from each other.\\ 
+
+Also the quadratic formula has two solutions, corresponding to the entry and the exit of the overlap. Because the entry has to be prior to the exit, we further conclude that interest lies on the smaller solution that is:
+\begin{align}
+\label{eqn:collision_prediction_pre}
+\Delta t &= \frac{ - rv + \sqrt{ (rv)^2  - vv (rr - \sigma^2 )} }{vv}
+\end{align}
+Now for the case where the distance of the spheres is already close to the diameter of the spheres we find $(rv)^2 >> (rr-\sigma^2)$, which results in a cancelation of two large numbers leaving a small number. Floating point number operations are inherently bad suited because they tend to large inaccuracy in this case. Rewriting \autoref{eqn:collision_prediction_pre} by making use of the third binomial formula \todo{look if this is fine to write.} leads to:
+\begin{align}
+\Delta t &= \frac{(rr - \sigma^2 )}{ - rv - \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}}
+\end{align}
+Comparably this does not contain a cancelation of the type seen before and such is better suited for the use in a computer simulation. \todo{cite Goldberg '91}\\
+\vspace{20ex}
+
+For this purpose all possible collisions of the particles have to be pre calculated and then stored in a future event list (FEL), which then is sorted by the time of occurance. From the FEL it can be read when the next collision between which two particles will take place. The collisions outcome itself can be analytically calculated \todo{equation of collision} where the two particles are assigned new momenta. Collision between more than two particles is close to excluded by treating the hard spheres as actual hard spheres.\\
+
+After every collision new events have to be calculated for collision now possible for the two particles. These have to be sorted into the FEL, and a new cycle beginns.\\
+
+Because some events may have been calculated for the previous ballistic trajectory of a particle which collided in the mean time, it is necessary to establish an interaction count for the particles. Every time an event occurs it is incremented by one. Each event now has  
 
 \subsection{Details of the Implementation} 
 \label{sec:implemetation}
@@ -49,4 +107,23 @@ Show dependence of equilibration steps on simulation
 \subsection{Initial density}
 \label{sec:}
 Show dependence of initial density on simulation
+
+\section{Possible extensions}
+\label{sec:simulation_ext}
+Highlit possible extenisions which migth be doable to implement.
+
+\subsection{Varying radius}
+\label{sec:extension_radius}
+Vary the radius of the spheres. Rewquirements and thought on that.
+
+\subsection{Varying mass}
+\label{sec:extension_mass}
+Same as with radius, highlight the points in the code requiring a change.
+
+\subsection{Muliprocessing}
+\label{sec:extension_MP}
+Idea on Parrallelizing the code. Probably more advanved, but for larger systems (Really large files) doable. (Actually RAM might become a serious problem).
+
+Besenrein, Samstag 6.3.  mittag, 13 h 
+
 
