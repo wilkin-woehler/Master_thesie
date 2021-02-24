@@ -22,22 +22,23 @@
 
 %Tabellen und Grafiken
 \usepackage{graphicx}
-\usepackage{tabularx}
+%\usepackage{tabularx}
 \setlength{\tabcolsep}{18pt}%space between text and left/right border
-\usepackage{dcolumn}
-\usepackage{multicol}
-\usepackage{float}
-\usepackage{floatflt}
-\usepackage{here}
-\usepackage{blindtext}
-\newcolumntype{.}{D{.}{.}{7}}
-\usepackage{wrapfig}
-\usepackage{bigstrut}
+%\usepackage{dcolumn}
+%\usepackage{multicol}
+%\usepackage{float}
+%\usepackage{floatflt}
+%\usepackage{here}
+%\usepackage{blindtext}
+%\newcolumntype{.}{D{.}{.}{7}}
+%\usepackage{wrapfig}
+%\usepackage{bigstrut}
 
-\usepackage{subfig}
+%\usepackage{subfig}
 
 %\usepackage{subfigure}
-\usepackage{here}
+%\usepackage{here}
+\usepackage{placeins}
 
 %Ueberschrift mit Serifen (nur Inhaltsverzeichnis)
 \setkomafont{sectioning}{\normalfont\bfseries}
@@ -61,7 +62,7 @@
 
 %Sonstiges
 \usepackage{geometry}
-\geometry{verbose,a4paper,tmargin=25mm,bmargin=25mm,lmargin=15mm,rmargin=20mm}
+\geometry{verbose,a4paper,tmargin=25mm,bmargin=25mm,lmargin=20mm,rmargin=20mm}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{latexsym}
@@ -85,10 +86,53 @@
 \usepackage[headsepline]{scrpage2}
 \pagestyle{scrheadings}
 \clearscrheadfoot
-\ihead{Wilkin Woehle}
-\ofoot{\pagemark}
-\ohead{\headmark}
-\automark{section}
+
+
+%WEll that took a while...
+%\lehead{\headmark}
+%\automark{chapter}
+%\rehead{Section}
+
+%\lohead{section}
+
+%\automark[chapter]{section}
+%\leftmark{section}
+%\rightmark{chapter}
+%\lehead{\headmark \hfill}
+%\lohead{\headmark}
+%\rehead{\headmark}
+%\rohead{\headmark}
+%\cehead{\headmark}
+%\cohead{\headmark}
+
+%\automark[chapter]{chapter}
+
+%\rehead{\headmark}
+%\automark[chapter]{section}
+
+%\lohead{\headmark}
+%\automark[section]{section}
+
+%\lohead{\headmark}
+%\automark[section]{section}
+
+%\ohead{Wilkin Wöhler}
+%\ihead{\headmark}
+\automark[chapter]{section}
+
+\rehead{\leftmark}
+%\lehead{Wilkin Wöhler}
+\lohead{\rightmark}
+\rohead{\leftmark}
+
+\ofoot{\pagemark} %Outerfooter (i-nner, c-enter + all three for head available)
+
+%\ohead{\headmark}
+%\automark[section]{section} %\automark[]{} gives as first argument left and second argument right side if two sided document
+
+
+
+
 
 %Bibliography
 %\usepackage{bibgerm}

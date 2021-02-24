@@ -48,29 +48,173 @@ Solving for $\Delta t$ with $|\vec{r}_{ij}(t_0)|^2 \coloneqq rr $, $|\vec{v}_{ij
 \end{align}
 %To circumvent a caveat when executing on a floating point machine, \autoref{eqn:collision_prediction_pre} is rewritten as in \autoref{eqn:collision_prediction}.\\ 
 
-But a caveat when executing on a floating point machine is present as can be seen when considering which solution is of interest. As for a possible collision it is necessary that the two particles move towards each other we can conclude that the scalar product is required to be positive $rv>0$, because otherwise the particles are already moving away from each other.\\ 
+But a caveat when executing on a floating point machine is present as can be seen when considering which solution is of interest. As for a possible collision it is necessary that the two particles move towards each other we can conclude that the scalar product is required to be negative $rv<0$, because otherwise the particles are already moving away from each other.\\ 
 
 Also the quadratic formula has two solutions, corresponding to the entry and the exit of the overlap. Because the entry has to be prior to the exit, we further conclude that interest lies on the smaller solution that is:
 \begin{align}
 \label{eqn:collision_prediction_pre}
-\Delta t &= \frac{ - rv + \sqrt{ (rv)^2  - vv (rr - \sigma^2 )} }{vv}
+\Delta t &= \frac{ - rv - \sqrt{ (rv)^2  - vv (rr - \sigma^2 )} }{vv}
 \end{align}
-Now for the case where the distance of the spheres is already close to the diameter of the spheres we find $(rv)^2 >> (rr-\sigma^2)$, which results in a cancelation of two large numbers leaving a small number. Floating point number operations are inherently bad suited because they tend to large inaccuracy in this case. Rewriting \autoref{eqn:collision_prediction_pre} by making use of the third binomial formula \todo{look if this is fine to write.} leads to:
+Now for the case where the distance of the spheres is already close to the diameter of the spheres we find $(rv)^2 \gg (rr-\sigma^2)$, which results in a cancelation of two large numbers leaving a small number. Floating point number operations are inherently bad suited because they tend to large inaccuracy in this case. Rewriting \autoref{eqn:collision_prediction_pre} by making use of the third binomial formula \todo{look if this is fine to write.} leads to:
 \begin{align}
-\Delta t &= \frac{(rr - \sigma^2 )}{ - rv - \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}}
+\label{eqn:collision_prediction}
+\Delta t &= \frac{(rr - \sigma^2 )}{ - rv + \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}}
 \end{align}
-Comparably this does not contain a cancelation of the type seen before and such is better suited for the use in a computer simulation. \todo{cite Goldberg '91}\\
-\vspace{20ex}
+Comparably \autoref{eqn:collision_prediction} does not contain a cancelation of the type seen before and such is better suited for the use in a computer simulation. \todo{cite Goldberg '91}\\
 
-For this purpose all possible collisions of the particles have to be pre calculated and then stored in a future event list (FEL), which then is sorted by the time of occurance. From the FEL it can be read when the next collision between which two particles will take place. The collisions outcome itself can be analytically calculated \todo{equation of collision} where the two particles are assigned new momenta. Collision between more than two particles is close to excluded by treating the hard spheres as actual hard spheres.\\
+%The algorithm proposed by Bannermann\cite{Bannerman2014} works by differentiating 4 cases:
+%\begin{description}
+%\item[First,] \hfill \\ if $rv>0$ the particles move away from each other leading to a collision time of $\Delta t = \infty$.
+%\item[Second,]\hfill \\ if $rr<\sigma^2$ an overlapis present resulting in an immediate collision time of $\Delta t = 0$
+%\item[Third,] \hfill \\ if $(rv)^2  - vv (rr - \sigma^2 ) \leq 0 $ the two particles miss each other, including touching without momentum transfer, resulting in a collision time of $\Delta t = \infty$
+%\item[Fourth,] \hfill \\ if none of the before is given the particles collide and $\Delta t$ is calculated by \autoref{eqn:collision_prediction}.
+%\end{description}
 
-After every collision new events have to be calculated for collision now possible for the two particles. These have to be sorted into the FEL, and a new cycle beginns.\\
+The event prediction algorithm proposed by Bannermann\cite{Bannerman2014} works by differentiating 4 cases:
+\begin{enumerate}
+\item If $rv>0$ the particles move away from each other leading to a collision time of $\Delta t = \infty$.
+\item If $rr<\sigma^2$ an overlap is present resulting in an immediate collision time of $\Delta t = 0$
+\item If $(rv)^2  - vv (rr - \sigma^2 ) \leq 0 $ the two particles miss each other, including touching without momentum transfer, resulting in a collision time of $\Delta t = \infty$
+\item If none of the before is given the particles collide and $\Delta t$ is calculated by \autoref{eqn:collision_prediction}.
+\end{enumerate}
 
-Because some events may have been calculated for the previous ballistic trajectory of a particle which collided in the mean time, it is necessary to establish an interaction count for the particles. Every time an event occurs it is incremented by one. Each event now has  
+All collision times for a particle are then stored in a queue sorted by event time called particle event list (PEL). From the PEL the first entry is then passed to the global FEL.\\
+This procedure initally takes place for all particles to set up the system and later on for particles involved in an event after its execution.\\ 
+
+As will be discussed in \autoref{sec:implemetation} some redundant calculations have been omitted in the actual simulation program, as well as a cell system added to reach $\mathcal{O}(N)$ computation time, in turn introducing a new event type for cell changes.\\
+
+A further detail to take care of is the possibility of scheduled events which have bcome invalid due to a earlier collision of the one of the particles. This is handeled by assigning an interaction count to each particle and then store this at precalculation time with the event. When the event comes up, and the interaction count of one of the particles has increased in the meantime, the event is said to be invalidated. Depending on which particle had an event in the meantime the invalidation either causes no action or a recalculation of new events.\\  
 
 \subsection{Details of the Implementation} 
 \label{sec:implemetation}
-Add Details of for example FEL, and backupevent handling, double time precision, reset sim
+%Add Details of for example FEL, and backupevent handling, double time precision, reset sim
+As the simulation code is based on an earlier Monte Carlo Code for hard spheres a complete walk through the whole progam would become quite extensive. Such we will focus on key points to understand the details of the simulation.\\
+
+\subsubsection{\textit{Event} struct}
+\label{sec:event_struct}
+We start with the basic \textit{Event} struct which includes 6 entries as shown in \autoref{tab:event_entries}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c}
+\textbf{Datatype} & \textbf{Name of entry}\\ \hline
+(timeType) & time \\
+(int) & event\_type \\
+(particle*)  & particle \\
+(void*) & partner \\
+(int) & particle\_count \\
+(int) & partner\_count \\
+\end{tabular}
+\caption{Content of the \textit{Event} struct.}
+\label{tab:event_entries}
+\end{table}
+The type of \textit{time} (timeType) is usually set to double. The \textit{time} variable itself represents the time for when the event is scheduled.\\ 
+The \textit{event\_type} variable is either set to 0 or 1 and indicates if the event is a cell transfer or a collision of two particles.\\
+The \textit{particle} variable is a pointer to the particle for which the event has been pre calculated, while the \textit{partner} variable is set to be a void pointer. Such it is possible to either interpret it as a particle pointer for the collision type event or as an interger pointer to the index in the current cells' neighbours list for transfer events.\\
+In the last two rows the interaction counts for particle and partner are listed as well. As the destination cell in a transfer event does not require an interaction count, the \textit{partner\_count} variable is only used for collision events.\\
+
+The \textit{event} struct is used for all events throughout the simulation. For read and write operations with the HDF5 file format, the struct \textit{event\_data} is available which uses only indexes instead of pointers.\\
+
+\subsubsection{\textit{Particle} class}
+\label{sec:particle_class}
+The \textit{Particle} class is comparably to the one from the MC code basis. Its MC related variables have been removed and additional key variables and concepts will be discussed in the following:\\
+
+First a vector storing events called \textit{backupEvent} has been added to make it possible to store events from the pre calculation for the case of the first event being invalidated. The idea of reusing events is discussed in many publications, for example that the memory cost increases onyl moderately with more backup events while the speedup does not increase much for more than two stored events \cite{Bannerman2011}. It also has been argued that the added complexity can not account for the increase in efficency\cite{DONEV2005}.\\ 
+Eventhough in the own simulations a decrease in calculation time of more than 10\% was observed and the cost of complexity was seen as moderate. The difference might be explained by the fact that the systems under consideration in this thesis have a rather large particle density, leading to more invalid collsions.\\
+
+In the context of reusing pre calculated results, it should also be mentioned that after a cell transfer the recalculation of events can be restricted to partner particles only in the new neighbouring cells, leading to only 1/3 of the calculation time in this case. But as mentioned systems under consideration are mostly rather dense and such the number of transfers is often at below 5\%. Thus the increase in efficency was assumed to be to costly on the complexity side, and not implemented. Eventhough for sparse systems, it might make sense to include an \textit{updatePEl} routine.\\
+
+
+Also key differences to the former MC Particle type are the variables \textit{total\_interactions} and \textit{particle\_delayed\_time}. The first is the variable for book keeping of interactions, while the second represents the event driven character of the simulation. Because each particle only moves on purely ballistic trajectories until an event occurs, it is not necessary to keep all particle positions and velocities synchronized in time. Quite on the contrary it would mean executing extra operations together with summing rounding errors by each floating point operation.\\
+
+Because sometimes it is desired to have the whole configuration at one point of time, the \textit{transferToTime()} function of the particle provides the possibility to take the particle into the present. This is necessary soon as measurements are performed on the system, including snapshots.\\
+
+As mentioned before the system behaves chaotic even under slightest changes like a rounding error from an extra floating point operation. A result of this is that measuring at different rates during a simulation changes the simulation trajectory quite a bit. It has been observed that such a system may keep close to the undisturbed trajectory for about 50-100 events/particle. As it is of desire to measure quantities and take snapshots without disturbing the simulation, the simulation program makes employs copies of the configuration being costly in terms of memory but making simulation resets or higher sampling rates at interesting points possible within a defined trajectory.\\ 
+
+The structure is as follows: The first copy is rewritten with an image of the working configuration just before any measurement. The working trajectory iteself is then disturbed by the measurement, and afterwards replaced with its state before the measurement from the backup configuration.\\
+The second copy actually includes the full simulation state, while the first only includes the particle cofiguration. This second one might be used to save a state during the simulation and reset to just the same point at any later time.\\
+
+
+\subsubsection{The \textit{Box} class}
+\label{sec:box_class}
+The box of the simulation stayed mostly the same as in the previous MC code. One chanege is the array \textit{neighbours\_lookup} which has been added. It contains the indices for the cells' \textit{neighbours} array pointing to cells that share their surface. It is used to identify which cell a particle has to be transfered to during a cell transfer event.\\
+
+Furthermore the \textit{Update} routine now takes care of all quantities depening on the length of the box, making the \textit{rescale} routine a simple rescaling of the edge lengths with an additional \textit{Update} command.\\
+
+\subsubsection{The \textit{Scheduler} class}
+\label{sec:scheduler_class}
+While the afore mentioned parts of the program are necessary for the EDMD program, the \textit{Scheduler} class contains the most distinct parts of the program. It keeps track of all events to come, predicts new events and orchestrates the execution of the events. The essential functions are discussed in the following subsections while some basic properties are shortly highlighted here.\\
+
+First of all the \textit{Scheduler} holds the Future event list (FEL) in which at least one event per particle is stored. As discussed within \autoref{sec:particle_class} the simulation is capable of saving the complete state of a trajectory, including all pre calculated events. For this purpose an array of \textit{Events} is available.\\
+Furthermore the \textit{Scheduler} includes the \textit{gloabl\_time}.\\
+Important for the efficency is the pre allocation of all arrays used within the prediction calculations, as the number of executions for the collision prediction routine is about $\frac{30}{\text{particle} \cdot \text{step}}$ accounting to a few billion function calls during a small simulation.\\
+
+\subsubsection{\quad \textit{Scheduler::predictTransfer()}}
+As the name suggests this function predicts the next cell transfer of a particle due to its movement. For this it calculates the position of the particle at global time, which for a valid state of the simulation always lies within its cell. By transforming the momentary position of the particle from the global coordinate system to the coordinate system of the cell and taking into account the periodic boundary conditions, we can write for each dimension $i$ the equations
+\begin{align}
+t_{i1}=-\frac{r_i}{v_i} \quad \text{and} \quad t_{i2}=\frac{l_i-r_i}{v_i}
+\end{align}
+which describe the times when the particle pierces the cell's left and right boundaries. A negative time corresponds in this case to a boundary crossing in the past, a time comparable to 0 means that the particle is on the edge of its cell and a positive time means that the boundary crossing lies in the future. By going through the different possible cases for $t_1$ and $t_2$ we find the resulting next crossing time for each case as shown in \autoref{tab:crossing_times}.
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c||c|c}
+$t_1$ & $t_2$ & Result & Case \\ \hline
+> & > & invalid & - \\ \hline
+> & = & $t_{\text{crossing}} = t_1$ & 0 \\ \hline
+> & < & $t_{\text{crossing}} = t_1$ & 1 \\ \hline
+= & > & $t_{\text{crossing}} = t_2$ & 2\\ \hline
+= & = & invalid & - \\ \hline
+= & < & $t_{\text{crossing}} = t_1$ & 3 \\ \hline
+< & > & $t_{\text{crossing}} = t_2$ & 4 \\ \hline
+< & = & $t_{\text{crossing}} = t_2$ & 5\\ \hline
+< & < & invalid & - \\ \hline
+\end{tabular}
+\caption{Possible results for left and right crossing time with resulting choice of next crossing time. >, = and < are to be read as for example $t_1 > 0$. The case indicates the case number within the actual simulation.}
+\label{tab:crossing_times}
+\end{table}
+
+By collecting the next crossing times for each dimension and taking the minimum of these times the exit time of the particle from its cell is determined.\\
+
+The return value of the routine is an \textit{Event} where the partner is given as an address to the box' \textit{neighbours\_lookup}. The index lies between 0 and 5, corresponding to the 6 possible neigbhour cells sharing a surface with the current cell of the particle. Each valid case represents a distinct neigbour cell and the index within the cells \textit{neighbours} array is clearly defined by the cell setup routines and is shown in \autoref{tab:cell_neighbour_index}. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c}
+dimension & boundary & case & index \\ \hline
+x & front & 0 & 12 \\
+ & back & 1 & 13 \\ \hline
+y & front & 2 & 10 \\
+ & back & 3 & 15 \\ \hline
+z & front & 4 & 4 \\
+ & back & 5 & 21 \\
+\end{tabular}
+\caption{Overview of the cells' \textit{neighbours} indices directly sharing a surface for 3 dimensions. As the indices hardly follow any simple pattern they are explicitly noted at this point. Obviously the cell consists of a front and a back boundary in each dimension. The corresponding case matches the one from \autoref{tab:crossing_times}.}
+\label{tab:cell_neighbour_index}
+\end{table}
+\FloatBarrier
+
+\subsubsection{\quad \textit{Scheduler::predictCollision()}}
+The prediction of collision times has already been discussed in \autoref{sec:EDMD}. The implementation in the program first calculates all necessary scalar products while accounting for the periodic boundary conditions, and in a second step returns the collision time depending on the case at hand.\\
+
+The presented algorithm is only valid for single sized particles. If polydisperse systems are supposed to be considered the algorithm has to be adjusted. \todo{mayhap do it in the appendix?}\\
+
+As this routine is executed through out the simulation very often it has been tried to optimize its efficency multiple times. For example calculating only necessary results for the next case differentation has been implemented but no significant increase in efficency was recognized and for better readability the prior version has been reestablished. In either case if an optimized way of calculating the results is found it might be useful to use them.\todo{<-- Not really nice}\\    
+
+\subsubsection{\quad \textit{Scheduler::setupFEL()}}
+This routine fill the FEL of the simulation. For this purpose it iterates through all particles and calls \textit{setupPEL} for each of them. The PEL in turn is set up by predicting the next cell transfer as well as the next collisions with all particles within the $3^d$ cells directly surrounding the particle. From all predicted events only such with finite times are then written to the \textit{backupEvents} vector corresponding to the PEL of the particle.\\
+For the FEL only the top event of each particle is then used. Because other events from the PEL are able to move on to the FEL ounce written to the FEL an event has to be erased from the PEL.\\
+
+\subsubsection{\quad \textit{Scheduler::executeTransfer()}}
+The execution of a transfer event is accomplishd by the event particles \textit{MoveBetweenCells()} routine. The departure cell is taken as the event particles own cell. While the event partner holds the information which of the cell neighbours is the destination cell.\\
+
+\subsubsection{\quad \textit{Scheduler::executeCollision()}}
+The outcome of a collision between particle 1 and 2 with corresponding position and velocity can be derived by momentum and energy conervation \todo{cite some textbook, or better jsut write down the calculation} too be 
+\begin{align}
+\vec{v}_1^{\,'} = \vec{v}_1 + \left( \frac{\vec{r} \cdot \vec{v} }{\vec{r} \cdot \vec{r}} \right) \vec{r}_{12}
+\end{align}
+This equation is not directly dependent on the radius, but only  
+ 
+\subsubsection{\quad \textit{Scheduler::executeEvent()}}
+
 
 \section{Probe of simulation code}
 \label{sec:probe}

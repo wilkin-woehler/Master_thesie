@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt]{scrreprt}
+\documentclass[a4paper, twoside, 11pt]{scrreprt}
 
 \input{header/head.tex}
 \input{header/commands.tex}
@@ -28,6 +28,7 @@
 	\newcommand{\presummary}{ A raw writing of hard sphere nucleation, a simulation to measure quantiteis, and a analysis of data generate by means of the simulation. A test citation: \cite{Heyes2007}}
 
 \input{header/title_page.tex}
+\pagestyle{plain}
 \pagenumbering{Roman}
 \tableofcontents
 \newpage
@@ -36,10 +37,16 @@
 \pagebreak
 
 \listoftables
-\newpage
+
+\newpage\null\thispagestyle{empty}\newpage %Makes an empty page
+
+
 \pagenumbering{arabic} 
 
-\chapter{Theory}
+\pagestyle{scrheadings}
+\renewcommand{\chapterpagestyle}{scrheadings}
+
+\chapter{Introduction}
 \input{text/theory.tex}
 \newpage
 
@@ -55,6 +62,8 @@
 \input{text/conclusion.tex}
 \newpage
 
+\pagestyle{plain}
+\renewcommand{\chapterpagestyle}{plain}
 \chapter{Appendix}
 \input{text/appendix.tex}
 \newpage

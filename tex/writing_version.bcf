@@ -1929,6 +1929,9 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Heyes2007</bcf:citekey>
     <bcf:citekey order="2">Bannerman2014</bcf:citekey>
+    <bcf:citekey order="3">Bannerman2014</bcf:citekey>
+    <bcf:citekey order="4">Bannerman2011</bcf:citekey>
+    <bcf:citekey order="5">DONEV2005</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
