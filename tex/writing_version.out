@@ -9,30 +9,37 @@
 \BOOKMARK [1][-]{section.2.1}{Algorithm and Simulation details}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.1.1}{Event driven molecular dynamics \(EDMD\)}{section.2.1}% 10
 \BOOKMARK [2][-]{subsection.2.1.2}{Details of the Implementation}{section.2.1}% 11
-\BOOKMARK [1][-]{section.2.2}{Probe of simulation code}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.1}{Diffusive behaviour}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.2}{Radial distribution function}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Estimate of required resources}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.3.1}{Calculation time estimates}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.2}{File sizes estimates}{section.2.3}% 17
-\BOOKMARK [1][-]{section.2.4}{Produced Data}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.4.1}{Equilibration steps}{section.2.4}% 19
-\BOOKMARK [2][-]{subsection.2.4.2}{Initial density}{section.2.4}% 20
-\BOOKMARK [1][-]{section.2.5}{Possible extensions}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.5.1}{Varying radius}{section.2.5}% 22
-\BOOKMARK [2][-]{subsection.2.5.2}{Varying mass}{section.2.5}% 23
-\BOOKMARK [2][-]{subsection.2.5.3}{Muliprocessing}{section.2.5}% 24
-\BOOKMARK [0][-]{chapter.3}{Data Analysis}{}% 25
-\BOOKMARK [1][-]{section.3.1}{Diffusion of the lqiuid}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.2}{Diffusion of the metastable liquid}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.3}{Cluster growth}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.4}{Tensor of Gyration properties}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.5}{ACF largest cluster?}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.6}{Nuclection time dilemma}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.7}{Induction time by exponential distribution}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.8}{Nucleation rate comparison}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.9}{Memory Kernels}{chapter.3}% 34
-\BOOKMARK [0][-]{chapter.4}{Conclusion - Summary}{}% 35
-\BOOKMARK [1][-]{section.4.1}{Conclusion}{chapter.4}% 36
-\BOOKMARK [0][-]{chapter.5}{Appendix}{}% 37
-\BOOKMARK [1][-]{section.Alph0.1}{A}{chapter.5}% 38
+\BOOKMARK [1][-]{section.2.2}{Measurement quantities}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Mean squared displacement}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Radial distribution fucntion}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Largest Cluster}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.4}{Cluster size distribution}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.5}{Cluster positions and numbers}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.6}{Tensor of Gyration}{section.2.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Probe of simulation code}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{Diffusive behaviour}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{Radial distribution function}{section.2.3}% 21
+\BOOKMARK [1][-]{section.2.4}{Estimate of required resources}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.4.1}{Calculation time estimates}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.2}{File sizes estimates}{section.2.4}% 24
+\BOOKMARK [1][-]{section.2.5}{First produced data}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.6}{Possible extensions}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.6.1}{Varying radius}{section.2.6}% 27
+\BOOKMARK [2][-]{subsection.2.6.2}{Varying mass}{section.2.6}% 28
+\BOOKMARK [2][-]{subsection.2.6.3}{Muliprocessing}{section.2.6}% 29
+\BOOKMARK [0][-]{chapter.3}{Data Analysis}{}% 30
+\BOOKMARK [1][-]{section.3.1}{Cluster growth}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.2}{Tensor of Gyration properties}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.3}{ACF largest cluster?}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.4}{Nuclection time dilemma}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.4.1}{induction time by critical cluster from cnt}{section.3.4}% 35
+\BOOKMARK [2][-]{subsection.3.4.2}{inudctio time by constant growth extrapolated to zero}{section.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.4.3}{induction time by exponential fit}{section.3.4}% 37
+\BOOKMARK [2][-]{subsection.3.4.4}{indutcion time by fluctation horizon crossing}{section.3.4}% 38
+\BOOKMARK [1][-]{section.3.5}{Induction time by exponential distribution}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.6}{Nucleation rate comparison}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.7}{Memory Kernels}{chapter.3}% 41
+\BOOKMARK [0][-]{chapter.4}{Conclusion - Summary}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Conclusion}{chapter.4}% 43
+\BOOKMARK [0][-]{chapter.5}{Appendix}{}% 44
+\BOOKMARK [1][-]{section.Alph0.1}{A}{chapter.5}% 45

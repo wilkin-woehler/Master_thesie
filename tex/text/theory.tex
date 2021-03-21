@@ -5,6 +5,7 @@
 \section{Hard sphere system}
 \label{sec:HS_system}
 %Explain the Hard sphere system and the first predictions of the phase transition\\ \\
+Some test text.
 
 The Hard Sphere system is the simplest model of a fluid including interactions between the single particles. Its well known potential between particles i and j reads:
 \begin{equation}
@@ -49,14 +50,17 @@ Classical nucleation theory (CNT) has been proposed \todo{look who did this the 
 
 CNT assumes that a spherical crystalite may form in the liquid with properties of the bulk crystal while the fluid remains with the properties of the bulk liquid. The difference in the free energy landscape is given by a surface and a volume term. The first arises from the surface tension $\gamma$ between the fluid bulk and solid bulk phases. The second comes by the difference in chemical potential $\Delta \mu$. The whole expression reads:
 \begin{equation}
+\label{eqn:free_energy}
 \beta \Delta G(R) =4 \pi R \gamma -\frac{4}{3} \pi R^3 \rho \Delta \mu  
 \end{equation}
 Where $\rho$ is the particle density of the solid phase.\\
 
 The free energy barrier can be sketched like this (maybe sketch it for som mu and gamma).\\
 
-As can be seen it has a maximum at $R_{crit}$ the critical radius. If the radius of a cluster surpasses the critical radius, it is likely to continue to grow until it incorporates all available fluid. It is given by:
+As can be seen the free energy landscape of \autoref{eqn:free_energy} has a maximum at a radius called $R_{crit}$. The interpretaion of this radius is that if a cluster, which is defined as a structure having a crystalline like ordering locally, surpasses the critical radius, it is likely to continue to grow until it incorporates all available fluid. This critical radius is given by \autoref{eqn:r_crit}.
+
 \begin{equation}
+\label{eqn:r_crit}
 R_{crit} = \frac{2 \gamma}{\rho \Delta \mu }
 \end{equation}
 
@@ -75,6 +79,7 @@ As the constant c is not further defined the absolute nucleation rate in this pi
 Given the equation of state for the liquid and fluid phase from \autoref{sec:HS_phase_diagram}, and taking a literature value for $\gamma$ \todo{cite the refernce to which the value corresponds} we can calculate $R_{crit}$ for various densities.
 
 \todo{Plot of $r_{crit}$ for different densities}
+
 
 \section{Memory including approaches}
 \label{sec:memory_approach}

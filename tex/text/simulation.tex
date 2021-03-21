@@ -209,56 +209,282 @@ The execution of a transfer event is accomplishd by the event particles \textit{
 \subsubsection{\quad \textit{Scheduler::executeCollision()}}
 The outcome of a collision between particle 1 and 2 with corresponding position and velocity can be derived by momentum and energy conervation \todo{cite some textbook, or better jsut write down the calculation} too be 
 \begin{align}
+\label{eqn:collision_result}
 \vec{v}_1^{\,'} = \vec{v}_1 + \left( \frac{\vec{r} \cdot \vec{v} }{\vec{r} \cdot \vec{r}} \right) \vec{r}_{12}
 \end{align}
-This equation is not directly dependent on the radius, but only  
+While \autoref{eqn:collision_result} is not directly depending on the radius, an indirect dependence  by the collision time and configuration at which \autoref{eqn:collision_result} is evaluated persists.
  
 \subsubsection{\quad \textit{Scheduler::executeEvent()}}
+The execution of an event works in multiple steps. At first the topmost \textit{Event} is copied from the FEL where it is deleted. Next the validity of the interaction counts of both particle (\textit{cond1}) and its partner (\textit{cond2}) are evaluated. The validation is nothing else than a comparison of the interaction counts when the event was scheduled with the present interaction counts. As the conditions are used in the following flow statements they are stored as boolean type. Furthermore in the case of a transfer event the validation of the partner is not necessary but only for better readability performed.\\
+It follows a distinction between 5 cases which are given by:
+\begin{description}
+\item[Valid transfer (\textit{event\_type}==0 and \textit{cond1}) ] \hfill \\ The transfer is executed, the global time is evolved to the event time and the particles PEL is rebuilt and its next event pushed to the FEL.
+\item[Valid collision (\textit{event\_type}==1 and \textit{cond1} and \textit{cond2}) ]\hfill \\ The collision is executed, the global time is evolved to the event time and for both particpating particles new PEL's are built and each top event is pushed to the FEL.
+\item[Invalid transfer (\textit{event\_type}==0 and not \textit{cond1})] \hfill \\ The particle must have had an interaction previously where a new event for it was scheduled, thus no action is taken.
+\item[Invalid collision due to particle (\textit{event\_type}==1 and not \textit{cond1})] \hfill \\  The particle must have had an interaction previously where a new event for it was scheduled, thus no action is taken as for the above.
+\item[Invalid collision due to partner (\textit{event\_type}==1 and not \textit{cond2})] \hfill \\  Only the partner had an interaction previously where a new event for it was scheduled, thus a new event for the particle is required. As the particle had no further interactions, the \textit{backupEvents} are still valid and its first entry is pushed into the FEL. In case no backupEvents are stored the PEL is rebuilt and its first entry pushed to the FEL instead.
+\end{description}
+The order of the cases might be exchanged, except for the last two. This is because the last one assumes \textit{cond1} to be true, which is guaranteed by the case before.\\
+
+Furthermore the routine counts the number of each case, to monitor numbers of collisions, transfers and invalidated cases by type. This is not required by the simulation but can be helpful for understanding the system and simulation.\\
+
+
+
+
+\section{Measurement quantities}
+\label{sec:cluster_quantities}
+list quantities and their use etc.
+
+\subsection{Mean squared displacement}
+\label{sec:MSD}
+-Averaged or as distribution\\
+-Reuqired for diffusion\\
+
+\subsection{Radial distribution fucntion}
+\label{sec:RDF}
+-Well show an RDF?
+
+\subsection{Largest Cluster}
+\label{sec:lc}
+- Non local\\
+- large in case of nucleation\\
+- requires almost no memory\\
+
+\subsection{Cluster size distribution}
+\label{sec:pnt}
+- Non local\\
+- requires more memory still not as much as for example particle positions\\
+- 
+
+\subsection{Cluster positions and numbers}
+\label{sec:cluster_position}
+- not done\\
+- local as single clusters can be named and followed from formation to melting or final growth\\
+- Much more information as locallity can be archieved.\\
+
+
+\subsection{Tensor of Gyration}
+\label{sec:ToG}
+-Only done for largest cluster of size larger than some threshold\\
+-How to extract the eigenvalues l1,l2,l3\\
+-Radius of Gyration\\
+-Anisotropy\\
+-Asphericity\\
+
+
+
+
+
+
 
 
 \section{Probe of simulation code}
 \label{sec:probe}
-To probe we have to measure known quantities
+To probe the simulation dynamics we measuremed the longtime diffusion constant and the radial distribution function of the stable hard sphere liquid, as there are many measurements available in the literature to compare with.
+
 \subsection{Diffusive behaviour}
 \label{sec:diffusion_probe}
-Show the diffusive behavior of at least the fluid
+The diffusive behaviour of particles in a liquid usually can be three sepearted in thee distinct parts. First the short time diffusion which can be understood as the random movement of the particles within their momentary cage within the fluid. Second a sub diffusive phase in which the particles are repelled for the first time by their nearest neighbours. And third the long time diffusion to describe the random propagation of the particle through the fluid over time.\\
+   
+As the ballistic hard sphere system enters into the long time diffusion almost at ounce only this is really measureable. By assuming a diffusive process we have the expectaion that the average mean squared displacement (MSD) of a particle can be well described by 
+\begin{align}
+\label{eqn:diffusion}
+\langle x^2 \rangle(t) = 2 \, d \, D \, t  \, \text{,}
+\end{align}
+where $\langle x^2 \rangle$ is the expectation value of the MSD, $d$ the number of spatial dimensions, $D$ the characteristic diffusion constant, and $t$ the time by which the system has evolved.\\
+
+By measuring $\langle x^2 \rangle (t)$ and making a linear regression to the data points we can find the Diffusion constant $D$.
+
+To probe the simulation code, systems as characterized in \autoref{tab:system_diffusion} have been used. The equilibration phase has been carried out up to $\eta_f = 50\%$ at the final volume fraction while above $\eta_f =  50\% $ an inital volume fraction of $\eta_i = 45\%$ has been used to obtain a fluid rather than a solid after the equilibration phase. As the measurement stretches into the metastable regime, it has also been necessary to check for nucleation events which were not present during the measurements.\\
+
+The resulting diffusion constants depending on the fluid volume fraction are shown in \autoref{fig:diffusion_const} alongside values obtained from the literature, for a similar system.\\
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/diffusion_probe.pdf}
+\caption{Logarithmic long time diffusion constant of the hard sphere liquid as measured in the own simulations as well as measurements from the literature. \todo{cite the people.}}
+\label{fig:diffusion_const}
+\end{figure}
+
+As it can be seen the EDMD simulation is very well capable of reproducing the diffusion constant for the hard sphere liquid, and such we expect the dynamics of it to accurately represent the purely ballistic hard sphere system.\\
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c}
+Parameter & Value \\ \hline
+N & 16384 \\
+eq\_steps/particle & 5000 \\
+pr\_steps/particle & 20000 \\
+$\eta_i$ & 5\% ... 50 \% \\
+$\eta_f$ & 5\% ... 54 \% \\
+\end{tabular}
+\caption{Input parameters of diffusion test systems.}
+\label{tab:system_diffusion}
+\end{table}
+
+
+
+
 
 \subsection{Radial distribution function}
 \label{sec:RDF_prob}
-Show a RDF of the fluid , if possibible with the theoretical cervus-pevick approximation
+A further well known quantity for the hard sphere system is the radial distribution function. As a theoretical prediction the Percus-Yevick approximation can be used to compare with, also it would be possible to compare with Monte Carlo simulations of the hard sphere system. In \autoref{fig:rdf_overview} an overview for a range of volume fractions is shown from the same simulations used in \autoref{sec:diffusion_probe}. Clearly visible is that no particles enter within the diameter of the spheres. Further for higher volume fractions the liquid shells become very well visible. At very high volume fraction we also find that  new peak arises below $r = 2 \sigma$.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/RDF.pdf}
+\caption{Radial distribution functions for a range of volume fractions. The colouring corresponds to the used volume fraction.}
+\label{fig:rdf_overview}
+\end{figure}
 
+To compare with Percus-Yevick approximation the radial distirbution function for two single volume fractions is shown with the corresponding theoretical solution in \autoref{fig:rdf_py}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/RDF_percus_yevick.pdf}
+\caption{Radial distribution function for the hard sphere system at a low and at a high volume fraction of the liquid together with the theoretical prediction from the Percus-Yevick approximation.}
+\label{fig:rdf_py}
+\end{figure}
+
+As highlighted for example in \cite{Hansen2006} the theoretical approximation has some flaws as can be seen with $g(r)|_{r=1\sigma}$ being too low for the Percus-Yevick approximation. Eventhough we see that overall the two radial distribution functions follow each other rather closely.\\
+Such we are confident that the elaborated simulation code is capable of producing accurate data in other contexts as well.\\
+
+\todo{It seems in the hansen and mcdonal that the peak below 2 sigma is also not present in their MC g(r), is there a reason for this?}
 
 \section{Estimate of required resources}
 \label{sec:resources}
-
+To choose system parameters senseful calculation times and file sizes of the simulation were characterized. This was of interest as the program was supposed to run on the NEMO high performance computing cluster which puts hard boundaries on calculation times which when treepassed can cause tremendous loss of data if not corretly caught by the program.\\
+ 
 \subsection{Calculation time estimates}
 \label{sec:calc_times}
-GIve some profiling numbers of the simulation
-Also conclude that missing q6q6 O($N^2$), broke the walltime.
+The calculation time of the program was tested for a large range of different system sizes up to almost 9 million particles in the fluid state. As can be seen in \autoref{fig:calc_time} the calculation time increases proportional to the system size for the execution of a step as well as for a measurement of the fluid system. The calculation cost being of $\mathcal{O}(N)$ enables the study of large systems. Furthermore from the slope an expectation for the execution time of a single event can be deduced, as well as an expectation for the time necessary for a measurement. As discussed on the example of \autoref{fig:calc_q6q6} the dependence of the measurement routines on the largest cluster size were not seen here, as possile clusters remained rather small during these simulation times.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/Calculation_times_measurement.pdf}
+\caption{Overview of CPU time required for calculating a simulation step, consisting of an event for each particle, and a measurement of relevant quantities for the system. As assumed for a simulation algorithm with $\mathcal{O}(N)$ calculation effort, the data points can be described by a line rather well. As the CPU time is clearly related to the further workload of the CPU during the calculation it is also expected to find fluctuations if the other workload of the machine is not strictly controlled.}
+\label{fig:calc_time}
+\end{figure}
+
+
+%Execution times for single steps have also been resolved with their distributions at 
+
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[width=0.7 \linewidth]{../plots/Simulation_runtimes.png}
+%\caption{Histogram of CPU time required per execution of one event at different volume fractions. A small variation in the execution time is visible but the dependence is only small over a large range of volume fractions. Somewhat surprising are the outliers at about half the median calculation times for which no direct explanation could be found, except that mayhap the calculation node they were executed on did not have any further workload present at the time of execution.}
+%\end{figure}
+The effect of larger clusters was only investigated after problems with the runtime of the programs were traced back to these. The q6q6-order parameter routine was tested for larger clusters in a nucleating simulation with about 1 million particles within the box. As can be seen in \autoref{fig:calc_q6q6} the calculation cost of the cluster finding routine can be described with a quadratic dependence on the largest cluster. For an impression what this means we can use the calculation costs of a simulation step from \autoref{fig:calc_time} being about $t_{step} \approx \SI{10}{\mu s \per \text{particle} }$. Such the execution of one step takes about $\SI{10}{s}$ for 1 million particles. If a measurement is performed every 10th step, the calculation cost of the measurements without a large cluster remain below 10\%. But as the largest cluster grows to a few hundred thousand particles in size, the measurements can make up 30 \% and more of the calculation cost, or for a fixed number of steps, increase the calculation time by about 50 \%. This previously unseen effect lead to actual data loss as the combination of NEMO cluster policy and EDMD simulation program did not result in a save shutdown of the program after breaching the walltime limit of the NEMO cluster.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/q6q6_calculation_time.pdf}
+\caption{Calculation time of the q6q6 order parameter at an increasing largest cluster size during one nucleation, together with the quadratic best fit indicating that the q6q6 routine calculation effort can be approximated by $\mathcal{O}({N_{lc}}^2)$ where $N_{lc}$ is the size of the largest cluster.}
+\label{fig:calc_q6q6}
+\end{figure}
+
 
 \subsection{File sizes estimates}
 \label{sec:file_size}
-Show the estimate on the file size
+A further important constraint for the simulations are the produced amount of data. To get an impression of the filesizes, the required memory for snapshots, reset steps and other measurements were measured prior to the actual simulations. The results for a single snapshot containing all positions and velocities of all particles as well as the size of a single simulation reset step containing all positions, velocities, the FEL, all PEL's and all delayed times is shown in \autoref{fig:file_size}. It can be seen that the file size is directly proportional to the system size which clearly expected as each particle adds a further set of positions, velocities etc. to the saved data.\\
+The memory costs of other measurements have been left out of \autoref{fig:file_size} as these only amount to substantial filesizes if measurements at about each step for long simulations are done.\\  
 
-\section{Produced Data}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/File_size.pdf}
+\caption{Overview of filesizes when a single setup on the one hand and a single full simulation on the other hand is saved for comparison reasons together with their corresponding linear regression. while the linear regression for 3 points is statistically not exceedingly senseful it still remains a useful tool to extract the slope which corresponds to the required memory per particle and snapshot or reset simulation.}
+\label{fig:file_size}
+\end{figure}
+
+
+
+
+\section{First produced data}
 \label{sec:data}
-Overview of produced data with visualized snapshot?
+The motivation for the simulation code is based on the interest in nucleation rates of the hard sphere system at varying volume fractions. To observe a nucleation the volume fraction of hard spheres has to be changed rapidly from lower ones where the system is in the stable fluid phase to higher ones where a meta stable fluid-solid phase exists. If this metastable phase is evolved in time nucleations can be observed as stochastic distributed events. To measure those without effects originating from the handling of the simulation, some parameters were tested within reasonable ranges prior to the data production.\\
+For this simulation the equilibration steps as well as the inital density before the volume quench seemed like they could introduce unwanted artefacts, and thus we performed some smaller data series to evaluate if and when these effects might come into play.\\
 
-\subsection{Equilibration steps}
-\label{sec:eq_steps}
-Show dependence of equilibration steps on simulation
+The used test system is characterized by the figures in \autoref{tab:system_start_parameter_test}.
 
-\subsection{Initial density}
-\label{sec:}
-Show dependence of initial density on simulation
+\begin{table}
+\centering
+\begin{tabular}{c|c}
+Parameter & Value \\ \hline
+N & 16384 \\
+eq\_steps/particle & 100 ... 20000 \\
+$\eta_i$ & 5\% ... 49 \% \\
+$\eta_f$ & 54 \% \\
+\end{tabular}
+\caption{Input parameters of test systems probing the dependence on equilibration steps and inital density.}
+\label{tab:system_start_parameter_test}
+\end{table}
+
+The general behaviour of the systems is analysed by inspecting the cluster distribution over time. The mean cluster distribution is shown in \autoref{fig:pnt_mean} together with the same data smoothed by a gaussian filter matrix. The smoothing is used because in a next step the difference between the mean cluster distribution and the cluster distributions with varying simulation parameters is compared, and without smoothing at low count rates only fluctuations are visible.\\
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/mean_pnt.png}
+\caption{Heat map of the mean cluster distribution over time. The diagram encompasses 800 trajectories of 16384 particles each. The colouring indicates the logarithm of the mean cluster occurance corresponding to a probability in the stationary case.}
+\label{fig:pnt_mean}
+\end{figure}
+
+From \autoref{fig:pnt_mean} we can see how the system behaves after a volume quench into the metastable region. In the liquid rarely any clusters are present and thus directly after the quench no clusters are present either as the spatial configuration requires time to rearange into clusters. In the later evolution we see how clusters form, and soon after begin to nucleate leaving the range of the diagram.\\
+
+To compare simulations with varying parameters the quantity defined in \autoref{eqn:pnt_delta} is used, where complications with zero values are circumvented by fixing these values below the regular signal.\\ Three samples of this comparison are shown in \autoref{fig:pnt_eq_step_comparison} and \autoref{fig:pnt_eq_step_comparison}. The colouring indicates $\Delta_{p(N,t)}$ defined in \autoref{eqn:pnt_delta}. As mentioned above the quantities $p_i(N,t)$ and $\langle p(N,t) \rangle$ have been smoothed by a gaussian filter, because the number of samples included, with 100 trajectories per series, were not sufficent to produce smooth distributions at the given sampling rate. Such without smoothing only fluctuations would be visible.\\ 
+
+\begin{align}
+\label{eqn:pnt_delta}
+\Delta_{p(N,t)} = log ( | \frac{p_i(N,t)}{\langle p(N,t) \rangle} -1 | )
+\end{align}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/pnt_comparison_eq_steps.png}
+\caption{Heat map of differences between the cluster distributions within simulations carried out with varying the length of the equilibration phase. The quantity used for colouring is defined in \autoref{eqn:pnt_delta}, where yellow indicates a large difference while blue indicates a small difference. Providing a legend of the colouring is ommited as $\Delta_{p(N,t)}$ has no further use as to indicate differences and actual values do not add any use.}
+\label{fig:pnt_eq_step_comparison}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/pnt_comparison_rho.png}
+\caption{Heat map of differences between the cluster distributions within simulations carried out with varying the volume fraction of the liquid during the equilibration phase. The quantity used for colouring is defined in \autoref{eqn:pnt_delta}, where yellow indicates a large difference while blue indicates a small difference. Providing a legend of the colouring is ommited as $\Delta_{p(N,t)}$ has no further use as to indicate differences and actual values do not add any use.}
+\label{fig:pnt_rho_comparison}
+\end{figure}
+
+On first sight none of them differ in their general behaviour. Because at t=0 after the quench no clusters have formed yet and also no clusters were present in the stable liquid, the difference between all simulations is zero, indicated by the blue region in the top left corner. The features visible on the edge between the zero region and the nonzero region on the other side are the same, because they are features of the mean distribution carried through. Actual differences not due to fluctuations can only be seend within the green and yellow non-zero region, but none such differences is observed.\\
+
+While it seems like the inital volume fraction of $\eta=0.4$ and $eq\_steps = 5000$ include less irregular fluctuations, dramatic effects from choosing the simulation parameters can be excluded. Intresting in this context are esspecially the simulations with $eq\_steps = 100$ because after executing 100 events/particle on average, the inital perfect crystal configuration is only on the verge of not being detected anymore. Such one could expect that these configurations might be stoill close to crystalization, but instead we do not detect any significant difference.\\
+
+A further more quantifying analysis of the differences is given by calculating the mean nucleation rates assuming classical nucleation theory. This is done for the data shown in \autoref{fig:comparison_nucleation_rates}. The calculations of the rates have been carried out as described in \autoref{sec:induction_times}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7 \linewidth]{../plots/nucleation_rate_comparison.pdf}
+\caption{Comparsion of nucleation rates under CNT assumptions for different inital densities during equilibration with eq\_steps fixed at 5000, as well as varying eq\_steps with $\eta_i$ fixed at 0.45. }
+\label{fig:comparison_nucleation_rates}
+\end{figure}
+
+As we see no significant difference in the nucleation rates can be observed even for the bold setting of only 100 events per particle for the equilibration phase. Eventhough it can be seen that for this special case the rate is a little higher, but it may as well be a stochatic flucutaion.\\
+
+Overall we conclude in this chapter that as long as parameters are set within reasonable boundaries, we expect not to have systematic influences of simulation parameters. 
+
+
+%\Floatbarrier
 
 \section{Possible extensions}
 \label{sec:simulation_ext}
-Highlit possible extenisions which migth be doable to implement.
+The program at this state is capable of simulating large systems including compression and relaxation. Extensions can aim at either increasing complexity or size of the systems. 
 
 \subsection{Varying radius}
 \label{sec:extension_radius}
-Vary the radius of the spheres. Rewquirements and thought on that.
+A further notch of complexity would be including polydispersity into the simulation. For this purpose the prediction of collisions has to be adjusted. When looking at the derivation of \autoref{eqn:collision_prediction} it is found that $\sigma$ has to be changed to $R_i+R_j$ 
+
+\begin{align}
+\label{eqn:collision_prediction}
+\Delta t &= \frac{(rr - \sigma^2 )}{ - rv + \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}}
+\end{align} 
+
 
 \subsection{Varying mass}
 \label{sec:extension_mass}

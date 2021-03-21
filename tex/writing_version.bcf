@@ -1932,6 +1932,7 @@
     <bcf:citekey order="3">Bannerman2014</bcf:citekey>
     <bcf:citekey order="4">Bannerman2011</bcf:citekey>
     <bcf:citekey order="5">DONEV2005</bcf:citekey>
+    <bcf:citekey order="6">Hansen2006</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -3,21 +3,25 @@
 \label{chp:data_analysis}
 This is the analysis part
 
-\section{Diffusion of the lqiuid}
-\label{sec:diffusion_liquid}
-This contain analysis of diffusion in the liquid to prove the simulations accuray
+%\section{Diffusion of the lqiuid}
+%\label{sec:diffusion_liquid}
+%This contain analysis of diffusion in the liquid to prove the simulations accuray
 
-\section{Diffusion of the metastable liquid}
-\label{sec:diffusion_metastable_liquid}
-This contains Diffusion constants to normalize the rates
+%\section{Diffusion of the metastable liquid}
+%\label{sec:diffusion_metastable_liquid}
+%This contains Diffusion constants to normalize the rates
 
 \section{Cluster growth}
 \label{sec:Cluster growth}
-Cluster growth depending on density
+Cluster growth depending on density\\
+- Almost no dependece to be seen !! \\
+(Diffusive or reaction controlled?) \\
 
 \section{Tensor of Gyration properties}
 \label{sec:tog}
-Well only swamp here, but it can be shown to conclude the swamp.
+Well only swamp here, but it can be shown to conclude the swamp.\\
+- Overview plots, as can be seen : nothing to see.\\
+
 
 \section{ACF largest cluster?}
 \label{sec:acf}
@@ -25,18 +29,49 @@ Just in case anything can be seen here
 
 \section{Nuclection time dilemma}
 \label{sec:nucleation_times}
-Evaluation of induction time. Prolem with accuracy and precision. Compare methods.
+Evaluation of induction time. Prolem with accuracy and precision. Compare methods.\\
+
+- General induction time ideas.\\
+-(HaJo : induction time of crystal or induction time of precuror under the assumption of later growth.)
+
+\subsection{induction time by critical cluster from cnt}
+-r\_crit calc and induction time distribution
+
+\subsection{inudctio time by constant growth extrapolated to zero}
+-linear regression and distribution of constant growth rates\\
+-induction time ditribution
+
+\subsection{induction time by exponential fit}
+- maybe procedure\\
+- distirbution rates\\
+- distribution inducion times
+
+\subsection{indutcion time by fluctation horizon crossing}
+- non locality of fluctuations -> acf?\\
+- sensefull to use the data until it vanishes\\
+- inudction time distribution\\
+- discuss the delay distirbution (precursor structuring time)\\ 
+- evaluation of an simple induction time or rate by cnt next chapter
+
 
 \section{Induction time by exponential distribution}
 \label{sec:induction_times}
-Obtain exp assumption and best estimator
+Obtain exp assumption and best estimator\\
+- CNT constant nucleation rate(justified by fast nucleations depending on the delay)\\
+- For such expontneila ML estimator following statists papers.\\
+- Uncertaintny by MC method following numerical recipes.\\
+- 
 
 \section{Nucleation rate comparison}
 \label{sec:nucleation_rates}
-All Nucleation rates that can be found.-> mayhap ask Hajo.
+All Nucleation rates that can be found.-> mayhap ask Hajo.\\
+-nucleation rates without\\
+-nucleation rates with small particles\\
+
 
 \section{Memory Kernels}
 \label{sec:memory_kernels}
-Memory kernels of systems at various densities. Depends strongly on what is found here
-
+Memory kernels of systems at various densities. Depends strongly on what is found here\\
+-memory kernels of 16k system at varying points of time\\
+-maybe memory kernels of 1m system, but do not know what to say. Maybe only mention that after seeing the 16k system to have only memory kernes at about middle of the time, no true memory kernel is visible in the 1m system as volume fractions have been to low with to large calculation times.\\
 

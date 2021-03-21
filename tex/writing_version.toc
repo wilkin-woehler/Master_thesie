@@ -5,7 +5,7 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Hard sphere system}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}metastable fluid/ phase diagram}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}metastable fluid/ phase diagram}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Classical nucleation theory :/}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Memory including approaches}{3}{section.1.4}
 \contentsline {section}{\numberline {1.5}Computer Precision}{4}{section.1.5}
@@ -24,30 +24,37 @@
 \contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeTransfer()}}{13}{section*.14}
 \contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeCollision()}}{13}{section*.15}
 \contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeEvent()}}{13}{section*.16}
-\contentsline {section}{\numberline {2.2}Probe of simulation code}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Diffusive behaviour}{13}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Radial distribution function}{13}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Estimate of required resources}{13}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Calculation time estimates}{13}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}File sizes estimates}{13}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Produced Data}{14}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Equilibration steps}{14}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Initial density}{14}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Possible extensions}{14}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Varying radius}{14}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Varying mass}{14}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Muliprocessing}{14}{subsection.2.5.3}
-\contentsline {chapter}{\numberline {3}Data Analysis}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Diffusion of the lqiuid}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}Diffusion of the metastable liquid}{15}{section.3.2}
-\contentsline {section}{\numberline {3.3}Cluster growth}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Tensor of Gyration properties}{15}{section.3.4}
-\contentsline {section}{\numberline {3.5}ACF largest cluster?}{15}{section.3.5}
-\contentsline {section}{\numberline {3.6}Nuclection time dilemma}{15}{section.3.6}
-\contentsline {section}{\numberline {3.7}Induction time by exponential distribution}{15}{section.3.7}
-\contentsline {section}{\numberline {3.8}Nucleation rate comparison}{16}{section.3.8}
-\contentsline {section}{\numberline {3.9}Memory Kernels}{16}{section.3.9}
-\contentsline {chapter}{\numberline {4}Conclusion - Summary}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusion}{17}{section.4.1}
-\contentsline {chapter}{\numberline {5}Appendix}{18}{chapter.5}
-\contentsline {section}{\numberline {.1}A}{18}{section.Alph0.1}
+\contentsline {section}{\numberline {2.2}Measurement quantities}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Mean squared displacement}{14}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Radial distribution fucntion}{14}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Largest Cluster}{14}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Cluster size distribution}{14}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Cluster positions and numbers}{15}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Tensor of Gyration}{15}{subsection.2.2.6}
+\contentsline {section}{\numberline {2.3}Probe of simulation code}{15}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Diffusive behaviour}{15}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Radial distribution function}{17}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Estimate of required resources}{18}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Calculation time estimates}{19}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}File sizes estimates}{20}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}First produced data}{21}{section.2.5}
+\contentsline {section}{\numberline {2.6}Possible extensions}{24}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Varying radius}{25}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Varying mass}{25}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Muliprocessing}{25}{subsection.2.6.3}
+\contentsline {chapter}{\numberline {3}Data Analysis}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Cluster growth}{26}{section.3.1}
+\contentsline {section}{\numberline {3.2}Tensor of Gyration properties}{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}ACF largest cluster?}{26}{section.3.3}
+\contentsline {section}{\numberline {3.4}Nuclection time dilemma}{26}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}induction time by critical cluster from cnt}{26}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}inudctio time by constant growth extrapolated to zero}{26}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}induction time by exponential fit}{27}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}indutcion time by fluctation horizon crossing}{27}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Induction time by exponential distribution}{27}{section.3.5}
+\contentsline {section}{\numberline {3.6}Nucleation rate comparison}{27}{section.3.6}
+\contentsline {section}{\numberline {3.7}Memory Kernels}{27}{section.3.7}
+\contentsline {chapter}{\numberline {4}Conclusion - Summary}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusion}{28}{section.4.1}
+\contentsline {chapter}{\numberline {5}Appendix}{29}{chapter.5}
+\contentsline {section}{\numberline {.1}A}{29}{section.Alph0.1}

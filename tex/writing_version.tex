@@ -26,25 +26,29 @@
 	
 	
 	\newcommand{\presummary}{ A raw writing of hard sphere nucleation, a simulation to measure quantiteis, and a analysis of data generate by means of the simulation. A test citation: \cite{Heyes2007}}
-
 \input{header/title_page.tex}
-\pagestyle{plain}
-\pagenumbering{Roman}
-\tableofcontents
+
+
+\pagenumbering{Roman} % and numbering to roman numbering
+\pagestyle{plain} % Set the pagestyle to plain to exclude header in inital part
+
+\tableofcontents 
 \newpage
 
 \listoffigures
-\pagebreak
+\newpage
 
 \listoftables
+\newpage
 
-\newpage\null\thispagestyle{empty}\newpage %Makes an empty page
+\null\thispagestyle{empty}  %An empty page
+\newpage
 
 
-\pagenumbering{arabic} 
+\pagenumbering{arabic} % Reset the numbering to arabic numbering
+\pagestyle{scrheadings} % Set the pagestyle back to header including style
+\renewcommand{\chapterpagestyle}{scrheadings} % Set the pagestyle of chapter page also with header
 
-\pagestyle{scrheadings}
-\renewcommand{\chapterpagestyle}{scrheadings}
 
 \chapter{Introduction}
 \input{text/theory.tex}

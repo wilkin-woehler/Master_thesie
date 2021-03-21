@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.12)  24 FEB 2021 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.12)  21 MAR 2021 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1770,7 +1770,11 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count464
 \@quotereset=\count465
-(./writing_version.aux)
+(./writing_version.aux
+
+LaTeX Warning: Label `eqn:collision_prediction' multiply defined.
+
+)
 \openout1 = `writing_version.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -2052,104 +2056,107 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \openout8 = `writing_version.toc'.
 
 
-[2] (./writing_version.lof)
+[2] (./writing_version.lof
+Underfull \vbox (badness 2088) has occurred while \output is active []
+
+ [3
+
+])
 \tf@lof=\write9
 \openout9 = `writing_version.lof'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3
-
-]
-(./writing_version.lot)
+[4] (./writing_version.lot)
 \tf@lot=\write10
 \openout10 = `writing_version.lot'.
 
- [4
+ [5
 
-] [5]
+] [6]
 chapter 1.
 (./text/theory.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--15
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 \end{equation}
-                    [1
+l.27 \begin{equation}
+                      [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 28--31
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Overfull \hbox (64.28848pt too wide) in paragraph at lines 43--45
+Overfull \hbox (64.28848pt too wide) in paragraph at lines 44--46
 \T1/lmr/m/n/10.95 a-gram be-comes even richer as show for ex-am-ple in []https:
 //journals.aps.org/prl/pdf/10.1103/PhysRevLett.91.068301[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
@@ -2328,45 +2335,277 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
  [12]
-[13]) [14]
-chapter 3.
-(./text/analysis.tex [15
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 221.
 
-]) [16]
+
+(/usr/share/texmf/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 221.
+
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--252
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+<../plots/diffusion_probe.pdf, id=481, 462.52798pt x 346.89601pt>
+File: ../plots/diffusion_probe.pdf Graphic file (type pdf)
+<use ../plots/diffusion_probe.pdf>
+Package pdftex.def Info: ../plots/diffusion_probe.pdf  used on input line 304.
+(pdftex.def)             Requested size: 338.58632pt x 253.95184pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../plots/RDF.pdf, id=484, 462.52798pt x 346.89601pt>
+File: ../plots/RDF.pdf Graphic file (type pdf)
+<use ../plots/RDF.pdf>
+Package pdftex.def Info: ../plots/RDF.pdf  used on input line 335.
+(pdftex.def)             Requested size: 338.58632pt x 253.95184pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <../plots/diffusion_probe.pdf>]
+<../plots/RDF_percus_yevick.pdf, id=551, 462.52798pt x 346.89601pt>
+File: ../plots/RDF_percus_yevick.pdf Graphic file (type pdf)
+<use ../plots/RDF_percus_yevick.pdf>
+Package pdftex.def Info: ../plots/RDF_percus_yevick.pdf  used on input line 343
+.
+(pdftex.def)             Requested size: 338.58632pt x 253.95184pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation 'Hansen2006' on page 17 undefined on input line 348.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
+
+ []
+
+[17 <../plots/RDF.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
+
+ []
+
+
+Underfull \vbox (badness 3503) has occurred while \output is active []
+
+ [18 <../plots/RDF_percus_yevick.pdf>]
+<../plots/Calculation_times_measurement.pdf, id=660, 462.52798pt x 346.89601pt>
+
+File: ../plots/Calculation_times_measurement.pdf Graphic file (type pdf)
+<use ../plots/Calculation_times_measurement.pdf>
+Package pdftex.def Info: ../plots/Calculation_times_measurement.pdf  used on in
+put line 363.
+(pdftex.def)             Requested size: 338.58632pt x 253.95184pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
+
+ []
+
+[19 <../plots/Calculation_times_measurement.pdf>]
+<../plots/q6q6_calculation_time.pdf, id=708, 462.52798pt x 346.89601pt>
+File: ../plots/q6q6_calculation_time.pdf Graphic file (type pdf)
+<use ../plots/q6q6_calculation_time.pdf>
+Package pdftex.def Info: ../plots/q6q6_calculation_time.pdf  used on input line
+ 380.
+(pdftex.def)             Requested size: 338.58632pt x 253.95184pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
+
+ []
+
+[20 <../plots/q6q6_calculation_time.pdf>]
+<../plots/File_size.pdf, id=746, 462.52798pt x 346.89601pt>
+File: ../plots/File_size.pdf Graphic file (type pdf)
+<use ../plots/File_size.pdf>
+Package pdftex.def Info: ../plots/File_size.pdf  used on input line 393.
+(pdftex.def)             Requested size: 338.58632pt x 253.95184pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--405
+
+ []
+
+[21 <../plots/File_size.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+<../plots/mean_pnt.png, id=791, 433.62pt x 289.08pt>
+File: ../plots/mean_pnt.png Graphic file (type png)
+<use ../plots/mean_pnt.png>
+Package pdftex.def Info: ../plots/mean_pnt.png  used on input line 426.
+(pdftex.def)             Requested size: 338.58632pt x 225.73291pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
+
+ []
+
+[22 <../plots/mean_pnt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+<../plots/pnt_comparison_eq_steps.png, id=803, 650.43pt x 289.08pt>
+File: ../plots/pnt_comparison_eq_steps.png Graphic file (type png)
+<use ../plots/pnt_comparison_eq_steps.png>
+Package pdftex.def Info: ../plots/pnt_comparison_eq_steps.png  used on input li
+ne 442.
+(pdftex.def)             Requested size: 338.58632pt x 150.48566pt.
+<../plots/pnt_comparison_rho.png, id=806, 650.43pt x 289.08pt>
+File: ../plots/pnt_comparison_rho.png Graphic file (type png)
+<use ../plots/pnt_comparison_rho.png>
+Package pdftex.def Info: ../plots/pnt_comparison_rho.png  used on input line 45
+0.
+(pdftex.def)             Requested size: 338.58632pt x 150.48566pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+[23 <../plots/pnt_comparison_eq_steps.png>]
+<../plots/nucleation_rate_comparison.pdf, id=816, 462.52798pt x 346.89601pt>
+File: ../plots/nucleation_rate_comparison.pdf Graphic file (type pdf)
+<use ../plots/nucleation_rate_comparison.pdf>
+Package pdftex.def Info: ../plots/nucleation_rate_comparison.pdf  used on input
+ line 463.
+(pdftex.def)             Requested size: 338.58632pt x 253.95184pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+[24 <../plots/pnt_comparison_rho.png>]) [25 <../plots/nucleation_rate_compariso
+n.pdf>]
+chapter 3.
+(./text/analysis.tex
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+[26
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
+
+ []
+
+) [27]
 chapter 4.
-(./text/conclusion.tex) [17
+(./text/conclusion.tex) [28
 
 ]
 chapter 5.
-(./text/appendix.tex) [18
+(./text/appendix.tex) [29
 
-] [19
+] [30
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
  (./writing_version.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
 Package rerunfilecheck Info: File `writing_version.out' has not changed.
-(rerunfilecheck)             Checksum: 184864D7F5FA8A10CC2C01BC79A98AF7;2624.
+(rerunfilecheck)             Checksum: 3B4894466ADA870B3980401638C113DC;3260.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                writing_version
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'writing_version.run.xml'.
 \openout1 = `writing_version.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 40090 strings out of 492982
- 783763 string characters out of 6134896
- 1279098 words of memory out of 5000000
- 42989 multiletter control sequences out of 15000+600000
- 612928 words of font info for 67 fonts, out of 8000000 for 9000
+ 40255 strings out of 492982
+ 787297 string characters out of 6134896
+ 1285191 words of memory out of 5000000
+ 43095 multiletter control sequences out of 15000+600000
+ 631387 words of font info for 79 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 58i,16n,66p,10381b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/l
-m/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
+ 58i,16n,66p,10381b,2374s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
 i10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.
@@ -2374,12 +2613,14 @@ pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on writing_version.pdf (25 pages, 312990 bytes).
+/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/l
+msy8.pfb>
+Output written on writing_version.pdf (37 pages, 1274706 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 431 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1004 PDF objects out of 1200 (max. 8388607)
+ 664 compressed objects within 7 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 423 words of extra memory for PDF output out of 10000 (max. 10000000)
 
