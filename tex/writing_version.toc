@@ -40,21 +40,21 @@
 \contentsline {section}{\numberline {2.5}First produced data}{21}{section.2.5}
 \contentsline {section}{\numberline {2.6}Possible extensions}{24}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Varying radius}{25}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Varying mass}{25}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Muliprocessing}{25}{subsection.2.6.3}
-\contentsline {chapter}{\numberline {3}Data Analysis}{26}{chapter.3}
-\contentsline {section}{\numberline {3.1}Cluster growth}{26}{section.3.1}
-\contentsline {section}{\numberline {3.2}Tensor of Gyration properties}{26}{section.3.2}
-\contentsline {section}{\numberline {3.3}ACF largest cluster?}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}Nuclection time dilemma}{26}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}induction time by critical cluster from cnt}{26}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}inudctio time by constant growth extrapolated to zero}{26}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}induction time by exponential fit}{27}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}indutcion time by fluctation horizon crossing}{27}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Induction time by exponential distribution}{27}{section.3.5}
-\contentsline {section}{\numberline {3.6}Nucleation rate comparison}{27}{section.3.6}
-\contentsline {section}{\numberline {3.7}Memory Kernels}{27}{section.3.7}
-\contentsline {chapter}{\numberline {4}Conclusion - Summary}{28}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusion}{28}{section.4.1}
-\contentsline {chapter}{\numberline {5}Appendix}{29}{chapter.5}
-\contentsline {section}{\numberline {.1}A}{29}{section.Alph0.1}
+\contentsline {subsection}{\numberline {2.6.2}Muliprocessing}{26}{subsection.2.6.2}
+\contentsline {chapter}{\numberline {3}Data Analysis}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Characterization of the simulated system}{27}{section.3.1}
+\contentsline {section}{\numberline {3.2}Diffusion in the metastable liquid}{28}{section.3.2}
+\contentsline {section}{\numberline {3.3}Cluster growth}{30}{section.3.3}
+\contentsline {section}{\numberline {3.4}Tensor of Gyration properties}{32}{section.3.4}
+\contentsline {section}{\numberline {3.5}Autocovariance functions ( largest cluster, p(n,t) )}{35}{section.3.5}
+\contentsline {section}{\numberline {3.6}Nuclection time dilemma}{36}{section.3.6}
+\contentsline {section}{\numberline {3.7}Induction time by exponential distribution}{39}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}CNT expectation the induction time distribution}{39}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Maximum likely estimator of induction time}{40}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Monte Carlo uncertainty estimaion}{42}{subsection.3.7.3}
+\contentsline {section}{\numberline {3.8}Nucleation rate comparison}{45}{section.3.8}
+\contentsline {section}{\numberline {3.9}Memory Kernels}{45}{section.3.9}
+\contentsline {chapter}{\numberline {4}Conclusion - Summary}{46}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusion}{46}{section.4.1}
+\contentsline {chapter}{\numberline {5}Appendix}{47}{chapter.5}
+\contentsline {section}{\numberline {.1}A}{47}{section.Alph0.1}

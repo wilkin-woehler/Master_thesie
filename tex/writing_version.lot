@@ -11,5 +11,6 @@
 \contentsline {table}{\numberline {2.3.1}{\ignorespaces Input parameters of diffusion test systems.\relax }}{17}{table.caption.18}
 \contentsline {table}{\numberline {2.5.1}{\ignorespaces Input parameters of test systems probing the dependence on equilibration steps and inital density.\relax }}{22}{table.caption.24}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1.1}{\ignorespaces Input parameters of large scale simulations on the NEMO HPC cluster. The varying steps during production come by the fact, that 20000 steps were estimated to be calculated within 3 days leaving 1 day of buffer to the hard walltime limit of 4 days. Due to the increasing calculation cost of the q6q6 cluster routines for large clusters the walltime limit was still breached and without proper reset steps the datasets could not be restarted wihtout large calculation overhead as all lost data has to be replaced, and the broken reset steps within the files would have to be removed before. Such the last proper version of the files were used resulting in varying simulation lenghts but with usually a nucleation event in case of early breakdown.\relax }}{27}{table.caption.29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -25,20 +25,20 @@
 \BOOKMARK [1][-]{section.2.5}{First produced data}{chapter.2}% 25
 \BOOKMARK [1][-]{section.2.6}{Possible extensions}{chapter.2}% 26
 \BOOKMARK [2][-]{subsection.2.6.1}{Varying radius}{section.2.6}% 27
-\BOOKMARK [2][-]{subsection.2.6.2}{Varying mass}{section.2.6}% 28
-\BOOKMARK [2][-]{subsection.2.6.3}{Muliprocessing}{section.2.6}% 29
-\BOOKMARK [0][-]{chapter.3}{Data Analysis}{}% 30
-\BOOKMARK [1][-]{section.3.1}{Cluster growth}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.2}{Tensor of Gyration properties}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.3}{ACF largest cluster?}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.4}{Nuclection time dilemma}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.4.1}{induction time by critical cluster from cnt}{section.3.4}% 35
-\BOOKMARK [2][-]{subsection.3.4.2}{inudctio time by constant growth extrapolated to zero}{section.3.4}% 36
-\BOOKMARK [2][-]{subsection.3.4.3}{induction time by exponential fit}{section.3.4}% 37
-\BOOKMARK [2][-]{subsection.3.4.4}{indutcion time by fluctation horizon crossing}{section.3.4}% 38
-\BOOKMARK [1][-]{section.3.5}{Induction time by exponential distribution}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.6}{Nucleation rate comparison}{chapter.3}% 40
-\BOOKMARK [1][-]{section.3.7}{Memory Kernels}{chapter.3}% 41
+\BOOKMARK [2][-]{subsection.2.6.2}{Muliprocessing}{section.2.6}% 28
+\BOOKMARK [0][-]{chapter.3}{Data Analysis}{}% 29
+\BOOKMARK [1][-]{section.3.1}{Characterization of the simulated system}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.2}{Diffusion in the metastable liquid}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.3}{Cluster growth}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.4}{Tensor of Gyration properties}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.5}{Autocovariance functions \( largest cluster, p\(n,t\) \)}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.6}{Nuclection time dilemma}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.7}{Induction time by exponential distribution}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.7.1}{CNT expectation the induction time distribution}{section.3.7}% 37
+\BOOKMARK [2][-]{subsection.3.7.2}{Maximum likely estimator of induction time}{section.3.7}% 38
+\BOOKMARK [2][-]{subsection.3.7.3}{Monte Carlo uncertainty estimaion}{section.3.7}% 39
+\BOOKMARK [1][-]{section.3.8}{Nucleation rate comparison}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.9}{Memory Kernels}{chapter.3}% 41
 \BOOKMARK [0][-]{chapter.4}{Conclusion - Summary}{}% 42
 \BOOKMARK [1][-]{section.4.1}{Conclusion}{chapter.4}% 43
 \BOOKMARK [0][-]{chapter.5}{Appendix}{}% 44

@@ -149,47 +149,96 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Varying radius}{25}{subsection.2.6.1}}
 \newlabel{sec:extension_radius}{{2.6.1}{25}{Varying radius}{subsection.2.6.1}{}}
 \newlabel{eqn:collision_prediction}{{2.6.1}{25}{Varying radius}{equation.2.6.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Varying mass}{25}{subsection.2.6.2}}
-\newlabel{sec:extension_mass}{{2.6.2}{25}{Varying mass}{subsection.2.6.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Muliprocessing}{25}{subsection.2.6.3}}
-\newlabel{sec:extension_MP}{{2.6.3}{25}{Muliprocessing}{subsection.2.6.3}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Data Analysis}{26}{chapter.3}}
+\newlabel{eqn:var_mass}{{2.6.2}{25}{Varying radius}{equation.2.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Muliprocessing}{26}{subsection.2.6.2}}
+\newlabel{sec:extension_MP}{{2.6.2}{26}{Muliprocessing}{subsection.2.6.2}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Data Analysis}{27}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:data_analysis}{{3}{26}{Data Analysis}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Cluster growth}{26}{section.3.1}}
-\newlabel{sec:Cluster growth}{{3.1}{26}{Cluster growth}{section.3.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Tensor of Gyration properties}{26}{section.3.2}}
-\newlabel{sec:tog}{{3.2}{26}{Tensor of Gyration properties}{section.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}ACF largest cluster?}{26}{section.3.3}}
-\newlabel{sec:acf}{{3.3}{26}{ACF largest cluster?}{section.3.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Nuclection time dilemma}{26}{section.3.4}}
-\newlabel{sec:nucleation_times}{{3.4}{26}{Nuclection time dilemma}{section.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}induction time by critical cluster from cnt}{26}{subsection.3.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}inudctio time by constant growth extrapolated to zero}{26}{subsection.3.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}induction time by exponential fit}{27}{subsection.3.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}indutcion time by fluctation horizon crossing}{27}{subsection.3.4.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Induction time by exponential distribution}{27}{section.3.5}}
-\newlabel{sec:induction_times}{{3.5}{27}{Induction time by exponential distribution}{section.3.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Nucleation rate comparison}{27}{section.3.6}}
-\newlabel{sec:nucleation_rates}{{3.6}{27}{Nucleation rate comparison}{section.3.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}Memory Kernels}{27}{section.3.7}}
-\newlabel{sec:memory_kernels}{{3.7}{27}{Memory Kernels}{section.3.7}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Conclusion - Summary}{28}{chapter.4}}
+\newlabel{chp:data_analysis}{{3}{27}{Data Analysis}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Characterization of the simulated system}{27}{section.3.1}}
+\newlabel{sec:system_choice}{{3.1}{27}{Characterization of the simulated system}{section.3.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1.1}{\ignorespaces Input parameters of large scale simulations on the NEMO HPC cluster. The varying steps during production come by the fact, that 20000 steps were estimated to be calculated within 3 days leaving 1 day of buffer to the hard walltime limit of 4 days. Due to the increasing calculation cost of the q6q6 cluster routines for large clusters the walltime limit was still breached and without proper reset steps the datasets could not be restarted wihtout large calculation overhead as all lost data has to be replaced, and the broken reset steps within the files would have to be removed before. Such the last proper version of the files were used resulting in varying simulation lenghts but with usually a nucleation event in case of early breakdown.\relax }}{27}{table.caption.29}}
+\newlabel{tab:system_1m}{{3.1.1}{27}{Input parameters of large scale simulations on the NEMO HPC cluster. The varying steps during production come by the fact, that 20000 steps were estimated to be calculated within 3 days leaving 1 day of buffer to the hard walltime limit of 4 days. Due to the increasing calculation cost of the q6q6 cluster routines for large clusters the walltime limit was still breached and without proper reset steps the datasets could not be restarted wihtout large calculation overhead as all lost data has to be replaced, and the broken reset steps within the files would have to be removed before. Such the last proper version of the files were used resulting in varying simulation lenghts but with usually a nucleation event in case of early breakdown.\relax }{table.caption.29}{}}
+\newlabel{eqn:system_size}{{3.1.1}{28}{Characterization of the simulated system}{equation.3.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Diffusion in the metastable liquid}{28}{section.3.2}}
+\newlabel{sec:diffusion_metastable_liquid}{{3.2}{28}{Diffusion in the metastable liquid}{section.3.2}{}}
+\newlabel{eqn:einstein_relation}{{3.2.1}{29}{Diffusion in the metastable liquid}{equation.3.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2.1}{\ignorespaces Comparison of long time selfdiffusion constants at different volume fractions as histograms and their means with uncertainty.\relax }}{29}{figure.caption.30}}
+\newlabel{fig:diffusion_comparison}{{3.2.1}{29}{Comparison of long time selfdiffusion constants at different volume fractions as histograms and their means with uncertainty.\relax }{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Histograms of the slopes for the linear regressions to the largest clusters during the later constant growth process. The histograms are for $\eta =0.531,\tmspace +\thickmuskip {.2777em}0.532,\tmspace +\thickmuskip {.2777em}0.533,\tmspace +\thickmuskip {.2777em}0.534$.}}}{29}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Mean of the histograms with the uncertainty on the mean given by $\sigma _{\delimiter "426830A D \delimiter "526930B } = \sigma _D/\sqrt {n}$ with n being the number of measurements included in the average.}}}{29}{subfigure.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Cluster growth}{30}{section.3.3}}
+\newlabel{sec:Cluster growth}{{3.3}{30}{Cluster growth}{section.3.3}{}}
+\newlabel{eqn:constant_growth}{{3.3.1}{30}{Cluster growth}{equation.3.3.1}{}}
+\newlabel{fig:cluster_growth_example}{{\caption@xref {fig:cluster_growth_example}{ on input line 113}}{31}{Cluster growth}{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3.1}{\ignorespaces Trajectories of the third root of the number of particles within the largest cluster of a system over time. Clearly visible is the linear proportionality for which a linear regression is shown together with the data. The cut of some data sets at $t/\delta t \approx 300$ is due to the trepassing of the maximum walltime of the NEMO cluster. This means that the simulation of 20000 production steps yields a system time of $T/\delta t \approx 300$. Clusters present already in the first step would become to large in the next simulation intervall leading to a breach of the walltime limit due to the quadratic effort reuired for the q6q6 cluster finding routine. It can be assumed that clusters forming just around $t/\delta t \approx 300$ might not have been recognized due to this flaw. But as the number of trajectories concerning this is rather small the impact is not easy to reckognize when looking at the induction time distributions in \autoref  {fig:induction_times}.\relax }}{31}{figure.caption.31}}
+\newlabel{fig:cluster_growth_example}{{3.3.1}{31}{Trajectories of the third root of the number of particles within the largest cluster of a system over time. Clearly visible is the linear proportionality for which a linear regression is shown together with the data. The cut of some data sets at $t/\delta t \approx 300$ is due to the trepassing of the maximum walltime of the NEMO cluster. This means that the simulation of 20000 production steps yields a system time of $T/\delta t \approx 300$. Clusters present already in the first step would become to large in the next simulation intervall leading to a breach of the walltime limit due to the quadratic effort reuired for the q6q6 cluster finding routine. It can be assumed that clusters forming just around $t/\delta t \approx 300$ might not have been recognized due to this flaw. But as the number of trajectories concerning this is rather small the impact is not easy to reckognize when looking at the induction time distributions in \autoref {fig:induction_times}.\relax }{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3.2}{\ignorespaces Comparison of growth rates in the constant attachement regime.\relax }}{32}{figure.caption.32}}
+\newlabel{fig:constant_growth_rates}{{3.3.2}{32}{Comparison of growth rates in the constant attachement regime.\relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Histograms of the slopes for the linear regressions to the largest clusters during the later constant growth process. The histograms are for $\eta =0.531,\tmspace +\thickmuskip {.2777em}0.532,\tmspace +\thickmuskip {.2777em}0.533,\tmspace +\thickmuskip {.2777em}0.534$.}}}{32}{subfigure.2.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Mean of the histograms with the uncertainty on the mean given by $\sigma _{\delimiter "426830A c \delimiter "526930B } = \sigma _c/\sqrt {n}$ with n being the number of measurements included in the average. \leavevmode{\color {red}is the standard deviation here more sensefull, as interest lays on the widht of the distribution not so much on the mean?}}}}{32}{subfigure.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Tensor of Gyration properties}{32}{section.3.4}}
+\newlabel{sec:tog}{{3.4}{32}{Tensor of Gyration properties}{section.3.4}{}}
+\newlabel{eqn:tensor_of_gyration}{{3.4.1}{32}{Tensor of Gyration properties}{equation.3.4.1}{}}
+\newlabel{eqn:center_of_mass}{{3.4.2}{32}{Tensor of Gyration properties}{equation.3.4.2}{}}
+\newlabel{eqn:tog_quantities1}{{3.4.3}{33}{Tensor of Gyration properties}{equation.3.4.3}{}}
+\newlabel{eqn:tog_quantities2}{{3.4.4}{33}{Tensor of Gyration properties}{equation.3.4.4}{}}
+\newlabel{eqn:tog_quantities3}{{3.4.5}{33}{Tensor of Gyration properties}{equation.3.4.5}{}}
+\newlabel{eqn:tog_quantities4}{{3.4.6}{33}{Tensor of Gyration properties}{equation.3.4.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Overview of the cluster shape describing quantites radius of gyration ($R_G$), asphericity (b) and anisotropy ($\kappa ^2$), depending on the size of the cluster. The colouring depicts the scalar quantities induction time, constant attachment rate and inital growth rate.\relax }}{34}{figure.caption.33}}
+\newlabel{fig:tog_overview}{{3.4.1}{34}{Overview of the cluster shape describing quantites radius of gyration ($R_G$), asphericity (b) and anisotropy ($\kappa ^2$), depending on the size of the cluster. The colouring depicts the scalar quantities induction time, constant attachment rate and inital growth rate.\relax }{figure.caption.33}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Autocovariance functions ( largest cluster, p(n,t) )}{35}{section.3.5}}
+\newlabel{sec:acf}{{3.5}{35}{Autocovariance functions ( largest cluster, p(n,t) )}{section.3.5}{}}
+\newlabel{eqn:definition_acf}{{3.5.1}{35}{Autocovariance functions ( largest cluster, p(n,t) )}{equation.3.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5.1}{\ignorespaces Comparison of autocovariance functions in the metastable fluid. The colouring corresponds to the largest cluster present over the whole simulation time. The lightest colour indicate therby a largest cluster of more than 500 hundred particles which can more or less also be called nucleated, but these are rare in the given selection and such the data represents the metastable fluid still rather good.\relax }}{36}{figure.caption.34}}
+\newlabel{fig:acf}{{3.5.1}{36}{Comparison of autocovariance functions in the metastable fluid. The colouring corresponds to the largest cluster present over the whole simulation time. The lightest colour indicate therby a largest cluster of more than 500 hundred particles which can more or less also be called nucleated, but these are rare in the given selection and such the data represents the metastable fluid still rather good.\relax }{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {$\eta = 0.531$}}}{36}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {$\eta = 0.532$}}}{36}{subfigure.1.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {$\eta = 0.533$}}}{36}{subfigure.1.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {$\eta = 0.534$}}}{36}{subfigure.1.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Nuclection time dilemma}{36}{section.3.6}}
+\newlabel{sec:nucleation_times}{{3.6}{36}{Nuclection time dilemma}{section.3.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6.1}{\ignorespaces Induction time distribution obtained by different definitions. While the two methods using extrapolation seem to have the two effects of smearing the signal as well as shifting them, the method of defining the nucleation as the time when the largest cluster is last below the horizon of fluctuations seems to return the most accurate and precise distribution. The final simualtion time is mrked by the grey line. As clusters require some time to be clearly recognised as crystals no nucleation are seen towards the end of the simualtion intervall. To counteract this we will truncate the distribution in the following analysis such that this does not have an impact on the final result.\relax }}{38}{figure.caption.35}}
+\newlabel{fig:induction_distributions}{{3.6.1}{38}{Induction time distribution obtained by different definitions. While the two methods using extrapolation seem to have the two effects of smearing the signal as well as shifting them, the method of defining the nucleation as the time when the largest cluster is last below the horizon of fluctuations seems to return the most accurate and precise distribution. The final simualtion time is mrked by the grey line. As clusters require some time to be clearly recognised as crystals no nucleation are seen towards the end of the simualtion intervall. To counteract this we will truncate the distribution in the following analysis such that this does not have an impact on the final result.\relax }{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Induction time by exponential distribution}{39}{section.3.7}}
+\newlabel{sec:induction_times}{{3.7}{39}{Induction time by exponential distribution}{section.3.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}CNT expectation the induction time distribution}{39}{subsection.3.7.1}}
+\newlabel{sec:induction_time_expectation}{{3.7.1}{39}{CNT expectation the induction time distribution}{subsection.3.7.1}{}}
+\newlabel{eqn:nuc_rate}{{3.7.1}{40}{CNT expectation the induction time distribution}{equation.3.7.1}{}}
+\newlabel{eqn:nuc_rate_result}{{3.7.4}{40}{CNT expectation the induction time distribution}{equation.3.7.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}Maximum likely estimator of induction time}{40}{subsection.3.7.2}}
+\newlabel{sec:ml_estimator}{{3.7.2}{40}{Maximum likely estimator of induction time}{subsection.3.7.2}{}}
+\newlabel{eqn:exponential_product}{{3.7.5}{40}{Maximum likely estimator of induction time}{equation.3.7.5}{}}
+\newlabel{eqn:exponential_maximization}{{3.7.6}{41}{Maximum likely estimator of induction time}{equation.3.7.6}{}}
+\newlabel{eqn:prob_t_larger_T}{{3.7.10}{41}{Maximum likely estimator of induction time}{equation.3.7.10}{}}
+\newlabel{eqn:pdf_censored}{{3.7.11}{41}{Maximum likely estimator of induction time}{equation.3.7.11}{}}
+\newlabel{eqn:ml_censored_exponential}{{3.7.12}{42}{Maximum likely estimator of induction time}{equation.3.7.12}{}}
+\newlabel{eqn:ml_censored_exponential_final}{{3.7.16}{42}{Maximum likely estimator of induction time}{equation.3.7.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.3}Monte Carlo uncertainty estimaion}{42}{subsection.3.7.3}}
+\newlabel{sec:mc_uncertainty}{{3.7.3}{42}{Monte Carlo uncertainty estimaion}{subsection.3.7.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7.1}{\ignorespaces Exemplary samples for a given $\kappa $ as well as the distribution of estimates calculated from the random samples. The uncertainty on $\mathaccentV {hat}05E{\kappa }$ is approximated by the standard deviation of the distribution from the corresponding Monte Carlo analysis at a given $\kappa $.\relax }}{43}{figure.caption.36}}
+\newlabel{fig:mc_example}{{3.7.1}{43}{Exemplary samples for a given $\kappa $ as well as the distribution of estimates calculated from the random samples. The uncertainty on $\hat {\kappa }$ is approximated by the standard deviation of the distribution from the corresponding Monte Carlo analysis at a given $\kappa $.\relax }{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Exponentially distributed random samples of size 500 with an exemplary censoring time of $T=\kappa ^{-1}$}}}{43}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Distribution of $\mathaccentV{hat}05E{\kappa }$ for the previously generated MC samples. The distribution can be described mostly by mean and standard deviation as the number of estimates in the tails are small.}}}{43}{subfigure.1.2}}
+\newlabel{eqn:uncertainty_k_gg}{{3.7.17}{43}{Monte Carlo uncertainty estimaion}{equation.3.7.17}{}}
+\newlabel{eqn:uncertainty_k_ll}{{3.7.20}{44}{Monte Carlo uncertainty estimaion}{equation.3.7.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7.2}{\ignorespaces Relative uncertainty of the ML estimator for varying $\kappa T$. The x scale is choosen dimensionless such that it indicates the simulation time in comparison to the characteristic nucleation time.\relax }}{44}{figure.caption.37}}
+\newlabel{fig:relative_uncertainty}{{3.7.2}{44}{Relative uncertainty of the ML estimator for varying $\kappa T$. The x scale is choosen dimensionless such that it indicates the simulation time in comparison to the characteristic nucleation time.\relax }{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}Nucleation rate comparison}{45}{section.3.8}}
+\newlabel{sec:nucleation_rates}{{3.8}{45}{Nucleation rate comparison}{section.3.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.9}Memory Kernels}{45}{section.3.9}}
+\newlabel{sec:memory_kernels}{{3.9}{45}{Memory Kernels}{section.3.9}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Conclusion - Summary}{46}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Conclusion}{28}{section.4.1}}
-\newlabel{sec:conclusion}{{4.1}{28}{Conclusion}{section.4.1}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Appendix}{29}{chapter.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Conclusion}{46}{section.4.1}}
+\newlabel{sec:conclusion}{{4.1}{46}{Conclusion}{section.4.1}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Appendix}{47}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {.1}A}{29}{section.Alph0.1}}
-\newlabel{sec:appendix}{{.1}{29}{A}{section.Alph0.1}{}}
-\abx@aux@refcontextdefaultsdone
-\abx@aux@defaultrefcontext{0}{Heyes2007}{none/global//global/global}
-\abx@aux@defaultrefcontext{0}{Bannerman2014}{none/global//global/global}
-\abx@aux@defaultrefcontext{0}{Bannerman2011}{none/global//global/global}
-\abx@aux@defaultrefcontext{0}{DONEV2005}{none/global//global/global}
+\@writefile{toc}{\contentsline {section}{\numberline {.1}A}{47}{section.Alph0.1}}
+\newlabel{sec:appendix}{{.1}{47}{A}{section.Alph0.1}{}}
 \global\@namedef{scr@dte@chapter@lastmaxnumwidth}{11.33315pt}
 \global\@namedef{scr@dte@section@lastmaxnumwidth}{18.37155pt}
 \global\@namedef{scr@dte@subsection@lastmaxnumwidth}{26.88818pt}

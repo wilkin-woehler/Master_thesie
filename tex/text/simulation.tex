@@ -81,7 +81,7 @@ The event prediction algorithm proposed by Bannermann\cite{Bannerman2014} works 
 All collision times for a particle are then stored in a queue sorted by event time called particle event list (PEL). From the PEL the first entry is then passed to the global FEL.\\
 This procedure initally takes place for all particles to set up the system and later on for particles involved in an event after its execution.\\ 
 
-As will be discussed in \autoref{sec:implemetation} some redundant calculations have been omitted in the actual simulation program, as well as a cell system added to reach $\mathcal{O}(N)$ computation time, in turn introducing a new event type for cell changes.\\
+As will be discussed in \autoref{sec:implemetation} some widely used measures like reducing redundant calculations or implementing a cell system to reach $\mathcal{O}(N)$ computation timehave been implemented.\\
 
 A further detail to take care of is the possibility of scheduled events which have bcome invalid due to a earlier collision of the one of the particles. This is handeled by assigning an interaction count to each particle and then store this at precalculation time with the event. When the event comes up, and the interaction count of one of the particles has increased in the meantime, the event is said to be invalidated. Depending on which particle had an event in the meantime the invalidation either causes no action or a recalculation of new events.\\  
 
@@ -301,7 +301,7 @@ The resulting diffusion constants depending on the fluid volume fraction are sho
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/diffusion_probe.pdf}
+\includegraphics[width=0.7 \linewidth]{diffusion_probe.pdf}
 \caption{Logarithmic long time diffusion constant of the hard sphere liquid as measured in the own simulations as well as measurements from the literature. \todo{cite the people.}}
 \label{fig:diffusion_const}
 \end{figure}
@@ -332,7 +332,7 @@ $\eta_f$ & 5\% ... 54 \% \\
 A further well known quantity for the hard sphere system is the radial distribution function. As a theoretical prediction the Percus-Yevick approximation can be used to compare with, also it would be possible to compare with Monte Carlo simulations of the hard sphere system. In \autoref{fig:rdf_overview} an overview for a range of volume fractions is shown from the same simulations used in \autoref{sec:diffusion_probe}. Clearly visible is that no particles enter within the diameter of the spheres. Further for higher volume fractions the liquid shells become very well visible. At very high volume fraction we also find that  new peak arises below $r = 2 \sigma$.
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/RDF.pdf}
+\includegraphics[width=0.7 \linewidth]{RDF.pdf}
 \caption{Radial distribution functions for a range of volume fractions. The colouring corresponds to the used volume fraction.}
 \label{fig:rdf_overview}
 \end{figure}
@@ -340,7 +340,7 @@ A further well known quantity for the hard sphere system is the radial distribut
 To compare with Percus-Yevick approximation the radial distirbution function for two single volume fractions is shown with the corresponding theoretical solution in \autoref{fig:rdf_py}.
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/RDF_percus_yevick.pdf}
+\includegraphics[width=0.7 \linewidth]{RDF_percus_yevick.pdf}
 \caption{Radial distribution function for the hard sphere system at a low and at a high volume fraction of the liquid together with the theoretical prediction from the Percus-Yevick approximation.}
 \label{fig:rdf_py}
 \end{figure}
@@ -360,7 +360,7 @@ The calculation time of the program was tested for a large range of different sy
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/Calculation_times_measurement.pdf}
+\includegraphics[width=0.7 \linewidth]{Calculation_times_measurement.pdf}
 \caption{Overview of CPU time required for calculating a simulation step, consisting of an event for each particle, and a measurement of relevant quantities for the system. As assumed for a simulation algorithm with $\mathcal{O}(N)$ calculation effort, the data points can be described by a line rather well. As the CPU time is clearly related to the further workload of the CPU during the calculation it is also expected to find fluctuations if the other workload of the machine is not strictly controlled.}
 \label{fig:calc_time}
 \end{figure}
@@ -370,14 +370,14 @@ The calculation time of the program was tested for a large range of different sy
 
 %\begin{figure}[h!]
 %\centering
-%\includegraphics[width=0.7 \linewidth]{../plots/Simulation_runtimes.png}
+%\includegraphics[width=0.7 \linewidth]{Simulation_runtimes.png}
 %\caption{Histogram of CPU time required per execution of one event at different volume fractions. A small variation in the execution time is visible but the dependence is only small over a large range of volume fractions. Somewhat surprising are the outliers at about half the median calculation times for which no direct explanation could be found, except that mayhap the calculation node they were executed on did not have any further workload present at the time of execution.}
 %\end{figure}
 The effect of larger clusters was only investigated after problems with the runtime of the programs were traced back to these. The q6q6-order parameter routine was tested for larger clusters in a nucleating simulation with about 1 million particles within the box. As can be seen in \autoref{fig:calc_q6q6} the calculation cost of the cluster finding routine can be described with a quadratic dependence on the largest cluster. For an impression what this means we can use the calculation costs of a simulation step from \autoref{fig:calc_time} being about $t_{step} \approx \SI{10}{\mu s \per \text{particle} }$. Such the execution of one step takes about $\SI{10}{s}$ for 1 million particles. If a measurement is performed every 10th step, the calculation cost of the measurements without a large cluster remain below 10\%. But as the largest cluster grows to a few hundred thousand particles in size, the measurements can make up 30 \% and more of the calculation cost, or for a fixed number of steps, increase the calculation time by about 50 \%. This previously unseen effect lead to actual data loss as the combination of NEMO cluster policy and EDMD simulation program did not result in a save shutdown of the program after breaching the walltime limit of the NEMO cluster.\\
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/q6q6_calculation_time.pdf}
+\includegraphics[width=0.7 \linewidth]{q6q6_calculation_time.pdf}
 \caption{Calculation time of the q6q6 order parameter at an increasing largest cluster size during one nucleation, together with the quadratic best fit indicating that the q6q6 routine calculation effort can be approximated by $\mathcal{O}({N_{lc}}^2)$ where $N_{lc}$ is the size of the largest cluster.}
 \label{fig:calc_q6q6}
 \end{figure}
@@ -390,7 +390,7 @@ The memory costs of other measurements have been left out of \autoref{fig:file_s
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/File_size.pdf}
+\includegraphics[width=0.7 \linewidth]{File_size.pdf}
 \caption{Overview of filesizes when a single setup on the one hand and a single full simulation on the other hand is saved for comparison reasons together with their corresponding linear regression. while the linear regression for 3 points is statistically not exceedingly senseful it still remains a useful tool to extract the slope which corresponds to the required memory per particle and snapshot or reset simulation.}
 \label{fig:file_size}
 \end{figure}
@@ -423,7 +423,7 @@ The general behaviour of the systems is analysed by inspecting the cluster distr
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/mean_pnt.png}
+\includegraphics[width=0.7 \linewidth]{mean_pnt.png}
 \caption{Heat map of the mean cluster distribution over time. The diagram encompasses 800 trajectories of 16384 particles each. The colouring indicates the logarithm of the mean cluster occurance corresponding to a probability in the stationary case.}
 \label{fig:pnt_mean}
 \end{figure}
@@ -439,7 +439,7 @@ To compare simulations with varying parameters the quantity defined in \autoref{
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/pnt_comparison_eq_steps.png}
+\includegraphics[width=0.7 \linewidth]{pnt_comparison_eq_steps.png}
 \caption{Heat map of differences between the cluster distributions within simulations carried out with varying the length of the equilibration phase. The quantity used for colouring is defined in \autoref{eqn:pnt_delta}, where yellow indicates a large difference while blue indicates a small difference. Providing a legend of the colouring is ommited as $\Delta_{p(N,t)}$ has no further use as to indicate differences and actual values do not add any use.}
 \label{fig:pnt_eq_step_comparison}
 \end{figure}
@@ -447,7 +447,7 @@ To compare simulations with varying parameters the quantity defined in \autoref{
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/pnt_comparison_rho.png}
+\includegraphics[width=0.7 \linewidth]{pnt_comparison_rho.png}
 \caption{Heat map of differences between the cluster distributions within simulations carried out with varying the volume fraction of the liquid during the equilibration phase. The quantity used for colouring is defined in \autoref{eqn:pnt_delta}, where yellow indicates a large difference while blue indicates a small difference. Providing a legend of the colouring is ommited as $\Delta_{p(N,t)}$ has no further use as to indicate differences and actual values do not add any use.}
 \label{fig:pnt_rho_comparison}
 \end{figure}
@@ -460,7 +460,7 @@ A further more quantifying analysis of the differences is given by calculating t
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7 \linewidth]{../plots/nucleation_rate_comparison.pdf}
+\includegraphics[width=0.7 \linewidth]{nucleation_rate_comparison.pdf}
 \caption{Comparsion of nucleation rates under CNT assumptions for different inital densities during equilibration with eq\_steps fixed at 5000, as well as varying eq\_steps with $\eta_i$ fixed at 0.45. }
 \label{fig:comparison_nucleation_rates}
 \end{figure}
@@ -478,22 +478,25 @@ The program at this state is capable of simulating large systems including compr
 
 \subsection{Varying radius}
 \label{sec:extension_radius}
-A further notch of complexity would be including polydispersity into the simulation. For this purpose the prediction of collisions has to be adjusted. When looking at the derivation of \autoref{eqn:collision_prediction} it is found that $\sigma$ has to be changed to $R_i+R_j$ 
+A further notch of complexity would be to include polydispersity into the simulation. For this purpose the prediction of collisions has to be adjusted. When looking at the derivation of \autoref{eqn:collision_prediction} it is found that $\sigma$ being the former diameter of a sphere in the monodisperse case has to be changed to $\sigma=R_i+R_j$. In the equations the same defiitions of scalar products are used as before in \autoref{sec:EDMD}.
 
 \begin{align}
 \label{eqn:collision_prediction}
 \Delta t &= \frac{(rr - \sigma^2 )}{ - rv + \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}}
 \end{align} 
 
+For a physical model in which the particles are made of some matter with constant density the change of the radius is also accompanied by a change of the mass. This has to be taken into account when assigning the velocities after a collision as written in \autoref{eqn:var_mass}.
 
-\subsection{Varying mass}
-\label{sec:extension_mass}
-Same as with radius, highlight the points in the code requiring a change.
+\begin{align}
+\label{eqn:var_mass}
+\vec{v}_i{\,'} = \vec{v}_i + \frac{2 m_j \; (rv)}{(m_i + m_j) \sigma^2} \cdot (\vec{r}_j - \vec{r}_i) \nonumber \\
+\vec{v}_j{\,'} = \vec{v}_j + \frac{2 m_i \; (rv)}{(m_i + m_j) \sigma^2} \cdot (\vec{r}_j - \vec{r}_i)
+\end{align}
+
 
 \subsection{Muliprocessing}
 \label{sec:extension_MP}
-Idea on Parrallelizing the code. Probably more advanved, but for larger systems (Really large files) doable. (Actually RAM might become a serious problem).
-
-Besenrein, Samstag 6.3.  mittag, 13 h 
+It further would be possible to precalculate different events on different processors, thereby speeding up simulations. This requires the execution of events not in the strict time order used for the EDMD algorithm shown before. Instead a check should be implemented to only execute events which are spatially seperated by some distance. This might make it possible to change only little of the dynamics. Eventhough a problem conserning this idea is that the simulation code would be required to consume less memory as this would be the bottleneck of the system sizes.\\
+Such rather large changes would be necessary to impelemnt parrallel EDMD simulations. Either way it could help making system of about 100 million particles feasible.   
 
 
