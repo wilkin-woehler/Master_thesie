@@ -406,7 +406,7 @@ The final line \autoref{eqn:ml_censored_exponential_final} is the estimator of t
 \label{sec:mc_uncertainty}
 Having found the estimator the next question is what is its uncertainty, i.e what is the distribution of $\kappa$. Eventhough corresponding literatur on analytic expresssions of the distribution exist the complexity becomes inappropriate for the task at hand. We will follow instead a Monte Carlo method proposed for example in the book Numerical Recipes \todo{cite numerical recispes} to find the uncertainty of the estimator.\\
 
-For this purpose we draw samples from an exponential distribution characterized by the estimator calculated from the actual simualtion data. Afterwards the samples are censored by cutting off all elements larger than $T$ and calculate the corresponding estimator $\hat{\kappa}_{MC}$ for the Monte Carlo sample. From multiple such random sets we can create a histogram of estimates for $\hat{\kappa}$ that can be seen together with some exemplary random samples in \autoref{fig:mc_example}. As the distribution seems to incorporate only little higher moments the standard deviation of the distribution is used as the uncertainty $\sigma_{\hat{\kappa}}$.\\
+For this purpose we draw samples from an exponential distribution characterized by the estimator calculated from the actual simualtion data. Afterwards the samples are censored by cutting off all elements larger than $T$ and calculate the corresponding estimator $\hat{\kappa}_{MC}$ for the Monte Carlo sample. From multiple such random sets we can create a histogram of estimates for $\hat{\kappa}$ that can be seen together with some exemplary random samples in \autoref{fig:mc_example}. As the distribution seems to incorporate only little higher moments the standard deviation of the distribution is used as the uncertainty $\sigma_{\hat{\kappa}}$.
 
 \begin{figure}[h]
 \begin{center}
@@ -416,9 +416,7 @@ For this purpose we draw samples from an exponential distribution characterized 
 \label{fig:mc_example}
 \end{center}
 \end{figure}
-
 Concerning the uncertainty in detail we can ask how long a simulation should be to yield precise results. For this we can first look at the case where $1 \gg \kappa T$ corresponding to a simulation where all boxes showed an nucleation event. In this case we have seen before that $\hat{kappa}^{-1} = \frac{1}{N} \sum_{i=1}^N t_i$. As we assume that the $t_i$ are exponentially distributed we further know that $\sigma_{t} = \kappa^{-1}$. The gaussian error propagation then is given in \autoref{eqn:uncertainty_k_gg}.
-
 \begin{align}
 \label{eqn:uncertainty_k_gg}
 \frac{\sigma_{\kappa}}{\kappa} &=\frac{1}{\kappa} \sqrt{\sum_{i=1}^N \left( \frac{\partial \kappa}{\partial t_i} \right)^2 \sigma_{t_i}^2 }\\ 
