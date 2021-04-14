@@ -4,6 +4,7 @@
 
 %Formatierung Ränder (Optional)
 \usepackage[left=2cm,right=2cm,top=2.3cm,bottom=2.3cm,includeheadfoot]{geometry}
+%\usepackage{showframe}
 
 %Spracheinstellung
 \usepackage[english]{babel}
@@ -33,7 +34,9 @@
 \setlength{\tabcolsep}{18pt}%space between text and left/right border
 %\usepackage{dcolumn}
 %\usepackage{multicol}
-%\usepackage{float}
+\usepackage{float}
+%\floatstyle{boxed}
+\restylefloat{figure}
 %\usepackage{floatflt}
 %\usepackage{here}
 %\usepackage{blindtext}
@@ -45,7 +48,7 @@
 
 %\usepackage{subfigure}
 %\usepackage{here}
-\usepackage{placeins}
+\usepackage[section]{placeins}
 
 %Ueberschrift mit Serifen (nur Inhaltsverzeichnis)
 \setkomafont{sectioning}{\normalfont\bfseries}

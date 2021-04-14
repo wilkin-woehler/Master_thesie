@@ -61,7 +61,7 @@ The average is measured in the system by saving an reference position of all par
 
 \begin{figure}[h]
 \begin{center}
-\subfloat[Histograms of the slopes for the linear regressions to the largest clusters during the later constant growth process. The histograms are for $\eta=0.531,\;0.532,\;0.533,\;0.534$.]{\includegraphics[width = 0.45 \textwidth]{diffusion_histogram_comparison.pdf}} \hspace{0.5cm}
+\subfloat[Histograms of the slopes for the linear regressions to the mean squared displacements. The histograms are for $\eta=0.531,\;0.532,\;0.533,\;0.534$.]{\includegraphics[width = 0.45 \textwidth]{diffusion_histogram_comparison.pdf}} \hspace{0.5cm}
 \subfloat[Mean of the histograms with the uncertainty on the mean given by $\sigma_{\langle D \rangle} = \sigma_D/\sqrt{n}$ with n being the number of measurements included in the average.]{\includegraphics[width = 0.45 \textwidth]{diffusion_comparison.pdf}}  
 \caption{Comparison of long time selfdiffusion constants at different volume fractions as histograms and their means with uncertainty.}
 \label{fig:diffusion_comparison}
@@ -74,7 +74,7 @@ The diffusion coefficents are important to know for comparsion between different
 As we see in \autoref{fig:diffusion_comparison} the diffusion constants can be measured with rather good precision with a relative standard deviation of $\sigma_D/D \approx 1\%$. Such it does not introduce large uncertainties when normalizing time related quantities by the diffusion time $\tau_{D} = D^{-1}$.
 
 \section{Cluster growth}
-\label{sec:Cluster growth}
+\label{sec:cluster_growth}
 Ounce the clusters reach a certain size they are expected to grow with new particles being attached to the surface at a constant rate leading to a growth with a proportionality of $N \propto t^3$ as shown in \autoref{eqn:constant_growth} where k is the assumed constant attachment rate, N is the number of particles in a specific cluster, A is the surface of the cluster, R is the radius of the cluster and $\rho_{solid}$ is the bulk density which is for large clusters a good approximation of the cluster density.\\
 
 \begin{align}
@@ -121,7 +121,7 @@ Subsequently the slopes of the linear regressions have been collected in histogr
 
 \begin{figure}[h]
 \begin{center}
-\subfloat[Histograms of the slopes for the linear regressions to the largest clusters during the later constant growth process. The histograms are for $\eta=0.531,\;0.532,\;0.533,\;0.534$.]{\includegraphics[width = 0.45 \textwidth]{const_growth_rate_histogram_comparison.pdf}} \hspace{0.5cm}
+\subfloat[Histograms of the slopes for the linear regressions to the largest clusters during the later stable growth process. The histograms are for $\eta=0.531,\;0.532,\;0.533,\;0.534$.]{\includegraphics[width = 0.45 \textwidth]{const_growth_rate_histogram_comparison.pdf}} \hspace{0.5cm}
 \subfloat[Mean of the histograms with the uncertainty on the mean given by $\sigma_{\langle c \rangle} = \sigma_c/\sqrt{n}$ with n being the number of measurements included in the average. \todo{is the standard deviation here more sensefull, as interest lays on the widht of the distribution not so much on the mean?}]{\includegraphics[width = 0.45 \textwidth]{const_growth_rate_comparison.pdf}}  
 \caption{Comparison of growth rates in the constant attachement regime.}
 \label{fig:constant_growth_rates}
@@ -456,8 +456,16 @@ What can be seen from \autoref{fig:relative_uncertainty} is that the uncertainty
 
 \section{Nucleation rate comparison}
 \label{sec:nucleation_rates}
-Finally we are able to evaluate the induction time distribution to find 
+Finally we are able to evaluate the induction time distribution to find the rates given in \autoref{fig:nucleation_comparison}.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7 \linewidth]{nucleation_rate_comparison.pdf}
+\caption{Some examples of nucleation times in the hard sphere system for varying volume fractions from the literature have been collected, to compare with the own measured data points. All data points have for this purpose been scaled by the self diffusion constant to make comparisons between different experiments possible, as the diffusion sets the timescale at which the system evolves.}
+\label{fig:nucleation_comparison}
+\end{figure}
+
+From the diagram we can state that our Event driven molecular dynamics simulations confirm the previous simulation results that stood against the experimentally found ones. Further these results are calculated together with their statistical uncertainty, which is mostly visible for the data point at $\eta = 53.1 \%$ but is indicated for the others as well but due to the logarithmic scaling almost not visible.
 
 All Nucleation rates that can be found.-> mayhap ask Hajo.\\
 -nucleation rates without\\
@@ -470,4 +478,22 @@ Memory kernels of systems at various densities. Depends strongly on what is foun
 -memory kernels of 16k system at varying points of time\\
 -memory kernels from fall article\\
 -maybe memory kernels of 1m system, but do not know what to say. Maybe only mention that after seeing the 16k system to have only memory kernes at about middle of the time, no true memory kernel is visible in the 1m system as volume fractions have been to low with to large calculation times.\\
+
  
+Following the approach of Hugues Meyer to calculate memory kernels for a process, this has been done for trajectories trajectories for about a million particles at volume fractions between $\eta = 53.1\% - 53.4\%$ as well as for a system containing 16384 particles a volume fraction of $\eta = 54.0\% $. While for the former system only little of the crystalites reached the box boundaries in the later these grow until they fill the whole box with more or less defects. As pointed out earlier this finite time of the complete phase transition translates into a width of the memory kernel at the mean induction time of the trajectories. Furthermore in \autoref{fig:kernel_width_evaluation} the shape of the memory kernel is analysed in more detail. As we can see in \todo{put in exemplary shape} the shape of the memory kernel is rather simple. Such we use a gaussian fit to approximate width and amplitude of the kernel. For this purpose we neglect the markovian share of the kernel around $t_1-t_2 \approx 0$. To validate the fit results we further use the FWHM, where the maximum is determined by the mean value of the peaks crest.\\
+As the properly normalized result for both methods are in good agreement, we can conclude that the shape of the memory kernel in this case is rather easily defined by a width and an amplitude over time which is depicted in \autoref{fig:kernel_width_evaluation}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7 \linewidth]{kernel_shape_evaluation.pdf}
+\caption{Kernel width together with some quantties regarding it.}
+\label{fig:kernel_width_evaluation}
+\end{figure}
+
+As we see the width of the memory kernel sections is more or less constant over the whole measurement with the exception that it becomes very noise at the end.\\
+The amplitudse in comparison increases at the beginning, remains over a prolonged period of time constant and then declines towards the end of the measurement.\\
+To compare with direct measurements of the observables, at the very bottom we can see the measurement itself from which the memory kernel has been calculated, together with arithmetic mean and different percentile trajectories.\\
+Finally it is also shown the amount of single trajectories within three distinct regions. While the lowest one indicates trajectoreis that have not yet been nucleation, the middle one indicates trajectories which are in the middle of the growing process, and the third intervall contains mostly trajectories that are in a complete crystaline phase in which only defect healing takes place.\\
+
+

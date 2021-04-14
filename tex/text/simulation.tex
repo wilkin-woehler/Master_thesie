@@ -271,10 +271,24 @@ list quantities and their use etc.
 -Anisotropy\\
 -Asphericity\\
 
+\subsection{Individual cluster tracking}
+\label{sec:tracking}
+To follow trajectories of single metastable clusters within the fluid is of interst as mean lifetimes and other quantities of these fluctuations can be measured with it. Because the clusters themself form out of the liquid and are not numbered and easily distinguisable as the particles are in the simulation, they have to be identified for each measurement step. They are mostly characterized by the participating particles and their center of mass position, of which the later one is easier for comparisons. An algorithm based on a maximum of expected movement from one time step to the other yields reasonable results as can be seen in \autoref{fig:cluster_tracking_example}.
 
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7 \linewidth]{cluster_tracking_example.png}
+\caption{Example results of cluster tracking algorithm in a polydisperse simulation. The three plots are the projections of the box onto the three spatial dimensions over time. Further each cluster is given a color which does not change over time. Such we can see for example that two clusters mingling in one projection are actually some distance apart from each other.}
+\label{fig:cluster_tracking_example}
+\end{figure}
 
-
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7 \linewidth]{cluster_tracking_lifetime.png}
+\caption{Example of lifetime depending on mean or maximum size of the metastable cluster.}
+\label{fig:lifetime}
+\end{figure}
 
 
 
@@ -478,7 +492,7 @@ The program at this state is capable of simulating large systems including compr
 
 \subsection{Varying radius}
 \label{sec:extension_radius}
-A further notch of complexity would be to include polydispersity into the simulation. For this purpose the prediction of collisions has to be adjusted. When looking at the derivation of \autoref{eqn:collision_prediction} it is found that $\sigma$ being the former diameter of a sphere in the monodisperse case has to be changed to $\sigma=R_i+R_j$. In the equations the same defiitions of scalar products are used as before in \autoref{sec:EDMD}.
+A further notch of complexity is to include polydispersity into the simulation. For this purpose the prediction of collisions has to be adjusted. When looking at the derivation of \autoref{eqn:collision_prediction} it is found that $\sigma$ being the former diameter of a sphere in the monodisperse case has to be changed to $\sigma=R_i+R_j$. In the equations the same defiitions of scalar products are used as before in \autoref{sec:EDMD}.
 
 \begin{align}
 \label{eqn:collision_prediction}
@@ -493,6 +507,7 @@ For a physical model in which the particles are made of some matter with constan
 \vec{v}_j{\,'} = \vec{v}_j + \frac{2 m_i \; (rv)}{(m_i + m_j) \sigma^2} \cdot (\vec{r}_j - \vec{r}_i)
 \end{align}
 
+A small caveat is given by the fact that the simulations should be run within the center of mass frame, as otherwise unnecessary transition events have to be calculated. The corresponding assignemnt of velocities works as follows.\todo{do the center of mass assignement}
 
 \subsection{Muliprocessing}
 \label{sec:extension_MP}
