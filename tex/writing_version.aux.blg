@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'writing_version.aux.blg'
+[22] biber:313> INFO - === So Apr 18, 2021, 15:41:36
+[115] Utils.pm:185> ERROR - Cannot find control file 'writing_version.aux.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[115] Biber.pm:114> INFO - ERRORS: 1

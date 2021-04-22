@@ -1924,15 +1924,23 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">../bib/library.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bibliography/library.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Heyes2007</bcf:citekey>
-    <bcf:citekey order="2">Bannerman2014</bcf:citekey>
-    <bcf:citekey order="3">Bannerman2014</bcf:citekey>
-    <bcf:citekey order="4">Bannerman2011</bcf:citekey>
-    <bcf:citekey order="5">DONEV2005</bcf:citekey>
-    <bcf:citekey order="6">Hansen2006</bcf:citekey>
+    <bcf:citekey order="1">Alders59</bcf:citekey>
+    <bcf:citekey order="2">Mulero2001</bcf:citekey>
+    <bcf:citekey order="3">Carnahan1969</bcf:citekey>
+    <bcf:citekey order="4">Almarza2009</bcf:citekey>
+    <bcf:citekey order="5">Becker1935</bcf:citekey>
+    <bcf:citekey order="6">Bultmann2020</bcf:citekey>
+    <bcf:citekey order="7">Pusey1986</bcf:citekey>
+    <bcf:citekey order="8">Doherty1998</bcf:citekey>
+    <bcf:citekey order="9">Bannerman2014</bcf:citekey>
+    <bcf:citekey order="10">Goldberg1991</bcf:citekey>
+    <bcf:citekey order="11">Bannerman2014</bcf:citekey>
+    <bcf:citekey order="12">Bannerman2011</bcf:citekey>
+    <bcf:citekey order="13">DONEV2005</bcf:citekey>
+    <bcf:citekey order="14">Hansen2006</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
