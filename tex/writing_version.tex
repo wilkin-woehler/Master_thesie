@@ -27,11 +27,13 @@
 During the cluster growth a constant attachment rate to the cluster surface is measured, suprisingly unaffected by the packing fraction of the surrounding mestastable liquid. But the attachemnt rate may vary between single clusters by about 50\% leading to uncertainties that do not exclude a dependence on the diffusion time.\\
 For the shape descriptors based on the Tensor of Gyrationa tendency towards more spherical clusters is observed up to sizes of about a thousand particles. Clusters including more particles seem to conserve their almost spherical proportions and approach the complelty spherical shape only slowly.\\  
 Also the nucleation rate at volume fractions of $\eta \in [53.1\%,53.4\%]$ are measured at high precision compared to earlier measurements of these, but also confirming the discrepancy between real world and simulation experiments. Beyond that the memory kernels of nucleation for smaller systems are investigated finding a rather featureless Gaussian kernel. The width of the Gaussian kernel therby is comparable to the width of the phase transition time for a single trajectory.}
-\input{header/title_page.tex}
-
 
 \pagenumbering{Roman} % and numbering to roman numbering
-\pagestyle{plain} % Set the pagestyle to plain to exclude header in inital part
+%\pagestyle{plain} % Set the pagestyle to plain to exclude header in inital part
+
+\input{header/title_page.tex}
+
+\renewcommand{\chapterpagestyle}{plain}
 
 \tableofcontents 
 \newpage
@@ -48,7 +50,8 @@ Also the nucleation rate at volume fractions of $\eta \in [53.1\%,53.4\%]$ are m
 
 \pagenumbering{arabic} % Reset the numbering to arabic numbering
 \pagestyle{scrheadings} % Set the pagestyle back to header including style
-\renewcommand{\chapterpagestyle}{scrheadings} % Set the pagestyle of chapter page also with header
+
+%\renewcommand{\chapterpagestyle}{scrheadings} % Set the pagestyle of chapter page also with header
 
 
 \chapter{Introduction}
