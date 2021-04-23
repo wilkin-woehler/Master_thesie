@@ -27,20 +27,20 @@ The first of such simulations date back to the beginning of electronic computer 
 \label{sec:memory_approach}
 Nucleation by itself can be characterized as a metastable state that, by crossing a first order phase transition, ends in a stable and qualitatively different state. Because nucleation processes are found in many circumstances, like atmosphere physics or metallurgy, people from various subjects have worked on understanding it.\\
 
-Most descriptions are based on classical nucleation theory (CNT) which in a simple form is shown in \autoref{sec:CNT}. CNT is capable of qualitatively capturing the behaviour of nucleations, but often fails a quantitative comparison to experiments or numerical findings, sometimes by orders of magnitude. Models of this kind often include modifications to circumvent field specific problems but no broadly applicable framework has found a consensus to fully describe nucleations today. \todo{cite Hugues thesis here}\\
+Most descriptions are based on classical nucleation theory (CNT) which in a simple form is shown in \autoref{sec:CNT}. CNT is capable of qualitatively capturing the behaviour of nucleations, but often fails a quantitative comparison to experiments or numerical findings, sometimes by orders of magnitude. Models of this kind often include modifications to circumvent field specific problems but no broadly applicable framework has found a consensus to fully describe nucleations today\cite{MeyerThesis}.\\
 
 \todo{include Markovian embedding?}\\
 
 There are other theoretical works beyond the classical nucleation theory that not only tailor CNT to a specific problem but actually are based on more fundamental ideas. These take into account memory effects and non stationarity, where the latter is obviously important for phase transitions.\\
 
-In the 1960's Mori and Zwanzig used their projection operator formalism to derive the Generalized Langevin equation while Grabert later also used a time dependent formalism introducing non stationarity. Based on these earlier works Hugues Meyer derived the non stationary Generalized Langevin Equation (nsGLE)\todo{cite Hugues}. While the framework is too broad to cover at this point we may show the nsGLE in \autoref{eqn:EOM_A} to understand the memory kernel that is evaluated in \autoref{sec:memory_kernels}.( with a numerical method that has been developed by Meyer as well.)
+In the 1960's Mori and Zwanzig used their projection operator formalism to derive the Generalized Langevin equation while Grabert later also used a time dependent formalism introducing non stationarity. Based on these earlier works Meyer et al. derived the non stationary Generalized Langevin Equation (nsGLE)\cite{Meyer_nsGLE}. While the framework is too broad to cover at this point we may show the nsGLE in \autoref{eqn:EOM_A} to understand the memory kernel that is evaluated in \autoref{sec:memory_kernels}.
 \begin{equation}
 \label{eqn:EOM_A}
   \frac{d A_{t}}{dt} = \omega (t) A_{t} + \int_{0}^{t} K(\tau, t) A_{\tau} d\tau + \eta(0,t) \quad ,
 \end{equation}
 In the equation $A_{t}$ denotes an observable depending on time on a single trajectory, $\omega (t)$ is the time dependent friction coefficient, $\eta(0,t)$ is a time dependent noise term and $K(\tau, t)$ is the memory kernel depending on two times. As can be seen the memory kernel is integrated over, which means that it holds the information about how the history of the observable's trajectory influences its future. As the kernel depends on two times this impact is time dependent. Further we may note that Markovian processes exhibit a Dirac delta distribution, as they do not include memory, in which case \autoref{eqn:EOM_A} is reduced to the usual Langevin equation.\\
 
-Quantifying the actual impact of memory effects in different systems is necessary for studying the use of the above mentioned ideas. For example Kuhnbold et al.\todo{cite anja} have previously studied the nucleation process of a metastable Lennard-Jones fluid concluding that memory effects can not be neglected for an accurate description. One aim of this thesis therefore is to extend this picture by a study of memory effects in the nucleation of the metastable hard sphere fluid, done in \autoref{sec:memory_kernels}.\\
+Quantifying the actual impact of memory effects in different systems is necessary for studying the use of the above mentioned ideas. For example Kuhnbold et al.\cite{Kuhnbold2019} have previously studied the nucleation process of a metastable Lennard-Jones fluid concluding that memory effects can not be neglected for an accurate description. One aim of this thesis therefore is to extend this picture by a study of memory effects in the nucleation of the metastable hard sphere fluid, done in \autoref{sec:memory_kernels}.\\
 
 An other question concerning the hard sphere system is to measure nucleation rates which summarize by some definition how fast the phase transition occurs. 
 
@@ -63,22 +63,18 @@ where p is the pressure, v is the volume per particle $v_0=\sigma^3/\sqrt{2}$ is
 The inverse of the volume per particle corresponds to the number of particles per volume $ v^{-1} = \rho$. The relation to the corresponding packing fraction $\eta$ is given by $\rho = \frac{6}{ \pi} \eta$, which can be easily shown by extending $\rho = \frac{N}{V}$ by the single particle's volume $V_s = \frac{4}{3} \pi \left(\frac{\sigma}{2}\right)^3 = \frac{\pi}{6} \sigma^3$.\\
 Within the thesis mostly but not only the volume fraction is used as it is the most common parameter for describing the system, but it can always be interchanged by the density.\\ 
 
-%Returning to the phase diagram, the volume fraction for freezing has been determined to $\eta_{freeze} = 0.494$, the melting volume fraction has been calculated to be $\eta_{melt}=0.55$. In between these two both phases are in coexistence. 
 A first order phase transition occurs when switching between the two stable branches of the system, described by the two equations of state, in between volume fractions of $\eta_{freeze} = 0.494$ and $\eta_{melt}=0.55$. They correspond to first solidifying clusters when approaching the transition from the liquid branch and melting of the crystalline phase when approaching the transition from the solid branch. Within this volume fraction interval the systems tends towards a coexistence state that in its equilibrium only varies the fraction of solid to liquid volume.\\
 This can be understood in the following way: The liquid may follow its branch to pressures above the coexistence pressure. As it becomes unstable the particles may arrange into the crystalline phase as each single particle can access a larger free volume in the structured lattice than it would be possible in the unordered fluid.\\
 By comparing the volume fractions of random close packing $\eta_{RCP}\approx 64\%$ with the one of a face centered cubic or hexagonal close packing fraction of $\eta_{HCP} \approx 74 \%$ this becomes evident. Within the crystalline phase each particle still has free volume accessible while the randomly packed particles are already confined at exactly one place.\\
 This additional accessible volume translates into a larger number of possible states for the particle or in terms of thermodynamics a larger entropy, that acts as a driving force for the metastable fluid into the solid phase. As the particles in the crystal are packed more densely with a volume fraction of $\eta_{melt}=0.55$, the pressure is reduced and not all fluid transforms into the solid phase, but both phases may coexist.\\
 The overall phase diagram is shown with the coexistence pressure in \autoref{fig:hs_phase_diagram}.\\
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6 \linewidth]{Hard_sphere_phase_diagram.pdf}
 \caption[Hard sphere phase diagram]{Phase diagram of the hard sphere system with freezing and melting volume fraction shown as shaded lines and the green dashed line indicating the equilibrium stable branch. Where liquid and solid branch do not coincide with the stable branch these are unstable and tend towards the stable branch.}
 \label{fig:hs_phase_diagram}
 \end{figure}
-
-
-
-
 
 The solid fraction in terms of volume for the system $x_s = \frac{V_s}{V}$ with $V_s$ the solid volume and $V$ the total volume can be described within the coexistence region in the equilibrium state by \autoref{eqn:solid_fraction}.\\ 
 For the derivation it is necessary to use that in the stationary state the density of the solid phase is given by the melting density and that the liquid density is equal to the freezing density, i.e $\rho_s = \rho_{\text{melt}}$ and $\rho_l = \rho_{\text{freeze}}$ respectively.\\
@@ -88,15 +84,9 @@ V &= V_s + V_l \; \text{,} \nonumber\\
 N &= n_s + n_l \; \text{,} \nonumber\\
 N_i &= \rho_i V_i \; \text{,} 
 \end{align}
+
 with $n_{s/l}$ the number of solid/liquid particles we may write
-%\begin{align}
-%\label{eqn:solid_fraction}
-%\rho V &= \rho_s V_s + \rho_l V_l \nonumber\\
-%\stackrel{\text{equil.}}{\Leftrightarrow} \qquad  \quad \; \; \; \rho &= \rho_{\text{melt}} \frac{V_s}{V} + \rho_{\text{freeze}} \frac{V_l}{V} \nonumber \\
-%\Leftrightarrow \qquad \qquad  \: \rho &= \rho_{\text{melt}} \frac{V_s}{V} + \rho_{\text{freeze}} \frac{V - V_s}{V} \nonumber \\
-%\Leftrightarrow \, \rho - \rho_{\text{freeze}} &= \frac{V_s}{V}  \left( \rho_{\text{melt}} - \rho_{\text{freeze}}  \right) \nonumber \\
-%\Leftrightarrow \qquad \quad \; \; \frac{V_s}{V} &= \frac{\rho - \rho_{\text{freeze}}}{\rho_{\text{melt}} - \rho_{\text{freeze}} } 
-%\end{align}
+
 \begin{align}
 \rho V &= \rho_s V_s + \rho_l V_l
 \end{align}
@@ -137,8 +127,6 @@ Some examples of \autoref{eqn:meta_stable_volume_fraction} are depicted in \auto
 \label{fig:remaining_density}
 \end{figure}
 What can be seen is that for crystalline fractions of a few percent the remaining liquid is not altered significantly. Especially for system sizes of about 1 million particles it already corresponds to cluster sizes of a few ten thousand particles, where stable growth of clusters takes place which is rather insensitive to changes of the volume fraction as shown in \autoref{sec:cluster_growth}. This means that during the highly sensitive cluster forming processes the volume fraction of the liquid can be assumed to be globally stable.\\ 
-
-%On the other hand local changes of the density are not considered at this point, but in \autoref{sec:cluster_growth} we may see that  
 
 %Eventhough not further discussed in this thesis it might be said that for polydisperse radii the phase diagram becomes even richer as show for example in 
 %\todo{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.91.068301}
@@ -203,7 +191,7 @@ The classical critical radius depending on the volume fraction is depicted in \a
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7 \linewidth]{CNT_radius.pdf}
-\caption[Critical radius in the metastable regime]{Critical radius $R_{crit}$ calculated from CNT depending on volume fraction $\eta$. As it can be seen the critical radii are rather small. When using the chemical potential calculated by Fillion and Schilling the critical clusters sizes become of the order $N \approx 50$ at intermediate metastable volume fractions, which is much more in agreement with typical largest cluster fluctuations found in simulations. \todo{maybe something is wrong after all with the derivation ?}}
+\caption[Critical radius in the metastable regime]{Critical radius $R_{crit}$ calculated from CNT depending on volume fraction $\eta$. As it can be seen the critical radii are rather small. When using the chemical potential calculated by Fillion and Schilling the critical clusters sizes become of the order $N \approx 50$ at intermediate metastable volume fractions, which is much more in agreement with typical largest cluster fluctuations found in simulations.}
 \label{fig:r_crit}
 \end{figure}
 

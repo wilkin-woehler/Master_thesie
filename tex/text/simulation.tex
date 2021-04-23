@@ -227,47 +227,6 @@ The setup routines are called mainly at the beginning of a simulation to either 
 \subsubsection{Tools}
 This is the toolbox of the simulation holding routines to measure quantities like mean squared displacement, radial distribution functions and also the cluster finding routine. It also contains an overlap and minimal distance function used within the simulation during compression.
 
-%\section{Measurement quantities}
-%\label{sec:cluster_quantities}
-%list quantities and their use etc.
-
-%\subsection{Mean squared displacement}
-%\label{sec:MSD}
-%-Averaged or as distribution\\
-%-Reuqired for diffusion\\
-
-%\subsection{Radial distribution fucntion}
-%5\label{sec:RDF}
-%-Well show an RDF?
-
-%\subsection{Largest Cluster}
-%\label{sec:lc}
-%- Non local\\
-%- large in case of nucleation\\
-%- requires almost no memory\\
-
-%\subsection{Cluster size distribution}
-%\label{sec:pnt}
-%- Non local\\
-%- requires more memory still not as much as for example particle positions\\
-%- 
-
-%\subsection{Cluster positions and numbers}
-%\label{sec:cluster_position}
-%5- not done\\
-%- local as single clusters can be named and followed from formation to melting or final growth\\
-%- Much more information as locallity can be archieved.\\
-
-
-%\subsection{Tensor of Gyration}
-%\label{sec:ToG}
-%-Only done for largest cluster of size larger than some threshold\\
-%%-How to extract the eigenvalues l1,l2,l3\\
-%-Radius of Gyration\\
-%-Anisotropy\\
-%-Asphericity\\
-
-
 \section{Probe of simulation code}
 \label{sec:probe}
 To probe the simulation dynamics we measured the longtime diffusion constant and the radial distribution function of the stable hard sphere liquid, as there are many measurements available in the literature to compare with.
@@ -292,7 +251,7 @@ The resulting diffusion constants depending on the fluid volume fraction are sho
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7 \linewidth]{diffusion_probe.pdf}
-\caption[Longtime diffusion constant at varying volume fractions]{Logarithmic plot of long time diffusion constant of the hard sphere liquid as measured in our own simulations as well as measurements from the literature. \todo{cite the people.}}
+\caption[Longtime diffusion constant at varying volume fractions]{Logarithmic plot of long time diffusion constant of the hard sphere liquid as measured in our own simulations as well as measurements from the literature\cite{Pieprzyk2019},\cite{Heyes2007}.}
 \label{fig:diffusion_const}
 \end{figure}
 
@@ -352,14 +311,6 @@ The calculation time of the program was tested for a large range of different sy
 \label{fig:calc_time}
 \end{figure}
 
-
-%Execution times for single steps have also been resolved with their distributions at 
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=0.7 \linewidth]{Simulation_runtimes.png}
-%\caption{Histogram of CPU time required per execution of one event at different volume fractions. A small variation in the execution time is visible but the dependence is only small over a large range of volume fractions. Somewhat surprising are the outliers at about half the median calculation times for which no direct explanation could be found, except that mayhap the calculation node they were executed on did not have any further workload present at the time of execution.}
-%\end{figure}
 The effect of larger clusters was only investigated after problems with the runtime of the programs were traced back to these. The q6q6-order parameter routine was tested for larger clusters in a nucleating simulation with about 1 million particles within the box. As can be seen in \autoref{fig:calc_q6q6} the calculation cost of the cluster finding routine can be described with a quadratic dependence on the largest cluster. For an impression what this means we can use the calculation costs of a simulation step from \autoref{fig:calc_time} being about $t_{step} \approx \SI{10}{\mu s \per \text{particle} }$. Therefore the execution of one step takes about $\SI{10}{s}$ for 1 million particles. If a measurement is performed every 10th step, the calculation cost of the measurements without a large cluster remain below 10\%. But as the largest cluster grows to a few hundred thousand particles in size, the measurements can make up 30 \% and more of the calculation cost, or for a fixed number of steps, increase the calculation time by about 50 \%. This previously unseen effect lead to actual data loss as the combination of NEMO cluster policy and EDMD simulation program did not result in a save shutdown of the program after breaching the wall time limit of the NEMO cluster.\\
 
 \begin{figure}[h!]
@@ -381,9 +332,6 @@ The memory costs of other measurements have been left out of \autoref{fig:file_s
 \caption[File size estimate]{Overview of file sizes when a single setup on the one hand and a single full simulation on the other hand is saved for comparison reasons together with their corresponding linear regression. While the linear regression for 3 points is statistically not exceedingly meaningful it still remains a useful tool to extract the slope which corresponds to the required memory per particle and snapshot or reset simulation.}
 \label{fig:file_size}
 \end{figure}
-
-
-
 
 \section{Preliminary data for testing equilibration}
 \label{sec:data}
@@ -477,25 +425,26 @@ For a physical model in which the particles are made of some matter with constan
 \vec{v}_j{\,'} = \vec{v}_j + \frac{2 m_i \; (rv)}{(m_i + m_j) \sigma^2} \cdot (\vec{r}_j - \vec{r}_i)
 \end{align}
 
-A small caveat is given by the fact that the simulations should be run within the center of mass frame, as otherwise unnecessary transition events have to be calculated.% The corresponding assignemnt of velocities works as follows.\todo{do the center of mass assignement}
+A small caveat is given by the fact that the simulations should be run within the center of mass frame, as otherwise unnecessary transition events have to be calculated.
+
 \subsection{Individual cluster tracking}
 \label{sec:tracking}
-Following trajectories of single metastable clusters within the fluid is of interest as mean lifetimes and other quantities of these fluctuations can be measured with it. Also the nucleation time can be measured with higher precision as the cluster can be tracked back to only a few particles.\\ 
-Because the clusters themselves form out of the liquid and are not numbered and easily distinguishable as the particles are in the simulation, they have to be identified for each measurement step. They are mostly characterized by the participating particles and their center of mass position, of which the later one is easier for comparisons. An algorithm based on a maximum of expected movement from one time step to the other yields reasonable results as can be seen in \autoref{fig:cluster_tracking_example}.
-
+Following trajectories of single metastable clusters within the fluid is useful as for example mean lifetimes of these fluctuations can be measured by it. Also the nucleation time can be measured with higher precision as the precursor can be tracked back to only a few particles.\\ 
+Because the clusters themselves form out of the liquid and are not numbered and easily distinguishable as the particles in the simulation, they have to be identified for each measurement step. They are mostly characterized by the participating particles and their center of mass position, of which the latter one is easier comparable and accessible in our case. An algorithm based on a maximum of expected movement from one time step to the other is tested and already yields reasonable results as can be seen in \autoref{fig:cluster_tracking_example}.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{cluster_tracking_example.png}
-\caption[Individual cluster tracking example]{Example results of cluster tracking algorithm in a polydisperse simulation. The three plots are the projections of the box onto the three spatial dimensions over time. Each cluster is given a color which does not change over time. With it we can see for example that two clusters mingling in one projection are actually some distance apart from each other in an other dimension.\\
+\includegraphics[width=0.6 \linewidth]{cluster_tracking_example.png}
+\caption[Individual cluster tracking example]{Example results of cluster tracking algorithm in a monodisperse simulation. The three plots are the projections of the box onto the three spatial dimensions over time. Each cluster is given a color which does not change over time. With it we can see for example that two clusters mingling in one projection are actually some distance apart from each other in an other dimension.\\
 While in this example only small metastable clusters that dissolve after some time are present, also nucleation events can be seen in this kind of plot. These are easily identfied as the linewidht of the lines are drawn proportional to the diameter of a sphere with a volume corresponding to the clusters volume under the assumption of a spherical cluster.}
 \label{fig:cluster_tracking_example}
 \end{figure}
 
+Information about the lifetime and size of the fluctuations derived from the analyzed example trajectory shown in \autoref{fig:cluster_tracking_example} are depicted in \autoref{fig:lifetime}.
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{cluster_tracking_lifetime.png}
-\caption[Size depending on lifetime of clusters example]{Example of lifetime depending on mean or maximum size of the metastable cluster. }
+\includegraphics[width=0.6 \linewidth]{cluster_tracking_lifetime.png}
+\caption[Size depending on lifetime of clusters example]{Example of lifetime depending on  maximum (top) or mean (bottom) size of the metastable cluster. }
 \label{fig:lifetime}
 \end{figure}
-
+First we note that both the maximum size and the mean size can be used as a measure for the scale of the flucutations, as the results do not vary by a lot. Further we can read from the diagram that at a volume fraction of $\eta = 53.4\%$ there are a lot of small to medium sized clusters with short lifetimes up to about $10 \delta t$, and some large clusters with lifetimes of more than $15 \delta t$. The overal impression is that the fluctuation distribution is compact with a small but very far reaching tails towards the large lifetimes as well as towards the large cluster sizes.

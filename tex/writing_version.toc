@@ -36,21 +36,21 @@
 \contentsline {section}{\numberline {2.5}Extensions}{34}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Varying radius}{34}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Individual cluster tracking}{35}{subsection.2.5.2}
-\contentsline {chapter}{\numberline {3}Data Analysis}{38}{chapter.3}
-\contentsline {section}{\numberline {3.1}Characterization of the simulated system}{38}{section.3.1}
-\contentsline {section}{\numberline {3.2}Diffusion in the metastable liquid}{39}{section.3.2}
-\contentsline {section}{\numberline {3.3}Cluster size distribution over time}{41}{section.3.3}
-\contentsline {section}{\numberline {3.4}Autocovariance functions of largest cluster in metastable fluid}{41}{section.3.4}
-\contentsline {section}{\numberline {3.5}Cluster growth}{42}{section.3.5}
-\contentsline {section}{\numberline {3.6}Tensor of Gyration properties}{46}{section.3.6}
-\contentsline {section}{\numberline {3.7}Nucleation time dilemma}{49}{section.3.7}
-\contentsline {section}{\numberline {3.8}Induction time by exponential distribution}{51}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}CNT expectation of the induction time distribution}{51}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Maximum likelihood estimator of induction time}{52}{subsection.3.8.2}
-\contentsline {subsection}{\numberline {3.8.3}Monte Carlo uncertainty estimation}{54}{subsection.3.8.3}
-\contentsline {section}{\numberline {3.9}Nucleation rate comparison}{57}{section.3.9}
-\contentsline {section}{\numberline {3.10}Memory Kernels}{58}{section.3.10}
-\contentsline {chapter}{\numberline {4}Conclusion - Summary}{62}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusion}{62}{section.4.1}
-\contentsline {chapter}{\numberline {5}Appendix}{63}{chapter.5}
-\contentsline {section}{\numberline {.1}A}{63}{section.Alph0.1}
+\contentsline {chapter}{\numberline {3}Data Analysis}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Parameter choice of the simulated system}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Diffusion in the metastable liquid}{38}{section.3.2}
+\contentsline {section}{\numberline {3.3}Cluster size distribution over time}{40}{section.3.3}
+\contentsline {section}{\numberline {3.4}Autocovariance functions of largest cluster in metastable fluid}{43}{section.3.4}
+\contentsline {section}{\numberline {3.5}Cluster growth}{45}{section.3.5}
+\contentsline {section}{\numberline {3.6}Tensor of Gyration properties}{47}{section.3.6}
+\contentsline {section}{\numberline {3.7}Nucleation time dilemma}{50}{section.3.7}
+\contentsline {section}{\numberline {3.8}Induction time by exponential distribution}{53}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}CNT expectation of the induction time distribution}{53}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Maximum likelihood estimator of induction time}{54}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Monte Carlo uncertainty estimation}{56}{subsection.3.8.3}
+\contentsline {section}{\numberline {3.9}Nucleation rate comparison}{59}{section.3.9}
+\contentsline {section}{\numberline {3.10}Memory Kernels}{60}{section.3.10}
+\contentsline {chapter}{\numberline {4}Conclusion - Summary}{64}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusion}{64}{section.4.1}
+\contentsline {chapter}{\numberline {5}Appendix}{65}{chapter.5}
+\contentsline {section}{\numberline {.1}A}{65}{section.Alph0.1}
