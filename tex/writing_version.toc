@@ -1,56 +1,55 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Hard sphere system}{1}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Memory effects and nucleation rates}{2}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}The phase diagram and the meta stable fluid}{3}{section.1.3}% 
-\contentsline {section}{\numberline {1.4}Classical nucleation theory}{7}{section.1.4}% 
-\contentsline {section}{\numberline {1.5}Computer Precision}{9}{section.1.5}% 
-\contentsline {section}{\numberline {1.6}Comparison to real world experiments}{11}{section.1.6}% 
-\contentsline {chapter}{\numberline {2}Simulation details}{14}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Algorithm and Simulation details}{14}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}Event driven molecular dynamics (EDMD)}{15}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Details of the Implementation}{17}{subsection.2.1.2}% 
-\contentsline {subsubsection}{\nonumberline \textit {Event} struct}{17}{section*.4}% 
-\contentsline {subsubsection}{\nonumberline \textit {Particle} class}{18}{section*.6}% 
-\contentsline {subsubsection}{\nonumberline The \textit {Box} class}{19}{section*.7}% 
-\contentsline {subsubsection}{\nonumberline The \textit {Scheduler} class}{19}{section*.8}% 
-\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::predictTransfer()}}{20}{section*.9}% 
-\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::predictCollision()}}{21}{section*.12}% 
-\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::setupFEL()}}{21}{section*.13}% 
-\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeTransfer()}}{22}{section*.14}% 
-\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeCollision()}}{22}{section*.15}% 
-\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeEvent()}}{22}{section*.16}% 
-\contentsline {subsection}{\numberline {2.1.3}Simulation periphery}{23}{subsection.2.1.3}% 
-\contentsline {subsubsection}{\nonumberline Inout and ch5md}{23}{section*.17}% 
-\contentsline {subsubsection}{\nonumberline Setup}{23}{section*.18}% 
-\contentsline {subsubsection}{\nonumberline Tools}{23}{section*.19}% 
-\contentsline {section}{\numberline {2.2}Probe of simulation code}{24}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Diffusive behaviour}{24}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Radial distribution function}{25}{subsection.2.2.2}% 
-\contentsline {section}{\numberline {2.3}Estimate of required resources}{27}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Calculation time estimates}{27}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}File sizes estimates}{29}{subsection.2.3.2}% 
-\contentsline {section}{\numberline {2.4}Preliminary data for testing equilibration}{30}{section.2.4}% 
-\contentsline {section}{\numberline {2.5}Extensions}{34}{section.2.5}% 
-\contentsline {subsection}{\numberline {2.5.1}Varying radius}{34}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}Individual cluster tracking}{35}{subsection.2.5.2}% 
-\contentsline {chapter}{\numberline {3}Data Analysis}{37}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Parameter choice of the simulated system}{37}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Diffusion in the metastable liquid}{38}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Cluster size distribution over time}{40}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Autocovariance functions of largest cluster in metastable fluid}{43}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Cluster growth}{45}{section.3.5}% 
-\contentsline {section}{\numberline {3.6}Tensor of Gyration properties}{47}{section.3.6}% 
-\contentsline {section}{\numberline {3.7}Nucleation time dilemma}{50}{section.3.7}% 
-\contentsline {section}{\numberline {3.8}Induction time by exponential distribution}{53}{section.3.8}% 
-\contentsline {subsection}{\numberline {3.8.1}CNT expectation of the induction time distribution}{53}{subsection.3.8.1}% 
-\contentsline {subsection}{\numberline {3.8.2}Maximum likelihood estimator of induction time}{54}{subsection.3.8.2}% 
-\contentsline {subsection}{\numberline {3.8.3}Monte Carlo uncertainty estimation}{56}{subsection.3.8.3}% 
-\contentsline {section}{\numberline {3.9}Nucleation rate comparison}{59}{section.3.9}% 
-\contentsline {section}{\numberline {3.10}Memory Kernels}{60}{section.3.10}% 
-\contentsline {chapter}{\numberline {4}Conclusion - Summary}{64}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Conclusion}{64}{section.4.1}% 
-\contentsline {chapter}{\numberline {5}Appendix}{65}{chapter.5}% 
-\contentsline {section}{\numberline {.1}A}{65}{section.Alph0.1}% 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}The hard sphere system}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Nucleation rate discrepancy and possible memory effects}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}The phase diagram and the metastable fluid}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Classical nucleation theory}{6}{section.1.4}
+\contentsline {section}{\numberline {1.5}Computer precision and chaotic behavior}{9}{section.1.5}
+\contentsline {section}{\numberline {1.6}Comparison to real world experiments}{11}{section.1.6}
+\contentsline {chapter}{\numberline {2}Simulation details}{14}{chapter.2}
+\contentsline {section}{\numberline {2.1}Algorithm and simulation details}{14}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Event driven molecular dynamics (EDMD)}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Details concerning the implementation}{17}{subsection.2.1.2}
+\contentsline {subsubsection}{\nonumberline The \textit {Event} struct}{17}{section*.4}
+\contentsline {subsubsection}{\nonumberline The \textit {Particle} class}{18}{section*.6}
+\contentsline {subsubsection}{\nonumberline The \textit {Box} class}{19}{section*.7}
+\contentsline {subsubsection}{\nonumberline The \textit {Scheduler} class}{19}{section*.8}
+\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::predictTransfer()}}{20}{section*.9}
+\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::predictCollision()}}{21}{section*.12}
+\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::setupFEL()}}{21}{section*.13}
+\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeTransfer()}}{22}{section*.14}
+\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeCollision()}}{22}{section*.15}
+\contentsline {subsubsection}{\nonumberline \hskip 1em\relax \textit {Scheduler::executeEvent()}}{22}{section*.16}
+\contentsline {subsection}{\numberline {2.1.3}Simulation periphery}{23}{subsection.2.1.3}
+\contentsline {subsubsection}{\nonumberline Inout and ch5md}{23}{section*.17}
+\contentsline {subsubsection}{\nonumberline Setup}{23}{section*.18}
+\contentsline {subsubsection}{\nonumberline Tools}{24}{section*.19}
+\contentsline {section}{\numberline {2.2}Testing of the simulation code}{24}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Diffusive behavior}{24}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Radial distribution function}{25}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Estimate of required resources}{27}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Calculation time estimate}{27}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}File sizes estimate}{29}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Preliminary data for equilibration test}{30}{section.2.4}
+\contentsline {section}{\numberline {2.5}Extensions for future studies}{34}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Polydispersity for varying radius and mass}{34}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Single cluster tracking algorithm}{35}{subsection.2.5.2}
+\contentsline {chapter}{\numberline {3}Data Analysis}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Parameter choice of the simulated system}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Long time diffusion time scale}{38}{section.3.2}
+\contentsline {section}{\numberline {3.3}Cluster size distribution over time}{41}{section.3.3}
+\contentsline {section}{\numberline {3.4}Autocovariance functions of largest cluster in the metastable fluid}{43}{section.3.4}
+\contentsline {section}{\numberline {3.5}Cluster growth and constant attachement rate}{45}{section.3.5}
+\contentsline {section}{\numberline {3.6}Tensor of gyration evaluation}{49}{section.3.6}
+\contentsline {section}{\numberline {3.7}Nucleation time dilemma}{52}{section.3.7}
+\contentsline {section}{\numberline {3.8}Induction time by exponential distribution assumption}{54}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}CNT expectation of the induction time distribution}{55}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Maximum likelihood estimator of the induction time}{55}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Monte Carlo uncertainty estimation}{57}{subsection.3.8.3}
+\contentsline {section}{\numberline {3.9}Nucleation rate comparison}{60}{section.3.9}
+\contentsline {section}{\numberline {3.10}Memory kernels of nucleating ensemble}{61}{section.3.10}
+\contentsline {chapter}{\numberline {4}Conclusion}{65}{chapter.4}
+\contentsline {chapter}{\numberline {5}Appendix}{66}{chapter.5}
+\contentsline {section}{\numberline {.1}A}{66}{section.Alph0.1}

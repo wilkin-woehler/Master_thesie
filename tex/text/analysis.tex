@@ -6,7 +6,7 @@
 %This contain analysis of diffusion in the liquid to prove the simulations accuray
 \section{Parameter choice of the simulated system}
 \label{sec:system_choice}
-As an integral part of this work large scale simulations have been executed on the NEMO High performance computation cluster. The input parameters of the simulated systems are given in \autoref{tab:system_1m}.
+As an integral part of this work large scale simulations have been executed on the NEMO High performance computation (HPC) cluster. The input parameters of the simulated systems are given in \autoref{tab:system_1m}.
 
 \begin{table}[ht]
 \centering
@@ -46,9 +46,9 @@ As the required CPU time for a nulcleation event is simply proportional to the p
 Thus the size of the system is only relevant to be chosen smaller if ordering processes are important for the system resulting in an induction time that is independent of the system size. This might be the case for polydisperse systems, but in the monodisperse case the above reasoning was found to hold true.\\
 An other objective that has to be considered is that less configuration snapshots of the system can be stored, as these requrie a lot of space. If one is interested in quantites like $g(r)$ this is not a problem as the necessary statistics can be either derived from a large set of small snapshot or from a small set of large snapshots, but for example resolving and storing the dynamcs of a configuration for a growing cluster would require using smaller system sizes as files easily grow to many GB's in size. 
 
-\section{Diffusion in the metastable liquid}
+\section{Long time diffusion time scale}
 \label{sec:diffusion_metastable_liquid}
-Diffusion or more precisely self-diffusion, characterizes the movement of the single particles within the system. The diffusive behaviour for many system can be subdivided into different regimes with different physical meaning.\\ 
+Diffusion or more precisely self-diffusion, characterizes the movement of the single particles within the system. The diffusive behavior for many system can be subdivided into different regimes with different physical meaning.\\ 
 
 For the ballistic hard sphere system we have an extremely short period in which most particles are freely moving without constraint, the ballistic regime. This could be resolved in the simulation by taking measurements at extreme rates, like after every event, but is not as the result could if desired also be determined by measuring the velocity distribution.\\ 
 
@@ -61,7 +61,7 @@ The long time diffusion on the other hand describes the movement of single parti
 D^S_L = \underset{t\rightarrow \infty}{\text{lim}} \frac{\langle (\vec{r}(t) - \vec{r}(0) )^2 \rangle}{2 d t}
 \end{align}
 
-With $D^S_L$ the longtime self-diffusion constant which will in the following be denoted only by D, $\vec{r}(t)$ the position of a particle at time t, d the number of spatial dimensions of the system and $\langle ... \rangle$ the expectation value of the ensemble.\\
+With $D^S_L$ the long time self-diffusion constant which will in the following be denoted only by D, $\vec{r}(t)$ the position of a particle at time t, d the number of spatial dimensions of the system and $\langle ... \rangle$ the expectation value of the ensemble.\\
 
 The average is measured in the system by saving an reference position of all particles at one point, and further carrying a set of unwrapped positions through out the simulation. The average of all particles difference in their reference position with their unwrapped position is used as a measurement of the ensemble average. Especially for large system of 1 million particles, this quantity has only very small fluctuations as can be seen in \autoref{fig:diffusion_comparison}.
 
@@ -70,12 +70,12 @@ The average is measured in the system by saving an reference position of all par
 \begin{center}
 \subfloat[Histograms of the slopes for the linear regressions to the mean squared displacements. The histograms are for $\eta=0.531,\;0.532,\;0.533,\;0.534$.]{\includegraphics[width = 0.45 \textwidth]{diffusion_histogram_comparison.pdf}} \hspace{0.5cm}
 \subfloat[Mean of the histograms with the uncertainty on the mean given by $\sigma_{\langle D \rangle} = \sigma_D/\sqrt{n}$ with n being the number of measurements included in the average.]{\includegraphics[width = 0.45 \textwidth]{diffusion_comparison.pdf}}  
-\caption[Result of long time self-diffusion constants from production data]{Comparison of long time self diffusion constants at different volume fractions as histograms and their means with uncertainty.}
+\caption[Long time self-diffusion constant measurements from production data]{Comparison of long time self-diffusion constants at different volume fractions as histograms and their means with uncertainty.}
 \label{fig:diffusion_comparison}
 \end{center}
 \end{figure}
 
-The diffusion coefficients are important to know for comparison between different systems. This importance is based on the idea that the fundamental mechanisms for nucleation and cluster growth do not vary between different hard sphere like systems, but are only scaled by the varying diffusion times. Furthermore there are theoretical predictions for the relationship of short time and long time diffusion, making it possible to compare experiments where the short time diffusion behaviour is better accessible with the ballistic simulations where only the long time diffusion constant is measurable.\\
+The diffusion coefficients are important to know for comparison between different systems. This importance is based on the idea that the fundamental mechanisms for nucleation and cluster growth do not vary between different hard sphere like systems, but are only scaled by the varying diffusion times. Furthermore there are theoretical predictions for the relationship of short time and long time diffusion, making it possible to compare experiments where the short time diffusion behavior is better accessible with the ballistic simulations where only the long time diffusion constant is measurable.\\
 
 
 As we see in \autoref{fig:diffusion_comparison} the diffusion constants can be measured with rather good precision with a relative standard deviation of $\sigma_D/D \approx 1\%$. Hence it does not introduce large uncertainties when normalizing time related quantities by the diffusion time $\tau_{D} = D^{-1}$.
@@ -93,7 +93,7 @@ The logarithmic representation is used as the mesurements span orders of magnitu
 \subfloat[$\eta = 53.2\%$]{\includegraphics[width = 0.49 \textwidth]{pnt_532_short.png}}\\
 \subfloat[$\eta = 53.3\%$]{\includegraphics[width = 0.49 \textwidth]{pnt_533_short.png}} \hspace{0.0cm}
 \subfloat[$\eta = 53.4\%$]{\includegraphics[width = 0.49 \textwidth]{pnt_534_short.png}}
-\caption[Cluster distribution over time after quench]{Cluster distributions at different volume fractions in the initial phase after the quench.}
+\caption[Cluster size distributions over time after quench]{Cluster distributions at different volume fractions in the initial phase after the quench.}
 \label{fig:pnt_short}
 \end{center}
 \end{figure}
@@ -107,14 +107,14 @@ To further compare the system time with the more intuitive number of collisions 
 \subfloat[$\eta = 53.2\%$]{\includegraphics[width = 0.49 \textwidth]{pnt_532_long.png}}\\
 \subfloat[$\eta = 53.3\%$]{\includegraphics[width = 0.49 \textwidth]{pnt_533_long.png}} \hspace{0.0cm}
 \subfloat[$\eta = 53.4\%$]{\includegraphics[width = 0.49 \textwidth]{pnt_534_long.png}}
-\caption[Cluster distribution over time for long times]{Cluster distributions at different volume fractions during the waiting time.}
+\caption[Cluster size distributions for long waiting times]{Cluster distributions at different volume fractions during the waiting time.}
 \label{fig:pnt_long}
 \end{center}
 \end{figure}
 
 The diagrams in \autoref{fig:pnt_long} show a zoomed out version of the same data depicted already in \autoref{fig:pnt_short}. We see that the distribution that is reached at the end of the initial phase remains stable over prolonged periods of time. Only the nulceation events, which account for most of the probability at largest cluster sizes, indicate that this is not a stable process.
 
-\section{Autocovariance functions of largest cluster in metastable fluid}
+\section{Autocovariance functions of largest cluster in the metastable fluid}
 \label{sec:acf}
 The autocovariance function (ACF) of the largest cluster contains information about how long a single cluster persists as the largest cluster within the volume, as fluctuations of clusters at different points of the volume are expected to be independent of each other, only the size fluctuation of a distinct cluster should be correlated in time.\\
 
@@ -134,15 +134,15 @@ The ACF is calculated from the largest cluster measurement for each trajectory. 
 \subfloat[$\eta = 0.532$]{\includegraphics[width = 0.4 \textwidth]{acf_lc_532.png}} \\
 \subfloat[$\eta = 0.533$]{\includegraphics[width = 0.4 \textwidth]{acf_lc_533.png}} \hspace{0.5cm}
 \subfloat[$\eta = 0.534$]{\includegraphics[width = 0.4 \textwidth]{acf_lc_534.png}} \\
-\caption[Autocovariance functions of largest cluster in the metastable fluid]{Comparison of autocovariance functions in the metastable fluid. The top of eache diagram depicts all trajectories with colouring indicating the largest cluster size within the used time interval. The lightest colour thereby indicates a largest cluster of more than 500 hundred particles which is a nucleation event, but these are rare in the given selection and therefore the data represents the metastable fluid still well. The bottom of each diagram shows the average of the above one with decay times of $ 15 \delta t- 35 \delta t$. }
+\caption[Autocovariance functions of largest cluster in the metastable fluid]{Comparison of autocovariance functions in the metastable fluid. The top of eache diagram depicts all trajectories with coloring indicating the largest cluster size within the used time interval. The lightest color thereby indicates a largest cluster of more than 500 hundred particles which is a nucleation event, but these are rare in the given selection and therefore the data represents the metastable fluid still well. The bottom of each diagram shows the average of the above one with decay times of $ 15 \delta t- 35 \delta t$. }
 \label{fig:acf}
 \end{center}
 \end{figure}
 
-From the autocovariance functions we see that structural fluctuations persist for longer times at higher volume fractions. From the colouring as well as from the cluster distributions we can also conclude that the fluctuations tend to be larger at higher volume fractions and that for $\eta=53.4\%$ a signal from nucleation events might not be completly negligible anymore. Still this behaviour was also seen in the cluster size distributions (\autoref{sec:pnt}).\\
+From the autocovariance functions we see that structural fluctuations persist for longer times at higher volume fractions. From the coloring as well as from the cluster distributions we can also conclude that the fluctuations tend to be larger at higher volume fractions and that for $\eta=53.4\%$ a signal from nucleation events might not be completly negligible anymore. Still this behavior was also seen in the cluster size distributions (\autoref{sec:pnt}).\\
 Also the time scale on which the ACF decays corresponds closely to the initial ordering time observed for the cluster distribution directly after the quench. And further it also correpsonds to the lifetimes of large clusters found in the single example of the individual cluster tracking algorithm (\autoref{fig:lifetime}). This leads to the conclusion that these three observations all show the same time scale of local ordering processes in the metastable fluid. 
 
-\section{Cluster growth}
+\section{Cluster growth and constant attachement rate}
 \label{sec:cluster_growth}
 Once the clusters reach a certain size they are expected to grow with new particles being attached to the surface at a constant rate leading to a growth with a proportionality of $N \propto t^3$ as shown in \autoref{eqn:constant_growth} where k is the assumed constant attachment rate, N is the number of particles in a specific cluster, A is the surface of the cluster, R is the radius of the cluster and $\rho_{solid}$ is the bulk density which is for large clusters a good approximation of the cluster density.\\
 
@@ -182,7 +182,7 @@ As the systems are able to accommodate clusters up to a few hundred thousand par
 \label{fig:cluster_growth_example}
 \centering
 \includegraphics[width=0.7 \linewidth]{cluster_growth_example.pdf}
-\caption[Largest cluster trajectories from production data with constant attachment rates]{Trajectories of the third root of the number of particles within the largest cluster of a system over time. Clearly visible is the linear proportionality for which a linear regression is shown together with the data. The cut of some data sets at $t/\delta t \approx 300$ is due to the trespassing of the maximum wall time of the NEMO cluster. This means that the simulation of 20000 production steps yields a system time of $T/\delta t \approx 300$. Clusters present already in the first step would become too large in the next simulation interval, leading to a breach of the wall time limit due to the quadratic effort required for the q6q6 cluster finding routine. It can be assumed that clusters forming just around $t/\delta t \approx 300$ might not have been recognized due to this flaw. But as the number of trajectories concerned by this is rather small the impact is not easy to recognize when looking at the induction time distributions in \autoref{fig:induction_distributions}.}
+\caption[Largest cluster trajectories from production data with constant attachment rates]{Trajectories of the third root of the number of particles within the largest cluster of a system over time. Clearly visible is the linear proportionality for which a linear regression is shown together with the data. The cut of some data sets at $t/\delta t \approx 300$ is due to the trespassing of the maximum wall time of the NEMO computational cluster. This means that the simulation of 20000 production steps yields a system time of $T/\delta t \approx 300$. Clusters present already in the first step would become too large in the next simulation interval, leading to a breach of the wall time limit due to the quadratic effort required for the q6q6 cluster finding routine. It can be assumed that clusters forming just around $t/\delta t \approx 300$ might not have been recognized due to this flaw. But as the number of trajectories concerned by this is rather small the impact is not easy to recognize when looking at the induction time distributions in \autoref{fig:induction_distributions}.}
 \label{fig:cluster_growth_example}
 \end{figure}
 
@@ -192,16 +192,16 @@ Subsequently the slopes of the linear regressions have been collected in histogr
 \begin{center}
 \subfloat[Histograms of the slopes for the linear regressions to the largest clusters during the later stable growth process. The histograms are for $\eta=0.531,\;0.532,\;0.533,\;0.534$.]{\includegraphics[width = 0.45 \textwidth]{const_growth_rate_histogram_comparison.pdf}} \hspace{0.5cm}
 \subfloat[Mean of the histograms with the uncertainty on the mean given by $\sigma_{\langle c \rangle} = \sigma_c/\sqrt{n}$ with n being the number of measurements included in the average.]{\includegraphics[width = 0.45 \textwidth]{const_growth_rate_comparison.pdf}}  
-\caption[Results of constant attachment rate measurement from production data]{Comparison of growth rates in the constant attachment regime.}
+\caption[Constant attachment rate measurements from production data]{Comparison of growth rates in the constant attachment regime.}
 \label{fig:constant_growth_rates}
 \end{center}
 \end{figure}
 
-What we see from the histograms is that the distribution is rather spread out, but interestingly not significantly depending on the volume fraction. Except for $\eta = 0.531$ we find a smaller growth rate. A possible explanation for this behaviour could be that growth by heterogeneous crystallization on the growing cluster surface, leading to a mean higher growth rate for higher volume fractions, is less likely for the lower volume fractions. Either way due to the low statistics at the lowest volume fraction it is also possible that only a statistical fluctuation is seen. From the similarity of the growth rates we can deduce that the attachment of the particles to the cluster is a reaction controlled process. \todo{is there a reasoning for it being a reaction or diffusion controlled process?} \\
+What we see from the histograms is that the distribution is rather spread out, but interestingly not significantly depending on the volume fraction. Except for $\eta = 0.531$ we find a smaller growth rate. A possible explanation for this behavior could be that growth by heterogeneous crystallization on the growing cluster surface, leading to a mean higher growth rate for higher volume fractions, is less likely for the lower volume fractions. Either way due to the low statistics at the lowest volume fraction it is also possible that only a statistical fluctuation is seen. From the similarity of the growth rates we can deduce that the attachment of the particles to the cluster is a reaction controlled process. \todo{is there a reasoning for it being a reaction or diffusion controlled process?} \\
 
 As the diffusion constants vary from $D=0.0081|_{\eta = 0.532}$ to $D=0.0075|_{\eta = 0.534}$ they span a difference of about 7.5\%, but does that mean they are either reaction or diffusion controlled, or is their only nothing to see, as the uncertainty on the growth rate is also of the size 5 \% ?
 
-\section{Tensor of Gyration properties}
+\section{Tensor of gyration evaluation}
 \label{sec:tog}
 The tensor of gyration is a very useful tool as it describes the second moments of the position distributions. It comprises information about the spatial extent in all three dimensions with commonly  defined quantities being the radius of gyration, asphericity and anisotropy\cite{Theodorou1985}, which are further discussed in the following.\\
 
@@ -235,19 +235,19 @@ For better understanding of the shape descriptors mentioned before, we can have 
 \item[Relative shape anisotropy $\kappa^2$:] \hfill \\ A sum of the asphericity and the acylindricity normalized by the radius of gyration to obtain a dimensionless quantity between 0 and 1.
 \end{description}
 
-To spot possible correlations between a cluster's shape and it's growth, the three quantities \autoref{eqn:tog_quantities1} - \ref{eqn:tog_quantities4} derived from the tensor of gyration have been plotted against the cluster size and then coloured by three scalar quantities characterizing the growth process of each trajectory.\\ 
+To spot possible correlations between a cluster's shape and it's growth, the three quantities \autoref{eqn:tog_quantities1} - \ref{eqn:tog_quantities4} derived from the tensor of gyration have been plotted against the cluster size and then colored by three scalar quantities characterizing the growth process of each trajectory.\\ 
 The first of them is the induction time, as early nucleations might arise from less ordered clusters resulting in a higher asphericity. The second is the constant attachement rate during cluster growth, where similarly one may expect that clusters including more defects may grow slower and also be less spherical. The third quantity is an exponential initial growth rate which is used to characterize how swift the precursor grows into the later crystal, again with the intuition that clusters with a higher asphericitiy may tend to a slower initial growth as theys might be less ordered. For quantifying the initial growth rate, an exponential function has been fitted to the data up to a cluster size of 500 particles.\\
-The representation depending on the cluster size is used, to make the different trajectories comparable, as we expect similar behaviour for similar cluster sizes. Because the cluster size depending on time becomes almost monotonic for cluster size above a few hundred particles, it mostly is a transformation of the time axis, while the order is only little influenced. Nevertheless it should be kept in mind that this does not constitute a function anymore.\\
+The representation depending on the cluster size is used, to make the different trajectories comparable, as we expect similar behavior for similar cluster sizes. Because the cluster size depending on time becomes almost monotonic for cluster size above a few hundred particles, it mostly is a transformation of the time axis, while the order is only little influenced. Nevertheless it should be kept in mind that this does not constitute a function anymore.\\
 Finally the number of particles, as well as the shape descriptors can span many orders of magnitude making logarithmic scales useful.\\
 
-A large overview produced by this procedure is given in \autoref{fig:tog_overview} for the nucleated trajectories at $\eta=0.534$ with the three shape descriptors in the vertical direction and the three scalar colouring schemes in the horizontal direction.\\
+A large overview produced by this procedure is given in \autoref{fig:tog_overview} for the nucleated trajectories at $\eta=0.534$ with the three shape descriptors in the vertical direction and the three scalar coloring schemes in the horizontal direction.\\
 
 A similar approach trying to correlate the three scalar quantities derived for each trajectory have been done, but also did not show any significant pattern.  
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.8 \linewidth]{Series_534_corrolation.png}
-\caption[Results of Tensor of Gyration quantities from production data]{Overview of the cluster shape describing quantities: Radius of gyration ($R_G$), asphericity (b) and anisotropy ($\kappa^2$), depending on the size of the cluster. The colouring depicts the scalar quantities induction time, constant attachment rate and initial growth rate. Further a smoothed arithmetic mean and median are calculated and depicted.}
+\caption[Tensor of gyration measurements from production data]{Overview of the cluster shape describing quantities: Radius of gyration ($R_G$), asphericity (b) and anisotropy ($\kappa^2$), depending on the size of the cluster. The coloring depicts the scalar quantities induction time, constant attachment rate and initial growth rate. Further a smoothed arithmetic mean and median are calculated and depicted.}
 \label{fig:tog_overview}
 \end{figure}
 
@@ -272,7 +272,7 @@ In \autoref{fig:induction_distributions} three distributions with varying defini
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.6 \linewidth]{varying_induction_time.pdf}
-\caption[Comparison of different definitions for the induction time]{Induction time distribution obtained by different definitions. While the two methods using extrapolation seem to have the two effects of smearing the signal as well as shifting them, the method of defining the nucleation as the time when the largest cluster is last below the horizon of fluctuations seems to return the most accurate and precise distribution. The final simulation time is marked by the grey line. As clusters require some time to be clearly recognised as crystals no nucleation events are seen towards the end of the simulation interval. To counteract this we will truncate the distribution in the following analysis such that this does not introduce a bias on the final result.}
+\caption[Comparison of different definitions for the induction time]{Induction time distribution obtained by different definitions. While the two methods using extrapolation seem to have the two effects of smearing the signal as well as shifting them, the method of defining the nucleation as the time when the largest cluster is last below the horizon of fluctuations seems to return the most accurate and precise distribution. The final simulation time is marked by the grey line. As clusters require some time to be clearly recognized as crystals no nucleation events are seen towards the end of the simulation interval. To counteract this we will truncate the distribution in the following analysis such that this does not introduce a bias on the final result.}
 \label{fig:induction_distributions}
 \end{figure}
 
@@ -288,7 +288,7 @@ The three methods explicitly used here are given by the following:
 As can be seen the horizon crossing method returns a rather smooth distribution that also roughly can be approximated by an exponential decay that is expected for a constant nucleation rate as is shown in \autoref{sec:induction_time_expectation}.\\
 
 
-\section{Induction time by exponential distribution}
+\section{Induction time by exponential distribution assumption}
 \label{sec:induction_times}
 \todo{define nucleation times as well as induction times? It seems like people use them as equivalents.}
 Nucleation rates for the meatstable hard sphere fluid have been measured on the experimental as well as on the theoretical side but with a large discrepancy as discussed in \autoref{sec:comparison}. The employed procedures and definitions also vary but not to a point to explain the discrepancy so far. The differences mostly originate from the kind of accessible information and system. While the experimentalists often have access to very large systems but without knowing all positions at all times, theorists mostly have smaller systems in numerical simulations but with the advantage of being able to access all particle positions, and in case of simulations probing the dynamics also all velocities.\\
@@ -321,7 +321,7 @@ In this case the total nucleation rate $ \dot{n} $ can be written by \autoref{eq
 The final result in \autoref{eqn:nuc_rate_result} is the well known stochastic exponential distribution. As the expectation value of the exponential distribution is given by its parameter $\tau$ the common approach of using the mean induction time when all simulations have nucleated yields an accurate result and precision can be obtained by taking a large number of simulations.\\
 
 
-\subsection{Maximum likelihood estimator of induction time}
+\subsection{Maximum likelihood estimator of the induction time}
 \label{sec:ml_estimator}
 In case the simulation time is not accessible we instead will have to deal with truncated exponential distributions. For this we can use Maximum likelihood estimators. The derivation follows Deemer and Votaw 1955 \cite{Deemer1955}.\\
 
@@ -487,7 +487,7 @@ Finally we are able to evaluate the induction time distribution to find the rate
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.7 \linewidth]{nucleation_rate_comparison.pdf}
-\caption[Nucleation rate comparison with literature values]{Some examples of nucleation times in the hard sphere system for varying volume fractions from the literature have been collected, to compare with the own measured data points. All data points have for this purpose been scaled by the self diffusion constant to make comparisons between different experiments possible, as the diffusion sets the timescale at which the system evolves.}
+\caption[Nucleation rate comparison with literature values]{Some examples of nucleation times in the hard sphere system for varying volume fractions from the literature have been collected, to compare with the own measured data points. All data points have for this purpose been scaled by the self-diffusion constant to make comparisons between different experiments possible, as the diffusion sets the timescale at which the system evolves.}
 \label{fig:nucleation_comparison}
 \end{figure}
 
@@ -498,7 +498,7 @@ All Nucleation rates that can be found.-> may hap ask Hajo.\\
 -nucleation rates with small particles\\
 
 
-\section{Memory Kernels}
+\section{Memory kernels of nucleating ensemble}
 \label{sec:memory_kernels}
 
 Following the approach of Hugues Meyer to calculate memory kernels for an ensemble of trajectories\cite{Meyer2019a}, memory kernels for trajectories of about one million particles at volume fractions between $\eta = 53.1\% - 53.4\%$ as well as for a system containing 16384 particles and a volume fraction of $\eta = 54.0\% $ have been calculated. While the first ensemble was not simulated up to the point where almost all boxes where nucleated, and the transition width can be assumed to be large as it takes long simulations for clusters to fill up the large box, the second is chosen to fulfill both objections with parameter given in \autoref{tab:system_16k_mem}.\\
@@ -547,7 +547,7 @@ As the properly normalized result for both methods are in good agreement, we can
 \subfloat[Slice through memory kernel at the given reference time. With the data the excluded Markovian part of the kernel is depicted. Further the full width at half maximum (FWHM) is shown as a first measure of the kernel width as well as a Gaussian fit. The FWHM is normalized to the value of a corresponding Gaussian curve.]{\includegraphics[width=0.37 \linewidth]{example_memory_kernel.pdf}} \hspace{0.5cm}
 \subfloat[Top: Width of the memory kernel slices by FWHM and Gaussian fit. The FWHM is normalized to the value of a corresponding Gaussian curve.
 Bottom: Amplitude of the memory kernel slice by on the one hand using the mean value of the data around the maximum and on the other by using the amplitude derived from the best Gaussian fit. The amplitude derived from the maximum value is normalized to the value of a corresponding Gaussian curve.]{\includegraphics[width=0.59 \linewidth]{memory_kernel_shape.pdf}}
-\caption[Width and amplitude of memory kernel with one example slice]{Example memory kernel together with width and amplitude depending on time.}
+\caption[Width and amplitude of memory kernel with example slice]{Example memory kernel together with width and amplitude depending on time.}
 \label{fig:memory_kernel}
 \end{center}
 \end{figure}

@@ -3,7 +3,13 @@
 \usepackage[utf8]{inputenc}
 
 %Formatierung Ränder (Optional)
-\usepackage[left=2cm,right=2cm,top=2.3cm,bottom=2.3cm,includeheadfoot]{geometry}
+\usepackage[a4paper, left=2.4cm,right=2.4cm,top=2.4cm,bottom=2.4cm,includeheadfoot, bindingoffset=6mm]{geometry}
+%\usepackage[twoside, a4paper, bindingoffset=5mm, marginratio={4:6,5:7}, includeheadfoot]{geometry}
+%\usepackage{geometry}
+%\geometry{verbose,a4paper,tmargin=20mm,bmargin=20mm,lmargin=26mm,rmargin=20mm}
+%bmargin etx equivalent to bottom
+%inner outer equivalent to left / right
+
 %\usepackage{showframe}
 
 %Spracheinstellung
@@ -71,8 +77,6 @@
 \numberwithin{table}{section}
 
 %Sonstiges
-\usepackage{geometry}
-\geometry{verbose,a4paper,tmargin=25mm,bmargin=25mm,lmargin=20mm,rmargin=20mm}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{latexsym}
@@ -130,12 +134,12 @@
 %\ihead{\headmark}
 \automark[chapter]{section}
 
-\rehead{\leftmark}
-%\lehead{Wilkin Wöhler}
-\lohead{\rightmark}
 \rohead{\leftmark}
+%\lehead{Wilkin Wöhler}
+\lehead{\rightmark}
+\rehead{\leftmark}
 
-\ifoot{\pagemark} %Outerfooter (i-nner, c-enter + all three for head available)
+\ofoot{\pagemark} %Outerfooter (i-nner, c-enter + all three for head available)
 
 %\ohead{\headmark}
 %\automark[section]{section} %\automark[]{} gives as first argument left and second argument right side if two sided document

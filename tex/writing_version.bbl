@@ -19,6 +19,65 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Meyer2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3b895879f8a27f1cba1c8bf5d4405db4}{%
+           family={Glatzel},
+           familyi={G\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6d52973ee298aa91dd581fabfb8926ec}{%
+           family={W{ö}hler},
+           familyi={W\bibinitperiod},
+           given={Wilkin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c9b8849840de6924a84a1789bdf97f9d}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Tanja},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{fullhash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{bibnamehash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{authorbibnamehash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{authornamehash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{authorfullhash}{9b92e3883e01dd5ce459e05104819b1d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose to describe the dynamics of phase transitions in terms of a nonstationary generalized Langevin equation for the order parameter. By construction, this equation is nonlocal in time, i.e., it involves memory effects whose intensity is governed by a memory kernel. In general, it is a hard task to determine the physical origin and the extent of the memory effects based on the underlying microscopic equations of motion. Therefore we propose to relate the extent of the memory kernel to quantities that are experimentally observed such as the induction time and the duration of the phase transformation process. Using a simple kinematic model, we show that the extent of the memory kernel is positively correlated with the duration of the transition, and that it is of the same order of magnitude, while the distribution of induction times does not have an effect on the memory kernel. This observation is tested at the example of several model systems, for which we have run computer simulations: a modified Potts model, a dipole gas, an anharmonic spring in a bath, and a nucleation problem. All these cases are shown to be consistent with the simple theoretical model.}
+      \field{issn}{24700053}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{2}
+      \field{title}{{Evaluation of memory effects at phase transitions and during relaxation processes}}
+      \field{volume}{103}
+      \field{year}{2021}
+      \field{pages}{22102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.103.022102
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/PhysRevE.103.022102.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1103/PhysRevE.103.022102
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevE.103.022102
+      \endverb
+      \keyw{doi:10.1103/PhysRevE.103.022102 url:https://doi.or}
+    \endentry
     \entry{Alders59}{article}{}
       \name{author}{2}{}{%
         {{hash=64ac69a2c10e6819d1cbb0cb7da8d913}{%
@@ -38,8 +97,8 @@
       \strng{authorbibnamehash}{11198cf7429793ddd59253760adff2d6}
       \strng{authornamehash}{11198cf7429793ddd59253760adff2d6}
       \strng{authorfullhash}{11198cf7429793ddd59253760adff2d6}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Chemical Physics}
@@ -70,8 +129,8 @@
       \strng{authorbibnamehash}{b143c3e26e8ccb1ac3669243780ab269}
       \strng{authornamehash}{b143c3e26e8ccb1ac3669243780ab269}
       \strng{authorfullhash}{b143c3e26e8ccb1ac3669243780ab269}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The dynamics of many-body complex processes is a challenge that many scientists from various fields have to face. Reducing the complexity of systems involving a large number of bodies in order to reach a simple description for observables captur- ing the main features of the process is a difficult task for which different approaches have been proposed over the past decades. In this thesis we introduce new tools to describe the coarse-grained dynamics of arbitrary observables in non-equilibrium processes. Following the projection operator formalisms introduced first by Mori and Zwanzig, and later on by Grabert, we first derive a non-stationary Generalized Langevin Equation that we prove to be valid in a wide spectrum of cases. This includes in particular driven processes as well as explicitly time-dependent observ- ables. The equation exhibits a priori memory effects, controlled by a so-called non- stationary memory kernel. Because the formalism does not provide extensive infor- mation about the memory kernel in general, we introduce a set of numerical meth- ods aimed at evaluating it from Molecular Dynamics simulation data. These proce- dures range from simple dimensionless estimations of the strength of the memory to the determination of the entire kernel. Again, the methods introduced are very general and require as input a small number of quantities directly computable from numerical of experimental timeseries. We finally conclude this thesis by using the projection operator formalisms to derive an equation of motion for work and heat in dissipative processes. This is done in two different ways, either by using well-known integral fluctuation theorems, or by explicitly splitting the dynamics into adiabatic and dissipative parts.}
@@ -80,53 +139,6 @@
       \field{year}{2020}
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/nucleation/thesis/thesisHugues{\_}latest.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Meyer_nsGLE}{article}{}
-      \name{author}{3}{}{%
-        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={Hugues},
-           giveni={H\bibinitperiod}}}%
-        {{hash=ac995c4572c7796a83d9d4f444aeb4eb}{%
-           family={Voigtmann},
-           familyi={V\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=c9b8849840de6924a84a1789bdf97f9d}{%
-           family={Schilling},
-           familyi={S\bibinitperiod},
-           given={Tanja},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{1fbb126f0619efeb813466e4d7e2672e}
-      \strng{fullhash}{1fbb126f0619efeb813466e4d7e2672e}
-      \strng{bibnamehash}{1fbb126f0619efeb813466e4d7e2672e}
-      \strng{authorbibnamehash}{1fbb126f0619efeb813466e4d7e2672e}
-      \strng{authornamehash}{1fbb126f0619efeb813466e4d7e2672e}
-      \strng{authorfullhash}{1fbb126f0619efeb813466e4d7e2672e}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0021-9606}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{month}{12}
-      \field{number}{21}
-      \field{title}{{On the non-stationary generalized Langevin equation}}
-      \field{volume}{147}
-      \field{year}{2017}
-      \field{pages}{214110}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1063/1.5006980
-      \endverb
-      \verb{urlraw}
-      \verb http://aip.scitation.org/doi/10.1063/1.5006980
-      \endverb
-      \verb{url}
-      \verb http://aip.scitation.org/doi/10.1063/1.5006980
       \endverb
     \endentry
     \entry{Kuhnbold2019}{article}{}
@@ -190,6 +202,53 @@
       \endverb
       \keyw{doi:10.1103/PhysRevE.100.052140 url:https://doi.or}
     \endentry
+    \entry{Meyer_nsGLE}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ac995c4572c7796a83d9d4f444aeb4eb}{%
+           family={Voigtmann},
+           familyi={V\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c9b8849840de6924a84a1789bdf97f9d}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Tanja},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{fullhash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{bibnamehash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{authorbibnamehash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{authornamehash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{authorfullhash}{1fbb126f0619efeb813466e4d7e2672e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{12}
+      \field{number}{21}
+      \field{title}{{On the non-stationary generalized Langevin equation}}
+      \field{volume}{147}
+      \field{year}{2017}
+      \field{pages}{214110}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.5006980
+      \endverb
+      \verb{urlraw}
+      \verb http://aip.scitation.org/doi/10.1063/1.5006980
+      \endverb
+      \verb{url}
+      \verb http://aip.scitation.org/doi/10.1063/1.5006980
+      \endverb
+    \endentry
     \entry{Mulero2001}{article}{}
       \name{author}{3}{}{%
         {{hash=e705a2a06efa772398ab2885eee58c53}{%
@@ -214,8 +273,8 @@
       \strng{authorbibnamehash}{a1b545d8a3c6a6bf1a645e267ab49d56}
       \strng{authornamehash}{a1b545d8a3c6a6bf1a645e267ab49d56}
       \strng{authorfullhash}{a1b545d8a3c6a6bf1a645e267ab49d56}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Twenty two different analytical expressions for the compressibility factor of the hard sphere system have been collected and reviewed in order to perform two applications: Firstly, the accuracy of these expressions in reproducing six available computer simulation data sets for the hard sphere system, some of which are very recent, is tested. It is shown that there is not a direct relation between the simplicity or complexity of their analytical form and their accuracy. Secondly, the expressions, together with the Verlet-Weis formula for the temperature dependence of the molecular diameter, have been used to reproduce our molecular dynamics results for the pressure of the Lennard-Jones reference system proposed in the Weeks-Chandler-Andersen theory. We conclude that the approximation of using hard sphere equations of state together with the Verlet-Weis formula is very accurate at temperatures and densities near the Lennard-Jones critical point. At densities close to the triple point or to the liquid curve in the liquid-vapour equilibrium, the coincidence is adequate (deviations around 3{\%}) only if the appropriate hard sphere equation of state is used.}
@@ -253,8 +312,8 @@
       \strng{authorbibnamehash}{9c6b3d47461a54dd568154fc25b8e668}
       \strng{authornamehash}{9c6b3d47461a54dd568154fc25b8e668}
       \strng{authorfullhash}{9c6b3d47461a54dd568154fc25b8e668}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A new equation of state for rigid spheres has been developed from an analysis of the reduced virial series. Comparisons with existing equations show that the new formula possesses superior ability to describe rigidsphere behavior.}
@@ -287,8 +346,8 @@
       \strng{authorbibnamehash}{3e551a1afcec594c2b9191d16d8b91a3}
       \strng{authornamehash}{3e551a1afcec594c2b9191d16d8b91a3}
       \strng{authorfullhash}{3e551a1afcec594c2b9191d16d8b91a3}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We propose an efficient algorithm to sample the volume in Monte Carlo simulations in the isobaric-isothermal ensemble. The method is designed to be applied in the simulation of hard-core models at high density. The algorithm is based in the generation of clusters of particles. At the volume change step, the distances between pairs of particles belonging to the same cluster do not change. This is done by rescaling the positions of the center of mass of each cluster instead of the position of each individual particle. We have tested the performance of the algorithm by simulating fluid and solid phases of hard spheres, finding that in both cases the algorithm is much more efficient than the standard procedure. Moreover, the efficiency of the method measured in terms of correlation "time" does not depend on the system size in contrast with the standard method, in which the sampling becomes rapidly inefficient as the system size increases. We have used the procedure to compute with high precision the equation of state of the face-centered-cubic phase of the hard sphere system for different system sizes. Using these results we have estimated the equation of state at the thermodynamic limit. The results are compared to different equations of state proposed in literature. {©} 2009 American Institute of Physics.}
@@ -324,8 +383,8 @@
       \strng{authorbibnamehash}{d2dd34bcc02c979003a19b759621ac5c}
       \strng{authornamehash}{d2dd34bcc02c979003a19b759621ac5c}
       \strng{authorfullhash}{d2dd34bcc02c979003a19b759621ac5c}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annalen der Physik}
@@ -348,6 +407,104 @@
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19354160806
       \endverb
     \endentry
+    \entry{Schilling2011}{article}{}
+      \name{author}{4}{}{%
+        {{hash=33da99b24fc7a1c26734425baf98c7ce}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bc7c4206a294ef7f2fccb1f7cb6a34af}{%
+           family={Dorosz},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2d60ee17c80eb2c4f2bd193652ec5681}{%
+           family={Sch{ö}pe},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d36ae83caeb19522ba1fa39399e17226}{%
+           family={Opletal},
+           familyi={O\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{fullhash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{bibnamehash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{authorbibnamehash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{authornamehash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{authorfullhash}{9aa2c51d5911e658fc7f4232175ed766}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The crystallization of a metastable melt is one of the most important non-equilibrium phenomena in condensed matter physics, and hard sphere colloidal model systems have been used for several decades to investigate this process by experimental observation and computer simulation. Nevertheless, there is still an unexplained discrepancy between the simulation data and experimental nucleation rate densities. In this paper we examine the nucleation process in hard spheres using molecular dynamics and Monte Carlo simulation. We show that the crystallization process is mediated by precursors of low orientational bond-order and that our simulation data fairly match the experimental data sets. {©} 2011 IOP Publishing Ltd.}
+      \field{issn}{09538984}
+      \field{journaltitle}{Journal of Physics Condensed Matter}
+      \field{number}{19}
+      \field{title}{{Crystallization in suspensions of hard spheres: A Monte Carlo and molecular dynamics simulation study}}
+      \field{volume}{23}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1088/0953-8984/23/19/194120
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/SchillingDoroszJPCM2011.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Filion2010a}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e3974acf1781fba3aad254ee786510ba}{%
+           family={Filion},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=66d699035a88e572975003148ec45b9d}{%
+           family={Hermes},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1a9f0531fa18f809d541b35fc379236f}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=48424193abb172f9b0d685b801ef05f9}{%
+           family={Dijkstra},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{fullhash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{bibnamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{authorbibnamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{authornamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{authorfullhash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Over the last number of years several simulation methods have been introduced to study rare events such as nucleation. In this paper we examine the crystal nucleation rate of hard spheres using three such numerical techniques: molecular dynamics, forward flux sampling, and a Bennett-Chandler-type theory where the nucleation barrier is determined using umbrella sampling simulations. The resulting nucleation rates are compared with the experimental rates of Harland and van Megen [Phys. Rev. E 55, 3054 (1997)], Sinn [Prog. Colloid Polym. Sci. 118, 266 (2001)], Schtzel and Ackerson [Phys. Rev. E 48, 3766 (1993)], and the predicted rates for monodisperse and 5{\%} polydisperse hard spheres of Auer and Frenkel [Nature 409, 1020 (2001)]. When the rates are examined in units of the long-time diffusion coefficient, we find agreement between all the theoretically predicted nucleation rates, however, the experimental results display a markedly different behavior for low supersaturation. Additionally, we examined the precritical nuclei arising in the molecular dynamics, forward flux sampling, and umbrella sampling simulations. The structure of the nuclei appears independent of the simulation method, and in all cases, the nuclei contains on average significantly more face-centered-cubic ordered particles than hexagonal-close-packed ordered particles. {©} 2010 American Institute of Physics.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{00219606}
+      \field{journaltitle}{Journal of Chemical Physics}
+      \field{number}{24}
+      \field{title}{{Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling, and forward flux sampling: A comparison of simulation techniques}}
+      \field{volume}{133}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1063/1.3506838
+      \endverb
+      \verb{eprint}
+      \verb 1006.2925
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling andforward flux sampling$\backslash$: A comparison of simulation techniques.pdf:pdf
+      \endverb
+    \endentry
     \entry{Bultmann2020}{article}{}
       \name{author}{2}{}{%
         {{hash=ba91b41a5b8ab0b2667260418b46bc0b}{%
@@ -367,8 +524,8 @@
       \strng{authorbibnamehash}{886431ab38d558f9f79ced32626dfa09}
       \strng{authornamehash}{886431ab38d558f9f79ced32626dfa09}
       \strng{authorfullhash}{886431ab38d558f9f79ced32626dfa09}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We used a thermodynamic integration scheme, which is specifically designed for disordered systems, to compute the interfacial free energy of the solid-liquid interface in the hard-sphere model. We separated the bulk contribution to the total free energy from the interface contribution, performed a finite-size scaling analysis, and obtained for the (100)-interface $\gamma$=0.591(11)kBT$\sigma$-2.}
@@ -566,8 +723,8 @@
       \strng{authorbibnamehash}{240b358a9522023bbc3da3675aceb4b6}
       \strng{authornamehash}{240b358a9522023bbc3da3675aceb4b6}
       \strng{authorfullhash}{240b358a9522023bbc3da3675aceb4b6}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Molecular dynamics algorithms for systems of particles interacting through discrete or "hard" potentials are fundamentally different to the methods for continuous or "soft" potential systems. Although many software packages have been developed for continuous potential systems, software for discrete potential systems based on event-driven algorithms are relatively scarce and specialized. We present DynamO, a general event-driven simulation package, which displays the optimal O(N) asymptotic scaling of the computational cost with the number of particles N, rather than the O(N log N) scaling found in most standard algorithms. DynamO provides reference implementations of the best available event-driven algorithms. These techniques allow the rapid simulation of both complex and large ({>}10 6 particles) systems for long times. The performance of the program is benchmarked for elastic hard sphere systems, homogeneous cooling and sheared inelastic hard spheres, and equilibrium Lennard-Jones fluids. This software and its documentation are distributed under the GNU General Public license and can be freely downloaded from. Copyright {©} 2011 Wiley Periodicals, Inc.}
@@ -593,30 +750,30 @@
     \endentry
     \entry{DONEV2005}{article}{}
       \name{author}{3}{}{%
-        {{hash=cf421e094b0b2fea74eade83cd49ce66}{%
-           family={DONEV},
+        {{hash=ffe615ac77a42c6b69db87a971de232e}{%
+           family={Donev},
            familyi={D\bibinitperiod},
-           given={A},
+           given={Aleksandar},
            giveni={A\bibinitperiod}}}%
-        {{hash=aeeffc64d6bc7172f6cc085a7bf28b8f}{%
-           family={TORQUATO},
+        {{hash=c3a792c01d1ad328590c8549b2dae94c}{%
+           family={Torquato},
            familyi={T\bibinitperiod},
-           given={S},
+           given={Salvatore},
            giveni={S\bibinitperiod}}}%
-        {{hash=43e4f9d6ff3fbe26ac20d6516b0e0374}{%
-           family={STILLINGER},
+        {{hash=e6043a06f8f35459090ccb7b7efc28a6}{%
+           family={Stillinger},
            familyi={S\bibinitperiod},
-           given={F},
-           giveni={F\bibinitperiod}}}%
+           given={Frank\bibnamedelima H.},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
       }
-      \strng{namehash}{13931f28c7fb74f97c106b1311077d20}
-      \strng{fullhash}{13931f28c7fb74f97c106b1311077d20}
-      \strng{bibnamehash}{13931f28c7fb74f97c106b1311077d20}
-      \strng{authorbibnamehash}{13931f28c7fb74f97c106b1311077d20}
-      \strng{authornamehash}{13931f28c7fb74f97c106b1311077d20}
-      \strng{authorfullhash}{13931f28c7fb74f97c106b1311077d20}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \strng{namehash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{fullhash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{bibnamehash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{authorbibnamehash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{authornamehash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{authorfullhash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In the first part of a series of two papers, we present in considerable detail a collision-driven molecular dynamics algorithm for a system of nonspherical particles, within a parallelepiped simulation domain, under both periodic or hard-wall boundary conditions. The algorithm extends previous event-driven molecular dynamics algorithms for spheres. We present a novel partial-update near-neighbor list (NNL) algorithm that is superior to previous algorithms at high densities, without compromising the correctness of the algorithm. This efficiency of the algorithm is further increased for systems of very aspherical particles by using bounding sphere complexes (BSC). In the second part of this series of papers we apply the algorithm presented in the first part of this series of papers to systems of hard ellipses and ellipsoids. The theoretical machinery needed to treat such particles, including the overlap potentials, is developed in full detail. We describe an algorithm for predicting the time of collision for two moving ellipses or ellipsoids. We present performance results for our implementation of the algorithm. The practical utility of the algorithm is demonstrated by presenting several interesting physical applications, including the generation of jammed packings inside spherical containers, the study of contact force chains in jammed packings, and melting the densest-known equilibrium crystals of prolate spheroids.}
@@ -669,8 +826,8 @@
       \strng{authorbibnamehash}{e5d07498f677c4aa630f1b75c12cc121}
       \strng{authornamehash}{e5d07498f677c4aa630f1b75c12cc121}
       \strng{authorfullhash}{0f94603a39732f3b03ab6d492045de3c}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Revised thermodynamic and dynamical properties of the hard sphere (HS) system are obtained from extensive molecular dynamics calculations carried out with large system sizes (number of particles, N) and long times. Accurate formulas for the compressibility factor of the HS solid and fluid branches are proposed, which represent the metastable region and take into account its divergence at close packing. Some basic second-order thermodynamic properties are obtained and a maximum in some of their derivatives in the metastable fluid region is found. The thermodynamic parameters associated with the melting-freezing transition have been determined to four digit accuracy, which generates accurate new values for the coexistence properties of the HS system. For the self-diffusion coefficient, D, it is shown that relatively large systems (N {>} 104) are required to achieve an accurate linear extrapolation of D to the infinite size limit with a D vs. N-1/3 plot. Moreover, it is found that there is a density dependence of the value of the slope in the linear regime. The density dependent correction becomes practically insignificant at higher densities and the hydrodynamic formula found in the literature is still accurate. However, with decreasing density the density dependence of the size correction cannot be neglected, which indicates that other sources of N-dependence, apart from those derived on purely hydrodynamic grounds, may also be important (and as yet unaccounted for). A detailed analytic representation of the density dependence of the HS self-diffusion coefficient and the HS viscosity, $\eta$, is given. It is shown that the HS viscosity near freezing and in the metastable region can be described well by the Krieger-Dougherty equation. Both D and $\eta$ start to scale at high densities and in the metastable region in such a way that D$\eta$p = const, where p ≃ 0.97, and D → 0 and $\eta$ → ∞ at a packing fraction of 0.58, which coincides with some previous predictions of the HS glass transition density.}
@@ -718,8 +875,8 @@
       \strng{authorbibnamehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
       \strng{authornamehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
       \strng{authorfullhash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Molecular dynamics simulations have been used to calculate the self-diffusion coefficient, D, of the hard sphere fluid over a wide density range and for different numbers of particles, N, between 32 and 10 976. These data are fitted to the relationship D = D∞ - AN -$\alpha$ where the parameters D∞, A, and $\alpha$ are all density-dependent (the temperature dependence of D can be trivially scaled out in all cases). The value $\alpha$ = 1/3 has been predicted on the basis of hydrodynamic arguments. In the studied system size range, the best value of $\alpha$ is ∼1/3 at intermediate packing fractions of ∼0.35, but increases in the low- and high-density extremes. At high density, the scaling follows more closely that of the thermodynamic properties, that is, with an exponent of order unity. At low packing fractions (less than ∼0.1), the exponent increases again, appearing to approach a limiting value of unity in the zero-density limit. The origin of this strong N dependence at low density probably lies in the divergence in the mean path between collisions, as compared with the dimensions of the simulation cell. A new simple analytical fit formula based on fitting to previous simulation data is proposed for the density dependence of the shear viscosity. The Stokes-Einstein relationship and the dependence of D on the excess entropy were also explored. The product D$\eta$sp with p = 0.975 was found to be approximately constant, with a value of 0.15 in the packing fraction range between 0.2 and 0.5. {©} 2007 American Chemical Society.}
@@ -817,8 +974,8 @@
       \strng{authorbibnamehash}{44ba097f9467878bfb6d4810bb3025d4}
       \strng{authornamehash}{44ba097f9467878bfb6d4810bb3025d4}
       \strng{authorfullhash}{44ba097f9467878bfb6d4810bb3025d4}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Large numbers of conformations of unperturbed polypropylene chains are generated in Monte Carlo experiments, based on a rotational isomeric state scheme, and the average instantaneous shape in the system of principal axes of gyration is evaluated. Several new shape measures are introduced to characterize the shape anisotropy, asphericity, and acylindricity. Significant differences are found between short and medium-length chains of different tacticity, while for long chains all shape measures converge to a common limit. The detailed three-dimensional segment density distributions are examined, and they are found to be bimodal along the longest principal axis of gyration. The loci of highest segment density are always two clearly separated domains, not containing the center of gyration, and they lie on the major principal axis separated by ca. 1.3〈S2〉01/2-2.0〈S2〉01/2. The core of the segment distribution of an unperturbed chain is therefore dumbbell-like in shape. {©} 1985, American Chemical Society. All rights reserved.}
@@ -835,57 +992,6 @@
       \endverb
       \verb{file}
       \verb :home/wave/Downloads/ma00148a028.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Filion2010a}{article}{}
-      \name{author}{4}{}{%
-        {{hash=e3974acf1781fba3aad254ee786510ba}{%
-           family={Filion},
-           familyi={F\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=66d699035a88e572975003148ec45b9d}{%
-           family={Hermes},
-           familyi={H\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=1a9f0531fa18f809d541b35fc379236f}{%
-           family={Ni},
-           familyi={N\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=48424193abb172f9b0d685b801ef05f9}{%
-           family={Dijkstra},
-           familyi={D\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{fullhash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{bibnamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{authorbibnamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{authornamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{authorfullhash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Over the last number of years several simulation methods have been introduced to study rare events such as nucleation. In this paper we examine the crystal nucleation rate of hard spheres using three such numerical techniques: molecular dynamics, forward flux sampling, and a Bennett-Chandler-type theory where the nucleation barrier is determined using umbrella sampling simulations. The resulting nucleation rates are compared with the experimental rates of Harland and van Megen [Phys. Rev. E 55, 3054 (1997)], Sinn [Prog. Colloid Polym. Sci. 118, 266 (2001)], Schtzel and Ackerson [Phys. Rev. E 48, 3766 (1993)], and the predicted rates for monodisperse and 5{\%} polydisperse hard spheres of Auer and Frenkel [Nature 409, 1020 (2001)]. When the rates are examined in units of the long-time diffusion coefficient, we find agreement between all the theoretically predicted nucleation rates, however, the experimental results display a markedly different behavior for low supersaturation. Additionally, we examined the precritical nuclei arising in the molecular dynamics, forward flux sampling, and umbrella sampling simulations. The structure of the nuclei appears independent of the simulation method, and in all cases, the nuclei contains on average significantly more face-centered-cubic ordered particles than hexagonal-close-packed ordered particles. {©} 2010 American Institute of Physics.}
-      \field{eprinttype}{arXiv}
-      \field{issn}{00219606}
-      \field{journaltitle}{Journal of Chemical Physics}
-      \field{number}{24}
-      \field{title}{{Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling, and forward flux sampling: A comparison of simulation techniques}}
-      \field{volume}{133}
-      \field{year}{2010}
-      \verb{doi}
-      \verb 10.1063/1.3506838
-      \endverb
-      \verb{eprint}
-      \verb 1006.2925
-      \endverb
-      \verb{file}
-      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling andforward flux sampling$\backslash$: A comparison of simulation techniques.pdf:pdf
       \endverb
     \endentry
     \entry{Deemer1955}{article}{}
@@ -907,8 +1013,8 @@
       \strng{authorbibnamehash}{297574cb38514098c92a43232a8fa986}
       \strng{authornamehash}{297574cb38514098c92a43232a8fa986}
       \strng{authorfullhash}{297574cb38514098c92a43232a8fa986}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A general weak convergence theory is developed for time-sequential censored rank statistics in the two-sample problem of comparing time to failure between two treatment groups, such as in the case of a clinical trial in which patients enter serially and, after being randomly allocated to one of two treatments, are followed until they fail or withdraw from the study or until the study is terminated. Applications of the theory to time-sequential tests based on these censored rank statistics are also discussed.}
@@ -946,8 +1052,8 @@
       \strng{authorbibnamehash}{9b682d89a243948d94c56db625716244}
       \strng{authornamehash}{9b682d89a243948d94c56db625716244}
       \strng{authorfullhash}{9b682d89a243948d94c56db625716244}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Consider a life testing experiment in which n units are put on test, successive failure times are recorded, and the observation is terminated either at a specified number r of failures or a specified time T whichever is reached first. This mixture of type I and type II censoring schemes, called hybrid censoring, is of wide use. Under this censoring scheme and the assumption of an exponential life distribution, the distribution of the maximum likelihood estimator of the mean life $\theta$ is derived. It is then used to construct an exact lower confidence bound for $\theta$. {©} 1988, Taylor {\&} Francis Group, LLC. All rights reserved.}
@@ -999,8 +1105,8 @@
       \strng{authorbibnamehash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
       \strng{authornamehash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
       \strng{authorfullhash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This is the greatly revised and greatly expanded Second Edition of the hugely popular Numerical Recipes: The Art of Scientific Computing. The product of a unique collaboration among four leading scientists in academic research and industry Numerical Recipes is a complete text and reference book on scientific computing. In a self-contained manner it proceeds from mathematical and theoretical considerations to actual practical computer routines. With over 100 new routines bringing the total to well over 300, plus upgraded versions of the original routines, this new edition remains the most practical,comprehensive handbook of scientific computing available today. Highlights of the new material include: - A new chapter on integral equations and inverse methods - Multigrid and other methods for solving partial differential equations - Improved random number routines - Wavelet transforms - The statistical bootstrap method - A new chapter on 'less-numerical' algorithms including compression coding and arbitrary precision arithmetic. The book retains the informal easy-to-read style that made the first edition so popular, while introducing some more advanced topics. It is an ideal text book for scientists and engineers and an indispensable reference for anyone who works in scientific computing. The Second Edition is available in FORTRAN, the traditional language for numerical calculations, and in the increasingly popular C language.}
@@ -1033,8 +1139,8 @@
       \strng{authorbibnamehash}{bb120eac4d0e21f9c481776a9964be0b}
       \strng{authornamehash}{bb120eac4d0e21f9c481776a9964be0b}
       \strng{authorfullhash}{bb120eac4d0e21f9c481776a9964be0b}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present a numerical method to compute non-equilibrium memory kernels based on experimental data or molecular dynamics simulations. The procedure uses a recasting of the non-stationary generalized Langevin equation, in which we expand the memory kernel in a series that can be reconstructed iteratively. Each term in the series can be computed based solely on knowledge of the two-Time auto-correlation function of the observable of interest. We discuss how to optimize this method in order to be the most numerically convenient. As a proof of principle, we test the method on the problem of crystallization from a super-cooled Lennard-Jones melt. We analyze the nucleation and growth dynamics of crystallites and observe that the memory kernel has a time extent that is about one order of magnitude larger than the typical timescale needed for a particle to be attached to the crystallite in the growth regime.}
@@ -1050,65 +1156,6 @@
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/Meyer{\_}2019{\_}EPL{\_}128{\_}40001.pdf:pdf
       \endverb
-    \endentry
-    \entry{Meyer2021}{article}{}
-      \name{author}{4}{}{%
-        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={Hugues},
-           giveni={H\bibinitperiod}}}%
-        {{hash=3b895879f8a27f1cba1c8bf5d4405db4}{%
-           family={Glatzel},
-           familyi={G\bibinitperiod},
-           given={Fabian},
-           giveni={F\bibinitperiod}}}%
-        {{hash=6d52973ee298aa91dd581fabfb8926ec}{%
-           family={W{ö}hler},
-           familyi={W\bibinitperiod},
-           given={Wilkin},
-           giveni={W\bibinitperiod}}}%
-        {{hash=c9b8849840de6924a84a1789bdf97f9d}{%
-           family={Schilling},
-           familyi={S\bibinitperiod},
-           given={Tanja},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{9b92e3883e01dd5ce459e05104819b1d}
-      \strng{fullhash}{9b92e3883e01dd5ce459e05104819b1d}
-      \strng{bibnamehash}{9b92e3883e01dd5ce459e05104819b1d}
-      \strng{authorbibnamehash}{9b92e3883e01dd5ce459e05104819b1d}
-      \strng{authornamehash}{9b92e3883e01dd5ce459e05104819b1d}
-      \strng{authorfullhash}{9b92e3883e01dd5ce459e05104819b1d}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We propose to describe the dynamics of phase transitions in terms of a nonstationary generalized Langevin equation for the order parameter. By construction, this equation is nonlocal in time, i.e., it involves memory effects whose intensity is governed by a memory kernel. In general, it is a hard task to determine the physical origin and the extent of the memory effects based on the underlying microscopic equations of motion. Therefore we propose to relate the extent of the memory kernel to quantities that are experimentally observed such as the induction time and the duration of the phase transformation process. Using a simple kinematic model, we show that the extent of the memory kernel is positively correlated with the duration of the transition, and that it is of the same order of magnitude, while the distribution of induction times does not have an effect on the memory kernel. This observation is tested at the example of several model systems, for which we have run computer simulations: a modified Potts model, a dipole gas, an anharmonic spring in a bath, and a nucleation problem. All these cases are shown to be consistent with the simple theoretical model.}
-      \field{issn}{24700053}
-      \field{journaltitle}{Physical Review E}
-      \field{number}{2}
-      \field{title}{{Evaluation of memory effects at phase transitions and during relaxation processes}}
-      \field{volume}{103}
-      \field{year}{2021}
-      \field{pages}{22102}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevE.103.022102
-      \endverb
-      \verb{file}
-      \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/PhysRevE.103.022102.pdf:pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1103/PhysRevE.103.022102
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1103/PhysRevE.103.022102
-      \endverb
-      \keyw{doi:10.1103/PhysRevE.103.022102 url:https://doi.or}
     \endentry
   \enddatalist
 \endrefsection
