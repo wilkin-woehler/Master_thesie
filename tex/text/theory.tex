@@ -137,7 +137,7 @@ The simplest version of CNT assumes that a spherical crystallite of radius R may
 \end{equation}
 with $\rho$ being the particle density of the solid phase.\\
 
-For the difference of the chemical potential $\Delta \mu $ we first derive the free energy difference between the metastable liquid branch and the stable coexistence branch. To calculate the free energy we employ it's differential relation
+For the difference of the chemical potential $\Delta \mu $ we first derive the free energy difference between the metastable liquid branch and the stable coexistence branch. To calculate the free energy we employ its differential relation
 \begin{align}
 \label{eqn:differential_relation}
 dF = -S  \, dT -P \, dV + \mu  \, dN \; \text{.}
@@ -179,7 +179,7 @@ and the height of the barrier at the critical radius is given by
 \beta \Delta G (R_{crit}) = \frac{16 \pi \gamma^3}{3 \rho^2 (\Delta \mu )^2} \; \text{.}
 \end{equation}
 
-The classical critical radius depending on the volume fraction is depicted in \autoref{fig:r_crit} for a first impression of the cluster sizes that we are expecting for nucleation. The interfacial surface tension for this often is given by $\gamma \approx \SI{0.6}{k_B T \sigma^{-2}}$, but it's precise value is under debate. Thus we may stick to one of the recently calculated values of $\gamma = \SI{0.589}{k_B T \sigma^{-2}}$ by Bültmann and Schilling 2020\cite{Bultmann2020}. 
+The classical critical radius depending on the volume fraction is depicted in \autoref{fig:r_crit} for a first impression of the cluster sizes that we are expecting for nucleation. The interfacial surface tension for this often is given by $\gamma \approx \SI{0.6}{k_B T \sigma^{-2}}$, but its precise value is under debate. Thus we may stick to one of the recently calculated values of $\gamma = \SI{0.589}{k_B T \sigma^{-2}}$ by Bültmann and Schilling 2020\cite{Bultmann2020}. 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7 \linewidth]{CNT_radius.pdf}
@@ -212,7 +212,7 @@ But facing this challenge makes it possible for example to resimulate an interes
 
 Starting in 1986 with the experiments by Pusey and Megen\cite{Pusey1986}, hard sphere like systems have been synthesized in the labaratory. Today a large variety of such is known, but still further systems are developed to better control stability, sphere size or also to reduce the possible impact of charges on top of the spheres as the Coulomb interaction alters the behavior of the system. Still all of these systems have in common that the hard spheres are suspended in some fluid. Even though nucleation experiments can be done without gravity in space\cite{Doherty1998}, usually the fluid's mass density has to be matched to the mass density of the hard spheres to prevent sedimentation. Further it is necessary for optical measurements to match the refractive index of the fluid and the spheres as otherwise the probe becomes opaque .\\
 
-The absence of the bath in simple hard sphere simulations constitutes a large difference to those experiments in the laboratory. It has been argued that this only introduces a difference of the time scale which can be compensated by using the characteristic diffusion time as the unit of time, but a discussion on the possibility of hydrodynamic effects changing the behavior of the laboratory system compared to simulations is ongoing at the moment.\todo{citation of the pro and contra hydrodynamics?}
+The absence of the bath in simple hard sphere simulations constitutes a large difference to those experiments in the laboratory. It has been argued that this only introduces a difference of the time scale which can be compensated by using the characteristic diffusion time as the unit of time, but a discussion on the possibility of hydrodynamic effects changing the behavior of the laboratory system compared to simulations is ongoing at the moment, see Radu and Schilling 2014\cite{Radu2014}.\todo{citation of the contra hydrodynamics?}
 Also the mode spectrum of the suspending fluid within the cavities between the dispersed spheres might have a more important role 
 than expected, but requires further investigation.\\ 
 Still it usually is not possible to include the suspending fluid into simulations as the proliferation of particles raises calculation times by orders of magnitude.\\
@@ -222,6 +222,7 @@ Concerning the spatial extent, simulations are mostly confined to very small sys
 
 In \autoref{sec:cluster_growth} the cluster growth rate $c$ is found to be mostly independent of the volume fraction in simulations. When extrapolating from the small region in which it was tested, we may approximate the number of particles $N$ at time $t$ for a cluster that emerged at time $t_0$ by
 \begin{align}
+\label{eqn:simple_growth}
 N(t) = c^3 (t-t_0)^3 \; \text{.}
 \end{align} 
 Furthermore approximating the stochastic nucleation events with rate density $\kappa$ by instead just adding a new cluster after every $\Delta t = (\kappa V)^{-1}$, we can write the total number of solidified particles $N$ in a Volume $V$ at time step $m$ with the corresponding time $t_m = m \Delta t$ as the sum of all previously nucleated cluster sizes $N_i$. Reformulating this leads to

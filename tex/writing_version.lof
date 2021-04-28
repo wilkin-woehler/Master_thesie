@@ -8,22 +8,22 @@
 \contentsline {figure}{\numberline {1.5.1}{\ignorespaces Exponential growth of perturbations in chaotic system}}{10}{figure.1.1}
 \contentsline {figure}{\numberline {1.6.1}{\ignorespaces Nucleation rate comparison under assumption of early filled boxes}}{13}{figure.1.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Long time diffusion constant at varying volume fractions}}{25}{figure.2.1}
-\contentsline {figure}{\numberline {2.2.2}{\ignorespaces Radial distribution functions at varying volume fractions}}{26}{figure.2.2}
-\contentsline {figure}{\numberline {2.2.3}{\ignorespaces Radial distribution function with Percus-Yevick solution}}{27}{figure.2.3}
-\contentsline {figure}{\numberline {2.3.1}{\ignorespaces Calculation time estimate}}{28}{figure.2.1}
-\contentsline {figure}{\numberline {2.3.2}{\ignorespaces Quadratic calculation time of q6q6-order parameter cluster finding routine}}{29}{figure.2.2}
-\contentsline {figure}{\numberline {2.3.3}{\ignorespaces File size estimate}}{30}{figure.2.3}
-\contentsline {figure}{\numberline {2.4.1}{\ignorespaces Gaussian filter applied to cluster size distribution}}{31}{figure.2.1}
-\contentsline {figure}{\numberline {2.4.2}{\ignorespaces Heat maps of differences under variation of equilibration step number}}{32}{figure.2.2}
-\contentsline {figure}{\numberline {2.4.3}{\ignorespaces Heat maps of differences under variation of initial density}}{33}{figure.2.3}
+\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Long time diffusion constant at varying volume fractions}}{26}{figure.2.1}
+\contentsline {figure}{\numberline {2.2.2}{\ignorespaces Radial distribution functions at varying volume fractions}}{27}{figure.2.2}
+\contentsline {figure}{\numberline {2.2.3}{\ignorespaces Radial distribution function with Percus-Yevick solution}}{28}{figure.2.3}
+\contentsline {figure}{\numberline {2.3.1}{\ignorespaces Calculation time estimate}}{29}{figure.2.1}
+\contentsline {figure}{\numberline {2.3.2}{\ignorespaces Quadratic calculation time of q6q6-order parameter cluster finding routine}}{30}{figure.2.2}
+\contentsline {figure}{\numberline {2.3.3}{\ignorespaces File size estimate}}{31}{figure.2.3}
+\contentsline {figure}{\numberline {2.4.1}{\ignorespaces Gaussian filter applied to cluster size distribution}}{32}{figure.2.1}
+\contentsline {figure}{\numberline {2.4.2}{\ignorespaces Heat maps of differences under variation of equilibration step number}}{33}{figure.2.2}
+\contentsline {figure}{\numberline {2.4.3}{\ignorespaces Heat maps of differences under variation of initial density}}{34}{figure.2.3}
 \contentsline {figure}{\numberline {2.4.4}{\ignorespaces Nucleation rates of equilibration test measurements}}{34}{figure.2.4}
-\contentsline {figure}{\numberline {2.5.1}{\ignorespaces Individual cluster tracking example}}{36}{figure.2.1}
-\contentsline {figure}{\numberline {2.5.2}{\ignorespaces Example for correlation between a unstable cluster's size and lifetime}}{36}{figure.2.2}
+\contentsline {figure}{\numberline {2.5.1}{\ignorespaces Individual cluster tracking example}}{37}{figure.2.1}
+\contentsline {figure}{\numberline {2.5.2}{\ignorespaces Example for correlation between a unstable cluster's size and lifetime}}{37}{figure.2.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.2.1}{\ignorespaces Long time self-diffusion constant measurements from production data}}{40}{figure.3.1}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Histograms of the slopes for the linear regressions to the mean squared displacements. The histograms are for $\eta =0.531,\tmspace +\thickmuskip {.2777em}0.532,\tmspace +\thickmuskip {.2777em}0.533,\tmspace +\thickmuskip {.2777em}0.534$.}}}{40}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean of the histograms with the uncertainty on the mean given by $\sigma _{\delimiter "426830A D \delimiter "526930B } = \sigma _D/\sqrt {n}$ with n being the number of measurements included in the average.}}}{40}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean of the histograms with the uncertainty on the mean given by $\sigma _{\delimiter "426830A D_L \delimiter "526930B } = \sigma _{D_L}/\sqrt {n}$ with n being the number of measurements included in the average.}}}{40}{subfigure.1.2}
 \contentsline {figure}{\numberline {3.3.1}{\ignorespaces Cluster size distributions over time after quench}}{42}{figure.3.1}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\eta = 53.1\%$}}}{42}{subfigure.1.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\eta = 53.2\%$}}}{42}{subfigure.1.2}
@@ -34,25 +34,25 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\eta = 53.2\%$}}}{43}{subfigure.2.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\eta = 53.3\%$}}}{43}{subfigure.2.3}
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\eta = 53.4\%$}}}{43}{subfigure.2.4}
-\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Autocovariance functions of largest cluster in the metastable fluid}}{45}{figure.3.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\eta = 0.531$}}}{45}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\eta = 0.532$}}}{45}{subfigure.1.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\eta = 0.533$}}}{45}{subfigure.1.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\eta = 0.534$}}}{45}{subfigure.1.4}
-\contentsline {figure}{\numberline {3.5.1}{\ignorespaces Largest cluster trajectories from production data with constant attachment rates}}{47}{figure.3.1}
-\contentsline {figure}{\numberline {3.5.2}{\ignorespaces Constant attachment rate measurements from production data}}{48}{figure.3.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Histograms of the slopes for the linear regressions to the largest clusters during the later stable growth process. The histograms are for $\eta =0.531,\tmspace +\thickmuskip {.2777em}0.532,\tmspace +\thickmuskip {.2777em}0.533,\tmspace +\thickmuskip {.2777em}0.534$.}}}{48}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean of the histograms with the uncertainty on the mean given by $\sigma _{\delimiter "426830A c \delimiter "526930B } = \sigma _c/\sqrt {n}$ with n being the number of measurements included in the average.}}}{48}{subfigure.2.2}
-\contentsline {figure}{\numberline {3.6.1}{\ignorespaces Tensor of gyration measurements from production data}}{51}{figure.3.1}
-\contentsline {figure}{\numberline {3.7.1}{\ignorespaces Comparison of different definitions for the induction time}}{53}{figure.3.1}
-\contentsline {figure}{\numberline {3.8.1}{\ignorespaces Monte Carlo uncertainty estimation example}}{58}{figure.3.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Exponentially distributed random samples of size 500 with an exemplary censoring time of $T=\kappa ^{-1}$}}}{58}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribution of $\mathaccentV {hat}05E{\kappa }$ for the previously generated MC samples. The distribution can be described mostly by mean and standard deviation as the number of estimates in the tails are small.}}}{58}{subfigure.1.2}
-\contentsline {figure}{\numberline {3.8.2}{\ignorespaces Nucleation rate uncertainty depending on measurement time}}{60}{figure.3.2}
-\contentsline {figure}{\numberline {3.9.1}{\ignorespaces Nucleation rate comparison with literature values}}{61}{figure.3.1}
-\contentsline {figure}{\numberline {3.10.1}{\ignorespaces Largest cluster trajectories of small system with percentiles and average}}{63}{figure.3.1}
-\contentsline {figure}{\numberline {3.10.2}{\ignorespaces Width and amplitude of memory kernel with example slice}}{64}{figure.3.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Slice through memory kernel at the given reference time. With the data the excluded Markovian part of the kernel is depicted. Further the full width at half maximum (FWHM) is shown as a first measure of the kernel width as well as a Gaussian fit. The FWHM is normalized to the value of a corresponding Gaussian curve.}}}{64}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Top: Width of the memory kernel slices by FWHM and Gaussian fit. The FWHM is normalized to the value of a corresponding Gaussian curve. Bottom: Amplitude of the memory kernel slice by on the one hand using the mean value of the data around the maximum and on the other by using the amplitude derived from the best Gaussian fit. The amplitude derived from the maximum value is normalized to the value of a corresponding Gaussian curve.}}}{64}{subfigure.2.2}
+\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Autocovariance functions of largest cluster in the metastable fluid}}{44}{figure.3.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\eta = 0.531$}}}{44}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\eta = 0.532$}}}{44}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\eta = 0.533$}}}{44}{subfigure.1.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\eta = 0.534$}}}{44}{subfigure.1.4}
+\contentsline {figure}{\numberline {3.5.1}{\ignorespaces Largest cluster trajectories from production data with constant attachment rates}}{46}{figure.3.1}
+\contentsline {figure}{\numberline {3.5.2}{\ignorespaces Constant attachment rate measurements from production data}}{47}{figure.3.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Histograms of the slopes from the linear regressions to third root of the largest cluster during the stable growth process. The histograms are for $\eta =0.531,\tmspace +\thickmuskip {.2777em}0.532,\tmspace +\thickmuskip {.2777em}0.533,\tmspace +\thickmuskip {.2777em}0.534$.}}}{47}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean of the histograms with the uncertainty on the mean given by $\sigma _{\delimiter "426830A c \delimiter "526930B } = \sigma _c/\sqrt {n}$ with n being the number of measurements included in the average.}}}{47}{subfigure.2.2}
+\contentsline {figure}{\numberline {3.6.1}{\ignorespaces Tensor of gyration measurements from production data}}{50}{figure.3.1}
+\contentsline {figure}{\numberline {3.7.1}{\ignorespaces Comparison of different definitions for the induction time}}{52}{figure.3.1}
+\contentsline {figure}{\numberline {3.8.1}{\ignorespaces Monte Carlo uncertainty estimation example}}{57}{figure.3.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Exponentially distributed random samples of size 500 with an exemplary censoring time of $T=\kappa ^{-1}$}}}{57}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribution of $\mathaccentV {hat}05E{\kappa }$ for the previously generated MC samples. The distribution can be described mostly by mean and standard deviation as the number of estimates in the tails are small.}}}{57}{subfigure.1.2}
+\contentsline {figure}{\numberline {3.8.2}{\ignorespaces Nucleation rate uncertainty depending on measurement time}}{58}{figure.3.2}
+\contentsline {figure}{\numberline {3.9.1}{\ignorespaces Nucleation rate comparison with literature values}}{59}{figure.3.1}
+\contentsline {figure}{\numberline {3.10.1}{\ignorespaces Largest cluster trajectories of small system with percentiles and average}}{61}{figure.3.1}
+\contentsline {figure}{\numberline {3.10.2}{\ignorespaces Width and amplitude of memory kernel with example slice}}{62}{figure.3.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Slice through memory kernel at the given reference time. With the data the excluded Markovian part of the kernel is depicted. Further the full width at half maximum (FWHM) is shown as a first measure of the kernel width as well as a Gaussian fit. The FWHM is normalized to the value of a corresponding Gaussian curve.}}}{62}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Top: Width of the memory kernel slices from FWHM and Gaussian fit. The FWHM is normalized to the value of a corresponding Gaussian curve. Bottom: Amplitude of the memory kernel slice on the one hand by using the mean value of the data around the maximum and on the other hand by using the amplitude derived from the best Gaussian fit. The amplitude derived from the maximum value is normalized to the value of a corresponding Gaussian curve.}}}{62}{subfigure.2.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

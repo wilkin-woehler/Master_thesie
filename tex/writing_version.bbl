@@ -623,6 +623,49 @@
       \verb :home/wave/uni/master{\_}1/literature/nucleation/historical paper/19980148004.pdf:pdf
       \endverb
     \endentry
+    \entry{Radu2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7d529580f29e57f5c7fd84f5d86d7538}{%
+           family={Radu},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=33da99b24fc7a1c26734425baf98c7ce}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{fullhash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{bibnamehash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{authorbibnamehash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{authornamehash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{authorfullhash}{5c470a73fa777eca3d4c183a1e12101e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a computer simulation study on the crystal nucleation process in suspensions of hard spheres, fully taking into account the solvent hydrodynamics. If the dynamics of crystallization in this system were purely diffusive, the crystal nucleation rate would be inversely proportional to the solvent viscosity. However, we observe that the nucleation rate is enhanced at high viscosities with respect to the diffusive behaviour. This effect might explain the large discrepancy between the nuclation rates obtained by simulation and experiment that have been reported in the literature so far. {©} Copyright EPLA, 2014.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{02955075}
+      \field{journaltitle}{Epl}
+      \field{number}{2}
+      \field{title}{{Solvent hydrodynamics speed up crystal nucleation in suspensions of hard spheres}}
+      \field{volume}{105}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1209/0295-5075/105/26001
+      \endverb
+      \verb{eprint}
+      \verb 1301.5592
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/1301.5592.pdf:pdf
+      \endverb
+    \endentry
     \entry{Bannerman2014}{article}{}
       \name{author}{4}{}{%
         {{hash=c863954fb47d5754a555162dbc01f089}{%
@@ -691,8 +734,8 @@
       \strng{authorbibnamehash}{d55a57c88a14828a53b9e8db48c889d1}
       \strng{authornamehash}{d55a57c88a14828a53b9e8db48c889d1}
       \strng{authorfullhash}{d55a57c88a14828a53b9e8db48c889d1}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Floating-point arithmetic is considered an esoteric subject by many people. This is rather surprising because floating-point is ubiquitous in computer systems. Almost every language has a floating-point datatype; computers from PCs to supercomputers have floating-point accelerators; most compilers will be called upon to compile floating-point algorithms from time to time; and virtually every operating system must respond to floating-point exceptions such as overflow. This paper presents a tutorial on those aspects of floating-point that have a direct impact on designers of computer systems. It begins with background on floating-point representation and rounding error, continues with a discussion of the IEEE floating-point standard, and concludes with numerous examples of how computer builders can better support floating-point.}
@@ -790,6 +833,94 @@
       \endverb
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/edmd/paper/neighbor{\_}list{\_}collision{\_}drive{\_}molecular{\_}dynamics{\_}simulation{\_}for{\_}nonspherical{\_}hard{\_}particles{\_}1.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Steinhardt1983}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9b033b2bf76949bb2c6d1b3f8cf9f061}{%
+           family={Steinhardt},
+           familyi={S\bibinitperiod},
+           given={Paul\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7e6f6ac14e381864e08e38615ee82cfb}{%
+           family={Ronchetti},
+           familyi={R\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{fullhash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{bibnamehash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{authorbibnamehash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{authornamehash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{authorfullhash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Bond-orientational order in molecular-dynamics simulations of supercooled liquids and in models of metallic glasses is studied. Quadratic and third-order invariants formed from bond spherical harmonics allow quantitative measures of cluster symmetries in these systems. A state with short-range translational order, but extended correlations in the orientations of particle clusters, starts to develop about 10{\%} below the equilibrium melting temperature in a supercooled Lennard-Jones liquid. The order is predominantly icosahedral, although there is also a cubic component which we attribute to the periodic boundary conditions. Results are obtained for liquids cooled in an icosahedral pair potential as well. Only a modest amount of orientational order appears in a relaxed Finney dense-random-packing model. In contrast, we find essentially perfect icosahedral bond correlations in alternative "amorphon" cluster models of glass structure. {©} 1983 The American Physical Society.}
+      \field{issn}{01631829}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{2}
+      \field{title}{{Bond-orientational order in liquids and glasses}}
+      \field{volume}{28}
+      \field{year}{1983}
+      \field{pages}{784\bibrangedash 805}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.28.784
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/order{\_}parameter/paper/Bond{\_}orientation{\_}order{\_}in{\_}liquids{\_}and{\_}glasses{\_}Steinhardt.pdf:pdf
+      \endverb
+    \endentry
+    \entry{TenWolde1995}{article}{}
+      \name{author}{3}{}{%
+        {{hash=813d53f4c86604f27bef144cd07e01c4}{%
+           family={{Ten Wolde}},
+           familyi={T\bibinitperiod},
+           given={Pieter\bibnamedelima Rein},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b6cced6f212dcb21fbe134c60a0c3638}{%
+           family={Ruiz-Montero},
+           familyi={R\bibinithyphendelim M\bibinitperiod},
+           given={Maria\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7191fa8dca47b12000be59cbab02be45}{%
+           family={Frenkel},
+           familyi={F\bibinitperiod},
+           given={Daan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{fullhash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{bibnamehash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{authorbibnamehash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{authornamehash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{authorfullhash}{754ee7375c47212505d4ba5e9020b23d}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We report a computer-simulation study of the crystal nucleation barrier and the structure of crystal nuclei in a Lennard-Jones system at moderate supercooling. The stable structure of the Lennard-Jones solid is known to be face-centered cubic. We find that the precritical nuclei are predominantly body-centered cubic ordered. But, as the nucleus grows to its critical size, the core becomes fcc ordered. Surprisingly, however, the interface of the critical nucleus retains a high degree of bcc-like ordering. {©} 1995 The American Physical Society.}
+      \field{issn}{00319007}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{14}
+      \field{title}{{Numerical evidence for bcc ordering at the surface of a critical fcc nucleus}}
+      \field{volume}{75}
+      \field{year}{1995}
+      \field{pages}{2714\bibrangedash 2717}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.75.2714
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/order{\_}parameter/paper/PhysRevLett.75.2714.pdf:pdf
       \endverb
     \endentry
     \entry{Pieprzyk2019}{article}{}
@@ -895,38 +1026,103 @@
       \verb :home/wave/uni/master{\_}1/literature/diffusion/Self-Diffusion Coefficient of the Hard-Sphere Fluid$\backslash$: System Size Dependence and Empirical Correlations.pdf:pdf
       \endverb
     \endentry
-    \entry{Hansen2006}{article}{}
-      \name{author}{2}{}{%
-        {{hash=17be630b0669caa9c2d86ff6ddc578ff}{%
-           family={Hansen},
+    \entry{Hansen2006}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=37438f412ea5ee18f8502721fed1cc8d}{%
+           family={{Hansen, Jean-Pierre McDonald}},
            familyi={H\bibinitperiod},
-           given={Jean-Pierre},
-           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
-        {{hash=66172b2ba1124a17a96fb4d62cc30b27}{%
-           family={McDonald},
-           familyi={M\bibinitperiod},
            given={Ian\bibnamedelima R.},
            giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
-      \strng{namehash}{a8b0e65949dbfb1da5936651b7fe385e}
-      \strng{fullhash}{a8b0e65949dbfb1da5936651b7fe385e}
-      \strng{bibnamehash}{a8b0e65949dbfb1da5936651b7fe385e}
-      \strng{authorbibnamehash}{a8b0e65949dbfb1da5936651b7fe385e}
-      \strng{authornamehash}{a8b0e65949dbfb1da5936651b7fe385e}
-      \strng{authorfullhash}{a8b0e65949dbfb1da5936651b7fe385e}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{fullhash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{bibnamehash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{authorbibnamehash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{authornamehash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{authorfullhash}{37438f412ea5ee18f8502721fed1cc8d}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{9780123705358}
-      \field{title}{{Theory of Simple Liquids (Third Edition)}}
+      \field{booktitle}{Theory of Simple Liquids}
+      \field{edition}{Third Edit}
+      \field{isbn}{978-0-12-370535-8}
+      \field{title}{{Chapter 4 - Distribution-function Theories}}
       \field{year}{2006}
+      \field{pages}{94}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1016/B978-012370535-8/50002-1
+      \verb https://doi.org/10.1016/B978-012370535-8/50006-9
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780123705358500069
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780123705358500069
+      \endverb
+    \endentry
+    \entry{Pusey2009}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7c46dea2d744286c5cb2c97334be7f2e}{%
+           family={Pusey},
+           familyi={P\bibinitperiod},
+           given={P.\bibnamedelimi N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=46088eba66137bd5eb1fdf4453a8a18f}{%
+           family={Zaccarelli},
+           familyi={Z\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2d3cf61e1388b1802009b159f1bfff64}{%
+           family={Valeriani},
+           familyi={V\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3fffa5f9fe8e63a5d56c45207cfb5349}{%
+           family={Sanz},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3b9d11e62b57a03e89310405ae146e4e}{%
+           family={Poon},
+           familyi={P\bibinitperiod},
+           given={Wilson\bibnamedelima C.K.},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=025019982cda0c38b195a155a528aef4}{%
+           family={Cates},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0845d9a71febf35c0341604e002845b2}
+      \strng{fullhash}{b71fc50fe27deee1fd37c41216fadc44}
+      \strng{bibnamehash}{0845d9a71febf35c0341604e002845b2}
+      \strng{authorbibnamehash}{0845d9a71febf35c0341604e002845b2}
+      \strng{authornamehash}{0845d9a71febf35c0341604e002845b2}
+      \strng{authorfullhash}{b71fc50fe27deee1fd37c41216fadc44}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Motivated by old experiments on colloidal suspensions, we report molecular dynamics simulations of assemblies of hard spheres, addressing crystallization and glass formation. The simulations cover wide ranges of polydispersity s (standard deviation of the particle size distribution divided by its mean) and particle concentration. No crystallization is observed for s {>} 0.07. For 0.02 {<} s {<} 0.07, we find that increasing the polydispersity at a given concentration slows down crystal nucleation. The main effect here is that polydispersity reduces the supersaturation since it tends to stabilize the fluid but to destabilize the crystal. At a given polydispersity ({<} 0.07), we find three regimes of nucleation: standard nucleation and growth at concentrations in and slightly above the coexistence region; 'spinodal nucleation', where the free-energy barrier to nucleation appears to be negligible, at intermediate concentrations; and, at the highest concentrations, a new mechanism, still to be fully understood, which only requires small rearrangement of the particle positions. The cross-over between the second and third regimes occurs at a concentration, approximately 58 per cent by volume, where the colloid experiments show a marked change in the nature of the crystals formed and the particle dynamics indicate an 'ideal' glass transition. {©} 2009 The Royal Society.}
+      \field{issn}{1364503X}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{1909}
+      \field{title}{{Hard spheres: crystallization and glass formation}}
+      \field{volume}{367}
+      \field{year}{2009}
+      \field{pages}{4993\bibrangedash 5011}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1098/rsta.2009.0181
       \endverb
       \verb{file}
-      \verb :home/wave/uni/master{\_}1/literature/lehrb{\"{u}}cher/Theory of Simple Liquids - Hansen-McDonald.pdf:pdf
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}Phase{\_}diagrams/Pusey-2009-Hard-spheres-crystallization-and-gl.pdf:pdf
       \endverb
+      \keyw{Colloid,Crystallization,Glass formation,Hard spheres,Molecular dynamics,Polydispersity}
     \endentry
     \entry{Albert1905}{misc}{}
       \name{author}{1}{}{%
@@ -942,8 +1138,8 @@
       \strng{authorbibnamehash}{8db2608cc924863f35c356c5767ae963}
       \strng{authornamehash}{8db2608cc924863f35c356c5767ae963}
       \strng{authorfullhash}{8db2608cc924863f35c356c5767ae963}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Annalen der Physik}
@@ -1139,8 +1335,8 @@
       \strng{authorbibnamehash}{bb120eac4d0e21f9c481776a9964be0b}
       \strng{authornamehash}{bb120eac4d0e21f9c481776a9964be0b}
       \strng{authorfullhash}{bb120eac4d0e21f9c481776a9964be0b}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present a numerical method to compute non-equilibrium memory kernels based on experimental data or molecular dynamics simulations. The procedure uses a recasting of the non-stationary generalized Langevin equation, in which we expand the memory kernel in a series that can be reconstructed iteratively. Each term in the series can be computed based solely on knowledge of the two-Time auto-correlation function of the observable of interest. We discuss how to optimize this method in order to be the most numerically convenient. As a proof of principle, we test the method on the problem of crystallization from a super-cooled Lennard-Jones melt. We analyze the nucleation and growth dynamics of crystallites and observe that the memory kernel has a time extent that is about one order of magnitude larger than the typical timescale needed for a particle to be attached to the crystallite in the growth regime.}

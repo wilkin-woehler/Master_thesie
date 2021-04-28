@@ -1,6 +1,25 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+tex_plot_path='../../plots/'
+
+
+
+SMALL_SIZE = 10
+MEDIUM_SIZE = 12
+BIGGER_SIZE = 12
+
+plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
+plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
+plt.rc('axes', labelsize=MEDIUM_SIZE)    # fontsize of the x and y labels
+plt.rc('xtick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
+plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
+plt.rc('legend', fontsize=MEDIUM_SIZE)    # legend fontsize
+plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
+
+
+
+
 #prelimnary data taking for deciding on aim
 N=np.array([32,32,32,32,108,108,108,108,256,256,256,256,500,500,500,500,864,864,864,864])*1e3
 
@@ -88,15 +107,15 @@ print(p_step)
 print(p_meas)
 
 plt.figure()
-plt.scatter(N2,T_STEP2,label="Step times = {0:4.2f} mus/step/particle ".format(p_step[0]*1e6))
-plt.scatter(N2,T_MEAS2, label="Measure times = {0:4.2f} mus/meas/particle ".format(p_meas[0]*1e6))
-plt.plot(N2,step_linreg(N2))
-plt.plot(N2,meas_linreg(N2))
+plt.scatter(N2*1e-6,T_STEP2,label="Step time = {0:4.2f} ".format(p_step[0]*1e6)+r'$\mu s$/particle' )
+plt.scatter(N2*1e-6,T_MEAS2, label="Measure time = {0:4.2f}".format(p_meas[0]*1e6)+' $\mu s$/particle ')
+plt.plot(N2*1e-6,step_linreg(N2))
+plt.plot(N2*1e-6,meas_linreg(N2))
 plt.legend()
-plt.xlabel("N")
-plt.ylabel("Time in seconds")
+plt.xlabel(r"Particle number $N / 10^{6}$")
+plt.ylabel("CPU time in seconds")
 plt.savefig("calculation_times_measure_step.pdf")
-
+plt.savefig(tex_plot_path+"Calculation_times_measurement.pdf")
 
 
 
@@ -116,17 +135,18 @@ reset_linreg=np.poly1d(p_reset)
 
 
 plt.figure()
-plt.scatter(N3,base_file,label = "setup size = {0:4.0f} byte/snap/particle ".format(p_base[0]*1e6))
-plt.scatter(N3,(sim20file- base_file)/20, label = "reset_sim size = {0:4.0f} byte/reset/particle ".format(p_reset[0]*1e6))
-plt.plot(N3,base_linreg(N3))
-plt.plot(N3,reset_linreg(N3))
+plt.scatter(N3*1e-5,base_file,label = "Configuration size = {0:3.0f} byte/particle ".format(p_base[0]*1e6))
+plt.scatter(N3*1e-5,(sim20file- base_file)/20, label = "Checkpoint size = {0:4.0f} byte/particle ".format(p_reset[0]*1e6))
+plt.plot(N3*1e-5,base_linreg(N3))
+plt.plot(N3*1e-5,reset_linreg(N3))
 #plt.scatter(N3,(simplus20file-sim20file)/20*1000*10, label = "measurement size *10,000")
 #plt.scatter(comparison[0],comparison[1])
 plt.axhline(0)
-plt.xlabel("N")
-plt.ylabel("File size in mb")
+plt.xlabel(r"Particle number $N / 10^{5}$")
+plt.ylabel("File size [MB]")
 plt.legend()
 plt.savefig("File_size.pdf")
+plt.savefig(tex_plot_path+"File_size.pdf")
 
 
 

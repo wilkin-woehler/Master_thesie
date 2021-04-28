@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.12)  25 APR 2021 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.12)  28 APR 2021 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1801,9 +1801,6 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 LaTeX Warning: Label `fig:cluster_growth_example' multiply defined.
 
-
-LaTeX Warning: Label `fig:cluster_growth_example' multiply defined.
-
 )
 \openout1 = `writing_version.aux'.
 
@@ -2075,7 +2072,10 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 14.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./header/title_page.tex [1
+) (./header/title_page.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 
@@ -2295,23 +2295,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--222
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 242--245
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
 
-<../plots/t_fill_rate_comparison.pdf, id=665, 462.52798pt x 346.89601pt>
+<../plots/t_fill_rate_comparison.pdf, id=667, 462.52798pt x 346.89601pt>
 File: ../plots/t_fill_rate_comparison.pdf Graphic file (type pdf)
 <use ../plots/t_fill_rate_comparison.pdf>
 Package pdftex.def Info: ../plots/t_fill_rate_comparison.pdf  used on input lin
-e 254.
+e 255.
 (pdftex.def)             Requested size: 266.32071pt x 199.74948pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.257 \end{figure}
+l.258 \end{figure}
                   
-Overfull \hbox (2.21722pt too wide) in paragraph at lines 250--258
+Overfull \hbox (2.21722pt too wide) in paragraph at lines 251--259
 \T1/lmr/m/n/10.95 As we see the time $\OML/lmm/m/it/10.95 t[]$ \T1/lmr/m/n/10.9
 5 ac-tu-ally de-pends only on the fourth root of the in-duc-tion time $\OML/lmm
 /m/it/10.95 ^^\[] \OT1/lmr/m/n/10.95 =
@@ -2321,7 +2321,7 @@ Overfull \hbox (2.21722pt too wide) in paragraph at lines 250--258
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
@@ -2454,138 +2454,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 202.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 203.
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 202.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 203.
 
  [22]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
-
- []
-
-[24]
-<../plots/diffusion_probe.pdf, id=864, 462.52798pt x 346.89601pt>
-File: ../plots/diffusion_probe.pdf Graphic file (type pdf)
-<use ../plots/diffusion_probe.pdf>
-Package pdftex.def Info: ../plots/diffusion_probe.pdf  used on input line 248.
-(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
-
- []
-
-<../plots/RDF.pdf, id=871, 462.52798pt x 346.89601pt>
-File: ../plots/RDF.pdf Graphic file (type pdf)
-<use ../plots/RDF.pdf>
-Package pdftex.def Info: ../plots/RDF.pdf  used on input line 279.
-(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
-[25 <../plots/diffusion_probe.pdf>]
-<../plots/RDF_percus_yevick.pdf, id=940, 462.52798pt x 346.89601pt>
-File: ../plots/RDF_percus_yevick.pdf Graphic file (type pdf)
-<use ../plots/RDF_percus_yevick.pdf>
-Package pdftex.def Info: ../plots/RDF_percus_yevick.pdf  used on input line 287
-.
-(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-
- []
-
-[26 <../plots/RDF.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-
- []
-
-<../plots/Calculation_times_measurement.pdf, id=997, 462.52798pt x 346.89601pt>
-
-File: ../plots/Calculation_times_measurement.pdf Graphic file (type pdf)
-<use ../plots/Calculation_times_measurement.pdf>
-Package pdftex.def Info: ../plots/Calculation_times_measurement.pdf  used on in
-put line 304.
-(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.307 \end{figure}
-                  
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-
- []
-
-[27 <../plots/RDF_percus_yevick.pdf>]
-<../plots/q6q6_calculation_time.pdf, id=1054, 462.52798pt x 346.89601pt>
-File: ../plots/q6q6_calculation_time.pdf Graphic file (type pdf)
-<use ../plots/q6q6_calculation_time.pdf>
-Package pdftex.def Info: ../plots/q6q6_calculation_time.pdf  used on input line
- 313.
-(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.316 \end{figure}
-                  
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <../plots/Calculation_times_measurement.pdf>]
-<../plots/File_size.pdf, id=1101, 462.52798pt x 346.89601pt>
-File: ../plots/File_size.pdf Graphic file (type pdf)
-<use ../plots/File_size.pdf>
-Package pdftex.def Info: ../plots/File_size.pdf  used on input line 326.
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+ []
+
+[25]
+<../plots/diffusion_probe.pdf, id=875, 462.52798pt x 346.89601pt>
+File: ../plots/diffusion_probe.pdf Graphic file (type pdf)
+<use ../plots/diffusion_probe.pdf>
+Package pdftex.def Info: ../plots/diffusion_probe.pdf  used on input line 279.
 (pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) 
+<../plots/RDF.pdf, id=882, 462.52798pt x 346.89601pt>
+File: ../plots/RDF.pdf Graphic file (type pdf)
+<use ../plots/RDF.pdf>
+Package pdftex.def Info: ../plots/RDF.pdf  used on input line 292.
+(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../plots/RDF_percus_yevick.pdf, id=884, 462.52798pt x 346.89601pt>
+File: ../plots/RDF_percus_yevick.pdf Graphic file (type pdf)
+<use ../plots/RDF_percus_yevick.pdf>
+Package pdftex.def Info: ../plots/RDF_percus_yevick.pdf  used on input line 300
+.
+(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+[26 <../plots/diffusion_probe.pdf>] [27 <../plots/RDF.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+<../plots/Calculation_times_measurement.pdf, id=987, 462.52798pt x 346.89601pt>
+
+File: ../plots/Calculation_times_measurement.pdf Graphic file (type pdf)
+<use ../plots/Calculation_times_measurement.pdf>
+Package pdftex.def Info: ../plots/Calculation_times_measurement.pdf  used on in
+put line 317.
+(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.320 \end{figure}
+                  
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+[28 <../plots/RDF_percus_yevick.pdf>]
+<../plots/q6q6_calculation_time.pdf, id=1038, 462.52798pt x 346.89601pt>
+File: ../plots/q6q6_calculation_time.pdf Graphic file (type pdf)
+<use ../plots/q6q6_calculation_time.pdf>
+Package pdftex.def Info: ../plots/q6q6_calculation_time.pdf  used on input line
+ 326.
+(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2594,29 +2576,31 @@ l.329 \end{figure}
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29 <../plots/q6q6_calculation_time.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 333--335
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- []
-
-[30 <../plots/File_size.pdf>]
-<../plots/mean_pnt.png, id=1184, 433.62pt x 289.08pt>
-File: ../plots/mean_pnt.png Graphic file (type png)
-<use ../plots/mean_pnt.png>
-Package pdftex.def Info: ../plots/mean_pnt.png  used on input line 356.
-(pdftex.def)             Requested size: 310.70299pt x 207.14496pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+ [29 <../plots/Calculation_times_measurement.pdf>]
+<../plots/File_size.pdf, id=1095, 462.52798pt x 346.89601pt>
+File: ../plots/File_size.pdf Graphic file (type pdf)
+<use ../plots/File_size.pdf>
+Package pdftex.def Info: ../plots/File_size.pdf  used on input line 339.
+(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.359 \end{figure}
+l.342 \end{figure}
                   
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30 <../plots/q6q6_calculation_time.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 346--349
 
  []
 
@@ -2625,235 +2609,242 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
-[31 <../plots/mean_pnt.png>]
-<../plots/pnt_comparison_eq_steps.png, id=1197, 650.43pt x 289.08pt>
+[31 <../plots/File_size.pdf>]
+<../plots/mean_pnt.png, id=1201, 433.62pt x 289.08pt>
+File: ../plots/mean_pnt.png Graphic file (type png)
+<use ../plots/mean_pnt.png>
+Package pdftex.def Info: ../plots/mean_pnt.png  used on input line 367.
+(pdftex.def)             Requested size: 310.70299pt x 207.14496pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.370 \end{figure}
+                  
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
+
+ []
+
+[32 <../plots/mean_pnt.png>]
+<../plots/pnt_comparison_eq_steps.png, id=1214, 650.43pt x 289.08pt>
 File: ../plots/pnt_comparison_eq_steps.png Graphic file (type png)
 <use ../plots/pnt_comparison_eq_steps.png>
 Package pdftex.def Info: ../plots/pnt_comparison_eq_steps.png  used on input li
-ne 372.
+ne 383.
 (pdftex.def)             Requested size: 310.70299pt x 138.09076pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.375 \end{figure}
+l.386 \end{figure}
                   
-<../plots/pnt_comparison_rho.png, id=1200, 650.43pt x 289.08pt>
+<../plots/pnt_comparison_rho.png, id=1217, 650.43pt x 289.08pt>
 File: ../plots/pnt_comparison_rho.png Graphic file (type png)
 <use ../plots/pnt_comparison_rho.png>
-Package pdftex.def Info: ../plots/pnt_comparison_rho.png  used on input line 38
-0.
+Package pdftex.def Info: ../plots/pnt_comparison_rho.png  used on input line 39
+1.
 (pdftex.def)             Requested size: 310.70299pt x 138.09076pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.383 \end{figure}
+l.394 \end{figure}
                   
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
-
- []
-
-[32 <../plots/pnt_comparison_eq_steps.png>]
-<../plots/nucleation_rate_pre_comparison.pdf, id=1210, 462.52798pt x 346.89601p
-t>
-File: ../plots/nucleation_rate_pre_comparison.pdf Graphic file (type pdf)
-<use ../plots/nucleation_rate_pre_comparison.pdf>
-Package pdftex.def Info: ../plots/nucleation_rate_pre_comparison.pdf  used on i
-nput line 393.
-(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
-[33 <../plots/pnt_comparison_rho.png>] [34 <../plots/nucleation_rate_pre_compar
-ison.pdf>]
-<../plots/cluster_tracking_example.png, id=1277, 462.528pt x 346.896pt>
+[33 <../plots/pnt_comparison_eq_steps.png>]
+<../plots/nucleation_rate_pre_comparison.pdf, id=1227, 462.52798pt x 346.89601p
+t>
+File: ../plots/nucleation_rate_pre_comparison.pdf Graphic file (type pdf)
+<use ../plots/nucleation_rate_pre_comparison.pdf>
+Package pdftex.def Info: ../plots/nucleation_rate_pre_comparison.pdf  used on i
+nput line 403.
+(pdftex.def)             Requested size: 266.32071pt x 199.74948pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+
+ []
+
+[34 <../plots/pnt_comparison_rho.png> <../plots/nucleation_rate_pre_comparison.
+pdf>]
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+ [35]
+Underfull \hbox (badness 10000) in paragraph at lines 438--440
+
+ []
+
+<../plots/cluster_tracking_example.png, id=1295, 462.528pt x 346.896pt>
 File: ../plots/cluster_tracking_example.png Graphic file (type png)
 <use ../plots/cluster_tracking_example.png>
 Package pdftex.def Info: ../plots/cluster_tracking_example.png  used on input l
-ine 432.
+ine 443.
 (pdftex.def)             Requested size: 266.32071pt x 199.74947pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.436 \end{figure}
+l.447 \end{figure}
                   
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../plots/cluster_tracking_lifetime.png, id=1280, 462.528pt x 346.896pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+
+ []
+
+<../plots/cluster_tracking_lifetime.png, id=1298, 462.528pt x 346.896pt>
 File: ../plots/cluster_tracking_lifetime.png Graphic file (type png)
 <use ../plots/cluster_tracking_lifetime.png>
 Package pdftex.def Info: ../plots/cluster_tracking_lifetime.png  used on input 
-line 441.
+line 453.
 (pdftex.def)             Requested size: 266.32071pt x 199.74947pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.444 \end{figure}
-                  )
+l.456 \end{figure}
+                  
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35] [36 <../plots/cluster_tracking_example.png> <../plots/cluster_tracking_lif
-etime.png>]
+) [36] [37 <../plots/cluster_tracking_example.png> <../plots/cluster_tracking_l
+ifetime.png>]
 chapter 3.
 (./text/analysis.tex
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[37
+[38
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-[38]
+] [39]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-<../plots/diffusion_histogram_comparison.pdf, id=1309, 462.52798pt x 346.89601p
+<../plots/diffusion_histogram_comparison.pdf, id=1327, 462.52798pt x 346.89601p
 t>
 File: ../plots/diffusion_histogram_comparison.pdf Graphic file (type pdf)
 <use ../plots/diffusion_histogram_comparison.pdf>
 Package pdftex.def Info: ../plots/diffusion_histogram_comparison.pdf  used on i
-nput line 71.
+nput line 61.
 (pdftex.def)             Requested size: 199.73715pt x 149.80284pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 71.
+(Font)              <9> on input line 61.
 
-Underfull \hbox (badness 3386) in paragraph at lines 71--71
+Underfull \hbox (badness 3386) in paragraph at lines 61--61
 \T1/lmr/m/n/9 gres-sions to the mean squared dis-place-
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 71--71
+Underfull \hbox (badness 3568) in paragraph at lines 61--61
 \T1/lmr/m/n/9 ments. The his-tograms are for $\OML/lmm/m/it/9 ^^Q \OT1/lmr/m/n/
 9 =
  []
 
-<../plots/diffusion_comparison.pdf, id=1310, 462.52798pt x 346.89601pt>
+<../plots/diffusion_comparison.pdf, id=1328, 462.52798pt x 346.89601pt>
 File: ../plots/diffusion_comparison.pdf Graphic file (type pdf)
 <use ../plots/diffusion_comparison.pdf>
 Package pdftex.def Info: ../plots/diffusion_comparison.pdf  used on input line 
-72.
+62.
 (pdftex.def)             Requested size: 199.73715pt x 149.80284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-[39] [40 <../plots/diffusion_histogram_comparison.pdf> <../plots/diffusion_comp
-arison.pdf
+[40 <../plots/diffusion_histogram_comparison.pdf> <../plots/diffusion_compariso
+n.pdf
 
 pdfTeX warning: pdflatex (file ../plots/diffusion_comparison.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
-
-LaTeX Warning: Reference `fig_pnt_short' on page 41 undefined on input line 85.
-
-
-
-LaTeX Warning: Reference `fig_pnt_long' on page 41 undefined on input line 85.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
-<../plots/pnt_531_short.png, id=1410, 361.35pt x 216.81pt>
+<../plots/pnt_531_short.png, id=1441, 361.35pt x 216.81pt>
 File: ../plots/pnt_531_short.png Graphic file (type png)
 <use ../plots/pnt_531_short.png>
-Package pdftex.def Info: ../plots/pnt_531_short.png  used on input line 92.
+Package pdftex.def Info: ../plots/pnt_531_short.png  used on input line 82.
 (pdftex.def)             Requested size: 217.49548pt x 130.49722pt.
-<../plots/pnt_532_short.png, id=1411, 361.35pt x 216.81pt>
+<../plots/pnt_532_short.png, id=1442, 361.35pt x 216.81pt>
 File: ../plots/pnt_532_short.png Graphic file (type png)
 <use ../plots/pnt_532_short.png>
-Package pdftex.def Info: ../plots/pnt_532_short.png  used on input line 93.
+Package pdftex.def Info: ../plots/pnt_532_short.png  used on input line 83.
 (pdftex.def)             Requested size: 217.49548pt x 130.49722pt.
-<../plots/pnt_533_short.png, id=1412, 361.35pt x 216.81pt>
+<../plots/pnt_533_short.png, id=1443, 361.35pt x 216.81pt>
 File: ../plots/pnt_533_short.png Graphic file (type png)
 <use ../plots/pnt_533_short.png>
-Package pdftex.def Info: ../plots/pnt_533_short.png  used on input line 94.
+Package pdftex.def Info: ../plots/pnt_533_short.png  used on input line 84.
 (pdftex.def)             Requested size: 217.49548pt x 130.49722pt.
-<../plots/pnt_534_short.png, id=1413, 361.35pt x 216.81pt>
+<../plots/pnt_534_short.png, id=1444, 361.35pt x 216.81pt>
 File: ../plots/pnt_534_short.png Graphic file (type png)
 <use ../plots/pnt_534_short.png>
-Package pdftex.def Info: ../plots/pnt_534_short.png  used on input line 95.
+Package pdftex.def Info: ../plots/pnt_534_short.png  used on input line 85.
 (pdftex.def)             Requested size: 217.49548pt x 130.49722pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \end{figure}
+l.89 \end{figure}
                  
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 
-<../plots/pnt_531_long.png, id=1415, 361.35pt x 216.81pt>
+[41]
+<../plots/pnt_531_long.png, id=1451, 361.35pt x 216.81pt>
 File: ../plots/pnt_531_long.png Graphic file (type png)
 <use ../plots/pnt_531_long.png>
-Package pdftex.def Info: ../plots/pnt_531_long.png  used on input line 106.
+Package pdftex.def Info: ../plots/pnt_531_long.png  used on input line 96.
 (pdftex.def)             Requested size: 217.49548pt x 130.49722pt.
-<../plots/pnt_532_long.png, id=1416, 361.35pt x 216.81pt>
+<../plots/pnt_532_long.png, id=1452, 361.35pt x 216.81pt>
 File: ../plots/pnt_532_long.png Graphic file (type png)
 <use ../plots/pnt_532_long.png>
-Package pdftex.def Info: ../plots/pnt_532_long.png  used on input line 107.
+Package pdftex.def Info: ../plots/pnt_532_long.png  used on input line 97.
 (pdftex.def)             Requested size: 217.49548pt x 130.49722pt.
-<../plots/pnt_533_long.png, id=1417, 361.35pt x 216.81pt>
+<../plots/pnt_533_long.png, id=1453, 361.35pt x 216.81pt>
 File: ../plots/pnt_533_long.png Graphic file (type png)
 <use ../plots/pnt_533_long.png>
-Package pdftex.def Info: ../plots/pnt_533_long.png  used on input line 108.
+Package pdftex.def Info: ../plots/pnt_533_long.png  used on input line 98.
 (pdftex.def)             Requested size: 217.49548pt x 130.49722pt.
-<../plots/pnt_534_long.png, id=1418, 361.35pt x 216.81pt>
+<../plots/pnt_534_long.png, id=1454, 361.35pt x 216.81pt>
 File: ../plots/pnt_534_long.png Graphic file (type png)
 <use ../plots/pnt_534_long.png>
-Package pdftex.def Info: ../plots/pnt_534_long.png  used on input line 109.
+Package pdftex.def Info: ../plots/pnt_534_long.png  used on input line 99.
 (pdftex.def)             Requested size: 217.49548pt x 130.49722pt.
-[41] [42 <../plots/pnt_531_short.png> <../plots/pnt_532_short.png> <../plots/pn
-t_533_short.png> <../plots/pnt_534_short.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+ [42 <../plots/pnt_531_short.png> <../plots/pnt_532_short.png> <../plots/pnt_53
+3_short.png> <../plots/pnt_534_short.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
@@ -2862,345 +2853,352 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43 <../plots/pnt_531_long.png> <../plots/pnt_532_long.png> <../plots/pnt_533_
 long.png> <../plots/pnt_534_long.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-<../plots/acf_lc_531.png, id=1453, 462.528pt x 346.896pt>
+<../plots/acf_lc_531.png, id=1485, 462.528pt x 346.896pt>
 File: ../plots/acf_lc_531.png Graphic file (type png)
 <use ../plots/acf_lc_531.png>
-Package pdftex.def Info: ../plots/acf_lc_531.png  used on input line 133.
+Package pdftex.def Info: ../plots/acf_lc_531.png  used on input line 123.
 (pdftex.def)             Requested size: 177.54263pt x 133.15573pt.
-<../plots/acf_lc_532.png, id=1454, 462.528pt x 346.896pt>
+<../plots/acf_lc_532.png, id=1486, 462.528pt x 346.896pt>
 File: ../plots/acf_lc_532.png Graphic file (type png)
 <use ../plots/acf_lc_532.png>
-Package pdftex.def Info: ../plots/acf_lc_532.png  used on input line 134.
+Package pdftex.def Info: ../plots/acf_lc_532.png  used on input line 124.
 (pdftex.def)             Requested size: 177.54263pt x 133.15573pt.
-<../plots/acf_lc_533.png, id=1455, 462.528pt x 346.896pt>
+<../plots/acf_lc_533.png, id=1487, 462.528pt x 346.896pt>
 File: ../plots/acf_lc_533.png Graphic file (type png)
 <use ../plots/acf_lc_533.png>
-Package pdftex.def Info: ../plots/acf_lc_533.png  used on input line 135.
+Package pdftex.def Info: ../plots/acf_lc_533.png  used on input line 125.
 (pdftex.def)             Requested size: 177.54263pt x 133.15573pt.
-<../plots/acf_lc_534.png, id=1456, 462.528pt x 346.896pt>
+<../plots/acf_lc_534.png, id=1488, 462.528pt x 346.896pt>
 File: ../plots/acf_lc_534.png Graphic file (type png)
 <use ../plots/acf_lc_534.png>
-Package pdftex.def Info: ../plots/acf_lc_534.png  used on input line 136.
+Package pdftex.def Info: ../plots/acf_lc_534.png  used on input line 126.
 (pdftex.def)             Requested size: 177.54263pt x 133.15573pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \end{figure}
-                   [44]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+l.130 \end{figure}
+                  
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44 <../plots/acf_lc_531.png> <../plots/acf_lc_532.png> <../plots/acf_lc_533.p
+ng> <../plots/acf_lc_534.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45 <../plots/acf_lc_531.png> <../plots/acf_lc_532.png> <../plots/acf_lc_533.p
-ng> <../plots/acf_lc_534.png>]
-<../plots/cluster_growth_example.pdf, id=1479, 462.52798pt x 346.89601pt>
+<../plots/cluster_growth_example.pdf, id=1506, 462.52798pt x 346.89601pt>
 File: ../plots/cluster_growth_example.pdf Graphic file (type pdf)
 <use ../plots/cluster_growth_example.pdf>
 Package pdftex.def Info: ../plots/cluster_growth_example.pdf  used on input lin
-e 184.
+e 171.
 (pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.187 \end{figure}
+l.174 \end{figure}
                   
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-<../plots/const_growth_rate_histogram_comparison.pdf, id=1484, 462.52798pt x 34
+[45]
+<../plots/const_growth_rate_histogram_comparison.pdf, id=1518, 462.52798pt x 34
 6.89601pt>
 File: ../plots/const_growth_rate_histogram_comparison.pdf Graphic file (type pd
 f)
 <use ../plots/const_growth_rate_histogram_comparison.pdf>
 Package pdftex.def Info: ../plots/const_growth_rate_histogram_comparison.pdf  u
-sed on input line 193.
+sed on input line 180.
 (pdftex.def)             Requested size: 199.73715pt x 149.80284pt.
-<../plots/const_growth_rate_comparison.pdf, id=1485, 462.52798pt x 346.89601pt>
+<../plots/const_growth_rate_comparison.pdf, id=1519, 462.52798pt x 346.89601pt>
 
 File: ../plots/const_growth_rate_comparison.pdf Graphic file (type pdf)
 <use ../plots/const_growth_rate_comparison.pdf>
 Package pdftex.def Info: ../plots/const_growth_rate_comparison.pdf  used on inp
-ut line 194.
+ut line 181.
 (pdftex.def)             Requested size: 199.73715pt x 149.80284pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.198 \end{figure}
+l.185 \end{figure}
                   
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \vbox (badness 5954) has occurred while \output is active []
+
+ [46 <../plots/cluster_growth_example.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-[46] [47 <../plots/cluster_growth_example.pdf>] [48 <../plots/const_growth_rate
-_histogram_comparison.pdf> <../plots/const_growth_rate_comparison.pdf
+[47 <../plots/const_growth_rate_histogram_comparison.pdf> <../plots/const_growt
+h_rate_comparison.pdf
 
 pdfTeX warning: pdflatex (file ../plots/const_growth_rate_comparison.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
-[49
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 238--242
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-<../plots/Series_534_corrolation.png, id=1630, 1084.05pt x 1084.05pt>
+<../plots/Series_534_corrolation.png, id=1670, 1011.78pt x 867.24pt>
 File: ../plots/Series_534_corrolation.png Graphic file (type png)
 <use ../plots/Series_534_corrolation.png>
 Package pdftex.def Info: ../plots/Series_534_corrolation.png  used on input lin
-e 249.
-(pdftex.def)             Requested size: 355.09203pt x 355.091pt.
+e 233.
+(pdftex.def)             Requested size: 355.09203pt x 304.37222pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.252 \end{figure}
+l.236 \end{figure}
                   
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 245--247
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51 <../plots/Series_534_corrolation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 264--268
+Underfull \hbox (badness 10000) in paragraph at lines 248--252
 
  []
 
-<../plots/varying_induction_time.pdf, id=1641, 361.35pt x 361.35pt>
+[50 <../plots/Series_534_corrolation.png>]
+<../plots/varying_induction_time.pdf, id=1681, 469.755pt x 361.35pt>
 File: ../plots/varying_induction_time.pdf Graphic file (type pdf)
 <use ../plots/varying_induction_time.pdf>
 Package pdftex.def Info: ../plots/varying_induction_time.pdf  used on input lin
-e 274.
-(pdftex.def)             Requested size: 266.32071pt x 266.31963pt.
+e 257.
+(pdftex.def)             Requested size: 266.32071pt x 204.86337pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.277 \end{figure}
+l.260 \end{figure}
                   
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[52] [53 <../plots/varying_induction_time.pdf>]
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
+
+ []
+
+[52 <../plots/varying_induction_time.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--296
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
+Underfull \vbox (badness 3668) has occurred while \output is active []
+
+ [55]
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
-
- []
-
-[55] [56]
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
-
- []
-
-[57]
-<../plots/mc_random_sample.pdf, id=1745, 361.35pt x 289.08pt>
+<../plots/mc_random_sample.pdf, id=1778, 361.35pt x 289.08pt>
 File: ../plots/mc_random_sample.pdf Graphic file (type pdf)
 <use ../plots/mc_random_sample.pdf>
-Package pdftex.def Info: ../plots/mc_random_sample.pdf  used on input line 434.
+Package pdftex.def Info: ../plots/mc_random_sample.pdf  used on input line 375.
 
-(pdftex.def)             Requested size: 177.54263pt x 142.03418pt.
-<../plots/k_estimator_distribution.pdf, id=1746, 361.35pt x 289.08pt>
+(pdftex.def)             Requested size: 199.73715pt x 159.78847pt.
+<../plots/k_estimator_distribution.pdf, id=1779, 361.35pt x 289.08pt>
 File: ../plots/k_estimator_distribution.pdf Graphic file (type pdf)
 <use ../plots/k_estimator_distribution.pdf>
 Package pdftex.def Info: ../plots/k_estimator_distribution.pdf  used on input l
-ine 435.
-(pdftex.def)             Requested size: 177.54263pt x 142.03418pt.
+ine 376.
+(pdftex.def)             Requested size: 199.73715pt x 159.78847pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.439 \end{figure}
-                  
-Underfull \vbox (badness 2050) has occurred while \output is active []
+l.380 \end{figure}
+                   [56]
+Underfull \vbox (badness 3536) has occurred while \output is active []
 
- [58 <../plots/mc_random_sample.pdf> <../plots/k_estimator_distribution.pdf
+ [57 <../plots/mc_random_sample.pdf> <../plots/k_estimator_distribution.pdf
 
 pdfTeX warning: pdflatex (file ../plots/k_estimator_distribution.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]
-<../plots/rel_uncertainty_k.pdf, id=1852, 361.35pt x 252.945pt>
+<../plots/rel_uncertainty_k.pdf, id=1891, 361.35pt x 252.945pt>
 File: ../plots/rel_uncertainty_k.pdf Graphic file (type pdf)
 <use ../plots/rel_uncertainty_k.pdf>
-Package pdftex.def Info: ../plots/rel_uncertainty_k.pdf  used on input line 473
+Package pdftex.def Info: ../plots/rel_uncertainty_k.pdf  used on input line 414
 .
 (pdftex.def)             Requested size: 288.50847pt x 201.95872pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.477 \end{figure}
+l.418 \end{figure}
                   
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
-[59]
-<../plots/nucleation_rate_comparison.pdf, id=1861, 462.52798pt x 346.89601pt>
+<../plots/nucleation_rate_comparison.pdf, id=1894, 462.52798pt x 346.89601pt>
 File: ../plots/nucleation_rate_comparison.pdf Graphic file (type pdf)
 <use ../plots/nucleation_rate_comparison.pdf>
 Package pdftex.def Info: ../plots/nucleation_rate_comparison.pdf  used on input
- line 489.
-(pdftex.def)             Requested size: 310.70299pt x 233.03842pt.
+ line 430.
+(pdftex.def)             Requested size: 266.32071pt x 199.74948pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.492 \end{figure}
+l.433 \end{figure}
                   
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 496--499
-
- []
-
-[60 <../plots/rel_uncertainty_k.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 504--505
+ [58 <../plots/rel_uncertainty_k.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
+[59 <../plots/nucleation_rate_comparison.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--528
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
 
-[61 <../plots/nucleation_rate_comparison.pdf>]
-<../plots/cluster_growth_quantities.pdf, id=2011, 505.89pt x 361.35pt>
+<../plots/cluster_growth_quantities.pdf, id=2038, 505.89pt x 361.35pt>
 File: ../plots/cluster_growth_quantities.pdf Graphic file (type pdf)
 <use ../plots/cluster_growth_quantities.pdf>
 Package pdftex.def Info: ../plots/cluster_growth_quantities.pdf  used on input 
-line 531.
+line 463.
 (pdftex.def)             Requested size: 310.70299pt x 221.93394pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.535 \end{figure}
+l.467 \end{figure}
                   
-<../plots/example_memory_kernel.pdf, id=2016, 216.81pt x 361.35pt>
+Underfull \hbox (badness 10000) in paragraph at lines 469--471
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--474
+
+ []
+
+[60]
+<../plots/example_memory_kernel.pdf, id=2047, 216.81pt x 361.35pt>
 File: ../plots/example_memory_kernel.pdf Graphic file (type pdf)
 <use ../plots/example_memory_kernel.pdf>
 Package pdftex.def Info: ../plots/example_memory_kernel.pdf  used on input line
- 547.
+ 477.
 (pdftex.def)             Requested size: 164.22726pt x 273.7246pt.
-<../plots/memory_kernel_shape.pdf, id=2017, 361.35pt x 361.35pt>
+<../plots/memory_kernel_shape.pdf, id=2048, 361.35pt x 361.35pt>
 File: ../plots/memory_kernel_shape.pdf Graphic file (type pdf)
 <use ../plots/memory_kernel_shape.pdf>
-Package pdftex.def Info: ../plots/memory_kernel_shape.pdf  used on input line 5
-49.
+Package pdftex.def Info: ../plots/memory_kernel_shape.pdf  used on input line 4
+79.
 (pdftex.def)             Requested size: 261.87775pt x 261.88106pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.553 \end{figure}
-                  ) [62] [63 <../plots/cluster_growth_quantities.pdf>] [64 <../
-plots/example_memory_kernel.pdf> <../plots/memory_kernel_shape.pdf
+l.483 \end{figure}
+                  
+Underfull \hbox (badness 10000) in paragraph at lines 485--488
+
+ []
+
+
+Underfull \vbox (badness 8075) has occurred while \output is active []
+
+ [61 <../plots/cluster_growth_quantities.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+
+ []
+
+) [62 <../plots/example_memory_kernel.pdf> <../plots/memory_kernel_shape.pdf
 
 pdfTeX warning: pdflatex (file ../plots/memory_kernel_shape.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >]
 chapter 4.
-(./text/conclusion.tex) [65
+(./text/conclusion.tex) [63
 
 ]
 chapter 5.
-(./text/appendix.tex) [66
+(./text/appendix.tex) [64
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 85.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [67
+) [65
 
 ]
-[68] [69]
+[66] [67]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
  (./writing_version.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
 Package rerunfilecheck Info: File `writing_version.out' has not changed.
-(rerunfilecheck)             Checksum: C38A5B0B5268F6ECE98FFCEBBF7F6AC5;3081.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 961E8A3A976E0C0E7F0DAB50819241CE;3085.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3211,35 +3209,36 @@ Package logreq Info: Writing requests to 'writing_version.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
  ) 
 Here is how much of TeX's memory you used:
- 40911 strings out of 492982
- 802258 string characters out of 6134896
- 1295220 words of memory out of 5000000
- 43576 multiletter control sequences out of 15000+600000
+ 40929 strings out of 492982
+ 802859 string characters out of 6134896
+ 1295630 words of memory out of 5000000
+ 43591 multiletter control sequences out of 15000+600000
  629066 words of font info for 86 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  58i,22n,66p,10381b,2362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
 i10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on writing_version.pdf (77 pages, 4357976 bytes).
+pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on writing_version.pdf (75 pages, 4669366 bytes).
 PDF statistics:
- 2398 PDF objects out of 2487 (max. 8388607)
- 1226 compressed objects within 13 object streams
- 266 named destinations out of 1000 (max. 500000)
+ 2433 PDF objects out of 2487 (max. 8388607)
+ 1270 compressed objects within 13 object streams
+ 269 named destinations out of 1000 (max. 500000)
  540 words of extra memory for PDF output out of 10000 (max. 10000000)
 

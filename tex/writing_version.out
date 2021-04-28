@@ -9,7 +9,7 @@
 \BOOKMARK [1][-]{section.2.1}{Algorithm and simulation details}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.1.1}{Event driven molecular dynamics \(EDMD\)}{section.2.1}% 10
 \BOOKMARK [2][-]{subsection.2.1.2}{Details concerning the implementation}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.3}{Simulation periphery}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.3}{The simulation periphery}{section.2.1}% 12
 \BOOKMARK [1][-]{section.2.2}{Testing of the simulation code}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.1}{Diffusive behavior}{section.2.2}% 14
 \BOOKMARK [2][-]{subsection.2.2.2}{Radial distribution function}{section.2.2}% 15
