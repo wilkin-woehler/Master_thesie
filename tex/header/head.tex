@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 
 %Formatierung Ränder (Optional)
-\usepackage[a4paper, left=2.4cm,right=2.4cm,top=2.4cm,bottom=2.4cm,includeheadfoot, bindingoffset=6mm]{geometry}
+\usepackage[a4paper, left=2.4cm,right=2.4cm,top=2.4cm,bottom=2.4cm,includeheadfoot, bindingoffset=2mm]{geometry}
 %\usepackage[twoside, a4paper, bindingoffset=5mm, marginratio={4:6,5:7}, includeheadfoot]{geometry}
 %\usepackage{geometry}
 %\geometry{verbose,a4paper,tmargin=20mm,bmargin=20mm,lmargin=26mm,rmargin=20mm}
@@ -40,10 +40,16 @@
 \setlength{\tabcolsep}{18pt}%space between text and left/right border
 %\usepackage{dcolumn}
 %\usepackage{multicol}
-\usepackage{float}
+
+%\usepackage{scrhack}
+%\usepackage{float} %Leads to wrong hyperlinks within the document!
 %\floatstyle{boxed}
-\restylefloat{figure}
+%\restylefloat{figure}
 %\usepackage{floatflt}
+
+\usepackage{tocbasic}
+
+
 %\usepackage{here}
 %\usepackage{blindtext}
 %\newcolumntype{.}{D{.}{.}{7}}
@@ -82,7 +88,7 @@
 \usepackage{latexsym}
 \usepackage{texdraw}
 \usepackage[T1]{fontenc}
-\usepackage[breaklinks,pdfborder={0 0 0}]{hyperref}
+\usepackage[breaklinks,pdfborder={0 0 0},plainpages=false,pdfpagelabels]{hyperref}
 \usepackage{url}
 \usepackage{pgf}
 \usepackage{tikz}
@@ -97,7 +103,7 @@
 %Titel
 \title{Dokumenttitel}
 \author{Autor}
-\usepackage[headsepline]{scrpage2}
+\usepackage[headsepline]{scrlayer-scrpage}
 %\pagestyle{scrheadings}
 \clearscrheadfoot
 
@@ -132,12 +138,12 @@
 
 %\ohead{Wilkin Wöhler}
 %\ihead{\headmark}
-\automark[chapter]{section}
+\automark[section]{chapter}
 
-\rohead{\leftmark}
+\rohead{\rightmark}
 %\lehead{Wilkin Wöhler}
-\lehead{\rightmark}
-\rehead{\leftmark}
+\lehead{\leftmark}
+\rehead{\rightmark}
 
 \ofoot{\pagemark} %Outerfooter (i-nner, c-enter + all three for head available)
 
@@ -151,6 +157,7 @@
 %Bibliography
 %\usepackage{bibgerm}
 \usepackage[backend=biber, style = phys,maxnames=4,clearlang=true,doi=false]{biblatex}
+\usepackage{csquotes}
 %\DeclareRedundantLanguages{english,german,french,en,de}{english,german,french,en,de}
 \addbibresource{bibliography/library.bib}
 
