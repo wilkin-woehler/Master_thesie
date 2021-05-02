@@ -1,0 +1,58 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.3.1}{\ignorespaces Phase diagram of hard sphere fluid}}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {1.4.1}{\ignorespaces Free energy difference between fluid and solid phase}}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {1.4.2}{\ignorespaces Critical radius in the metastable regime}}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {1.5.1}{\ignorespaces Exponential growth of perturbations in chaotic system}}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {1.6.1}{\ignorespaces Nucleation rate comparison under assumption of early filled boxes}}{13}{figure.caption.8}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Long time diffusion constant at varying volume fractions}}{26}{figure.caption.26}
+\contentsline {figure}{\numberline {2.2.2}{\ignorespaces Radial distribution functions at varying volume fractions}}{27}{figure.caption.27}
+\contentsline {figure}{\numberline {2.2.3}{\ignorespaces Radial distribution function with Percus-Yevick approximation}}{27}{figure.caption.28}
+\contentsline {figure}{\numberline {2.3.1}{\ignorespaces Calculation time estimate}}{28}{figure.caption.29}
+\contentsline {figure}{\numberline {2.3.2}{\ignorespaces Quadratic calculation time of q6q6-order parameter cluster finding routine}}{29}{figure.caption.30}
+\contentsline {figure}{\numberline {2.3.3}{\ignorespaces File size estimate}}{30}{figure.caption.31}
+\contentsline {figure}{\numberline {2.4.1}{\ignorespaces Gaussian filter applied to cluster size distribution}}{31}{figure.caption.33}
+\contentsline {figure}{\numberline {2.4.2}{\ignorespaces Heat maps of differences under variation of equilibration step number}}{32}{figure.caption.34}
+\contentsline {figure}{\numberline {2.4.3}{\ignorespaces Heat maps of differences under variation of initial density}}{33}{figure.caption.35}
+\contentsline {figure}{\numberline {2.4.4}{\ignorespaces Nucleation rates of equilibration test measurements}}{33}{figure.caption.36}
+\contentsline {figure}{\numberline {2.5.1}{\ignorespaces Individual cluster tracking example}}{36}{figure.caption.37}
+\contentsline {figure}{\numberline {2.5.2}{\ignorespaces Example for correlation between a unstable cluster's size and lifetime}}{36}{figure.caption.38}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.2.1}{\ignorespaces Long time self-diffusion constant measurements from production data}}{39}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Histograms of the slopes for the linear regressions to the mean squared displacements. The histograms are for $\eta =0.531,\tmspace +\thickmuskip {.2777em}0.532,\tmspace +\thickmuskip {.2777em}0.533,\tmspace +\thickmuskip {.2777em}0.534$.}}}{39}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean of the histograms with the uncertainty on the mean given by $\sigma _{\delimiter "426830A D_L \delimiter "526930B } = \sigma _{D_L}/\sqrt {n}$ with n being the number of measurements included in the average.}}}{39}{subfigure.1.2}
+\contentsline {figure}{\numberline {3.3.1}{\ignorespaces Cluster size distributions over time after quench}}{41}{figure.caption.41}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\eta = 53.1\%$}}}{41}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\eta = 53.2\%$}}}{41}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\eta = 53.3\%$}}}{41}{subfigure.1.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\eta = 53.4\%$}}}{41}{subfigure.1.4}
+\contentsline {figure}{\numberline {3.3.2}{\ignorespaces Cluster size distributions for long waiting times}}{42}{figure.caption.42}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\eta = 53.1\%$}}}{42}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\eta = 53.2\%$}}}{42}{subfigure.2.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\eta = 53.3\%$}}}{42}{subfigure.2.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\eta = 53.4\%$}}}{42}{subfigure.2.4}
+\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Autocovariance functions of largest cluster in the metastable fluid}}{43}{figure.caption.43}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\eta = 0.531$}}}{43}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\eta = 0.532$}}}{43}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\eta = 0.533$}}}{43}{subfigure.1.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\eta = 0.534$}}}{43}{subfigure.1.4}
+\contentsline {figure}{\numberline {3.5.1}{\ignorespaces Largest cluster trajectories from production data with constant attachment rates}}{45}{figure.caption.44}
+\contentsline {figure}{\numberline {3.5.2}{\ignorespaces Constant attachment rate measurements from production data}}{46}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Histograms of the slopes from the linear regressions to third root of the largest cluster during the stable growth process. The histograms are for $\eta =0.531,\tmspace +\thickmuskip {.2777em}0.532,\tmspace +\thickmuskip {.2777em}0.533,\tmspace +\thickmuskip {.2777em}0.534$.}}}{46}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean of the histograms with the uncertainty on the mean given by $\sigma _{\delimiter "426830A c \delimiter "526930B } = \sigma _c/\sqrt {n}$ with n being the number of measurements included in the average.}}}{46}{subfigure.2.2}
+\contentsline {figure}{\numberline {3.6.1}{\ignorespaces Tensor of gyration measurements from production data}}{49}{figure.caption.46}
+\contentsline {figure}{\numberline {3.7.1}{\ignorespaces Comparison of different definitions for the induction time}}{51}{figure.caption.47}
+\contentsline {figure}{\numberline {3.8.1}{\ignorespaces Monte Carlo uncertainty estimation example}}{56}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Exponentially distributed random samples of size 500 with an exemplary censoring time of $T=\kappa ^{-1}$}}}{56}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribution of $\mathaccentV {hat}05E{\kappa }$ for the previously generated MC samples. The distribution can be described mostly by mean and standard deviation as the number of estimates in the tails are small.}}}{56}{subfigure.1.2}
+\contentsline {figure}{\numberline {3.8.2}{\ignorespaces Nucleation rate uncertainty depending on measurement time}}{57}{figure.caption.49}
+\contentsline {figure}{\numberline {3.9.1}{\ignorespaces Nucleation rate comparison with literature values}}{58}{figure.caption.50}
+\contentsline {figure}{\numberline {3.10.1}{\ignorespaces Largest cluster trajectories of small system with percentiles and average}}{60}{figure.caption.52}
+\contentsline {figure}{\numberline {3.10.2}{\ignorespaces Width and amplitude of memory kernel with example slice}}{61}{figure.caption.53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Slice through memory kernel at the given reference time. With the data the excluded Markovian part of the kernel is depicted. Further the full width at half maximum (FWHM) is shown as a first measure of the kernel width as well as a Gaussian fit. The FWHM is normalized to the value of a corresponding Gaussian curve.}}}{61}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Top: Width of the memory kernel slices from FWHM and Gaussian fit. The FWHM is normalized to the value of a corresponding Gaussian curve. Bottom: Amplitude of the memory kernel slice on the one hand by using the mean value of the data around the maximum and on the other hand by using the amplitude derived from the best Gaussian fit. The amplitude derived from the maximum value is normalized to the value of a corresponding Gaussian curve.}}}{61}{subfigure.2.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

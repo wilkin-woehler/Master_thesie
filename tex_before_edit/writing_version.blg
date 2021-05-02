@@ -1,0 +1,19 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'writing_version.blg'
+[24] biber:313> INFO - === Do Apr 29, 2021, 23:51:32
+[42] Biber.pm:371> INFO - Reading 'writing_version.bcf'
+[95] Biber.pm:857> INFO - Found 37 citekeys in bib section 0
+[109] Biber.pm:3981> INFO - Processing section 0
+[117] Biber.pm:4154> INFO - Looking for bibtex format file 'bibliography/library.bib' for section 0
+[127] bibtex.pm:1468> INFO - LaTeX decoding ...
+[234] bibtex.pm:1294> INFO - Found BibTeX data source 'bibliography/library.bib'
+[235] Utils.pm:169> WARN - Duplicate entry key: 'Sinn2001' in file 'bibliography/library.bib', skipping ...
+[267] Utils.pm:169> WARN - month field 'dec' in entry 'Meyer_nsGLE' is not an integer - this will probably not sort properly.
+[440] Utils.pm:169> WARN - BibTeX subsystem: /tmp/nWed9yUjGu/library.bib_5064.utf8, line 6, warning: 172 characters of junk seen at toplevel
+[477] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[477] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[477] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[477] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[501] bbl.pm:617> INFO - Writing 'writing_version.bbl' with encoding 'UTF-8'
+[518] bbl.pm:720> INFO - Output to writing_version.bbl
+[518] Biber.pm:110> INFO - WARNINGS: 3

@@ -4,37 +4,24 @@
 
 \section{Markovian assumption and the nucleation rate discrepancy}
 \label{sec:memory_approach}
-\newText{
-Understanding and describing phase transitions has always been as important as it has been challenging. On the one side its importance can be see in technological disciplines like metllurgy or in present scientific fields like atmosphere physics, where the properties of phase transitions are decisive. On the other side the challenge is due to the large number of participating particles.\\\\
-Nevertheless early on a concept to qualitatively describe phase transitions was developed, called clasical nucleation theory fro todays point of view. It assumes a free energy landscape for a collective observable describing the transition, that includes a barrier seperating the two distinct phases. Due to thermic Markovian fluctuations the system will eventually cross the barrier and the averages for this process is given by the Temperature and the barrier height.\\\\
-It is discussed in \autoref{sec:CNT} and further used a few times during this thesis. However it has been shown, for example by Sear 2012\cite{Sear2012}, that in many circumstances CNT fails to provide a quantiative description. As this is not only unsatisfying for a theorist, but actually of importance in many fields of science, various approaches to solve this problem have been proposed in the past. A comprehensive list of them can be found by Kuhnbold et al.\cite{Kuhnbold2019}. It includes modifying the free energy landscape, choosing suitable reaction coordinates or to include non-Markovian effects in the description. In the aforementioned article by Kuhnbold, the presences of these is shown for the largest cluster in the metastable Lennard-Jones system. Similarly Pelagejcev 2019\cite{ThesisPhilipp} lately found non-neglibile memory kernels in the same system, by employing a numeric memory kernel reconsturction scheme derived by Meyer et al. 2019\cite{Meyer2019a}. In this thesis we continue to extend the examples of memory kernel studies by adding our findings in the elastic hard sphere system in \autoref{sec:memory_kernels}.\\\\
-While the theory and framework to obtain the evaluated non-staitionary memory kernel it too broad to cover at this point, we may mention the foundations as given by Meyer 2020\cite{MeyerThesis} in his dissertation.\\\\
-In the 1960's Mori and Zwanzig used their projections operator formalisms to show that memory effects can a priori not be excluded for the time evolution of collective observables. Within these formalisms the generalized Langevin equation (GLE) was derived and later on Grabert developed a time dependent formalism to include non-stationarity. Based on these earlier works the non-stationary generalized Langevin equation was derived by Meyer et al. 2017\cite{Meyer_nsGLE}. It is the equation of motion for an coarse grained observable $A$ and is given by
+Understanding and describing phase transitions has always been as important as it has been challenging. On the one hand its importance can be seen in technological disciplines like metallurgy or in scientific fields like atmosphere physics. Metal melts, for example, will form different grain sizes depending on how fast they solidify. The need for an accurate description of phase transitions then becomes obvious when considering that this grain size is crucial for properties like rigidity and brittleness. On the other hand, the challenge is due to the large number of participating particles which make an exact description impossible.\\\\
+Nevertheless, a concept to qualitatively describe phase transitions was developed early on. Today this is called classical nucleation theory (CNT). In it, a free energy is defined for some collective observable which describes the transition. This free energy landscape includes a barrier separating the two distinct phases and starting from the unfavorable phase, the system will eventually cross the barrier due to thermic Markovian fluctuations. The average duration of this process is called induction or nucleation time and usually is determined by the temperature and the barrier height.\\
+
+In \autoref{sec:CNT}, it is discussed in more detail. Also, it is used a few times within this thesis. However, it has been shown by Sear 2012\cite{Sear2012} that in many circumstances CNT fails to provide a quantitative description. As this is not only unsatisfying for a theorist, but actually of importance in many fields of science, various approaches to solve this problem have been proposed in the past. A comprehensive list of them can be found by Kuhnbold et al. 2019\cite{Kuhnbold2019}. The list includes modifying the free energy landscape, choosing suitable reaction coordinates or to include non-Markovian effects in the description.\\ 
+
+In the article by Kuhnbold et al., the presence of these is illustrated for the largest cluster in the metastable Lennard-Jones system. Similarly Pelagejcev 2019\cite{ThesisPhilipp} found non-negligible memory kernels in the same system by employing a numeric memory kernel reconstruction scheme which was derived by Meyer et al. 2019\cite{Meyer2019a}. In this thesis, we will continue to extend the examples of memory kernel studies by adding our findings in the elastic hard sphere system in \autoref{sec:memory_kernels}.\\
+
+While the theory and framework to obtain the non-stationary memory kernel is too broad to cover at this point, we may mention the foundations as given by Meyer 2020\cite{MeyerThesis} in his dissertation.\\
+
+In the 1960's Mori and Zwanzig used their projection operator formalisms to show that memory effects can a priori not be excluded for the time evolution of collective observables. Within these formalisms the generalized Langevin equation (GLE) was derived and later on Grabert developed a time dependent formalism to include non-stationarity. Based on these earlier works, the non-stationary generalized Langevin equation was derived by Meyer et al. 2017\cite{Meyer_nsGLE}. It is the equation of motion for a coarse grained observable $A$ and is given by
 \begin{equation}
 \label{eqn:EOM_A}
   \frac{d A_{t}}{dt} = \omega (t) A_{t} + \int_{0}^{t} K(\tau, t) A_{\tau} d\tau + \eta_{0,t} \; \text{.}
 \end{equation}
-In the equation $A_{t}$ denotes the observable depending on time for a specific trajectory, $\omega (t)$ is the time dependent friction coefficient, $\eta_{0,t}$ is a time dependent noise term and $K(\tau, t)$ is the memory kernel depending on two times. From the strucutre we see that the kernel holds the information on how the observable's history influences its future and furthermore that it is fully time dependent to suit the desciption of non-stationary processes like phase transtions. In the case of a purely Markovian process a Dirac delta distirbution is expected as no memory is present.\\\\
-While the study of memory effects is one major aim of this thesis, the other one is to measure nucleation rates of the metastable hard sphere fluid. These are an acive topic of reaserch, as those from laboratory based experiments and thosed from numerical simulation studies differ by orders of magnitude, see for example Auer and Frenkel 2001\cite{Auer2001}, Filion et al. 2010\cite{Filion2010}, Schilling et al.\cite{Schilling2011}, Wood 2019\cite{Wood2019} or Fiorucci et al. 2020\cite{Fiorucci2020a}). To shade some more light on the problem, a detailed analysis and characterization of the nucleatione process is done, leading to a possible remedy of the discrepnacy as discussed in \autoref{sec:inf_vol_limit_nuc_rate}.
-}
+In the equation, $A_{t}$ denotes the observable which depends on the time $t$ for a specific trajectory, $\omega (t)$ is the time dependent friction coefficient, $\eta_{0,t}$ is the time dependent noise term and $K(\tau, t)$ is the memory kernel depending on two times. From the structure, we see that the kernel holds the information on how the observable's history influences its future. Moreover, we see that the equation is fully time dependent to suit the description of non-stationary processes like phase transitions. For purely Markovian and stationary processes, we expect to find a Dirac delta distribution, as no memory is present. In this case, \autoref{eqn:EOM_A} simplifies to the usual Langevin equation.\\
 
+While the study of memory effects is one major aim of this thesis, the other one is to measure nucleation rates of the metastable hard sphere fluid. They are an active topic of research, as those from laboratory based experiments and those from numerical simulation studies differ by orders of magnitude. See for example Auer and Frenkel 2001\cite{Auer2001}, Filion et al. 2010\cite{Filion2010}, Schilling et al. 2011\cite{Schilling2011}, Wood 2019\cite{Wood2019} or Fiorucci et al. 2020\cite{Fiorucci2020a}). To shed some light on the problem, a detailed analysis and characterization of the nucleation process is done. This leads to a possible remedy of the discrepancy as is discussed in \autoref{sec:inf_vol_limit_nuc_rate}.
 
-%Nucleation is a process in which a metastable state crosses a first order phase transition and ends in a stable and qualitatively different state. Because such processes are found in many circumstances, like atmosphere physics or metallurgy, people from various subjects have worked on understanding it.\\
-
-%Most descriptions of this phenomenon are based on classical nucleation theory (CNT) which in a simple form is shown in \autoref{sec:CNT}. CNT is capable of qualitatively capturing the behavior of nucleations, but often fails a quantitative comparison to experiments or numerical findings, sometimes by orders of magnitude. Models of this kind often include modifications to circumvent field specific problems but no broadly applicable framework has found a consensus to fully describe nucleations today\cite{MeyerThesis}. An extensive list of such approaches can also be found in the introduction by Kuhnbold et al.\cite{Kuhnbold2019}\\
-
-%Apart from it, there are other theoretical works that not only tailor CNT to a specific problem but actually are based on more fundamental ideas. These usually take into account memory effects and non stationarity, where the latter is obviously important for phase transitions.\\
-
-%In the 1960's Mori and Zwanzig used their projection operator formalism to derive the Generalized Langevin equation while Grabert later also used a time dependent formalism introducing non stationarity. Based on these earlier works the non stationary Generalized Langevin Equation (nsGLE) was derived by Meyer et al. 2017\cite{Meyer_nsGLE}. While the framework is too broad to cover at this point we may show the nsGLE in \autoref{eqn:EOM_A} to understand the memory kernel that is evaluated at the end of thesis in \autoref{sec:memory_kernels}.
-%\begin{equation}
-%\label{eqn:EOM_A}
-%  \frac{d A_{t}}{dt} = \omega (t) A_{t} + \int_{0}^{t} K(\tau, t) A_{\tau} d\tau + \eta_{0,t} \quad ,
-%\end{equation}
-%In the equation $A_{t}$ denotes an observable depending on time for a trajectory, $\omega (t)$ is the time dependent friction coefficient, $\eta_{0,t}$ is a time dependent noise term and $K(\tau, t)$ is the memory kernel depending on two times. As we integrate over the memory kernel, we can state that it holds the information about how the history of the observable's trajectory influences its future. As the kernel depends on two times this influence is time dependent. Further we may note that a Markovian kernel only consists of a Dirac delta distribution, as no memory is included. In this case \autoref{eqn:EOM_A} is simplified to the usual Langevin equation.\\
-
-%Quantifying the actual impact of memory effects in different systems is necessary for studying the use of the above mentioned ideas. For example Kuhnbold et al.\cite{Kuhnbold2019} as well as Pelageziev \cite{} have previously studied the nucleation process of metastable Lennard-Jones fluids concluding that memory effects can not be neglected for an accurate description. One aim of this thesis therefore is to extend this picture by a study of memory effects in the nucleation of the metastable hard sphere fluid.\\
-
-%An other question concerning the hard sphere system is to measure nucleation rates which summarize in a single number how fast the liquid to solid phase transition occurs. This is done to help understand the huge discrepancy between nucleation rates of the hard sphere system measured in experiments on the one hand and in computer simulations on the other hand. To explain the difference spanning order of magnitude, multiple attempts have been made but it could not be resolved until now. To this purpose a detailed analysis and characterization of the hard sphere nucleation process is done, leading to a speculation on the origin of the discrepancy.
 
 \section{The hard sphere system}
 \label{sec:HS_system}
@@ -47,7 +34,7 @@ V(r_{ij})=%\infty \cdot \Theta(\sigma - r_{ij})
 0 \quad & r_{ij} > \sigma
 \end{cases}
 \end{equation}
-In this equation $r_{ij} = r_j - r_i$ denotes the distance between two particles and $\sigma$ is the diameter of a hard sphere.\\
+In this equation, $r_{ij} = r_j - r_i$ denotes the distance between two particles and $\sigma$ is the diameter of a hard sphere.\\
 
 While the ideal gas model without pair interactions already makes it possible to derive the famous equation of state, $pV=NkT$, it does not include phase transitions yet. Those can be observed when granting the particles to occupy space, in the simplest case, by defining hard spheres of the kind in \autoref{eqn:hs_potential}. As it is the simplest model and it is efficiently accessible for computer simulations, the hard sphere system is very well suited to study basic properties of first order phase transitions.\\ 
 
@@ -57,7 +44,7 @@ On the downside, computer simulations are much more constraint in their size but
 
 The first of such simulations dates back to the beginning of electronic computer technology with first studies by Alder and Wainwright in 1959\cite{Alders59}. Since then, more algorithms have been elaborated to increase efficiency and technology has advanced to a point at which virtual studies of large scale systems are possible.
 
-\section{The hard sphere phase diagram and the metastable fluid}
+\section{The hard sphere phase diagram and its metastable state}
 \label{sec:HS_phase_diagram}
 The equation of state for the monodisperse hard sphere system has various parametrizations, as for example, listed by Mulero et al. 2001\cite{Mulero2001}. The most common of them, due to its simplicity, is the Carnahan-Starling approximation\cite{Carnahan1969}
 \begin{equation}
@@ -72,20 +59,22 @@ Similarly for the stable solid branch many approximations exist where a common o
 \end{equation}
 In this equation, $p$ is the pressure, $v$ is the volume per particle, $v_0=\sigma^3/\sqrt{2}$ is the volume per particle at close packing and $y=p \sigma^3 / (k_B T)$, with $k_B$ being the Boltzmann constant, $T$ the temperature of the crystal and $\sigma$ the diameter of the spheres.\\
 We may note that the inverse of the volume per particle corresponds to the number of particles per volume $ v^{-1} = \rho$. The relation to the corresponding packing fraction $\eta$ is given by $\rho = \frac{6}{ \pi} \eta$, which can be easily shown by extending $\rho = \frac{N}{V}$ by the single particle's volume $V_s = \frac{4}{3} \pi \left(\frac{\sigma}{2}\right)^3 = \frac{\pi}{6} \sigma^3$.\\
-Within the thesis mostly but not only the volume fraction is used as it is the most common parameter for describing the hard sphere system, but it can always be exchanged by the density.\\ 
+%Within the thesis mostly but not only the volume fraction is used as it is the most common parameter for describing the hard sphere system, but it can always be exchanged by the density.\\ 
 
 In the system a first order phase transition occurs when switching between the two stable branches, described by the two equations of state, between volume fractions of $\eta_{\text{freeze}} = 0.494$ and $\eta_{\text{melt}}=0.55$. The freezing volume fraction corresponds to first solidifying clusters when approaching the transition from the liquid branch. Accordingly the melting volume fraction indicates the melting of the crystalline phase when approaching the transition from the solid branch. Within this interval, the system tends towards a coexistence state which in equilibrium varies by the fraction of solid to liquid volume.\\
 This can be understood in the following way: The liquid may follow its branch to pressures above the coexistence pressure where it becomes unstable. The particles then rearrange into the crystalline phase as each single particle can access a larger free volume in the structured lattice than it would be possible in the unordered fluid.\\
 This becomes evident by comparing the volume fractions of random close packing $\eta_{\text{RCP}}\approx 64\%$ with the one of a face centered cubic or hexagonal close packing fraction of $\eta_{\text{HCP}} \approx 74 \%$. Within the crystalline phase each particle still has free volume accessible while the randomly packed particles are already confined at exactly one place.\\
-This additional accessible volume translates into a larger number of possible states for the particle or in terms of thermodynamics a larger entropy which acts as a driving force for the phase transition. As the particles in the crystal are packed more densely with a volume fraction of $\eta_{\text{melt}}=0.55$, the pressure is reduced and not all fluid transforms into the solid phase, but both phases may coexist.\\
+The additional accessible volume translates into a larger number of possible states for the particle or in terms of thermodynamics a larger entropy which acts as a driving force for the phase transition. As the particles in the crystal are packed more densely with a volume fraction of $\eta_{\text{melt}}=0.55$, the pressure is reduced and not all fluid transforms into the solid phase, but both phases may coexist.\\
 
 The overall phase diagram is shown with the coexistence pressure in \autoref{fig:hs_phase_diagram}.\\
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{Hard_sphere_phase_diagram.pdf}
+\includegraphics[width=0.6 \linewidth]{Hard_sphere_phase_diagram.pdf}
 \caption[Phase diagram of hard sphere fluid]{Phase diagram of the hard sphere system with freezing and melting volume fraction shown as shaded lines and the green dashed line indicating the equilibrium stable branch. Where liquid and solid branch do not coincide with the stable branch, systems are unstable and tend towards a state on the stable branch.}
 \label{fig:hs_phase_diagram}
 \end{figure}
+\FloatBarrier
 The equilibration solid fraction of the system, $x_s = \frac{V_s}{V}$ with $V_s$ the solid volume and $V$ the total volume, are described by \autoref{eqn:solid_fraction_result}.\\ 
 For the derivation it is necessary to keep in mind that, in the stationary coexistence state, the density of the solid phase is given by the melting density and that the liquid density is equal to the freezing density, i.e $\rho_s = \rho_{\text{melt}}$ and $\rho_l = \rho_{\text{freeze}}$ respectively. When further using the trivial equations
 \begin{align}
@@ -126,17 +115,8 @@ Combining \autoref{eqn:volume_relation} and \autoref{eqn:number_relation} to the
 \label{eqn:meta_stable_volume_fraction}
 \rho_l(x_s) &= \frac{N_l (x_s) }{ V_l(x_s) } = \frac{N}{V} \frac{1-\frac{\rho_m}{\rho}x_s}{1-x_s} = \rho \frac{1-\frac{\rho_m}{\rho}x_s}{1-x_s} \; \text{.}
 \end{align}
-%Some examples of \autoref{eqn:meta_stable_volume_fraction} are depicted in \autoref{fig:remaining_density} for moderate solid fractions of the system at regular volume fractions used for nucleation.\\
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.5 \linewidth]{remaining_density.pdf}
-%\caption[Density decrease of the fluid during crystallization]{Visualization of \autoref{eqn:meta_stable_volume_fraction}. The volume fraction of the remaining liquid decreases for all shown initial volume fractions only little up to crystalline ratios of a few percent.}
-%\label{fig:remaining_density}
-%\end{figure}
-%What can be seen is that for crystalline fractions of a few percent the remaining liquid is not altered significantly. 
+ 
 Evaluating the expression for relevant volume fractions of $\eta \in [53\%, 55\%]$ leads to the conclusion that crystalline fractions of $x_s < 5\%$ only reduce the packing fraction in the fluid by 0.1\%. Especially for system sizes of about 1 million particles, this already corresponds to cluster sizes of a few ten thousand particles where stable growth of clusters takes place and is rather insensitive to changes of the volume fraction as shown in \autoref{sec:cluster_growth}. This shows that during the highly sensitive cluster forming processes the volume fraction of the liquid can be assumed to be globally stable.
-%Eventhough not further discussed in this thesis it might be said that for polydisperse radii the phase diagram becomes even richer as show for example in 
-%\todo{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.91.068301}
 
 \section{Classical nucleation theory }
 \label{sec:CNT}
@@ -173,13 +153,13 @@ Dropping the lengthy notation for $\eta$ we end up with
 \frac{\Delta F}{N} = kT \left(  \frac{3-2 \eta_2}{(\eta_2 - 1)^2} - \frac{3-2 \eta_1}{(\eta_1 - 1)^2} + \text{log}\left( \frac{\eta_2}{\eta_1} \right) \right) \; \text{.}
 \end{equation}
 The analytical solution is compared in \autoref{fig:free_energy_diff} with numerically results which have been calculated before the analytical solution was found. In the following the free energy difference is identified with the difference in chemical potential $\Delta \mu$ as it is the driving force of the nucleation.\\
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{Free_energy_difference.pdf}
+\includegraphics[width=0.55 \linewidth]{Free_energy_difference.pdf}
 \caption[Free energy difference between fluid and solid phase]{Free energy difference per particle between the metastable liquid phase and the coexistence phase. Values by Schilling et al. 2011\cite{Schilling2011} and Filion et al. 2010\cite{Filion2010a} deviate from the shown result, but we assume that a factor of $\frac{\pi}{6}$ in the calculations is missing in either this or their calculation, as the modified green curve collapses rather accurately on the literature values when choosing $\eta_{\text{freeze}}=0.5$.}
 \label{fig:free_energy_diff}
 \end{figure}
-
 
 Coming back to the free energy landscape of \autoref{eqn:free_energy}, we see that it exhibits a maximum at a radius called $R_{\text{crit.}}$. The interpretation of this radius is that if a cluster surpasses the critical radius it is likely to keep growing until the system settles at the equilibrium solid fraction. Here a cluster is defined as a structure having a locally crystalline like ordering. The critical radius, simply calculated by setting the derivative of \autoref{eqn:free_energy} to zero, is given by
 \begin{equation}
@@ -194,7 +174,7 @@ and the height of the barrier at the critical radius is given by
 The classical critical radius depending on the volume fraction is depicted in \autoref{fig:r_crit} for a first impression of the cluster sizes that we are expecting for nucleation. The interfacial surface tension for this often is given by $\gamma \approx \SI{0.6}{k_B T \sigma^{-2}}$, but its precise value is under debate. Thus, we may stick to one of the recently calculated values of $\gamma = \SI{0.589}{k_B T \sigma^{-2}}$ by Bültmann and Schilling 2020\cite{Bultmann2020}. 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{CNT_radius.pdf}
+\includegraphics[width=0.55 \linewidth]{CNT_radius.pdf}
 \caption[Critical radius in the metastable regime]{Critical radius $R_{\text{crit.}}$ calculated from CNT depending on volume fraction $\eta$. The critical radius obtained by our calculation is rather small, but when using the chemical potential calculated by Schilling and Filion the critical cluster size is of the order $N \approx 50$ at intermediate metastable volume fractions, corresponding better to typical fluctuations of the largest cluster found in simulations.}
 \label{fig:r_crit}
 \end{figure}
@@ -207,7 +187,7 @@ The exponential growth of induced variations in a chaotic system can be visualiz
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7 \linewidth]{perturbation.pdf}
+\includegraphics[width=0.6 \linewidth]{perturbation.pdf}
 \caption[Exponential growth of perturbations in chaotic system]{Mean difference of particle positions in the reference and perturbed simulation. The blue lines show the same data while the orange curve shows the maximum deviation present at each step. For comparison with datasets using the system time $\delta t$ as units, a rough conversion is given by $T \approx \text{(\#steps)} \cdot \frac{1 \delta t}{60 \text{steps}}$, where a step is defined as one event execution per particle.\\ The maximum deviation first consists only of the initial perturbation but then increases similar to the mean deviation.}
 \label{fig:chaotic_behavior}
 \end{figure}
@@ -218,27 +198,20 @@ The small bumps seemed to be an artifact of the periodic boundary conditions, on
 The challenge that this behavior poses is that any perturbation pushes the system to a completely different trajectory. In the context of EDMD simulations, we can examine the case when a measurement of some quantity is performed. For this purpose all particles have to be propagated to the global time. To not perturb the system with this extra calculations, an exact copy of the particle positions has to be saved prior to the measurement. Following it, this copy is then used to restore the unperturbed system.\\ 
 Similarly recalculating an event for the FEL at some point of time is not possible as the outcome will vary in the last digits. For this reason it becomes necessary to save all precalculated events of the simulation in order to be able to restart it from a file.\\
 Facing this challenge makes it possible, for example, to resimulate an interesting part of a trajectory from some saved checkpoint with a higher measurement frequency to resolve more details. 
-
+\newpage
 \section{Comparison to real world experiments} 
 \label{sec:comparison}
-Starting in 1986 with the experiments by Pusey and Megen\cite{Pusey1986}, hard sphere like systems have been synthesized in the laboratory. Today, a large variety of them is known, but further systems are being developed aiming at controlling stability and sphere size as well as reducing the possible impact of charges on top of the spheres because the Coulomb interaction alters the behavior of the system. Still, all of these systems have in common that the hard spheres are suspended in some fluid. Even though nucleation experiments can be done without gravity in space\cite{Doherty1998}, usually, the fluid's mass density has to be matched to the mass density of the hard spheres to prevent sedimentation. Further, it is necessary for optical measurements to match the refractive index of the fluid and the spheres because otherwise the probe becomes opaque.\\
+Starting in 1986 with the experiments by Pusey and Megen\cite{Pusey1986}, hard sphere like systems have been synthesized in the laboratory. Today, a large variety of them is known, but further systems are being developed aiming at controlling stability and sphere size as well as reducing the possible impact of charges on top of the spheres because the Coulomb interaction alters the behavior of the system. Common to all is, that the hard spheres are suspended in some fluid and that usually its mass density has to be matched to the mass density of the hard spheres to prevent sedimentation. An exception to this may be nucleation experiments that have been done in space without gravity. See Doherty et al. 1998\cite{Doherty1998}. Further, it is necessary for optical measurements to match the refractive index of the fluid and the spheres because otherwise the probe becomes opaque.\\
 
-The absence of the bath in simple hard sphere simulations constitutes a large difference to those experiments in the laboratory. It has been argued that this only introduces a difference of the time scale which can be compensated by using the characteristic diffusion time as the unit of time. However, a discussion on the possibility of hydrodynamic effects changing the behavior of the laboratory system compared to simulations is ongoing at the moment, see Radu and Schilling 2014\cite{Radu2014} compared to Fiorucci et al. 2020\cite{Fiorucci2020a}.\\
-Also, the mode spectrum of the suspending fluid within the cavities between the dispersed spheres might have a more important role 
-than expected, but requires further investigation.\\ 
-Still, it usually is not possible to include the suspending fluid into simulations as the proliferation of particles raises calculation times by orders of magnitude.\\
+The absence of the bath in simple hard sphere simulations constitutes a large difference to those experiments in the laboratory. It has been argued, that this only introduces a difference of the time scale which can be compensated by using the characteristic diffusion time as the unit of time. However, a discussion on the possibility of hydrodynamic effects changing the behavior of the laboratory system compared to simulations is ongoing at the moment. See Radu and Schilling 2014\cite{Radu2014} compared to Fiorucci et al. 2020\cite{Fiorucci2020a}.\\
+A more subtle detail is the missing mode spectrum of the suspending fluid within the cavities between the dispersed spheres. However, showing its importance requires further investigation.\\ 
+Nevertheless, simulations probably could approximate the real world more accurate by including the suspending fluid, but the proliferation of particles raises calculation times by orders of magnitude.\\
 
-A further difference is given by the spatial geometry and extent of the simulation. The geometry in simulations is often defined by periodic boundary conditions (PBC) to circumvent surface effects, which is by itself an unphysical setup.\\ 
-Concerning the spatial extent, simulations are mostly confined to very small systems in comparison to experimental setups leading to a further major difference between the measurement geometries: While the experimentalists usually probe a large continuous volume of hard spheres in a suspending fluid, the theorists mostly use many disjunct volumes, as each subvolume can be processed by a single CPU, making simple parallelization of the calculations possible.\\
+A further difference is given by the spatial geometry and extent of the simulation. The geometry in simulations is often chosen with the unphysical setup of periodic boundary conditions (PBC) which are used to avoid surface effects. The impact of this geometry is studied well because the setup is very commonly used. \\ 
+Concerning the spatial extent, simulations are mostly confined to very small systems in comparison to experimental setups leading to a further major difference between the measurement geometries. While the experimentalists usually probe a large continuous volume of hard spheres in a suspending fluid, the theorists mostly use many disjunct volumes, as each subvolume can be processed by a single CPU, making simple parallelization of the calculations possible.\\
 
-\newText{To obtain information about the nucleation state of the experiment also diferent approaches are used. Because the information of each single particle position is most of the time not accessible in experiments, light scattering is pften used to determine the crystallinity of a sample and the nucleation time then can be defined by when an overall crystallinity is reached. In comparisontheorists have access to all positions but no simple measurement as light scattering available. Instead they use a variety of cluster finding algorithms to determine crystalline local structures. The nucleation time then might be defined by the mean waiting time until a stable crystalline phase is found, for example Filion et al. 2010\cite{Filion2010a}. A discussion on possible definitions of the nucleation time is done in \autoref{sec:nucleation_times}. Furthermore wihtin this thesis we discuss the nucleation behavior of the common simulation geometry in \autoref{sec:induction_time_expectation} and the corresponding one for the infinitely large volume in \autoref{sec:inf_vol_limit_nuc_rate}, leading to a possible explanation of the discrepancy between the nucleation rates measured in simulations and laboratory based experiments.
-}
-%While the expected behavior of disjunct volumes under the assumption of a constant nucleation rate is discussed in \autoref{sec:induction_time_expectation}, the overall solid fraction in the thermodynamic limit of infinite volume is inspected in \autoref{sec:nucleation_rates}.\\
-%At last we may also note the difference in defining nucleation rates, as it 
-%\todo{Some of this introduction stuff may better fit into comparison to real world?}\\
-%Nucleation rates for the metastable hard sphere fluid have been measured on the experimental as well as on the theoretical side, but with a large discrepancy as discussed in \autoref{sec:comparison}. The employed procedures and definitions also vary but not to a point to explain the discrepancy so far. The differences mostly originate from the kind of accessible system and information. While the experimentalists often have access to very large systems but without knowing all positions at all times, theorists mostly have smaller systems in numerical simulations but with the advantage of being able to access all particle positions and in case of MD simulations their velocities as well.\\
-%On the experimental side light scattering and optical methods are mostly employed to measure the %structural properties of the probe, on the theoretical side different cluster finding algorithms are used.\\
-%While experimentalists may define an induction time by how long it takes for a quenched system to reach some level of overall crystallinity,
-%As theorists have often used simple approaches like the average time to nucleation for a couple of trajectories to measure their induction times for example by Filion et al. 2010\cite{Filion2010a}. This method requires the theorist to wait for all trajectories of an ensemble to show nucleation, what renders it very unsuitable for systems at low volume fractions where the induction time increases steeply.\\
-%To circumvent this problem we will define the nucleation rate in the following differently without requiring all simulations to nucleate. In fact we can also show that the uncertainty of the induction time obtained from the data is not significantly reduced anymore for measurements longer than the mean induction time.
+Measurement techniques, to determine the nucleation state of the experiment, also vary. Light scattering on the growing crystal planes is often used in experiments to measure the crystallinity of a sample because the information of each single particle position is most of the time not accessible. subsequently, a nucleation time can be defined by when an overall crystallinity is obtained. In comparison, theorists have access to all positions but no simple measurement like light scattering available. Instead, they use a variety of cluster finding algorithms to determine crystalline local structures. The nucleation time then can be defined by the mean waiting time until a stable crystalline phase is found, for example, Filion et al. 2010\cite{Filion2010a}.\\ 
+
+A discussion on possible definitions of the nucleation time is done in \autoref{sec:nucleation_times}. Furthermore, we will discuss the nucleation behavior of the common simulation geometry in \autoref{sec:induction_time_expectation} and the corresponding one for the infinitely large volume in \autoref{sec:inf_vol_limit_nuc_rate}. Finally, this leads to a possible explanation of the discrepancy between the nucleation rates measured in simulations and laboratory based experiments.
+
 \FloatBarrier

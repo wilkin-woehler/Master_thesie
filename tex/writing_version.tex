@@ -12,98 +12,91 @@
 
 %88888888888888888888888888888888888888888888888888888888888888888888888888
 \begin{document}
-	%set language
-	\selectlanguage{english}
+  %set language
+  \selectlanguage{english}
 	
-	%sections
-	\renewcommand{\subsectionautorefname}{section\negthinspace}
-	\renewcommand{\subsubsectionautorefname}{section\negthinspace}
-        \renewcommand{\figureautorefname}{fig.\negthinspace}
-	\renewcommand{\tableautorefname}{tab.\negthinspace}
-	\renewcommand{\equationautorefname}{eq.\negthinspace}
-	
-	
-	\newcommand{\vtitle}{Nucleation and Crystallization of the Metastable Hard Sphere Fluid}
-	\newcommand{\vinstitute}{Research group for complex systems and soft matter}
-	\newcommand{\vsupervision}{Prof. Dr. Tanja Schilling}
-	\newcommand{\vauthor}{Wilkin Wöhler}
-
+  %sections
+  \renewcommand{\subsectionautorefname}{section\negthinspace}
+  \renewcommand{\subsubsectionautorefname}{section\negthinspace}
+  \renewcommand{\figureautorefname}{fig.\negthinspace}
+  \renewcommand{\tableautorefname}{tab.\negthinspace}
+  \renewcommand{\equationautorefname}{eq.\negthinspace}
 	
 	
-	%\newcommand{\presummary}{Nucleation and cluster development in the metastable hard sphere fluid are studied in this thesis. To this purpose an event driven molecular dynamcis simulation code is developed and thouroughly tested by measuring well known quantities like diffusion coefficients or radial distribution functions at various packing fractions. Its performance is well suited for large systems enabling also the measurement of cluster growth rates and shape descriptors for clusters with sizes up to a hundred thousand particles without significant spatial influence to itself due to the periodic boundary conditions.\\ 
-%The program is used to simulate 2000 trajectories of systems containing about 1 million particles. In the analysis of the data a constant attachment rate to the cluster's surface is measured. Surprisingly the attachement rate seems unaffected by the packing fraction of the surrounding mestastable liquid, even though varying between single clusters by about 50\% leading to uncertainties that can not exclude a dependence on the diffusion time scale.\\
-%From shape descriptors based on the Tensor of Gyration a tendency towards more spherical clusters is observed up to sizes of about a thousand particles. Clusters including more particles seem to conserve their almost spherical proportions and approach the completly spherical shape only slowly.\\  
-%Also nucleation rates at volume fractions of $\eta \in [53.1\%,53.4\%]$ are measured at high precision compared to earlier measurements of these, confirming the discrepancy between real world experiments and numerical simulations. Beyond that the impact memory effects in nucleations for smaller systems is investigated with the finding of a Gaussian memory kernel. The width of which therby is comparable to the width of the phase transition time for a single trajectory, as previously shown by Meyer et al. 2021\cite{Meyer2021}.}
+  \newcommand{\vtitle}{Nucleation and Crystallization of the Metastable Hard Sphere Fluid}
+  \newcommand{\vinstitute}{Research group for complex systems and soft matter}
+  \newcommand{\vsupervision}{Prof. Dr. Tanja Schilling}
+  \newcommand{\vauthor}{Wilkin Wöhler}
 
-\newcommand{\presummary}{\newText{
-The thesis at hand studies the nucleation process of the metastable hard sphere liquid. It focuses on the one hand on understanding the discrepancy between experimental and theoretical determined nucleation rates, where after a broad analysis of the process a possible solution is proposed. On the other hand the existance of non-Markovian effects are investigated. We find a mostly featurelss Gaussian memory kernel of constant width. However a clear interpretation or relation to direct accessible quantities requires further research.\\
-Also key points and testing of the employed Event driven molecular dynamics (EDMD) simulation are presented, as well as an analysis of the produced simulation trajectories. The analysis includes the measurement of the long time diffusion constant, the time scale on which the local ordering process takes place and the attachement rate of particles to a growing cluster.\\
-Furthermore, shape descriptors for clusters at different stages are evaluated regarding their dependence on different quantities describing the growth process. However no dependence is found.\\
-The nucleation study is based on simulations with 2000 trajectories at $\eta \in [53.1\%,53.4\%]$ with each containing about one million particles, while the memory kernel analysis is based on about 500 trajectories at $\eta = 54.0\%$ with each containing 16384 particles to reach complete crystallization
-}}
-
-\pagestyle{plain}
-\pagenumbering{Roman} % and numbering to roman numbering
-%\pagestyle{plain} % Set the pagestyle to plain to exclude header in inital part
-
-\input{header/title_page.tex}
-
-\renewcommand{\chapterpagestyle}{plain}
-
-\tableofcontents 
-\newpage
-
-\listoffigures
-\newpage
-
-\listoftables
-\newpage
-
-\null\thispagestyle{empty}  %An empty page
-\newpage
-
-
-\pagenumbering{arabic} % Reset the numbering to arabic numbering
-\pagestyle{scrheadings} % Set the pagestyle back to header including style
-
-%\renewcommand{\chapterpagestyle}{plain} % Set the pagestyle of chapter page also with header
-
-
-\chapter{Introduction}
-\input{text/theory.tex}
-\newpage
-
-\chapter{Simulation details}
-\input{text/simulation.tex}
-\newpage
-
-\chapter{Data Analysis}
-\input{text/analysis.tex}
-\newpage
-
-\chapter{Conclusion}
-\input{text/conclusion.tex}
-\newpage
-
-\pagestyle{plain}
-\renewcommand{\chapterpagestyle}{plain}
-
-\appendix
-%\chapter{Appendix}
-\input{text/appendix.tex}
-\newpage
-
-
-\chapter*{Acknowledgements}
-\newText{
-First of all, i want to thank Tanja Schilling for granting me a lot of freedom while always hinting relevant details and for providing the large resources for the simulation study. Secondly, I want to thank Anja Kuhnbold for the short line of communication that helped solve many small questions. And then, i also want to thank Hugues Meyer and Fabian Glatzel as they elaborated and developed the theoretical and numerical base on which the memory kernel analysis relies.\\\\
-The author acknowledges support by the state of Baden-Württemberg through bwHPC
-and the German Research Foundation (DFG) through grant no INST 39/963-1 FUGG (bwForCluster NEMO).
-%\pagestyle{plain}
-%\renewcommand{\chapterpagestyle}{plain}
+  \newcommand{\presummary}{
+The thesis at hand studies the nucleation process of the metastable hard sphere liquid. It focuses on understanding the discrepancy between experimentally and theoretically determined nucleation rates. Regarding it, a possible solution is proposed based on a broad analysis of the process. Further, the existance of non-Markovian effects are investigated. We find a mostly featurelss Gaussian memory kernel of constant width. However, a clear interpretation or relation to direct accessible quantities requires further research.\\
+Also key features and testing of the employed event driven molecular dynamics (EDMD) simulation code are presented as well as an analysis of the produced simulation trajectories. The analysis includes the measurement of the long time diffusion constant, the time scale on which the local ordering process takes place and the attachement rate of particles to a growing cluster.\\
+Furthermore, shape descriptors for clusters at different stages are evaluated regarding their dependence on different quantities describing the growth process. In the analysis, however, no dependence is observed.\\
+The nucleation study is based on simulations with 2000 trajectories at $\eta \in [53.1\%,\,53.4\%]$ of which each contains about one million particles. The memory kernel analysis is based on about 500 trajectories at $\eta = 54.0\%$. In this case each simulation contains 16384 particles to reach complete crystallization.
 }
 
-\printbibliography
+
+  %Beginnig: Title, content, figure, tables
+  \pagenumbering{Roman} % Set front matter to roman numbering
+  \pagestyle{plain} % Set the pagestyle to exclude header in inital part
+  \renewcommand{\chapterpagestyle}{plain} %Also for chapter start page
+
+
+  \input{header/title_page.tex}
+
+  \tableofcontents 
+  \newpage
+
+  \listoffigures
+  \newpage
+
+  \listoftables
+  \newpage
+
+  \null\thispagestyle{empty}  %An empty page to start introduction at the right place
+  \newpage
+
+
+  \pagenumbering{arabic} % Reset the numbering to arabic numbering
+  \pagestyle{scrheadings} % Set the pagestyle back to header including style
+  \renewcommand{\chapterpagestyle}{plain} % Set the pagestyle of chapter page for body
+
+
+
+  %Body of the text
+  \chapter{Introduction and theory}
+    \input{text/theory.tex}
+  \newpage
+
+  \chapter{Simulation details and testing}
+    \input{text/simulation.tex}
+  \newpage
+
+  \null\thispagestyle{empty}  %An empty page to start introduction at the right place
+  \newpage
+
+  \chapter{Data Analysis}
+    \input{text/analysis.tex}
+  \newpage
+
+  
+
+  %Endpart: conclusion, appendix, acknowlegdment, bibliography
+  \chapter{Conclusion}
+    \pagestyle{plain} %Set the pagestyle to exclude headers in the back matter
+    \renewcommand{\chapterpagestyle}{plain} %Pagestyel for the chapter startpage
+    \input{text/conclusion.tex}
+  \newpage
+
+  \appendix
+    \input{text/appendix.tex}
+  \newpage
+
+  \chapter*{Acknowledgements}
+    \input{text/acknowlegment.tex}
+  \newpage
+
+  \printbibliography
 
 \end{document}
 

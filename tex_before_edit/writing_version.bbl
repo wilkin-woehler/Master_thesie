@@ -1,0 +1,1657 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Meyer2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3b895879f8a27f1cba1c8bf5d4405db4}{%
+           family={Glatzel},
+           familyi={G\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6d52973ee298aa91dd581fabfb8926ec}{%
+           family={W{ö}hler},
+           familyi={W\bibinitperiod},
+           given={Wilkin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c9b8849840de6924a84a1789bdf97f9d}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Tanja},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{fullhash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{bibnamehash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{authorbibnamehash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{authornamehash}{9b92e3883e01dd5ce459e05104819b1d}
+      \strng{authorfullhash}{9b92e3883e01dd5ce459e05104819b1d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose to describe the dynamics of phase transitions in terms of a nonstationary generalized Langevin equation for the order parameter. By construction, this equation is nonlocal in time, i.e., it involves memory effects whose intensity is governed by a memory kernel. In general, it is a hard task to determine the physical origin and the extent of the memory effects based on the underlying microscopic equations of motion. Therefore we propose to relate the extent of the memory kernel to quantities that are experimentally observed such as the induction time and the duration of the phase transformation process. Using a simple kinematic model, we show that the extent of the memory kernel is positively correlated with the duration of the transition, and that it is of the same order of magnitude, while the distribution of induction times does not have an effect on the memory kernel. This observation is tested at the example of several model systems, for which we have run computer simulations: a modified Potts model, a dipole gas, an anharmonic spring in a bath, and a nucleation problem. All these cases are shown to be consistent with the simple theoretical model.}
+      \field{issn}{24700053}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{2}
+      \field{title}{{Evaluation of memory effects at phase transitions and during relaxation processes}}
+      \field{volume}{103}
+      \field{year}{2021}
+      \field{pages}{22102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.103.022102
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/PhysRevE.103.022102.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1103/PhysRevE.103.022102
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevE.103.022102
+      \endverb
+      \keyw{doi:10.1103/PhysRevE.103.022102 url:https://doi.or}
+    \endentry
+    \entry{Alders59}{article}{}
+      \name{author}{2}{}{%
+        {{hash=64ac69a2c10e6819d1cbb0cb7da8d913}{%
+           family={Alder},
+           familyi={A\bibinitperiod},
+           given={Bernie\bibnamedelima Julian},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=591e94104974a1f805e2ad8d848bee3c}{%
+           family={Wainwright},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelima Everett},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{11198cf7429793ddd59253760adff2d6}
+      \strng{fullhash}{11198cf7429793ddd59253760adff2d6}
+      \strng{bibnamehash}{11198cf7429793ddd59253760adff2d6}
+      \strng{authorbibnamehash}{11198cf7429793ddd59253760adff2d6}
+      \strng{authornamehash}{11198cf7429793ddd59253760adff2d6}
+      \strng{authorfullhash}{11198cf7429793ddd59253760adff2d6}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{2}
+      \field{title}{{Studies in Molecular Dynamics. I. General Method}}
+      \field{volume}{31}
+      \field{year}{1959}
+      \field{pages}{459\bibrangedash 466}
+      \range{pages}{8}
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}Phase{\_}diagrams/Alders{\&}Wainwright1959.pdf:pdf
+      \endverb
+    \endentry
+    \entry{MeyerThesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universit{é} du Luxembourg, Albert-Ludwigs-Universit{ä}t Freiburg}%
+      }
+      \strng{namehash}{b143c3e26e8ccb1ac3669243780ab269}
+      \strng{fullhash}{b143c3e26e8ccb1ac3669243780ab269}
+      \strng{bibnamehash}{b143c3e26e8ccb1ac3669243780ab269}
+      \strng{authorbibnamehash}{b143c3e26e8ccb1ac3669243780ab269}
+      \strng{authornamehash}{b143c3e26e8ccb1ac3669243780ab269}
+      \strng{authorfullhash}{b143c3e26e8ccb1ac3669243780ab269}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The dynamics of many-body complex processes is a challenge that many scientists from various fields have to face. Reducing the complexity of systems involving a large number of bodies in order to reach a simple description for observables captur- ing the main features of the process is a difficult task for which different approaches have been proposed over the past decades. In this thesis we introduce new tools to describe the coarse-grained dynamics of arbitrary observables in non-equilibrium processes. Following the projection operator formalisms introduced first by Mori and Zwanzig, and later on by Grabert, we first derive a non-stationary Generalized Langevin Equation that we prove to be valid in a wide spectrum of cases. This includes in particular driven processes as well as explicitly time-dependent observ- ables. The equation exhibits a priori memory effects, controlled by a so-called non- stationary memory kernel. Because the formalism does not provide extensive infor- mation about the memory kernel in general, we introduce a set of numerical meth- ods aimed at evaluating it from Molecular Dynamics simulation data. These proce- dures range from simple dimensionless estimations of the strength of the memory to the determination of the entire kernel. Again, the methods introduced are very general and require as input a small number of quantities directly computable from numerical of experimental timeseries. We finally conclude this thesis by using the projection operator formalisms to derive an equation of motion for work and heat in dissipative processes. This is done in two different ways, either by using well-known integral fluctuation theorems, or by explicitly splitting the dynamics into adiabatic and dissipative parts.}
+      \field{title}{{Generalized Langevin Equations and memory effects in non-equilibrium statistical physics}}
+      \field{type}{phdthesis}
+      \field{year}{2020}
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/thesis/thesisHugues{\_}latest.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Kuhnbold2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1b1ca81f540bb27db598e3859c175299}{%
+           family={Kuhnhold},
+           familyi={K\bibinitperiod},
+           given={Anja},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d9fb770089912e1006e7d402818d9d31}{%
+           family={Amati},
+           familyi={A\bibinitperiod},
+           given={Graziano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bdc824d7d360b6c70551a338aadd6e4a}{%
+           family={Philipp},
+           familyi={P\bibinitperiod},
+           given={Pelagejcev},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c9b8849840de6924a84a1789bdf97f9d}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Tanja},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{dc3987a53c50f83b34dc199616a06948}
+      \strng{fullhash}{4a63e82437338c9e59aa50f5b2c71ca0}
+      \strng{bibnamehash}{dc3987a53c50f83b34dc199616a06948}
+      \strng{authorbibnamehash}{dc3987a53c50f83b34dc199616a06948}
+      \strng{authornamehash}{dc3987a53c50f83b34dc199616a06948}
+      \strng{authorfullhash}{4a63e82437338c9e59aa50f5b2c71ca0}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We discuss the structure of the equation of motion that governs nucleation processes at first order phase transitions. From the underlying microscopic dynamics of a nucleating system, we derive by means of a nonequilibrium projection operator formalism the equation of motion for the size distribution of the nuclei. The equation is exact, i.e., the derivation does not contain approximations. To assess the impact of memory, we express the equation of motion in a form that allows for direct comparison to the Markovian limit. As a numerical test, we have simulated crystal nucleation from a supersaturated melt of particles interacting via a Lennard-Jones potential. The simulation data show effects of non-Markovian dynamics.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{23318422}
+      \field{journaltitle}{Physical Review E - Statistical Physics, Plasmas, Fluids, and Related Interdisciplinary Topics}
+      \field{title}{{Derivation of an exact, nonequilibrium framework for nucleation: Nucleation is a priori neither diffusive nor Markovian}}
+      \field{volume}{052140}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.100.052140
+      \endverb
+      \verb{eprint}
+      \verb 1809.09834
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/KuhnholdPhysRevE.100.052140.pdf:pdf
+      \endverb
+      \keyw{doi:10.1103/PhysRevE.100.052140 url:https://doi.or}
+    \endentry
+    \entry{Meyer_nsGLE}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ac995c4572c7796a83d9d4f444aeb4eb}{%
+           family={Voigtmann},
+           familyi={V\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c9b8849840de6924a84a1789bdf97f9d}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Tanja},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{fullhash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{bibnamehash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{authorbibnamehash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{authornamehash}{1fbb126f0619efeb813466e4d7e2672e}
+      \strng{authorfullhash}{1fbb126f0619efeb813466e4d7e2672e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{12}
+      \field{number}{21}
+      \field{title}{{On the non-stationary generalized Langevin equation}}
+      \field{volume}{147}
+      \field{year}{2017}
+      \field{pages}{214110}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.5006980
+      \endverb
+      \verb{urlraw}
+      \verb http://aip.scitation.org/doi/10.1063/1.5006980
+      \endverb
+      \verb{url}
+      \verb http://aip.scitation.org/doi/10.1063/1.5006980
+      \endverb
+    \endentry
+    \entry{Mulero2001}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e705a2a06efa772398ab2885eee58c53}{%
+           family={Mulero},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5c4ef4cef290c50bee66c795838e38ce}{%
+           family={Gal{á}n},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e2e4be337eb93f8d33e1d46c4b9116d6}{%
+           family={Cuadros},
+           familyi={C\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1b545d8a3c6a6bf1a645e267ab49d56}
+      \strng{fullhash}{a1b545d8a3c6a6bf1a645e267ab49d56}
+      \strng{bibnamehash}{a1b545d8a3c6a6bf1a645e267ab49d56}
+      \strng{authorbibnamehash}{a1b545d8a3c6a6bf1a645e267ab49d56}
+      \strng{authornamehash}{a1b545d8a3c6a6bf1a645e267ab49d56}
+      \strng{authorfullhash}{a1b545d8a3c6a6bf1a645e267ab49d56}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Twenty two different analytical expressions for the compressibility factor of the hard sphere system have been collected and reviewed in order to perform two applications: Firstly, the accuracy of these expressions in reproducing six available computer simulation data sets for the hard sphere system, some of which are very recent, is tested. It is shown that there is not a direct relation between the simplicity or complexity of their analytical form and their accuracy. Secondly, the expressions, together with the Verlet-Weis formula for the temperature dependence of the molecular diameter, have been used to reproduce our molecular dynamics results for the pressure of the Lennard-Jones reference system proposed in the Weeks-Chandler-Andersen theory. We conclude that the approximation of using hard sphere equations of state together with the Verlet-Weis formula is very accurate at temperatures and densities near the Lennard-Jones critical point. At densities close to the triple point or to the liquid curve in the liquid-vapour equilibrium, the coincidence is adequate (deviations around 3{\%}) only if the appropriate hard sphere equation of state is used.}
+      \field{issn}{14639076}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{number}{22}
+      \field{title}{{Equations of state for hard spheres. A review of accuracy and applications}}
+      \field{volume}{3}
+      \field{year}{2001}
+      \field{pages}{4991\bibrangedash 4999}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1039/b104049a
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/eos/muleropccp01.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Carnahan1969}{article}{}
+      \name{author}{2}{}{%
+        {{hash=207e4e900798940fa86abee6268bdcdc}{%
+           family={Carnahan},
+           familyi={C\bibinitperiod},
+           given={Norman\bibnamedelima F.},
+           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=9e205cb4879786552c2f450e5e7a90c7}{%
+           family={Starling},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c6b3d47461a54dd568154fc25b8e668}
+      \strng{fullhash}{9c6b3d47461a54dd568154fc25b8e668}
+      \strng{bibnamehash}{9c6b3d47461a54dd568154fc25b8e668}
+      \strng{authorbibnamehash}{9c6b3d47461a54dd568154fc25b8e668}
+      \strng{authornamehash}{9c6b3d47461a54dd568154fc25b8e668}
+      \strng{authorfullhash}{9c6b3d47461a54dd568154fc25b8e668}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A new equation of state for rigid spheres has been developed from an analysis of the reduced virial series. Comparisons with existing equations show that the new formula possesses superior ability to describe rigidsphere behavior.}
+      \field{issn}{00219606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{2}
+      \field{title}{{Equation of state for nonattracting rigid spheres}}
+      \field{volume}{51}
+      \field{year}{1969}
+      \field{pages}{635\bibrangedash 636}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1063/1.1672048
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/eos/1.1672048.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Almarza2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3e551a1afcec594c2b9191d16d8b91a3}{%
+           family={Almarza},
+           familyi={A\bibinitperiod},
+           given={N.\bibnamedelimi G.},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e551a1afcec594c2b9191d16d8b91a3}
+      \strng{fullhash}{3e551a1afcec594c2b9191d16d8b91a3}
+      \strng{bibnamehash}{3e551a1afcec594c2b9191d16d8b91a3}
+      \strng{authorbibnamehash}{3e551a1afcec594c2b9191d16d8b91a3}
+      \strng{authornamehash}{3e551a1afcec594c2b9191d16d8b91a3}
+      \strng{authorfullhash}{3e551a1afcec594c2b9191d16d8b91a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose an efficient algorithm to sample the volume in Monte Carlo simulations in the isobaric-isothermal ensemble. The method is designed to be applied in the simulation of hard-core models at high density. The algorithm is based in the generation of clusters of particles. At the volume change step, the distances between pairs of particles belonging to the same cluster do not change. This is done by rescaling the positions of the center of mass of each cluster instead of the position of each individual particle. We have tested the performance of the algorithm by simulating fluid and solid phases of hard spheres, finding that in both cases the algorithm is much more efficient than the standard procedure. Moreover, the efficiency of the method measured in terms of correlation "time" does not depend on the system size in contrast with the standard method, in which the sampling becomes rapidly inefficient as the system size increases. We have used the procedure to compute with high precision the equation of state of the face-centered-cubic phase of the hard sphere system for different system sizes. Using these results we have estimated the equation of state at the thermodynamic limit. The results are compared to different equations of state proposed in literature. {©} 2009 American Institute of Physics.}
+      \field{issn}{00219606}
+      \field{journaltitle}{Journal of Chemical Physics}
+      \field{number}{18}
+      \field{title}{{A cluster algorithm for Monte Carlo simulation at constant pressure}}
+      \field{volume}{130}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.1063/1.3133328
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/eos/1.3133328.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Becker1935}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4bc21076f906b3e294b4a90cb1512bb5}{%
+           family={R.},
+           familyi={R\bibinitperiod},
+           given={Becker},
+           giveni={B\bibinitperiod}}}%
+        {{hash=01b9b593c3011f7f1d4b366d91e12a87}{%
+           family={W.},
+           familyi={W\bibinitperiod},
+           given={D{ö}ring},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2dd34bcc02c979003a19b759621ac5c}
+      \strng{fullhash}{d2dd34bcc02c979003a19b759621ac5c}
+      \strng{bibnamehash}{d2dd34bcc02c979003a19b759621ac5c}
+      \strng{authorbibnamehash}{d2dd34bcc02c979003a19b759621ac5c}
+      \strng{authornamehash}{d2dd34bcc02c979003a19b759621ac5c}
+      \strng{authorfullhash}{d2dd34bcc02c979003a19b759621ac5c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{8}
+      \field{title}{{Kinetische Behandlung der Keimbildung in {ü}bers{ä}ttigten D{ä}mpfen}}
+      \field{volume}{416}
+      \field{year}{1935}
+      \field{pages}{719\bibrangedash 752}
+      \range{pages}{34}
+      \verb{doi}
+      \verb https://doi.org/10.1002/andp.19354160806
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/historical paper/andp.19354160806.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19354160806
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19354160806
+      \endverb
+    \endentry
+    \entry{Schilling2011}{article}{}
+      \name{author}{4}{}{%
+        {{hash=33da99b24fc7a1c26734425baf98c7ce}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bc7c4206a294ef7f2fccb1f7cb6a34af}{%
+           family={Dorosz},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2d60ee17c80eb2c4f2bd193652ec5681}{%
+           family={Sch{ö}pe},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d36ae83caeb19522ba1fa39399e17226}{%
+           family={Opletal},
+           familyi={O\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{fullhash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{bibnamehash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{authorbibnamehash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{authornamehash}{9aa2c51d5911e658fc7f4232175ed766}
+      \strng{authorfullhash}{9aa2c51d5911e658fc7f4232175ed766}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The crystallization of a metastable melt is one of the most important non-equilibrium phenomena in condensed matter physics, and hard sphere colloidal model systems have been used for several decades to investigate this process by experimental observation and computer simulation. Nevertheless, there is still an unexplained discrepancy between the simulation data and experimental nucleation rate densities. In this paper we examine the nucleation process in hard spheres using molecular dynamics and Monte Carlo simulation. We show that the crystallization process is mediated by precursors of low orientational bond-order and that our simulation data fairly match the experimental data sets. {©} 2011 IOP Publishing Ltd.}
+      \field{issn}{09538984}
+      \field{journaltitle}{Journal of Physics Condensed Matter}
+      \field{number}{19}
+      \field{title}{{Crystallization in suspensions of hard spheres: A Monte Carlo and molecular dynamics simulation study}}
+      \field{volume}{23}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1088/0953-8984/23/19/194120
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/SchillingDoroszJPCM2011.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Filion2010a}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e3974acf1781fba3aad254ee786510ba}{%
+           family={Filion},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=66d699035a88e572975003148ec45b9d}{%
+           family={Hermes},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1a9f0531fa18f809d541b35fc379236f}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=48424193abb172f9b0d685b801ef05f9}{%
+           family={Dijkstra},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{fullhash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{bibnamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{authorbibnamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{authornamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \strng{authorfullhash}{fde1a20fa0a4b67ec57719b9e24191f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Over the last number of years several simulation methods have been introduced to study rare events such as nucleation. In this paper we examine the crystal nucleation rate of hard spheres using three such numerical techniques: molecular dynamics, forward flux sampling, and a Bennett-Chandler-type theory where the nucleation barrier is determined using umbrella sampling simulations. The resulting nucleation rates are compared with the experimental rates of Harland and van Megen [Phys. Rev. E 55, 3054 (1997)], Sinn [Prog. Colloid Polym. Sci. 118, 266 (2001)], Schtzel and Ackerson [Phys. Rev. E 48, 3766 (1993)], and the predicted rates for monodisperse and 5{\%} polydisperse hard spheres of Auer and Frenkel [Nature 409, 1020 (2001)]. When the rates are examined in units of the long-time diffusion coefficient, we find agreement between all the theoretically predicted nucleation rates, however, the experimental results display a markedly different behavior for low supersaturation. Additionally, we examined the precritical nuclei arising in the molecular dynamics, forward flux sampling, and umbrella sampling simulations. The structure of the nuclei appears independent of the simulation method, and in all cases, the nuclei contains on average significantly more face-centered-cubic ordered particles than hexagonal-close-packed ordered particles. {©} 2010 American Institute of Physics.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{00219606}
+      \field{journaltitle}{Journal of Chemical Physics}
+      \field{number}{24}
+      \field{title}{{Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling, and forward flux sampling: A comparison of simulation techniques}}
+      \field{volume}{133}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1063/1.3506838
+      \endverb
+      \verb{eprint}
+      \verb 1006.2925
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling andforward flux sampling$\backslash$: A comparison of simulation techniques.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Bultmann2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ba91b41a5b8ab0b2667260418b46bc0b}{%
+           family={B{ü}ltmann},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=33da99b24fc7a1c26734425baf98c7ce}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{886431ab38d558f9f79ced32626dfa09}
+      \strng{fullhash}{886431ab38d558f9f79ced32626dfa09}
+      \strng{bibnamehash}{886431ab38d558f9f79ced32626dfa09}
+      \strng{authorbibnamehash}{886431ab38d558f9f79ced32626dfa09}
+      \strng{authornamehash}{886431ab38d558f9f79ced32626dfa09}
+      \strng{authorfullhash}{886431ab38d558f9f79ced32626dfa09}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We used a thermodynamic integration scheme, which is specifically designed for disordered systems, to compute the interfacial free energy of the solid-liquid interface in the hard-sphere model. We separated the bulk contribution to the total free energy from the interface contribution, performed a finite-size scaling analysis, and obtained for the (100)-interface $\gamma$=0.591(11)kBT$\sigma$-2.}
+      \field{issn}{24700053}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{4}
+      \field{title}{{Computation of the solid-liquid interfacial free energy in hard spheres by means of thermodynamic integration}}
+      \field{volume}{102}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.102.042123
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/PhysRevE.102.042123.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Pusey1986}{article}{}
+      \name{author}{2}{}{%
+        {{hash=53946c33fc9eefa0774dc15e9b1ce4fe}{%
+           family={{P. N. Pusey}},
+           familyi={P\bibinitperiod}}}%
+        {{hash=5a10f2dbc74ca6aa91d9f08ccbca1d0f}{%
+           family={Megen},
+           familyi={M\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d6267dea43a061efc086281bcb45484}
+      \strng{fullhash}{7d6267dea43a061efc086281bcb45484}
+      \strng{bibnamehash}{7d6267dea43a061efc086281bcb45484}
+      \strng{authorbibnamehash}{7d6267dea43a061efc086281bcb45484}
+      \strng{authornamehash}{7d6267dea43a061efc086281bcb45484}
+      \strng{authorfullhash}{7d6267dea43a061efc086281bcb45484}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{title}{{Phase behaviour of concentrated suspensions of nearly colloidal spheres}}
+      \field{volume}{320}
+      \field{year}{1986}
+      \field{pages}{340\bibrangedash 342}
+      \range{pages}{3}
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/historical paper/320340a0.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/320340a0
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/320340a0
+      \endverb
+    \endentry
+    \entry{Doherty1998}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7466ce959a50a45a43f542a8dd0bfb4f}{%
+           family={Doherty},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d6f8f6588d2e4efc859d45a36ec68831}{%
+           family={Lant},
+           familyi={L\bibinitperiod},
+           given={Christian\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=33423dcfcdeb6b30fe629a371ba279b8}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Jerri\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a28c87dc01ca48b9731b334937d24c2}
+      \strng{fullhash}{9a28c87dc01ca48b9731b334937d24c2}
+      \strng{bibnamehash}{9a28c87dc01ca48b9731b334937d24c2}
+      \strng{authorbibnamehash}{9a28c87dc01ca48b9731b334937d24c2}
+      \strng{authornamehash}{9a28c87dc01ca48b9731b334937d24c2}
+      \strng{authorfullhash}{9a28c87dc01ca48b9731b334937d24c2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Physics of HArd Spheres Experiment (PHaSE), one of NASA Lewis Research Center's first major light scattering experiments for microgravity research on complex fluids, flew on board the Space Shuttle's Microgravity Science Laboratory (MSL-1) in 1997. Using colloidal systems of various concentrations of micron sized plastic spheres in a refractive index matching fluid as test samples, illuminated by laser light during and after crystallization, investigations were conducted to measure the nucleation and growth rate of colloidal crystals as well as the structure, rheology, and dynamics of the equilibrium crystal. Together, these measurements support an enhanced understanding of the nature of the liquid-to-solid transition. Achievement of the science objectives required an accurate experimental determination of eight fundamental properties for the hard sphere colloidal samples. The instrument design met almost all of the original measurement requirements, but with compromise on the number of samples on which data were taken. The instrument performs 2-D Bragg and low angle scattering from 0.4° to 60°, dynamic and single-channel static scattering from 10° to 170°, rheology using fiber optics, and white light imaging of the sample.}
+      \field{journaltitle}{36th AIAA Aerospace Sciences Meeting and Exhibit}
+      \field{number}{April}
+      \field{title}{{The physics of hard spheres experiment on MSL-1: Required measurements and instrument performance}}
+      \field{year}{1998}
+      \verb{doi}
+      \verb 10.2514/6.1998-462
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/historical paper/19980148004.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Radu2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7d529580f29e57f5c7fd84f5d86d7538}{%
+           family={Radu},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=33da99b24fc7a1c26734425baf98c7ce}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{fullhash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{bibnamehash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{authorbibnamehash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{authornamehash}{5c470a73fa777eca3d4c183a1e12101e}
+      \strng{authorfullhash}{5c470a73fa777eca3d4c183a1e12101e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a computer simulation study on the crystal nucleation process in suspensions of hard spheres, fully taking into account the solvent hydrodynamics. If the dynamics of crystallization in this system were purely diffusive, the crystal nucleation rate would be inversely proportional to the solvent viscosity. However, we observe that the nucleation rate is enhanced at high viscosities with respect to the diffusive behaviour. This effect might explain the large discrepancy between the nuclation rates obtained by simulation and experiment that have been reported in the literature so far. {©} Copyright EPLA, 2014.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{02955075}
+      \field{journaltitle}{Epl}
+      \field{number}{2}
+      \field{title}{{Solvent hydrodynamics speed up crystal nucleation in suspensions of hard spheres}}
+      \field{volume}{105}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1209/0295-5075/105/26001
+      \endverb
+      \verb{eprint}
+      \verb 1301.5592
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/1301.5592.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Fiorucci2020a}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6ef0277c954fac5b03cca600e60e5292}{%
+           family={Fiorucci},
+           familyi={F\bibinitperiod},
+           given={Giulia},
+           giveni={G\bibinitperiod}}}%
+        {{hash=49660c51e58ba43f88aad199ad120101}{%
+           family={Coli},
+           familyi={C\bibinitperiod},
+           given={Gabriele\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9aa0c6b4b89921643fd3d71ab1f5c2d3}{%
+           family={Padding},
+           familyi={P\bibinitperiod},
+           given={Johan\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=8ba0fb9dcf755f53c600257c0bfa1f75}{%
+           family={Dijkstra},
+           familyi={D\bibinitperiod},
+           given={Marjolein},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing, LLC}%
+      }
+      \strng{namehash}{c0029c94f4fada1ba58f9c8cd08b828c}
+      \strng{fullhash}{c0029c94f4fada1ba58f9c8cd08b828c}
+      \strng{bibnamehash}{c0029c94f4fada1ba58f9c8cd08b828c}
+      \strng{authorbibnamehash}{c0029c94f4fada1ba58f9c8cd08b828c}
+      \strng{authornamehash}{c0029c94f4fada1ba58f9c8cd08b828c}
+      \strng{authorfullhash}{c0029c94f4fada1ba58f9c8cd08b828c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigate the effect of hydrodynamic interactions (HIs) on the crystal nucleation of hard-sphere colloids for varying supersaturations. We use molecular dynamics and stochastic rotation dynamics techniques to account for the HIs. For high supersaturation values, we perform brute force simulations and compute the nucleation rate, obtaining good agreement with previous studies where HIs were neglected. In order to access low supersaturation values, we use a seeding approach method and perform simulations with and without HIs. We compute the nucleation rates for the two cases and surprisingly find good agreement between them. The nucleation rate in both cases follows the trend of the previous numerical results, thereby corroborating the discrepancy between experiments and simulations. Furthermore, we investigate the amount of fivefold symmetric clusters (FSCs) in a supersaturated fluid under different physical conditions, following the idea that FSCs compete against nucleation. To this end, we explore the role of the softness of the pair interactions, different solvent viscosities, and different sedimentation rates in simulations that include HIs. We do not find significant variations in the amount of FSCs, which might reflect the irrelevance of these three features on the nucleation process.}
+      \field{issn}{00219606}
+      \field{journaltitle}{Journal of Chemical Physics}
+      \field{number}{6}
+      \field{title}{{The effect of hydrodynamics on the crystal nucleation of nearly hard spheres}}
+      \field{volume}{152}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1063/1.5137815
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation{\_}simulation{\_}experiment{\_}discrepancy/1.5137815.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.5137815
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.5137815
+      \endverb
+    \endentry
+    \entry{Harland1997}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7af1498bcf7cdc4979c4c57427f940c3}{%
+           family={Harland},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5a10f2dbc74ca6aa91d9f08ccbca1d0f}{%
+           family={Megen},
+           familyi={M\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{03cdf071570bae753d22fb54c87d3a4b}
+      \strng{fullhash}{03cdf071570bae753d22fb54c87d3a4b}
+      \strng{bibnamehash}{03cdf071570bae753d22fb54c87d3a4b}
+      \strng{authorbibnamehash}{03cdf071570bae753d22fb54c87d3a4b}
+      \strng{authornamehash}{03cdf071570bae753d22fb54c87d3a4b}
+      \strng{authorfullhash}{03cdf071570bae753d22fb54c87d3a4b}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The crystallization of suspensions of sterically stabilized polymer particles, with hard-sphere-like interactions, is studied by laser light scattering. Over the range of volume fractions examined, from just below melting to the glass transition, crystallization occurs by homogeneous nucleation. After the suspensions are shear melted, the intensity, position, and width of the main interlayer Bragg reflection are measured as functions of time. From these the amount of crystal, the average linear crystal dimension, the number of crystals, and the volume fraction of the crystal phase are obtained. No assumptions are made concerning the functional time dependence of nucleation or growth processes. Below the melting concentration the observed crystallization process is compatible with the classical picture of sequential nucleation and growth of isolated crystals. However, when the melting concentration is exceeded, nucleation events are correlated, nucleation is accelerated, and high nucleation rate densities suppress crystal growth. Above the melting concentration we infer, with the aid of the equations of state for the hard-sphere fluid and solid, that the first identifiable crystals are in mechanical equilibrium with the embedding fluid and, consequently, strongly compressed by it. Ensuing nucleation lags expansion of the crystal lattice. {©} 1997 The American Physical Society.}
+      \field{issn}{1063651X}
+      \field{journaltitle}{Physical Review E - Statistical Physics, Plasmas, Fluids, and Related Interdisciplinary Topics}
+      \field{number}{3}
+      \field{title}{{Crystallization kinetics of suspensions of hard colloidal spheres}}
+      \field{volume}{55}
+      \field{year}{1997}
+      \field{pages}{3054\bibrangedash 3067}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.55.3054
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/used{\_}data/PhysRevE.55.3054.pdf:pdf
+      \endverb
+    \endentry
+    \entry{He1996}{article}{}
+      \name{author}{5}{}{%
+        {{hash=4210bb2643eeccda679271a454be67b8}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yueming},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=de621e4e63bd1b4c07368d8f08c7e14f}{%
+           family={Ackerson},
+           familyi={A\bibinitperiod},
+           given={Bruce\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5a10f2dbc74ca6aa91d9f08ccbca1d0f}{%
+           family={Megen},
+           familyi={M\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=a9d7ae77be41088ba34da9175a4331eb}{%
+           family={Underwood},
+           familyi={U\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=31b9704ef44fc13b8234e76a5f2423d8}{%
+           family={Sch{ä}tzel},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed2cde4a8240249dff13250fc5412b33}
+      \strng{fullhash}{459164141f77cf8ca72694d711cb58a1}
+      \strng{bibnamehash}{ed2cde4a8240249dff13250fc5412b33}
+      \strng{authorbibnamehash}{ed2cde4a8240249dff13250fc5412b33}
+      \strng{authornamehash}{ed2cde4a8240249dff13250fc5412b33}
+      \strng{authorfullhash}{459164141f77cf8ca72694d711cb58a1}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Density fluctuations are monitored by small-angle light scattering during the crystallization of 0.22-$\mu$m-radius, hard colloidal spheres. Measured structure factors show an intensity maximum at finite-scattering vectors. The shape of the intensity distribution scales at early times during nucleation and growth and again at large times during ripening. At intermediate times there is a crossover region where scaling ceases to be valid. Both the amplitude and the position of the maximum intensity show quasi-power law behavior in time. The values of the observed exponents are within the range expected for classical growth models. The breadth of the intensity distribution increases with increasing volume fraction, suggesting greater crystal polydispersity with increasing volume fraction. The lower volume fraction intensity distributions suggest that crystals have a compound or internal structure, while the observed decrease in characteristic length in the crossover time regime may indicate breakup of crystals to this smaller internal structure. The results of measurements are compared with results calculated for nucleation and growth of crystals in suspensions of hard spheres. Results also are compared with earlier measurements made on samples containing 0.50-$\mu$m radius spheres. Differences in the two systems are discussed in terms of interparticle potential, polydispersity, and gravitational effects. {©} 1996 The American Physical Society.}
+      \field{issn}{1063651X}
+      \field{journaltitle}{Physical Review E - Statistical Physics, Plasmas, Fluids, and Related Interdisciplinary Topics}
+      \field{number}{5}
+      \field{title}{{Dynamics of crystallization in hard-sphere suspensions}}
+      \field{volume}{54}
+      \field{year}{1996}
+      \field{pages}{5286\bibrangedash 5297}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.54.5286
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/used{\_}data/PhysRevE.54.5286.pdf:pdf
+      \endverb
+    \endentry
+    \entry{schaetzel1993}{article}{}
+      \name{author}{2}{}{%
+        {{hash=31b9704ef44fc13b8234e76a5f2423d8}{%
+           family={Sch{ä}tzel},
+           familyi={S\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+        {{hash=de621e4e63bd1b4c07368d8f08c7e14f}{%
+           family={Ackerson},
+           familyi={A\bibinitperiod},
+           given={Bruce\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ef41c124a8183e88ec482b29f11befa}
+      \strng{fullhash}{0ef41c124a8183e88ec482b29f11befa}
+      \strng{bibnamehash}{0ef41c124a8183e88ec482b29f11befa}
+      \strng{authorbibnamehash}{0ef41c124a8183e88ec482b29f11befa}
+      \strng{authornamehash}{0ef41c124a8183e88ec482b29f11befa}
+      \strng{authorfullhash}{0ef41c124a8183e88ec482b29f11befa}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Long-wavelength density Quctuations are recorded by small-angle light scattering during the crystallization of hard colloidal spheres. Measured structure factors show approximate scaling with peak at 6nite scattering vectors. The time dependences of the peak intensity and the wave vector clearly reveal two different crystallization regimes. For samples near melting density, we find diffusion limited growth at small times and Lifshitz-Slyozov ripening at large times. Growth exponents in the ripening process seem to increase for higher densities. All measurements demonstrate a strong coupling ofthe observed conserved density parameter to the nonconserved crystal-order parameter.}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{5}
+      \field{title}{{Density fluctuations during crystallization of colloids}}
+      \field{volume}{48}
+      \field{year}{1993}
+      \field{pages}{3766\bibrangedash 3777}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.48.3766
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/used{\_}data/PhysRevE.48.3766.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.48.3766
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.48.3766
+      \endverb
+    \endentry
+    \entry{Sinn2001}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3228130223bb30c628ec8c49da4797a3}{%
+           family={Sinn},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8f51a6c6a0ca5517c489d1207b82fb38}{%
+           family={Heymann},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=77f3ac0b29642040a9756515b7490a9c}{%
+           family={Stipp},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b26dd405406613afb6ed951b766dea7f}{%
+           family={Palberg},
+           familyi={P\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{09c88cd1a36054125d66898e9136a10e}
+      \strng{fullhash}{09c88cd1a36054125d66898e9136a10e}
+      \strng{bibnamehash}{09c88cd1a36054125d66898e9136a10e}
+      \strng{authorbibnamehash}{09c88cd1a36054125d66898e9136a10e}
+      \strng{authornamehash}{09c88cd1a36054125d66898e9136a10e}
+      \strng{authorfullhash}{09c88cd1a36054125d66898e9136a10e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Trends in Colloid and Interface Science XV. Progress in Colloid and Polymer Science}
+      \field{title}{{Solidification kinetics of hard-sphere colloidal suspensions}}
+      \field{volume}{118}
+      \field{year}{2001}
+      \verb{doi}
+      \verb https://doi.org/10.1007/3-540-45725-9_57
+      \endverb
+    \endentry
+    \entry{Auer2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f63542aa0ccf88a35900f9551b6ab7a5}{%
+           family={Auer},
+           familyi={A\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7191fa8dca47b12000be59cbab02be45}{%
+           family={Frenkel},
+           familyi={F\bibinitperiod},
+           given={Daan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0567f73f9b6bf508f164ae13ecdfbae4}
+      \strng{fullhash}{0567f73f9b6bf508f164ae13ecdfbae4}
+      \strng{bibnamehash}{0567f73f9b6bf508f164ae13ecdfbae4}
+      \strng{authorbibnamehash}{0567f73f9b6bf508f164ae13ecdfbae4}
+      \strng{authornamehash}{0567f73f9b6bf508f164ae13ecdfbae4}
+      \strng{authorfullhash}{0567f73f9b6bf508f164ae13ecdfbae4}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Crystal nucleation is a much-studied phenomenon, yet the rate at which it occurs remains difficult to predict. Small crystal nuclei form spontaneously in supersaturated solutions, but unless their size exceeds a critical value-the so-called critical nucleus-they will re-dissolve rather than grow. It is this rate-limiting step that has proved difficult to probe experimentally. The crystal nuclea tion rate depends on Pcrit, the (very small) probability that a critical nucleus forms spontaneously, and on a kinetic factor (ic) that measures the rate at which critical nuclei subsequently grow. Given the absence of a priori knowledge of either quantity, classical nucleation theory' is commonly used to analyse crystal nucleation experiments, with the unconstrained parameters adjusted to fit the observations. This approach yields no 'first principles' prediction of absolute nucleation rates. Here we approach the problem from a different angle, simulating the nucleation process in a suspension of hard colloidal spheres, to obtain quantitative numerical predictions of the crystal nuclea tion rate. We find large discrepancies between the computed nucleation rates and those deduced from experiments the best experimental estimates of Pcrit seem to be too large by several orders of magnitude.}
+      \field{journaltitle}{Nature}
+      \field{number}{February}
+      \field{title}{{Prediction of absolute crystal-nucleation rate in hard-sphere colloids}}
+      \field{volume}{409}
+      \field{year}{2001}
+      \field{pages}{1020\bibrangedash 1023}
+      \range{pages}{4}
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/used{\_}data/Auer-2001-Prediction-of-absolute-crystal-nucl.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb www.nature.com
+      \endverb
+      \verb{url}
+      \verb www.nature.com
+      \endverb
+      \keyw{nucleation}
+    \endentry
+    \entry{Bannerman2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c863954fb47d5754a555162dbc01f089}{%
+           family={Bannerman},
+           familyi={B\bibinitperiod},
+           given={Marcus\bibnamedelima N.},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=506f911475f02f1da6a8565259d5997a}{%
+           family={Strobl},
+           familyi={S\bibinitperiod},
+           given={Severin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=45590c9c66ffabd71826b1d325d316a9}{%
+           family={Formella},
+           familyi={F\bibinitperiod},
+           given={Arno},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3a0ad737ca125ac9082a3285a8bd752b}{%
+           family={P{ö}schel},
+           familyi={P\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{38f527f52c391bbf95dcec3bf88d5dcc}
+      \strng{fullhash}{38f527f52c391bbf95dcec3bf88d5dcc}
+      \strng{bibnamehash}{38f527f52c391bbf95dcec3bf88d5dcc}
+      \strng{authorbibnamehash}{38f527f52c391bbf95dcec3bf88d5dcc}
+      \strng{authornamehash}{38f527f52c391bbf95dcec3bf88d5dcc}
+      \strng{authorfullhash}{38f527f52c391bbf95dcec3bf88d5dcc}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Event-driven particle dynamics is a fast and precise method to simulate particulate systems of all scales. In this work it is demonstrated that, despite the high accuracy of the method, the finite machine precision leads to simulations entering invalid states where the dynamics are undefined. A general event-detection algorithm is proposed which handles these situations in a stable and efficient manner. This requires a definition of the dynamics of invalid states and leads to improved algorithms for event-detection in hard-sphere systems.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{21964386}
+      \field{journaltitle}{Computational Particle Mechanics}
+      \field{number}{2}
+      \field{title}{{Stable algorithm for event detection in event-driven particle dynamics}}
+      \field{volume}{1}
+      \field{year}{2014}
+      \field{pages}{191\bibrangedash 198}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/s40571-014-0021-8
+      \endverb
+      \verb{eprint}
+      \verb 1211.6718
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/edmd/paper/Bannerman2014{\_}Article{\_}StableAlgorithmForEventDetecti.pdf:pdf
+      \endverb
+      \keyw{Collision detection,DEM,Event-driven,Hard sphere,Molecular dynamics}
+    \endentry
+    \entry{Goldberg1991}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d55a57c88a14828a53b9e8db48c889d1}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{fullhash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{bibnamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authorbibnamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authornamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authorfullhash}{d55a57c88a14828a53b9e8db48c889d1}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Floating-point arithmetic is considered an esoteric subject by many people. This is rather surprising because floating-point is ubiquitous in computer systems. Almost every language has a floating-point datatype; computers from PCs to supercomputers have floating-point accelerators; most compilers will be called upon to compile floating-point algorithms from time to time; and virtually every operating system must respond to floating-point exceptions such as overflow. This paper presents a tutorial on those aspects of floating-point that have a direct impact on designers of computer systems. It begins with background on floating-point representation and rounding error, continues with a discussion of the IEEE floating-point standard, and concludes with numerous examples of how computer builders can better support floating-point.}
+      \field{journaltitle}{ACM Comput. Surv.}
+      \field{number}{1}
+      \field{title}{{What Every Computer Scientist Should Know About Floating-Point Arithmetic}}
+      \field{volume}{23}
+      \field{year}{1991}
+      \field{pages}{10}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1145/103162.103163
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/103162.103163
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/103162.103163
+      \endverb
+    \endentry
+    \entry{Bannerman2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ef01d4d6feb3d85650dcd54dff5e9a9f}{%
+           family={Bannerman},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi N.},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=77ac44b90bf632ae86c18edda43a7770}{%
+           family={Sargant},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9bed6efb87b4cc689c59d99babe79ee6}{%
+           family={Lue},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{240b358a9522023bbc3da3675aceb4b6}
+      \strng{fullhash}{240b358a9522023bbc3da3675aceb4b6}
+      \strng{bibnamehash}{240b358a9522023bbc3da3675aceb4b6}
+      \strng{authorbibnamehash}{240b358a9522023bbc3da3675aceb4b6}
+      \strng{authornamehash}{240b358a9522023bbc3da3675aceb4b6}
+      \strng{authorfullhash}{240b358a9522023bbc3da3675aceb4b6}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Molecular dynamics algorithms for systems of particles interacting through discrete or "hard" potentials are fundamentally different to the methods for continuous or "soft" potential systems. Although many software packages have been developed for continuous potential systems, software for discrete potential systems based on event-driven algorithms are relatively scarce and specialized. We present DynamO, a general event-driven simulation package, which displays the optimal O(N) asymptotic scaling of the computational cost with the number of particles N, rather than the O(N log N) scaling found in most standard algorithms. DynamO provides reference implementations of the best available event-driven algorithms. These techniques allow the rapid simulation of both complex and large ({>}10 6 particles) systems for long times. The performance of the program is benchmarked for elastic hard sphere systems, homogeneous cooling and sheared inelastic hard spheres, and equilibrium Lennard-Jones fluids. This software and its documentation are distributed under the GNU General Public license and can be freely downloaded from. Copyright {©} 2011 Wiley Periodicals, Inc.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{01928651}
+      \field{journaltitle}{Journal of Computational Chemistry}
+      \field{number}{15}
+      \field{title}{{DynamO: A free O(N) general event-driven molecular dynamics simulator}}
+      \field{volume}{32}
+      \field{year}{2011}
+      \field{pages}{3329\bibrangedash 3338}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1002/jcc.21915
+      \endverb
+      \verb{eprint}
+      \verb 1004.3501
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/edmd/paper/DynamO{\_}Bannerman{\_}2011.pdf:pdf
+      \endverb
+      \keyw{discontinuous potentials,event-driven simulation,hard spheres,molecular dynamics,square-well potential}
+    \endentry
+    \entry{DONEV2005}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ffe615ac77a42c6b69db87a971de232e}{%
+           family={Donev},
+           familyi={D\bibinitperiod},
+           given={Aleksandar},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c3a792c01d1ad328590c8549b2dae94c}{%
+           family={Torquato},
+           familyi={T\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e6043a06f8f35459090ccb7b7efc28a6}{%
+           family={Stillinger},
+           familyi={S\bibinitperiod},
+           given={Frank\bibnamedelima H.},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{fullhash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{bibnamehash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{authorbibnamehash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{authornamehash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \strng{authorfullhash}{cbf45d1bd3ab0234f9fc915ad76c44fe}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the first part of a series of two papers, we present in considerable detail a collision-driven molecular dynamics algorithm for a system of nonspherical particles, within a parallelepiped simulation domain, under both periodic or hard-wall boundary conditions. The algorithm extends previous event-driven molecular dynamics algorithms for spheres. We present a novel partial-update near-neighbor list (NNL) algorithm that is superior to previous algorithms at high densities, without compromising the correctness of the algorithm. This efficiency of the algorithm is further increased for systems of very aspherical particles by using bounding sphere complexes (BSC). In the second part of this series of papers we apply the algorithm presented in the first part of this series of papers to systems of hard ellipses and ellipsoids. The theoretical machinery needed to treat such particles, including the overlap potentials, is developed in full detail. We describe an algorithm for predicting the time of collision for two moving ellipses or ellipsoids. We present performance results for our implementation of the algorithm. The practical utility of the algorithm is demonstrated by presenting several interesting physical applications, including the generation of jammed packings inside spherical containers, the study of contact force chains in jammed packings, and melting the densest-known equilibrium crystals of prolate spheroids.}
+      \field{issn}{00219991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{2}
+      \field{title}{{Neighbor list collision-driven molecular dynamics simulation for nonspherical hard particles.II. Applications to ellipses and ellipsoids}}
+      \field{volume}{202}
+      \field{year}{2005}
+      \field{pages}{765\bibrangedash 793}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/s0021-9991(04)00394-8
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/edmd/paper/neighbor{\_}list{\_}collision{\_}drive{\_}molecular{\_}dynamics{\_}simulation{\_}for{\_}nonspherical{\_}hard{\_}particles{\_}1.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Steinhardt1983}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9b033b2bf76949bb2c6d1b3f8cf9f061}{%
+           family={Steinhardt},
+           familyi={S\bibinitperiod},
+           given={Paul\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a8d9840d9f558860884d0cf2d40f4e62}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7e6f6ac14e381864e08e38615ee82cfb}{%
+           family={Ronchetti},
+           familyi={R\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{fullhash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{bibnamehash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{authorbibnamehash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{authornamehash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \strng{authorfullhash}{2314f7e8c4c05e68b8fc3d271407c961}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Bond-orientational order in molecular-dynamics simulations of supercooled liquids and in models of metallic glasses is studied. Quadratic and third-order invariants formed from bond spherical harmonics allow quantitative measures of cluster symmetries in these systems. A state with short-range translational order, but extended correlations in the orientations of particle clusters, starts to develop about 10{\%} below the equilibrium melting temperature in a supercooled Lennard-Jones liquid. The order is predominantly icosahedral, although there is also a cubic component which we attribute to the periodic boundary conditions. Results are obtained for liquids cooled in an icosahedral pair potential as well. Only a modest amount of orientational order appears in a relaxed Finney dense-random-packing model. In contrast, we find essentially perfect icosahedral bond correlations in alternative "amorphon" cluster models of glass structure. {©} 1983 The American Physical Society.}
+      \field{issn}{01631829}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{2}
+      \field{title}{{Bond-orientational order in liquids and glasses}}
+      \field{volume}{28}
+      \field{year}{1983}
+      \field{pages}{784\bibrangedash 805}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.28.784
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/order{\_}parameter/paper/Bond{\_}orientation{\_}order{\_}in{\_}liquids{\_}and{\_}glasses{\_}Steinhardt.pdf:pdf
+      \endverb
+    \endentry
+    \entry{TenWolde1995}{article}{}
+      \name{author}{3}{}{%
+        {{hash=813d53f4c86604f27bef144cd07e01c4}{%
+           family={{Ten Wolde}},
+           familyi={T\bibinitperiod},
+           given={Pieter\bibnamedelima Rein},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b6cced6f212dcb21fbe134c60a0c3638}{%
+           family={Ruiz-Montero},
+           familyi={R\bibinithyphendelim M\bibinitperiod},
+           given={Maria\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7191fa8dca47b12000be59cbab02be45}{%
+           family={Frenkel},
+           familyi={F\bibinitperiod},
+           given={Daan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{fullhash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{bibnamehash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{authorbibnamehash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{authornamehash}{754ee7375c47212505d4ba5e9020b23d}
+      \strng{authorfullhash}{754ee7375c47212505d4ba5e9020b23d}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We report a computer-simulation study of the crystal nucleation barrier and the structure of crystal nuclei in a Lennard-Jones system at moderate supercooling. The stable structure of the Lennard-Jones solid is known to be face-centered cubic. We find that the precritical nuclei are predominantly body-centered cubic ordered. But, as the nucleus grows to its critical size, the core becomes fcc ordered. Surprisingly, however, the interface of the critical nucleus retains a high degree of bcc-like ordering. {©} 1995 The American Physical Society.}
+      \field{issn}{00319007}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{14}
+      \field{title}{{Numerical evidence for bcc ordering at the surface of a critical fcc nucleus}}
+      \field{volume}{75}
+      \field{year}{1995}
+      \field{pages}{2714\bibrangedash 2717}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.75.2714
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/order{\_}parameter/paper/PhysRevLett.75.2714.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Pieprzyk2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b3cb4a6ecb6fc2209c55211a83cb3615}{%
+           family={Pieprzyk},
+           familyi={P\bibinitperiod},
+           given={Sławomir},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c863954fb47d5754a555162dbc01f089}{%
+           family={Bannerman},
+           familyi={B\bibinitperiod},
+           given={Marcus\bibnamedelima N.},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=0cf90fe6ada5c3978d0fbf120a422f31}{%
+           family={Bra{ń}ka},
+           familyi={B\bibinitperiod},
+           given={Arkadiusz\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=abd7f4146827250ce322c02594647d1c}{%
+           family={Chudak},
+           familyi={C\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6c49eaf8de78e5f6f26b5b18906b8450}{%
+           family={Heyes},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5d07498f677c4aa630f1b75c12cc121}
+      \strng{fullhash}{0f94603a39732f3b03ab6d492045de3c}
+      \strng{bibnamehash}{e5d07498f677c4aa630f1b75c12cc121}
+      \strng{authorbibnamehash}{e5d07498f677c4aa630f1b75c12cc121}
+      \strng{authornamehash}{e5d07498f677c4aa630f1b75c12cc121}
+      \strng{authorfullhash}{0f94603a39732f3b03ab6d492045de3c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Revised thermodynamic and dynamical properties of the hard sphere (HS) system are obtained from extensive molecular dynamics calculations carried out with large system sizes (number of particles, N) and long times. Accurate formulas for the compressibility factor of the HS solid and fluid branches are proposed, which represent the metastable region and take into account its divergence at close packing. Some basic second-order thermodynamic properties are obtained and a maximum in some of their derivatives in the metastable fluid region is found. The thermodynamic parameters associated with the melting-freezing transition have been determined to four digit accuracy, which generates accurate new values for the coexistence properties of the HS system. For the self-diffusion coefficient, D, it is shown that relatively large systems (N {>} 104) are required to achieve an accurate linear extrapolation of D to the infinite size limit with a D vs. N-1/3 plot. Moreover, it is found that there is a density dependence of the value of the slope in the linear regime. The density dependent correction becomes practically insignificant at higher densities and the hydrodynamic formula found in the literature is still accurate. However, with decreasing density the density dependence of the size correction cannot be neglected, which indicates that other sources of N-dependence, apart from those derived on purely hydrodynamic grounds, may also be important (and as yet unaccounted for). A detailed analytic representation of the density dependence of the HS self-diffusion coefficient and the HS viscosity, $\eta$, is given. It is shown that the HS viscosity near freezing and in the metastable region can be described well by the Krieger-Dougherty equation. Both D and $\eta$ start to scale at high densities and in the metastable region in such a way that D$\eta$p = const, where p ≃ 0.97, and D → 0 and $\eta$ → ∞ at a packing fraction of 0.58, which coincides with some previous predictions of the HS glass transition density.}
+      \field{issn}{14639076}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{number}{13}
+      \field{title}{{Thermodynamic and dynamical properties of the hard sphere system revisited by molecular dynamics simulation}}
+      \field{volume}{21}
+      \field{year}{2019}
+      \field{pages}{6886\bibrangedash 6899}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1039/c9cp00903e
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/diffusion/Thermodynamic and dynamical properties of the hard sphere system revisited by molecular dynamics simulation.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Heyes2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=dcfb685777f731a8f521232da974f223}{%
+           family={Heyes},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0cd08fc61529587e9b67c52c134e8507}{%
+           family={Cass},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=53674050e5b0d56c868c10e836bd3aad}{%
+           family={Powles},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=dfb5eb87d5e2ec5892fc5f67db7ed684}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={W.\bibnamedelimi A.B.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{fullhash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{bibnamehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{authorbibnamehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{authornamehash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \strng{authorfullhash}{7b8887daaaa6a4cbaa5d7eb3a866d624}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Molecular dynamics simulations have been used to calculate the self-diffusion coefficient, D, of the hard sphere fluid over a wide density range and for different numbers of particles, N, between 32 and 10 976. These data are fitted to the relationship D = D∞ - AN -$\alpha$ where the parameters D∞, A, and $\alpha$ are all density-dependent (the temperature dependence of D can be trivially scaled out in all cases). The value $\alpha$ = 1/3 has been predicted on the basis of hydrodynamic arguments. In the studied system size range, the best value of $\alpha$ is ∼1/3 at intermediate packing fractions of ∼0.35, but increases in the low- and high-density extremes. At high density, the scaling follows more closely that of the thermodynamic properties, that is, with an exponent of order unity. At low packing fractions (less than ∼0.1), the exponent increases again, appearing to approach a limiting value of unity in the zero-density limit. The origin of this strong N dependence at low density probably lies in the divergence in the mean path between collisions, as compared with the dimensions of the simulation cell. A new simple analytical fit formula based on fitting to previous simulation data is proposed for the density dependence of the shear viscosity. The Stokes-Einstein relationship and the dependence of D on the excess entropy were also explored. The product D$\eta$sp with p = 0.975 was found to be approximately constant, with a value of 0.15 in the packing fraction range between 0.2 and 0.5. {©} 2007 American Chemical Society.}
+      \field{issn}{15206106}
+      \field{journaltitle}{Journal of Physical Chemistry B}
+      \field{number}{6}
+      \field{title}{{Self-diffusion coefficient of the hard-sphere fluid: System size dependence and empirical correlations}}
+      \field{volume}{111}
+      \field{year}{2007}
+      \field{pages}{1455\bibrangedash 1464}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1021/jp067373s
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/diffusion/Self-Diffusion Coefficient of the Hard-Sphere Fluid$\backslash$: System Size Dependence and Empirical Correlations.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Hansen2006}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=37438f412ea5ee18f8502721fed1cc8d}{%
+           family={{Hansen, Jean-Pierre McDonald}},
+           familyi={H\bibinitperiod},
+           given={Ian\bibnamedelima R.},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{fullhash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{bibnamehash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{authorbibnamehash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{authornamehash}{37438f412ea5ee18f8502721fed1cc8d}
+      \strng{authorfullhash}{37438f412ea5ee18f8502721fed1cc8d}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Theory of Simple Liquids}
+      \field{edition}{Third Edit}
+      \field{isbn}{978-0-12-370535-8}
+      \field{title}{{Chapter 4 - Distribution-function Theories}}
+      \field{year}{2006}
+      \field{pages}{94}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-012370535-8/50006-9
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780123705358500069
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780123705358500069
+      \endverb
+    \endentry
+    \entry{Pusey2009}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7c46dea2d744286c5cb2c97334be7f2e}{%
+           family={Pusey},
+           familyi={P\bibinitperiod},
+           given={P.\bibnamedelimi N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=46088eba66137bd5eb1fdf4453a8a18f}{%
+           family={Zaccarelli},
+           familyi={Z\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2d3cf61e1388b1802009b159f1bfff64}{%
+           family={Valeriani},
+           familyi={V\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3fffa5f9fe8e63a5d56c45207cfb5349}{%
+           family={Sanz},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3b9d11e62b57a03e89310405ae146e4e}{%
+           family={Poon},
+           familyi={P\bibinitperiod},
+           given={Wilson\bibnamedelima C.K.},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=025019982cda0c38b195a155a528aef4}{%
+           family={Cates},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0845d9a71febf35c0341604e002845b2}
+      \strng{fullhash}{b71fc50fe27deee1fd37c41216fadc44}
+      \strng{bibnamehash}{0845d9a71febf35c0341604e002845b2}
+      \strng{authorbibnamehash}{0845d9a71febf35c0341604e002845b2}
+      \strng{authornamehash}{0845d9a71febf35c0341604e002845b2}
+      \strng{authorfullhash}{b71fc50fe27deee1fd37c41216fadc44}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Motivated by old experiments on colloidal suspensions, we report molecular dynamics simulations of assemblies of hard spheres, addressing crystallization and glass formation. The simulations cover wide ranges of polydispersity s (standard deviation of the particle size distribution divided by its mean) and particle concentration. No crystallization is observed for s {>} 0.07. For 0.02 {<} s {<} 0.07, we find that increasing the polydispersity at a given concentration slows down crystal nucleation. The main effect here is that polydispersity reduces the supersaturation since it tends to stabilize the fluid but to destabilize the crystal. At a given polydispersity ({<} 0.07), we find three regimes of nucleation: standard nucleation and growth at concentrations in and slightly above the coexistence region; 'spinodal nucleation', where the free-energy barrier to nucleation appears to be negligible, at intermediate concentrations; and, at the highest concentrations, a new mechanism, still to be fully understood, which only requires small rearrangement of the particle positions. The cross-over between the second and third regimes occurs at a concentration, approximately 58 per cent by volume, where the colloid experiments show a marked change in the nature of the crystals formed and the particle dynamics indicate an 'ideal' glass transition. {©} 2009 The Royal Society.}
+      \field{issn}{1364503X}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{1909}
+      \field{title}{{Hard spheres: crystallization and glass formation}}
+      \field{volume}{367}
+      \field{year}{2009}
+      \field{pages}{4993\bibrangedash 5011}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1098/rsta.2009.0181
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}Phase{\_}diagrams/Pusey-2009-Hard-spheres-crystallization-and-gl.pdf:pdf
+      \endverb
+      \keyw{Colloid,Crystallization,Glass formation,Hard spheres,Molecular dynamics,Polydispersity}
+    \endentry
+    \entry{Albert1905}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
+           family={Einstein},
+           familyi={E\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{fullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{bibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{authorbibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{authornamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{authorfullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Annalen der Physik}
+      \field{title}{{{Ü}ber die von der molekularkinetischen Theorie der W{ä}rme geforderte Bewegung von in ruhenden Fl{ü}ssigkeiten suspendierten Teilchen}}
+      \field{year}{1905}
+      \field{pages}{549\bibrangedash 560}
+      \range{pages}{12}
+      \verb{file}
+      \verb :home/wave/Downloads/einstein2.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Theodorou1985}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3f23235cb5d88a49e4b8f6be90572d92}{%
+           family={Theodorou},
+           familyi={T\bibinitperiod},
+           given={Doros\bibnamedelima N.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=1172fbd05d7c603ccf1f25f4869cda02}{%
+           family={Suter},
+           familyi={S\bibinitperiod},
+           given={Ulrich\bibnamedelima W.},
+           giveni={U\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{44ba097f9467878bfb6d4810bb3025d4}
+      \strng{fullhash}{44ba097f9467878bfb6d4810bb3025d4}
+      \strng{bibnamehash}{44ba097f9467878bfb6d4810bb3025d4}
+      \strng{authorbibnamehash}{44ba097f9467878bfb6d4810bb3025d4}
+      \strng{authornamehash}{44ba097f9467878bfb6d4810bb3025d4}
+      \strng{authorfullhash}{44ba097f9467878bfb6d4810bb3025d4}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Large numbers of conformations of unperturbed polypropylene chains are generated in Monte Carlo experiments, based on a rotational isomeric state scheme, and the average instantaneous shape in the system of principal axes of gyration is evaluated. Several new shape measures are introduced to characterize the shape anisotropy, asphericity, and acylindricity. Significant differences are found between short and medium-length chains of different tacticity, while for long chains all shape measures converge to a common limit. The detailed three-dimensional segment density distributions are examined, and they are found to be bimodal along the longest principal axis of gyration. The loci of highest segment density are always two clearly separated domains, not containing the center of gyration, and they lie on the major principal axis separated by ca. 1.3〈S2〉01/2-2.0〈S2〉01/2. The core of the segment distribution of an unperturbed chain is therefore dumbbell-like in shape. {©} 1985, American Chemical Society. All rights reserved.}
+      \field{issn}{15205835}
+      \field{journaltitle}{Macromolecules}
+      \field{number}{6}
+      \field{title}{{Shape of Unperturbed Linear Polymers: Polypropylene}}
+      \field{volume}{18}
+      \field{year}{1985}
+      \field{pages}{1206\bibrangedash 1214}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1021/ma00148a028
+      \endverb
+      \verb{file}
+      \verb :home/wave/Downloads/ma00148a028.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Deemer1955}{article}{}
+      \name{author}{2}{}{%
+        {{hash=88a9ac7de4c7806883d7bb6b06fb44e4}{%
+           family={Deemer},
+           familyi={D\bibinitperiod},
+           given={Walter\bibnamedelima L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3c768af8f98635f3497f2861406df301}{%
+           family={Votaw},
+           familyi={V\bibinitperiod},
+           given={David\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{297574cb38514098c92a43232a8fa986}
+      \strng{fullhash}{297574cb38514098c92a43232a8fa986}
+      \strng{bibnamehash}{297574cb38514098c92a43232a8fa986}
+      \strng{authorbibnamehash}{297574cb38514098c92a43232a8fa986}
+      \strng{authornamehash}{297574cb38514098c92a43232a8fa986}
+      \strng{authorfullhash}{297574cb38514098c92a43232a8fa986}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A general weak convergence theory is developed for time-sequential censored rank statistics in the two-sample problem of comparing time to failure between two treatment groups, such as in the case of a clinical trial in which patients enter serially and, after being randomly allocated to one of two treatments, are followed until they fail or withdraw from the study or until the study is terminated. Applications of the theory to time-sequential tests based on these censored rank statistics are also discussed.}
+      \field{issn}{0003-4851}
+      \field{journaltitle}{The Annals of Mathematical Statistics}
+      \field{number}{3}
+      \field{title}{{Estimation of Parameters of Truncated or Censored Exponential Distributions}}
+      \field{volume}{26}
+      \field{year}{1955}
+      \field{pages}{498\bibrangedash 504}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1214/aoms/1177728494
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/statistics/ESTIMATION OF PARAMETERS OF TRUNCATED OR CENSORED EXPONENTIAL DISTRIBUTIONS.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Chen1988}{article}{}
+      \name{author}{2}{}{%
+        {{hash=88d14c0ca5d4e5dea32a54cba3a713bd}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Shu\bibnamedelima Mei},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ad4b8878b690c5e0a3cc06b3022d389c}{%
+           family={Bhattacharyya},
+           familyi={B\bibinitperiod},
+           given={Gouri\bibnamedelima K.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b682d89a243948d94c56db625716244}
+      \strng{fullhash}{9b682d89a243948d94c56db625716244}
+      \strng{bibnamehash}{9b682d89a243948d94c56db625716244}
+      \strng{authorbibnamehash}{9b682d89a243948d94c56db625716244}
+      \strng{authornamehash}{9b682d89a243948d94c56db625716244}
+      \strng{authorfullhash}{9b682d89a243948d94c56db625716244}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consider a life testing experiment in which n units are put on test, successive failure times are recorded, and the observation is terminated either at a specified number r of failures or a specified time T whichever is reached first. This mixture of type I and type II censoring schemes, called hybrid censoring, is of wide use. Under this censoring scheme and the assumption of an exponential life distribution, the distribution of the maximum likelihood estimator of the mean life $\theta$ is derived. It is then used to construct an exact lower confidence bound for $\theta$. {©} 1988, Taylor {\&} Francis Group, LLC. All rights reserved.}
+      \field{issn}{1532415X}
+      \field{journaltitle}{Communications in Statistics - Theory and Methods}
+      \field{number}{6}
+      \field{title}{{Exact confidence bounds for an exponential parameter under hybrid censoring}}
+      \field{volume}{17}
+      \field{year}{1988}
+      \field{pages}{1857\bibrangedash 1870}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/03610928808829718
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/statistics/Exact confidence bounds for an exponentialparameter under hybrid censoring.pdf:pdf
+      \endverb
+      \keyw{censoring,confidence bound,exponential distribution,hybrid}
+    \endentry
+    \entry{Press1992}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=9ea28ecf6729fbac759381b1db4a8bb4}{%
+           family={Press},
+           familyi={P\bibinitperiod},
+           given={William\bibnamedelima Henry},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=669bf06e8f7f0f6139884459cb728440}{%
+           family={Teukolsky},
+           familyi={T\bibinitperiod},
+           given={Saul\bibnamedelima Arno},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=12ba825dc296f78b21b90f645ff266b9}{%
+           family={Vetterling},
+           familyi={V\bibinitperiod},
+           given={William\bibnamedelima T.},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=15807a7b15e1cd89dfa546bd8385a36f}{%
+           family={Flannery},
+           familyi={F\bibinitperiod},
+           given={Brian\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
+      \strng{fullhash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
+      \strng{bibnamehash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
+      \strng{authorbibnamehash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
+      \strng{authornamehash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
+      \strng{authorfullhash}{f67eeae4a4ebf5dc9baf4840fdaef5c6}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This is the greatly revised and greatly expanded Second Edition of the hugely popular Numerical Recipes: The Art of Scientific Computing. The product of a unique collaboration among four leading scientists in academic research and industry Numerical Recipes is a complete text and reference book on scientific computing. In a self-contained manner it proceeds from mathematical and theoretical considerations to actual practical computer routines. With over 100 new routines bringing the total to well over 300, plus upgraded versions of the original routines, this new edition remains the most practical,comprehensive handbook of scientific computing available today. Highlights of the new material include: - A new chapter on integral equations and inverse methods - Multigrid and other methods for solving partial differential equations - Improved random number routines - Wavelet transforms - The statistical bootstrap method - A new chapter on 'less-numerical' algorithms including compression coding and arbitrary precision arithmetic. The book retains the informal easy-to-read style that made the first edition so popular, while introducing some more advanced topics. It is an ideal text book for scientists and engineers and an indispensable reference for anyone who works in scientific computing. The Second Edition is available in FORTRAN, the traditional language for numerical calculations, and in the increasingly popular C language.}
+      \field{booktitle}{Numerical Recipes in Fortran 77: the Art of Scientific Computing}
+      \field{chapter}{15}
+      \field{edition}{2}
+      \field{isbn}{052143064X}
+      \field{title}{{Confidence Limits on Estimated Model Parameters}}
+      \field{year}{1992}
+      \field{pages}{684\bibrangedash 686}
+      \range{pages}{3}
+    \endentry
+    \entry{Meyer2019a}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b143c3e26e8ccb1ac3669243780ab269}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=067c3d15efd678f179e516285dd5827c}{%
+           family={Pelagejcev},
+           familyi={P\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c9b8849840de6924a84a1789bdf97f9d}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Tanja},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb120eac4d0e21f9c481776a9964be0b}
+      \strng{fullhash}{bb120eac4d0e21f9c481776a9964be0b}
+      \strng{bibnamehash}{bb120eac4d0e21f9c481776a9964be0b}
+      \strng{authorbibnamehash}{bb120eac4d0e21f9c481776a9964be0b}
+      \strng{authornamehash}{bb120eac4d0e21f9c481776a9964be0b}
+      \strng{authorfullhash}{bb120eac4d0e21f9c481776a9964be0b}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a numerical method to compute non-equilibrium memory kernels based on experimental data or molecular dynamics simulations. The procedure uses a recasting of the non-stationary generalized Langevin equation, in which we expand the memory kernel in a series that can be reconstructed iteratively. Each term in the series can be computed based solely on knowledge of the two-Time auto-correlation function of the observable of interest. We discuss how to optimize this method in order to be the most numerically convenient. As a proof of principle, we test the method on the problem of crystallization from a super-cooled Lennard-Jones melt. We analyze the nucleation and growth dynamics of crystallites and observe that the memory kernel has a time extent that is about one order of magnitude larger than the typical timescale needed for a particle to be attached to the crystallite in the growth regime.}
+      \field{issn}{12864854}
+      \field{journaltitle}{Epl}
+      \field{number}{4}
+      \field{title}{{Non-Markovian out-of-equilibrium dynamics: A general numerical procedure to construct time-dependent memory kernels for coarse-grained observables}}
+      \field{volume}{128}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1209/0295-5075/128/40001
+      \endverb
+      \verb{file}
+      \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/Meyer{\_}2019{\_}EPL{\_}128{\_}40001.pdf:pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,14 +1,14 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction and theory}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Markovian assumption and the nucleation rate discrepancy}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}The hard sphere system}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}The hard sphere phase diagram and the metastable fluid}{3}{section.1.3}
+\contentsline {section}{\numberline {1.3}The hard sphere phase diagram and its metastable state}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Classical nucleation theory}{6}{section.1.4}
 \contentsline {section}{\numberline {1.5}Computer precision and chaotic behavior}{9}{section.1.5}
 \contentsline {section}{\numberline {1.6}Comparison to real world experiments}{11}{section.1.6}
-\contentsline {chapter}{\numberline {2}Simulation details}{13}{chapter.2}
+\contentsline {chapter}{\numberline {2}Simulation details and testing}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Algorithm and simulation details}{13}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Event driven molecular dynamics (EDMD)}{14}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Details concerning the implementation}{16}{subsection.2.1.2}
@@ -29,28 +29,28 @@
 \contentsline {section}{\numberline {2.2}Testing of the simulation code}{23}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Diffusive behavior}{23}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Radial distribution function}{25}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Estimate of required resources}{26}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Calculation time estimate}{26}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}File sizes estimate}{27}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.3}Estimate of required resources}{27}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Calculation time estimate}{27}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}File sizes estimate}{28}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Preliminary data for equilibration test}{29}{section.2.4}
 \contentsline {section}{\numberline {2.5}Extensions for future studies}{33}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Polydispersity for varying radius and mass}{33}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Single cluster tracking algorithm}{34}{subsection.2.5.2}
-\contentsline {chapter}{\numberline {3}Data Analysis}{36}{chapter.3}
-\contentsline {section}{\numberline {3.1}Parameter choice of the simulated system}{36}{section.3.1}
-\contentsline {section}{\numberline {3.2}Long time diffusion time scale}{37}{section.3.2}
+\contentsline {chapter}{\numberline {3}Data Analysis}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Parameter choice of the simulated system}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Long time diffusion time scale}{38}{section.3.2}
 \contentsline {section}{\numberline {3.3}Cluster size distribution over time}{39}{section.3.3}
-\contentsline {section}{\numberline {3.4}Autocovariance functions of largest cluster in the metastable fluid}{41}{section.3.4}
+\contentsline {section}{\numberline {3.4}Autocovariance functions of largest cluster in the metastable fluid}{42}{section.3.4}
 \contentsline {section}{\numberline {3.5}Cluster growth and constant attachment rate}{43}{section.3.5}
-\contentsline {section}{\numberline {3.6}Tensor of gyration evaluation}{45}{section.3.6}
-\contentsline {section}{\numberline {3.7}Nucleation time dilemma}{48}{section.3.7}
-\contentsline {section}{\numberline {3.8}Induction time by exponential distribution assumption}{50}{section.3.8}
+\contentsline {section}{\numberline {3.6}Evaluation of shape descriptors}{46}{section.3.6}
+\contentsline {section}{\numberline {3.7}The nucleation time dilemma}{49}{section.3.7}
+\contentsline {section}{\numberline {3.8}Induction time by exponential distribution assumption}{51}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}CNT expectation of the induction time distribution}{51}{subsection.3.8.1}
 \contentsline {subsection}{\numberline {3.8.2}Maximum likelihood estimator of the induction time}{52}{subsection.3.8.2}
 \contentsline {subsection}{\numberline {3.8.3}Monte Carlo uncertainty estimation}{54}{subsection.3.8.3}
 \contentsline {section}{\numberline {3.9}Nucleation rate discrepancy and possible solution}{56}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Comparison to literature}{56}{subsection.3.9.1}
-\contentsline {subsection}{\numberline {3.9.2}Solid fraction in the thermodynamic limit of infinite volume}{56}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.2}Solid fraction in the thermodynamic limit of infinite volume}{57}{subsection.3.9.2}
 \contentsline {section}{\numberline {3.10}Memory kernel analysis of nucleating ensemble}{59}{section.3.10}
-\contentsline {chapter}{\numberline {4}Conclusion}{63}{chapter.4}
-\contentsline {chapter}{\numberline {A}Derivation of momentum transfer in elastic hard sphere collisions}{65}{appendix.A}
+\contentsline {chapter}{\numberline {4}Conclusion}{62}{chapter.4}
+\contentsline {chapter}{\numberline {A}Derivation of momentum transfer in elastic hard sphere collisions}{64}{appendix.A}

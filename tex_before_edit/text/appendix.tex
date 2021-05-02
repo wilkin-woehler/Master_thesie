@@ -1,0 +1,25 @@
+% !TEX root = writing_version.tex
+
+\appendix
+%\section{A}
+\label{sec:appendix}
+\section{Derivation of momentum transfer in elastic hard sphere collision}
+The elastic collision of hard spheres i and j is governed by energy and momentum conservation. As the momentum transfer between the two spheres $\Delta \vec{p}$ is instantaneous it is confined within the direction of relative position. Thus we may write the momentum transfer on particle i as $\Delta \vec{p}_i = a \vec{r}_{ij}$ with the relative position $\vec{r}_{ij} = \vec{r}_{j} -\vec{r}_{i} $ and $a$ some constant to be determined. It can be easily seen that $\Delta \vec{p}_i = - \Delta \vec{p}_j$ due to $\vec{r}_{ij} = -\vec{r}_{ji}$. \\
+
+With $\vec{p}_i = m_i \vec{v}_i$ we can then write the velocity after the collision for particle i as
+\begin{align}
+\vec{v}_i^{\,'} = \vec{v}_i +\frac{\Delta \vec{p}_i } {m_i} \; \text{.}
+\end{align}
+
+Energy conservation then leads to
+
+\begin{align}
+\label{eqn:momentum_transfer}
+\frac{1}{2}\left( m_i |\vec{v}_i^{\,'}|^2 + m_j |\vec{v}_j^{\,'}|^2 \right) &= \frac{1}{2}\left( m_i |\vec{v}_i|^2 + m_j |\vec{v}_j|^2 \right)\\
+ m_i \left(  \vec{v}_i +\frac{\Delta \vec{p}_i } {m_i} \right)^2 + m_ j\left(  \vec{v}_j +\frac{\Delta \vec{p}_j } {m_j} \right)^2  &= m_i |\vec{v}_i|^2 + m_j |\vec{v}_j|^2 \\
+2 \left(  \vec{v}_i \cdot  \Delta \vec{p}_i  +\vec{v}_j \cdot  \Delta \vec{p}_j   \right)+\frac{|\Delta \vec{p}_i|^2 } {m_i} +\frac{|\Delta \vec{p}_j|^2 } {m_j} &= 0\\
+2 (\vec{v}_i - \vec{v}_j)\cdot \Delta \vec{p}_i + |\Delta \vec{p}_i|^2 \left(\frac{1}{m_i} +\frac{1}{m_j} \right) &=0\\
+a^2 |\vec{r}_{ij}|^2 \frac{m_i + m_j}{m_i m_j} &= 2 a \vec{r}_{ij} \cdot \vec{v}_{ij} \\
+a = \frac{2 m_i m_j }{(m_i + m_j)  } \frac{\vec{r}_{ij} \cdot \vec{v}_{ij}}{|\vec{r}_{ij}|^2}\\
+\Rightarrow \vec{v}_{i/j}^{\,'} = \vec{v}_{i/j} \pm \frac{2 m_{j/i} }{(m_i + m_j)  } \frac{\vec{r}_{ij} \cdot \vec{v}_{ij}}{|\vec{r}_{ij}|^2}
+\end{align}

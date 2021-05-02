@@ -1,0 +1,113 @@
+\documentclass[a4paper, twoside, 11pt]{scrreprt}
+
+\input{header/head.tex}
+\input{header/commands.tex}
+
+\makeatletter
+     \renewcommand*\l@figure{\@dottedtocline{1}{1em}{3.0em}}
+     \renewcommand*\l@table{\@dottedtocline{1}{1em}{3.2em}}
+\makeatother
+
+
+
+%88888888888888888888888888888888888888888888888888888888888888888888888888
+\begin{document}
+	%set language
+	\selectlanguage{english}
+	
+	%sections
+	\renewcommand{\subsectionautorefname}{section\negthinspace}
+	\renewcommand{\subsubsectionautorefname}{section\negthinspace}	\renewcommand{\figureautorefname}{fig.\negthinspace}
+	\renewcommand{\tableautorefname}{tab.\negthinspace}
+	\renewcommand{\equationautorefname}{eq.\negthinspace}
+	
+	
+	\newcommand{\vtitle}{Nucleation and Crystallization of the Metastable Hard Sphere Fluid}
+	\newcommand{\vinstitute}{Research group for complex systems and soft matter}
+	\newcommand{\vsupervision}{Prof. Dr. Tanja Schilling}
+	\newcommand{\vauthor}{Wilkin Wöhler}
+
+	
+	
+	\newcommand{\presummary}{Nucleation and cluster development in the metastable hard sphere fluid are studied in this thesis. To this purpose an event driven molecular dynamcis simulation code is developed and thouroughly tested by measuring well known quantities like diffusion coefficients or radial distribution functions at various packing fractions. Its performance is well suited for large systems enabling also the measurement of cluster growth rates and shape descriptors for clusters with sizes up to a hundred thousand particles without significant spatial influence to itself due to the periodic boundary conditions.\\ 
+The program is used to simulate 2000 trajectories of systems containing about 1 million particles. In the analysis of the data a constant attachment rate to the cluster's surface is measured. Surprisingly the attachement rate seems unaffected by the packing fraction of the surrounding mestastable liquid, even though varying between single clusters by about 50\% leading to uncertainties that can not exclude a dependence on the diffusion time scale.\\
+From shape descriptors based on the Tensor of Gyration a tendency towards more spherical clusters is observed up to sizes of about a thousand particles. Clusters including more particles seem to conserve their almost spherical proportions and approach the completly spherical shape only slowly.\\  
+Also nucleation rates at volume fractions of $\eta \in [53.1\%,53.4\%]$ are measured at high precision compared to earlier measurements of these, confirming the discrepancy between real world experiments and numerical simulations. Beyond that the impact memory effects in nucleations for smaller systems is investigated with the finding of a Gaussian memory kernel. The width of which therby is comparable to the width of the phase transition time for a single trajectory, as previously shown by Meyer et al. 2021\cite{Meyer2021}.}
+
+\pagenumbering{Roman} % and numbering to roman numbering
+%\pagestyle{plain} % Set the pagestyle to plain to exclude header in inital part
+
+\input{header/title_page.tex}
+
+\renewcommand{\chapterpagestyle}{plain}
+
+\tableofcontents 
+\newpage
+
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\null\thispagestyle{empty}  %An empty page
+\newpage
+
+
+\pagenumbering{arabic} % Reset the numbering to arabic numbering
+\pagestyle{scrheadings} % Set the pagestyle back to header including style
+
+%\renewcommand{\chapterpagestyle}{scrheadings} % Set the pagestyle of chapter page also with header
+
+
+\chapter{Introduction}
+\input{text/theory.tex}
+\newpage
+
+\chapter{Simulation details}
+\input{text/simulation.tex}
+\newpage
+
+\chapter{Data Analysis}
+\input{text/analysis.tex}
+\newpage
+
+\chapter{Conclusion}
+\input{text/conclusion.tex}
+\newpage
+
+\pagestyle{plain}
+\renewcommand{\chapterpagestyle}{plain}
+\chapter{Appendix}
+\input{text/appendix.tex}
+\newpage
+
+\chapter*{Acknowledgements}% for the actuall unnumbered heading
+
+I thankfully want to achknowledge the freedom
+The authors acknowledge support by the state of Baden-Württemberg through bwHPC
+and the German Research Foundation (DFG) through grant no INST 39/963-1 FUGG (bwForCluster NEMO).
+
+%Phillips
+%It is a pleasure to acknowledge the fruitful discussion and helpful comments from
+%Tanja Schilling, Anja Kuhnhold, Andreas Härtel and Graziano Am-
+%ati. Especially, I am grateful for the support from Hugues Meyer. He provided
+%additional simulation trajectories from the HPC facility of the University of Lux-
+%embourg and gave me permission to use his memory-kernel reconstruction scheme
+%that is not published yet. He also invested a lot of time to present and discuss
+%his scheme for clarifications. The simulation data presented in this work was
+%supported by the state of Baden-Württemberg through bwHPC and the German
+%Research Foundation (DFG) through grant no INST 39/963-1 FUGG.
+
+
+
+\printbibliography
+
+\end{document}
+
+
+
+
+
+
+

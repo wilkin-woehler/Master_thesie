@@ -4,24 +4,24 @@
 \label{sec:appendix}
 \chapter{Derivation of momentum transfer in elastic hard sphere collisions}
 \section*{}
-The elastic collision of hard spheres i and j is governed by energy and momentum conservation. As the momentum transfer between the two spheres $\Delta \vec{p}$ is instantaneous it is confined within the direction of relative position. Thus we may write the momentum transfer on particle i as $\Delta \vec{p}_i = a \vec{r}_{ij}$ with the relative position $\vec{r}_{ij} = \vec{r}_{j} -\vec{r}_{i} $ and $a$ some constant to be determined. It can be easily seen that $\Delta \vec{p}_i = - \Delta \vec{p}_j$ due to $\vec{r}_{ij} = -\vec{r}_{ji}$. \\
+The elastic collision of two hard spheres $i$ and $j$ is governed by energy and momentum conservation.
+In the collision of the two particles, the momentum transfer $\Delta \vec{p}$ is confined within the direction of relative position because the collision is instantaneous. Thus, we may write the momentum transfer on particle $i$ as $\Delta \vec{p}_i = a \vec{r}_{ij}$ with the relative position $\vec{r}_{ij} = \vec{r}_{j} -\vec{r}_{i} $ and $a$ being some constant to be determined. It can be easily seen, that $\Delta \vec{p}_i = - \Delta \vec{p}_j$ due to $\vec{r}_{ij} = -\vec{r}_{ji}$. \\
 
-With $\vec{p}_i = m_i \vec{v}_i$ we can then write the velocity after the collision for particle i as
+Using $\vec{p}_i = m_i \vec{v}_i$, we can write the velocity after the collision for particle i as
 \begin{align}
 \vec{v}_i^{\,'} = \vec{v}_i +\frac{\Delta \vec{p}_i } {m_i} \; \text{.}
 \end{align}
-
-Energy conservation then leads to
-
+By using classical energy conservation and reformulating, we find
 \begin{align}
 \label{eqn:momentum_transfer}
-\frac{1}{2}\left( m_i |\vec{v}_i^{\,'}|^2 + m_j |\vec{v}_j^{\,'}|^2 \right) &= \frac{1}{2}\left( m_i |\vec{v}_i|^2 + m_j |\vec{v}_j|^2 \right)\\
- m_i \left(  \vec{v}_i +\frac{\Delta \vec{p}_i } {m_i} \right)^2 + m_ j\left(  \vec{v}_j +\frac{\Delta \vec{p}_j } {m_j} \right)^2  &= m_i |\vec{v}_i|^2 + m_j |\vec{v}_j|^2 \\
-2 \left(  \vec{v}_i \cdot  \Delta \vec{p}_i  +\vec{v}_j \cdot  \Delta \vec{p}_j   \right)+\frac{|\Delta \vec{p}_i|^2 } {m_i} +\frac{|\Delta \vec{p}_j|^2 } {m_j} &= 0\\
-2 (\vec{v}_i - \vec{v}_j)\cdot \Delta \vec{p}_i + |\Delta \vec{p}_i|^2 \left(\frac{1}{m_i} +\frac{1}{m_j} \right) &=0\\
-a^2 |\vec{r}_{ij}|^2 \frac{m_i + m_j}{m_i m_j} &= 2 a \vec{r}_{ij} \cdot \vec{v}_{ij} \\
-a = \frac{2 m_i m_j }{(m_i + m_j)  } \frac{\vec{r}_{ij} \cdot \vec{v}_{ij}}{|\vec{r}_{ij}|^2}\\
+\frac{1}{2}\left( m_i |\vec{v}_i|^2 + m_j |\vec{v}_j|^2 \right) &= \frac{1}{2}\left( m_i |\vec{v}_i^{\,'}|^2 + m_j |\vec{v}_j^{\,'}|^2 \right) \\
+\Leftrightarrow \qquad  m_i |\vec{v}_i|^2 + m_j |\vec{v}_j|^2  &= m_i \left(  \vec{v}_i +\frac{\Delta \vec{p}_i } {m_i} \right)^2 + m_ j\left(  \vec{v}_j +\frac{\Delta \vec{p}_j } {m_j} \right)^2 \\
+\Leftrightarrow \qquad\qquad\qquad\qquad\quad\! 0 &= 2 \left(  \vec{v}_i \cdot  \Delta \vec{p}_i  +\vec{v}_j \cdot  \Delta \vec{p}_j   \right)+\frac{|\Delta \vec{p}_i|^2 } {m_i} +\frac{|\Delta \vec{p}_j|^2 } {m_j}\\
+\Leftrightarrow  \qquad\qquad\qquad\qquad\quad\! 0 &= 2 (\vec{v}_i - \vec{v}_j)\cdot \Delta \vec{p}_i + |\Delta \vec{p}_i|^2 \left(\frac{1}{m_i} +\frac{1}{m_j} \right)\\
+ \Leftrightarrow \qquad\qquad\quad\, 2 a \, \vec{r}_{ij} \cdot \vec{v}_{ij} &= a^2 |\vec{r}_{ij}|^2 \frac{m_i + m_j}{m_i m_j}\\
+ \Leftrightarrow\qquad\qquad\qquad\qquad\;\;\; a &= \frac{2 m_i m_j }{(m_i + m_j)  } \frac{\vec{r}_{ij} \cdot \vec{v}_{ij}}{|\vec{r}_{ij}|^2}\\
 \label{eqn:momentum_transefer_result}
-\Rightarrow \vec{v}_{i/j}^{\,'} = \vec{v}_{i/j} \pm \frac{2 m_{j/i} }{(m_i + m_j)  } \frac{\vec{r}_{ij} \cdot \vec{v}_{ij}}{|\vec{r}_{ij}|^2}
+\Rightarrow \vec{v}_{i/j}^{\,'} &= \vec{v}_{i/j} \pm \frac{2 m_{j/i} }{(m_i + m_j)  } \frac{\vec{r}_{ij} \cdot \vec{v}_{ij}}{|\vec{r}_{ij}|^2}
 \end{align}
-With \autoref{eqn:momentum_transefer_result} the final result that is used in the thesis.
+
+Equation \ref{eqn:momentum_transefer_result}, is the final result which is used in the thesis.
