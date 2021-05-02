@@ -99,12 +99,13 @@
       \field{abstract}{We discuss the structure of the equation of motion that governs nucleation processes at first order phase transitions. From the underlying microscopic dynamics of a nucleating system, we derive by means of a nonequilibrium projection operator formalism the equation of motion for the size distribution of the nuclei. The equation is exact, i.e., the derivation does not contain approximations. To assess the impact of memory, we express the equation of motion in a form that allows for direct comparison to the Markovian limit. As a numerical test, we have simulated crystal nucleation from a supersaturated melt of particles interacting via a Lennard-Jones potential. The simulation data show effects of non-Markovian dynamics.}
       \field{eprinttype}{arXiv}
       \field{issn}{23318422}
-      \field{journaltitle}{Physical Review E - Statistical Physics, Plasmas, Fluids, and Related Interdisciplinary Topics}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{5}
       \field{title}{{Derivation of an exact, nonequilibrium framework for nucleation: Nucleation is a priori neither diffusive nor Markovian}}
-      \field{volume}{052140}
+      \field{volume}{100}
       \field{year}{2019}
-      \field{pages}{1\bibrangedash 7}
-      \range{pages}{7}
+      \field{pages}{52140}
+      \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevE.100.052140
       \endverb
@@ -113,6 +114,12 @@
       \endverb
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/KuhnholdPhysRevE.100.052140.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.100.052140
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.100.052140
       \endverb
       \keyw{doi:10.1103/PhysRevE.100.052140 url:https://doi.or}
     \endentry
@@ -138,7 +145,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Simulation study of non-Markovian effects in crystal nucleation}}
-      \field{type}{master thesis}
+      \field{type}{Master Thesis}
       \field{year}{2019}
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/nucleation/thesis/CrystalNucleation.pdf:pdf
@@ -173,17 +180,24 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present a numerical method to compute non-equilibrium memory kernels based on experimental data or molecular dynamics simulations. The procedure uses a recasting of the non-stationary generalized Langevin equation, in which we expand the memory kernel in a series that can be reconstructed iteratively. Each term in the series can be computed based solely on knowledge of the two-Time auto-correlation function of the observable of interest. We discuss how to optimize this method in order to be the most numerically convenient. As a proof of principle, we test the method on the problem of crystallization from a super-cooled Lennard-Jones melt. We analyze the nucleation and growth dynamics of crystallites and observe that the memory kernel has a time extent that is about one order of magnitude larger than the typical timescale needed for a particle to be attached to the crystallite in the growth regime.}
-      \field{issn}{12864854}
-      \field{journaltitle}{Epl}
+      \field{journaltitle}{EPL}
       \field{number}{4}
       \field{title}{{Non-Markovian out-of-equilibrium dynamics: A general numerical procedure to construct time-dependent memory kernels for coarse-grained observables}}
       \field{volume}{128}
       \field{year}{2019}
+      \field{pages}{40001}
+      \range{pages}{1}
       \verb{doi}
       \verb 10.1209/0295-5075/128/40001
       \endverb
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/nucleation/paper/Meyer{\_}2019{\_}EPL{\_}128{\_}40001.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1209/0295-5075/128/40001
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1209/0295-5075/128/40001
       \endverb
     \endentry
     \entry{MeyerThesis}{thesis}{}
@@ -209,7 +223,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The dynamics of many-body complex processes is a challenge that many scientists from various fields have to face. Reducing the complexity of systems involving a large number of bodies in order to reach a simple description for observables captur- ing the main features of the process is a difficult task for which different approaches have been proposed over the past decades. In this thesis we introduce new tools to describe the coarse-grained dynamics of arbitrary observables in non-equilibrium processes. Following the projection operator formalisms introduced first by Mori and Zwanzig, and later on by Grabert, we first derive a non-stationary Generalized Langevin Equation that we prove to be valid in a wide spectrum of cases. This includes in particular driven processes as well as explicitly time-dependent observ- ables. The equation exhibits a priori memory effects, controlled by a so-called non- stationary memory kernel. Because the formalism does not provide extensive infor- mation about the memory kernel in general, we introduce a set of numerical meth- ods aimed at evaluating it from Molecular Dynamics simulation data. These proce- dures range from simple dimensionless estimations of the strength of the memory to the determination of the entire kernel. Again, the methods introduced are very general and require as input a small number of quantities directly computable from numerical of experimental timeseries. We finally conclude this thesis by using the projection operator formalisms to derive an equation of motion for work and heat in dissipative processes. This is done in two different ways, either by using well-known integral fluctuation theorems, or by explicitly splitting the dynamics into adiabatic and dissipative parts.}
       \field{title}{{Generalized Langevin Equations and memory effects in non-equilibrium statistical physics}}
-      \field{type}{dissertation}
+      \field{type}{Dissertation}
       \field{year}{2020}
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/nucleation/thesis/thesisHugues{\_}latest.pdf:pdf
@@ -293,18 +307,21 @@
       \field{year}{2001}
       \field{pages}{1020\bibrangedash 1023}
       \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/35059035
+      \endverb
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/used{\_}data/Auer-2001-Prediction-of-absolute-crystal-nucl.pdf:pdf
       \endverb
       \verb{urlraw}
-      \verb www.nature.com
+      \verb https://doi.org/10.1038/35059035
       \endverb
       \verb{url}
-      \verb www.nature.com
+      \verb https://doi.org/10.1038/35059035
       \endverb
       \keyw{nucleation}
     \endentry
-    \entry{Filion2010}{article}{}
+    \entry{Filion2010a}{article}{}
       \name{author}{4}{}{%
         {{hash=e3974acf1781fba3aad254ee786510ba}{%
            family={Filion},
@@ -345,6 +362,8 @@
       \field{title}{{Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling, and forward flux sampling: A comparison of simulation techniques}}
       \field{volume}{133}
       \field{year}{2010}
+      \field{pages}{244115}
+      \range{pages}{1}
       \verb{doi}
       \verb 10.1063/1.3506838
       \endverb
@@ -352,7 +371,7 @@
       \verb 1006.2925
       \endverb
       \verb{file}
-      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/Filion-2010-Crystal-nucleation-of-hard-spheres-.pdf:pdf
+      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling andforward flux sampling$\backslash$: A comparison of simulation techniques.pdf:pdf
       \endverb
     \endentry
     \entry{Schilling2011}{article}{}
@@ -395,6 +414,8 @@
       \field{title}{{Crystallization in suspensions of hard spheres: A Monte Carlo and molecular dynamics simulation study}}
       \field{volume}{23}
       \field{year}{2011}
+      \field{pages}{194120}
+      \range{pages}{1}
       \verb{doi}
       \verb 10.1088/0953-8984/23/19/194120
       \endverb
@@ -425,7 +446,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Chemistry is hard. Simulating the full quantum-chemical interactions involved in any complicated physical process is often impossible, due to the huge amount of computing power required. Instead, model systems which interact in simpler ways can be studied. The simplest model is known as the ideal gas. This model consists of point parti- cles which only interact through elastic collisions. Even a model this abstract gives us the ideal gas law, one of the most prized equations in all of physical chemistry. Moving one step further in complexity, we can give the particles a diameter and prohibit them from overlapping. This is the hard sphere model. This extra step in complexity gives hard spheres a richer behaviour than the ideal gas. Hard spheres form the familiar liquid and solid phases, with a full thermodynamic transition between the two, just like real materials. This existence of the freezing transition has been known since the 1950s, and new simulation tech- niques have measured its speed (the nucleation rate). Ten years earlier, experiments on particles suspended in a solvent (colloids), had shown that the hard sphere model could be realised in experiment. However, the experimental nucleation rates disagreed spectacularly with the simulations, by up to 13 orders of magnitude. This discrepancy has been described as the second worst failure in physics. In this thesis, we attempt to resolve the discrepancy. First, we ex- amine the impact of the sedimentation in the experiments, and show that it can create a substantial change in the nucleation rates. Then we examine the density fluctuations in the experimental system. We demonstrate that they are significantly larger than in the simulations. A detailed investigation into the cause of the increased fluctuations is undertaken. We conclude that they are due to the particle tracking methods applied in studying colloids, revealing an important experi- mental limitation which has not been previously described. Finally, we develop a new method for studying nucleation rates using confocal microscopy, increasing the sample size by several orders of magnitude. This allows us to measure the most extended nucleation barriers ever seen experimentally. Unfortunately these barriers essentially agree with previous experiments, leading us to conclude that the nucleation rate discrepancy remains unresolved.}
       \field{title}{{Hard Sphere Nucleation Rates}}
-      \field{type}{dissertation}
+      \field{type}{Dissertation}
       \field{year}{2019}
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/nucleation{\_}simulation{\_}experiment{\_}discrepancy/NicholasWood{\_}Thesis{\_}Final.pdf:pdf
@@ -474,6 +495,8 @@
       \field{title}{{The effect of hydrodynamics on the crystal nucleation of nearly hard spheres}}
       \field{volume}{152}
       \field{year}{2020}
+      \field{pages}{064903}
+      \range{pages}{1}
       \verb{doi}
       \verb 10.1063/1.5137815
       \endverb
@@ -517,6 +540,9 @@
       \field{year}{1959}
       \field{pages}{459\bibrangedash 466}
       \range{pages}{8}
+      \verb{doi}
+      \verb 10.1063/1.1730376
+      \endverb
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/HS{\_}Phase{\_}diagrams/Alders{\&}Wainwright1959.pdf:pdf
       \endverb
@@ -629,6 +655,8 @@
       \field{title}{{A cluster algorithm for Monte Carlo simulation at constant pressure}}
       \field{volume}{130}
       \field{year}{2009}
+      \field{pages}{184106}
+      \range{pages}{1}
       \verb{doi}
       \verb 10.1063/1.3133328
       \endverb
@@ -638,23 +666,23 @@
     \endentry
     \entry{Becker1935}{article}{}
       \name{author}{2}{}{%
-        {{hash=4bc21076f906b3e294b4a90cb1512bb5}{%
-           family={R.},
-           familyi={R\bibinitperiod},
-           given={Becker},
-           giveni={B\bibinitperiod}}}%
-        {{hash=01b9b593c3011f7f1d4b366d91e12a87}{%
-           family={W.},
-           familyi={W\bibinitperiod},
-           given={D{ö}ring},
-           giveni={D\bibinitperiod}}}%
+        {{hash=9b3541c4dc1bd7d731f33c5bea9ea3fb}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9aeab8a7199d6975d891a0bd4c82776c}{%
+           family={D{ö}ring},
+           familyi={D\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
       }
-      \strng{namehash}{d2dd34bcc02c979003a19b759621ac5c}
-      \strng{fullhash}{d2dd34bcc02c979003a19b759621ac5c}
-      \strng{bibnamehash}{d2dd34bcc02c979003a19b759621ac5c}
-      \strng{authorbibnamehash}{d2dd34bcc02c979003a19b759621ac5c}
-      \strng{authornamehash}{d2dd34bcc02c979003a19b759621ac5c}
-      \strng{authorfullhash}{d2dd34bcc02c979003a19b759621ac5c}
+      \strng{namehash}{f7be8a3a1bb15b5cb717dd93e2d563e1}
+      \strng{fullhash}{f7be8a3a1bb15b5cb717dd93e2d563e1}
+      \strng{bibnamehash}{f7be8a3a1bb15b5cb717dd93e2d563e1}
+      \strng{authorbibnamehash}{f7be8a3a1bb15b5cb717dd93e2d563e1}
+      \strng{authornamehash}{f7be8a3a1bb15b5cb717dd93e2d563e1}
+      \strng{authorfullhash}{f7be8a3a1bb15b5cb717dd93e2d563e1}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
@@ -677,57 +705,6 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19354160806
-      \endverb
-    \endentry
-    \entry{Filion2010a}{article}{}
-      \name{author}{4}{}{%
-        {{hash=e3974acf1781fba3aad254ee786510ba}{%
-           family={Filion},
-           familyi={F\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=66d699035a88e572975003148ec45b9d}{%
-           family={Hermes},
-           familyi={H\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=1a9f0531fa18f809d541b35fc379236f}{%
-           family={Ni},
-           familyi={N\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=48424193abb172f9b0d685b801ef05f9}{%
-           family={Dijkstra},
-           familyi={D\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{fullhash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{bibnamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{authorbibnamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{authornamehash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \strng{authorfullhash}{fde1a20fa0a4b67ec57719b9e24191f1}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Over the last number of years several simulation methods have been introduced to study rare events such as nucleation. In this paper we examine the crystal nucleation rate of hard spheres using three such numerical techniques: molecular dynamics, forward flux sampling, and a Bennett-Chandler-type theory where the nucleation barrier is determined using umbrella sampling simulations. The resulting nucleation rates are compared with the experimental rates of Harland and van Megen [Phys. Rev. E 55, 3054 (1997)], Sinn [Prog. Colloid Polym. Sci. 118, 266 (2001)], Schtzel and Ackerson [Phys. Rev. E 48, 3766 (1993)], and the predicted rates for monodisperse and 5{\%} polydisperse hard spheres of Auer and Frenkel [Nature 409, 1020 (2001)]. When the rates are examined in units of the long-time diffusion coefficient, we find agreement between all the theoretically predicted nucleation rates, however, the experimental results display a markedly different behavior for low supersaturation. Additionally, we examined the precritical nuclei arising in the molecular dynamics, forward flux sampling, and umbrella sampling simulations. The structure of the nuclei appears independent of the simulation method, and in all cases, the nuclei contains on average significantly more face-centered-cubic ordered particles than hexagonal-close-packed ordered particles. {©} 2010 American Institute of Physics.}
-      \field{eprinttype}{arXiv}
-      \field{issn}{00219606}
-      \field{journaltitle}{Journal of Chemical Physics}
-      \field{number}{24}
-      \field{title}{{Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling, and forward flux sampling: A comparison of simulation techniques}}
-      \field{volume}{133}
-      \field{year}{2010}
-      \verb{doi}
-      \verb 10.1063/1.3506838
-      \endverb
-      \verb{eprint}
-      \verb 1006.2925
-      \endverb
-      \verb{file}
-      \verb :home/wave/uni/master{\_}1/literature/HS{\_}nucleation{\_}rates/Crystal nucleation of hard spheres using molecular dynamics, umbrella sampling andforward flux sampling$\backslash$: A comparison of simulation techniques.pdf:pdf
       \endverb
     \endentry
     \entry{Bultmann2020}{article}{}
@@ -771,9 +748,11 @@
     \endentry
     \entry{Pusey1986}{article}{}
       \name{author}{2}{}{%
-        {{hash=53946c33fc9eefa0774dc15e9b1ce4fe}{%
-           family={{P. N. Pusey}},
-           familyi={P\bibinitperiod}}}%
+        {{hash=7c46dea2d744286c5cb2c97334be7f2e}{%
+           family={Pusey},
+           familyi={P\bibinitperiod},
+           given={P.\bibnamedelimi N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
         {{hash=5a10f2dbc74ca6aa91d9f08ccbca1d0f}{%
            family={Megen},
            familyi={M\bibinitperiod},
@@ -782,12 +761,12 @@
            prefix={van},
            prefixi={v\bibinitperiod}}}%
       }
-      \strng{namehash}{7d6267dea43a061efc086281bcb45484}
-      \strng{fullhash}{7d6267dea43a061efc086281bcb45484}
-      \strng{bibnamehash}{7d6267dea43a061efc086281bcb45484}
-      \strng{authorbibnamehash}{7d6267dea43a061efc086281bcb45484}
-      \strng{authornamehash}{7d6267dea43a061efc086281bcb45484}
-      \strng{authorfullhash}{7d6267dea43a061efc086281bcb45484}
+      \strng{namehash}{07d384a62ac2937638fd78df044100e3}
+      \strng{fullhash}{07d384a62ac2937638fd78df044100e3}
+      \strng{bibnamehash}{07d384a62ac2937638fd78df044100e3}
+      \strng{authorbibnamehash}{07d384a62ac2937638fd78df044100e3}
+      \strng{authornamehash}{07d384a62ac2937638fd78df044100e3}
+      \strng{authorfullhash}{07d384a62ac2937638fd78df044100e3}
       \field{sortinit}{2}
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
@@ -808,7 +787,7 @@
       \verb https://www.nature.com/articles/320340a0
       \endverb
     \endentry
-    \entry{Doherty1998}{article}{}
+    \entry{Doherty1998}{incollection}{}
       \name{author}{3}{}{%
         {{hash=7466ce959a50a45a43f542a8dd0bfb4f}{%
            family={Doherty},
@@ -837,8 +816,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Physics of HArd Spheres Experiment (PHaSE), one of NASA Lewis Research Center's first major light scattering experiments for microgravity research on complex fluids, flew on board the Space Shuttle's Microgravity Science Laboratory (MSL-1) in 1997. Using colloidal systems of various concentrations of micron sized plastic spheres in a refractive index matching fluid as test samples, illuminated by laser light during and after crystallization, investigations were conducted to measure the nucleation and growth rate of colloidal crystals as well as the structure, rheology, and dynamics of the equilibrium crystal. Together, these measurements support an enhanced understanding of the nature of the liquid-to-solid transition. Achievement of the science objectives required an accurate experimental determination of eight fundamental properties for the hard sphere colloidal samples. The instrument design met almost all of the original measurement requirements, but with compromise on the number of samples on which data were taken. The instrument performs 2-D Bragg and low angle scattering from 0.4° to 60°, dynamic and single-channel static scattering from 10° to 170°, rheology using fiber optics, and white light imaging of the sample.}
-      \field{journaltitle}{36th AIAA Aerospace Sciences Meeting and Exhibit}
-      \field{number}{April}
+      \field{booktitle}{36th AIAA Aerospace Sciences Meeting and Exhibit}
       \field{title}{{The physics of hard spheres experiment on MSL-1: Required measurements and instrument performance}}
       \field{year}{1998}
       \verb{doi}
@@ -846,6 +824,12 @@
       \endverb
       \verb{file}
       \verb :home/wave/uni/master{\_}1/literature/nucleation/historical paper/19980148004.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1998-462
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1998-462
       \endverb
     \endentry
     \entry{Radu2014}{article}{}
@@ -1162,7 +1146,7 @@
       \verb :home/wave/uni/master{\_}1/literature/order{\_}parameter/paper/PhysRevLett.75.2714.pdf:pdf
       \endverb
     \endentry
-    \entry{Albert1905}{misc}{}
+    \entry{Albert1905}{article}{}
       \name{author}{1}{}{%
         {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
            family={Einstein},
@@ -1180,13 +1164,24 @@
       \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Annalen der Physik}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{8}
       \field{title}{{{Ü}ber die von der molekularkinetischen Theorie der W{ä}rme geforderte Bewegung von in ruhenden Fl{ü}ssigkeiten suspendierten Teilchen}}
+      \field{volume}{322}
       \field{year}{1905}
       \field{pages}{549\bibrangedash 560}
       \range{pages}{12}
+      \verb{doi}
+      \verb https://doi.org/10.1002/andp.19053220806
+      \endverb
       \verb{file}
       \verb :home/wave/Downloads/einstein2.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19053220806
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19053220806
       \endverb
     \endentry
     \entry{Pieprzyk2019}{article}{}
@@ -1581,7 +1576,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The crystallization of suspensions of sterically stabilized polymer particles, with hard-sphere-like interactions, is studied by laser light scattering. Over the range of volume fractions examined, from just below melting to the glass transition, crystallization occurs by homogeneous nucleation. After the suspensions are shear melted, the intensity, position, and width of the main interlayer Bragg reflection are measured as functions of time. From these the amount of crystal, the average linear crystal dimension, the number of crystals, and the volume fraction of the crystal phase are obtained. No assumptions are made concerning the functional time dependence of nucleation or growth processes. Below the melting concentration the observed crystallization process is compatible with the classical picture of sequential nucleation and growth of isolated crystals. However, when the melting concentration is exceeded, nucleation events are correlated, nucleation is accelerated, and high nucleation rate densities suppress crystal growth. Above the melting concentration we infer, with the aid of the equations of state for the hard-sphere fluid and solid, that the first identifiable crystals are in mechanical equilibrium with the embedding fluid and, consequently, strongly compressed by it. Ensuing nucleation lags expansion of the crystal lattice. {©} 1997 The American Physical Society.}
       \field{issn}{1063651X}
-      \field{journaltitle}{Physical Review E - Statistical Physics, Plasmas, Fluids, and Related Interdisciplinary Topics}
+      \field{journaltitle}{Physical Review E}
       \field{number}{3}
       \field{title}{{Crystallization kinetics of suspensions of hard colloidal spheres}}
       \field{volume}{55}
@@ -1637,7 +1632,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Density fluctuations are monitored by small-angle light scattering during the crystallization of 0.22-$\mu$m-radius, hard colloidal spheres. Measured structure factors show an intensity maximum at finite-scattering vectors. The shape of the intensity distribution scales at early times during nucleation and growth and again at large times during ripening. At intermediate times there is a crossover region where scaling ceases to be valid. Both the amplitude and the position of the maximum intensity show quasi-power law behavior in time. The values of the observed exponents are within the range expected for classical growth models. The breadth of the intensity distribution increases with increasing volume fraction, suggesting greater crystal polydispersity with increasing volume fraction. The lower volume fraction intensity distributions suggest that crystals have a compound or internal structure, while the observed decrease in characteristic length in the crossover time regime may indicate breakup of crystals to this smaller internal structure. The results of measurements are compared with results calculated for nucleation and growth of crystals in suspensions of hard spheres. Results also are compared with earlier measurements made on samples containing 0.50-$\mu$m radius spheres. Differences in the two systems are discussed in terms of interparticle potential, polydispersity, and gravitational effects. {©} 1996 The American Physical Society.}
       \field{issn}{1063651X}
-      \field{journaltitle}{Physical Review E - Statistical Physics, Plasmas, Fluids, and Related Interdisciplinary Topics}
+      \field{journaltitle}{Physical Review E}
       \field{number}{5}
       \field{title}{{Dynamics of crystallization in hard-sphere suspensions}}
       \field{volume}{54}
