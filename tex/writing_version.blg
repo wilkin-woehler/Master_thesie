@@ -1,18 +1,18 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'writing_version.blg'
-[22] biber:313> INFO - === So Mai  2, 2021, 23:51:59
-[40] Biber.pm:371> INFO - Reading 'writing_version.bcf'
-[93] Biber.pm:857> INFO - Found 40 citekeys in bib section 0
-[104] Biber.pm:3981> INFO - Processing section 0
-[113] Biber.pm:4154> INFO - Looking for bibtex format file 'bibliography/library.bib' for section 0
-[123] bibtex.pm:1468> INFO - LaTeX decoding ...
-[234] bibtex.pm:1294> INFO - Found BibTeX data source 'bibliography/library.bib'
-[268] Utils.pm:169> WARN - month field 'dec' in entry 'Meyer_nsGLE' is not an integer - this will probably not sort properly.
-[453] Utils.pm:169> WARN - BibTeX subsystem: /tmp/YLOW_rmfOO/library.bib_11706.utf8, line 6, warning: 172 characters of junk seen at toplevel
+[23] biber:313> INFO - === Mo Mai  3, 2021, 14:09:57
+[41] Biber.pm:371> INFO - Reading 'writing_version.bcf'
+[92] Biber.pm:857> INFO - Found 40 citekeys in bib section 0
+[103] Biber.pm:3981> INFO - Processing section 0
+[112] Biber.pm:4154> INFO - Looking for bibtex format file 'bibliography/library.bib' for section 0
+[122] bibtex.pm:1468> INFO - LaTeX decoding ...
+[230] bibtex.pm:1294> INFO - Found BibTeX data source 'bibliography/library.bib'
+[263] Utils.pm:169> WARN - month field 'dec' in entry 'Meyer_nsGLE' is not an integer - this will probably not sort properly.
+[456] Utils.pm:169> WARN - BibTeX subsystem: /tmp/Bnur8NS1B1/library.bib_3687.utf8, line 6, warning: 172 characters of junk seen at toplevel
 [480] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
 [480] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
 [480] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
 [480] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[506] bbl.pm:617> INFO - Writing 'writing_version.bbl' with encoding 'UTF-8'
+[507] bbl.pm:617> INFO - Writing 'writing_version.bbl' with encoding 'UTF-8'
 [525] bbl.pm:720> INFO - Output to writing_version.bbl
 [525] Biber.pm:110> INFO - WARNINGS: 2

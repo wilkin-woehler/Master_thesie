@@ -2,10 +2,12 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction and theory}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Markovian assumption and the nucleation rate discrepancy}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}The hard sphere system}{2}{section.1.2}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Testing the Markovian assumption}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Studying the nucleation rate discrepancy}{2}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}The hard sphere system}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}The hard sphere phase diagram and its metastable state}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Classical nucleation theory}{6}{section.1.4}
+\contentsline {section}{\numberline {1.4}Classical nucleation theory}{7}{section.1.4}
 \contentsline {section}{\numberline {1.5}Computer precision and chaotic behavior}{9}{section.1.5}
 \contentsline {section}{\numberline {1.6}Comparison to real world experiments}{11}{section.1.6}
 \contentsline {chapter}{\numberline {2}Simulation details and testing}{13}{chapter.2}

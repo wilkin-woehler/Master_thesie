@@ -1,18 +1,18 @@
 % !TEX root = writing_version.tex
 
 \label{chp:simulation}
-During the course of the master thesis an event driven molecular dynamics (EDMD) simulation code has been developed. The EDMD approach is chosen because the actual dynamics of the system is required to search for possible memory effects. This means that simulations only probing the phase space of the system, like Monte Carlo (MC) simulation schemes, are not suited.\\ 
-Furthermore the discontinuous potential of the hard spheres is an obstacle not easy to face in regular molecular dynamics (MD) schemes where the Newtonian equations of motion for the particles are numerically integrated. As the EDMD approach even requires these discontinuities it is very well suited for the purpose at hand.\\ 
-The key points of the program, possible extensions and a thorough testing are presented in the following, starting with the units of the simulation which are also used throughout this thesis. They are $\sigma$ the sphere diameter as the unit of length, $m$ the mass of a particle as the unit of mass, $k_B T$ as the unit of energy and resulting from these $\delta t = \sqrt{m / (k_B t)} \, \sigma$ as the unit of time.
+During the course of the master thesis, an event driven molecular dynamics (EDMD) simulation code has been developed. The EDMD approach is chosen because the actual dynamics of the system is required to search for possible memory effects. This means, that simulations only probing the phase space of the system, like Monte Carlo (MC) simulation schemes, are not suited.\\ 
+Furthermore, the discontinuous potential of the hard spheres is an obstacle not easy to face in regular molecular dynamics (MD) schemes in which the Newtonian equations of motion for the particles are numerically integrated. As the EDMD approach even requires these discontinuities, it is very well suited for the purpose at hand.\\ 
+The key points of the program, possible extensions and a thorough testing are presented in the following, starting with the units of the simulation. They are $\sigma$ the sphere diameter as the unit of length, $m$ the mass of a particle as the unit of mass, $k_B T$ as the unit of energy and resulting from these $\delta t = \sqrt{m / (k_B t)} \, \sigma$ as the unit of time. The unit system is also used throughout this thesis.
 
 \section{Algorithm and simulation details}
 \label{sec:simulation}
 %EDMD and Simulation details
-In this section we will highlight the main differences to regular MD simulation schemes which are another main tool to probe the dynamics of molecular systems. Furthermore, we will stick to the hard sphere example when discussing the EDMD simulation but it should be kept in mind that the approach allows to simulate all systems governed purely by potentials made of step functions.\\
+In this section, we will highlight the main differences to regular MD simulation schemes which are another main tool to probe the dynamics of molecular systems. Furthermore, we will stick to the hard sphere example when discussing the EDMD simulation but it should be kept in mind that the approach allows to simulate all systems governed purely by potentials made of step functions.\\
  
 The decisive difference between EDMD simulations and regular MD schemes is that, instead of evaluating all pair and external forces on each particle and then evolving the whole system accordingly to the next time step, EDMD simulations do not use a predefined time step. Instead, the system is evolved from one event time to the next one which is defined by the next collision of two particles within the simulation box.\\
 
-The employed event prediction algorithm follows the approach proposed by Bannerman et al.2014\cite{Bannerman2014} closely and is discussed in the next section.
+The employed event prediction algorithm follows the approach proposed by Bannerman et al. 2014\cite{Bannerman2014} closely and is discussed in the next section.
 
 \subsection{Event driven molecular dynamics (EDMD)}
 \label{sec:EDMD}
@@ -44,7 +44,7 @@ Solving for $\Delta t$ with $rr \coloneqq |\vec{r}_{ij}(t_0)|^2  $, $vv \coloneq
 
 A caveat when executing on a floating point machine, however, is present as can be seen when we consider which solution is the relevant one. For a possible collision it is necessary that the two particles move towards each other or mathematically $rv<0$ as the relative velocity is required to be opposite to the relative position.\\
 
-Further the quadratic formula has two solutions, corresponding to the beginning and the ending of the overlap. Due to the entry being prior to the exit, we further conclude that we are interested in the smaller solution which is
+Further, the quadratic formula has two solutions, corresponding to the beginning and the ending of the overlap. Due to the entry being prior to the exit, we conclude that we are interested in the smaller solution which is
 \begin{align}
 \label{eqn:collision_prediction_pre}
 \Delta t &= \frac{ - rv - \sqrt{ (rv)^2  - vv (rr - \sigma^2 )} }{vv} \; \text{.}
@@ -54,19 +54,19 @@ Now, for the case where the distance of the spheres is already close to the diam
 \label{eqn:collision_prediction}
 \Delta t &= \frac{(rr - \sigma^2 )}{ - rv + \sqrt{ (rv)^2  - vv (rr - \sigma^2 )}} \; \text{.}
 \end{align}
-Comparably \autoref{eqn:collision_prediction} does not contain a cancellation of the type seen before and hence is better suited for the use in the computer simulation as stated by Goldberg 1991\cite{Goldberg1991}.\\
+Comparably, \autoref{eqn:collision_prediction} does not contain a cancellation of the type seen before and hence is better suited for the use in the computer simulation, as stated by Goldberg 1991\cite{Goldberg1991}.\\
 
-The event prediction algorithm, proposed by Bannerman et al. 2014\cite{Bannerman2014}, works by differentiating 4 cases:
+The event prediction algorithm, which was proposed by Bannerman et al. 2014\cite{Bannerman2014}, works by differentiating 4 cases:
 \begin{enumerate}
-\item If $rv>0$ the particles move away from each other leading to a collision time of $\Delta t = \infty$
-\item If $rr<\sigma^2$ an overlap is present resulting in an immediate collision time of $\Delta t = 0$
-\item If $(rv)^2  - vv (rr - \sigma^2 ) \leq 0 $ the two particles miss each other, including touching without momentum transfer, resulting in a collision time of $\Delta t = \infty$
-\item If none of the before is true the particles collide and $\Delta t$ is calculated by \autoref{eqn:collision_prediction}.
+\item If $rv>0$, the particles move away from each other leading to a collision time of $\Delta t = \infty$
+\item If $rr<\sigma^2$, an overlap is present resulting in an immediate collision time of $\Delta t = 0$
+\item If $(rv)^2  - vv (rr - \sigma^2 ) \leq 0 $, the two particles miss each other, including touching without momentum transfer, resulting in a collision time of $\Delta t = \infty$
+\item If none of the before is true, the particles collide and $\Delta t$ is calculated by \autoref{eqn:collision_prediction}
 \end{enumerate}
 
-All possible collision times for a particle are then stored in a queue that is sorted by the event times and is called particle event list (PEL). From the PEL the first entry is then passed to the global future event list (FEL).This procedure initially takes place for all particles to set up the system and later on only for those particles involved in the execution of an event.\\
+All possible collision times for a particle are then stored in a queue that is sorted by the event times and is called particle event list (PEL). From the PEL the first entry is then passed to the global future event list (FEL). This procedure initially takes place for all particles to set up the system and later on only for those particles involved in the execution of an event.\\
 
-While this is the simplest description in \autoref{sec:implemetation}, the implementation of some widely used measures to reduce redundant calculations and the use of a cell system to reach $\mathcal{O}(N)$ computation time are further discussed.\\
+While this is the simplest description, in \autoref{sec:implemetation} the implementation of some widely used measures to reduce redundant calculations and the use of a cell system to reach $\mathcal{O}(N)$ computation time are further discussed.\\
 
 An important detail to take care of is the possibility of scheduled events which have become invalid due to an earlier collision of one of the particles. This is handled by assigning an interaction count to each particle that is stored at precalculation time with the event. When the event is drawn from the FEL and the interaction count of one of the particles has increased in the meantime, the event is said to be invalidated. Depending on which particle had an event in the meantime the invalidation either causes no action or a recalculation of new events.
 
@@ -92,10 +92,10 @@ We start with the basic \textit{Event} struct which includes 6 entries that are 
 \label{tab:event_entries}
 \end{table}
 The \textit{time} variable holds the time for when the event is scheduled in the future. The \textit{event\_type} variable is either set to 0 or 1 and indicates if the event is a cell transfer or a collision of two particles respectively. To include hard walls or other elements further types of events can be defined.\\
-The \textit{particle} variable is a pointer to the particle for which the event has been precalculated, while the \textit{partner} variable is defined as a void pointer. This allows it to either be interpreted as a particle pointer for the collision type event or as an integer pointer to the index in the current cells' neighbors list for transfer events.\\
-In the last two rows the interaction counts for particle and partner are listed as well. As the destination cell in a transfer event does not require an interaction count the \textit{partner\_count} variable is only used for collision events.\\
+The \textit{particle} variable is a pointer to the particle for which the event has been precalculated, while the \textit{partner} variable is defined as a void pointer. This allows, to either interpret it as a particle pointer for the collision type event or as an integer pointer to the index in the current cells' neighbors list for transfer events.\\
+In the last two rows the interaction counts for particle and partner are listed as well. As the destination cell in a transfer event does not require an interaction count, the \textit{partner\_count} variable is only used for collision events.\\
 
-The \textit{event} struct is used for all events throughout the simulation. For read and write operations with the HDF5 file format, the struct \textit{event\_data} is available which uses only indexes instead of pointers.
+The \textit{event} struct is used for all events throughout the simulation. For read and write operations with the HDF5 file format, the struct \textit{event\_data} is available which uses only integer indexes, instead of pointers.
 
 \subsubsection{The \textit{Particle} class}
 \label{sec:particle_class}
@@ -104,23 +104,23 @@ The \textit{Particle} class is comparable to the one from the MC code basis. Its
 First, a vector for storing events, called \textit{backupEvents}, has been added to make it possible to keep events from the precalculation for the case of the first event being invalidated. The idea of reusing events is discussed in many publications, for example, Bannerman et al. 2011\cite{Bannerman2011} states that the memory cost increases linearly with more backup events while the speedup does not increase much for more than two stored events. It also has been argued by Donev et al. 2005\cite{DONEV2005} that the added complexity can not account for the increase in efficiency.\\ 
 However, in our own simulations a calculation time reduction of more than 10\% was observed and the cost of complexity and memory was seen as moderate. The difference might be explained by the fact that the systems under consideration in this thesis have a rather large particle density which leads to more invalid collisions.\\
 
-In the context of reusing precalculated results, it should also be mentioned that after a cell transfer the recalculation of events can be reduced to possible partner particles of only the new neighboring cells leading to only 1/3 of the calculation time in this case. But, as the systems under consideration are very dense, transfer events often constitute less than 5\% of all executed events. Thus, the increase in efficiency is assumed to be to costly on the complexity side and not implemented. For sparse systems, however, it might make sense to include an \textit{updatePEL()} routine as transfers are more frequent.\\
+In the context of reusing precalculated results, it should also be mentioned that after a cell transfer the recalculation of events can be reduced to possible partner particles of only the new neighboring cells, leading to only 1/3 of the calculation time in this case. But, as the systems under consideration are very dense, transfer events often constitute less than 5\% of all executed events. Thus, the increase in efficiency is assumed to be to costly on the complexity side and not implemented. For sparse systems, however, it might make sense to include an \textit{updatePEL()} routine as transfers are more frequent.\\
 
-Further key differences to the former MC particle type are the variables \textit{total\_interactions} and \textit{particle\_delayed\_time}. The first is the variable for book keeping of interactions. The second is necessary because the particles are not synchronized in time. Nevertheless, the behavior is well defined by the ballistic equation of motion. To actually take the whole configuration to one point of time, the \textit{transferToTime()} function of the particle is provided. This is obviously necessary for measurements including snapshots.\\
+Further key differences to the former MC particle type are the variables \textit{total\_interactions} and \textit{particle\_delayed\_time}. The first is the variable for book keeping of interactions. The second is necessary because the particles are not synchronized in time. Nevertheless, the behavior is well defined by the ballistic equation of motion. To actually take the whole configuration to one point of time, the \textit{transferToTime()} function of the particle is provided. This is obviously necessary for measurements, including snapshots.\\
 
-This is not a problem because each particle only moves on purely ballistic trajectories until an event occurs and quite on the contrary 
+%This is not a problem because each particle only moves on purely ballistic trajectories until an event occurs and quite on the contrary 
 
-it would mean executing extra operations with extra calculation time and extra rounding errors.\\
+%it would mean executing extra operations with extra calculation time and extra rounding errors.\\
 To take the whole configuration to one point of time, the \textit{transferToTime()} function of the particle is provided. This is obviously necessary for measurements including snapshots.\\
 
-As mentioned before, the system behaves chaotically even under slightest changes like a rounding error from an extra floating point operation. A result of this is that measuring at different rates during a simulation changes the simulation. It is observed in \autoref{sec:precision} that the system may keep close to the undisturbed trajectory for about 50-100 events/particle. As it is of desire to measure quantities and take snapshots without disturbing the simulation, the program employs copies of the configuration being costly in terms of memory but making simulation resets or higher sampling rates at interesting points possible within a well defined trajectory.\\ 
+As mentioned before, the system behaves chaotically even under slightest changes like a rounding error from an extra floating point operation. Therefore, measuring at different rates during a simulation changes it, as we have observed in \autoref{sec:precision}, that the system may keep close to the undisturbed trajectory only for about 50-100 events/particle. The program employs copies of the configuration because it is of desire to measure quantities and take snapshots without disturbing the simulation. This is costly in terms of memory but makes simulation resets or higher sampling rates at interesting points possible within a well defined trajectory.\\ 
 
-The measurement without perturbing the system is implemented by making a backup copy of the working configuration just before a measurement is taken. The working trajectory then is disturbed by the measurement and afterwards replaced with its state before the measurement from the backup configuration.\\
-A second copy is carried throughout the simulation including the full simulation state to save and reset it at any point during the simulation without writing to the file. This could be useful to do a committer analysis in which a cluster at different stages is sampled multiple times with different perturbations.
+In detail, the measurement without perturbing the system is implemented by making a backup copy of the working configuration just before a measurement is taken. The working trajectory then is disturbed by the measurement and afterwards replaced with its state before the measurement from the backup configuration.\\
+A second copy is carried throughout the simulation including the full simulation state to save and reset it at any point during the simulation without writing to the file. This could be useful to do a committer analysis in which a cluster at different stages is sampled multiple times with different perturbations but may include other uses as well.
 
 \subsubsection{The \textit{Box} class}
 \label{sec:box_class}
-The box of the simulation remained in principle the same as in the previous MC code. A new element is the \textit{neighbors\_lookup} table which contains the indices to the elements in the cells' array \textit{neighbors} where pointers to the cells that share a surface are stored. It is used to identify which cell a particle has to be transferred to during a cell transfer event.\\
+The box of the simulation remained in principle the same as in the previous MC code. A new element is the \textit{neighbors\_lookup} table which contains the indices to the elements in the cells' array \textit{neighbors}, where pointers to the cells that share a surface are stored. It is used to identify which cell a particle has to be transferred to during a cell transfer event.\\
 
 Furthermore the \textit{Update()} routine now takes care of all quantities depending on the length of the box, and the \textit{rescale()} routine is a simple rescaling of the edge lengths with an additional \textit{Update()} call.
 
@@ -128,16 +128,16 @@ Furthermore the \textit{Update()} routine now takes care of all quantities depen
 \label{sec:scheduler_class}
 While the aforementioned elements of the program are also required for the EDMD simulation, the \textit{Scheduler} class certainly contains the most distinct parts of the program. It keeps track of all events to come, predicts new events and orchestrates the execution of the events. The essential functions are discussed in the following subsections while some basic properties are shortly highlighted here.\\
 
-First of all the \textit{Scheduler} holds the future event list (FEL) in which at least one event per particle is stored. As discussed within \autoref{sec:particle_class}, the simulation is capable of saving the complete state of a trajectory, including all precalculated events. For this purpose the \textit{reset\_FEL\_array} is available. Furthermore, the \textit{Scheduler} includes the \textit{global\_time} variable that holds the latest event execution time.\\
+First of all the \textit{Scheduler} holds the future event list (FEL) in which at least one event per particle is stored. As discussed within \autoref{sec:particle_class}, the simulation is capable of saving the complete state of a trajectory, including all precalculated events. For this purpose, the \textit{reset\_FEL\_array} is available. Furthermore, the \textit{Scheduler} includes the \textit{global\_time} variable that holds the latest event execution time.\\
 
 We may also note the importance to preallocate all arrays that are used in the event calculations for the efficiency because the collision prediction routine is executed about 30 times per step and particle, and easily accounts to a few billion function calls during a small simulation.
 
 \subsubsection{\quad \textit{Scheduler::predictTransfer()}}
-As the name suggests, this function predicts the next cell transfer of a particle due to its movement. It calculates the position of the particle at global time which for a valid state of the simulation always lies within its cell. Denoting for each dimension $i$, the position of a particle within its cell by $r_i$, its velocity by $v_i$, and the cell's length by $l_i$, we can formulate for each dimension the equations
+As the name suggests, this function predicts the next cell transfer of a particle due to its movement. It calculates the position of the particle at global time which, for a valid state of the simulation, always lies within its cell. Denoting for each dimension $i$, the position of a particle within its cell by $r_i$, its velocity by $v_i$, and the cell's length by $l_i$, we can formulate for each dimension the equations
 \begin{align}
 t_{i1}=-\frac{r_i}{v_i} \quad \text{and} \quad t_{i2}=\frac{l_i-r_i}{v_i} 
 \end{align}
-which describe the times $t_{i \, 1/2}$ when the particle pierces the cell's left and right boundaries in dimension $i$. A negative time corresponds in this case to a boundary crossing in the past. A time comparable to 0 means that the particle is on the edge of its cell and a positive time means that the boundary crossing lies in the future. By going through the different possible cases for $t_1$ and $t_2$, we find the resulting next crossing time for each case as shown in \autoref{tab:crossing_times}.
+which describe the times $t_{i \, 1/2}$ when the particle pierces the cell's left and right boundaries in dimension $i$. A negative time corresponds in this case to a boundary crossing in the past. A time comparable to 0 means that the particle is on the edge of its cell and a positive time means that the boundary crossing is in the future. By going through the different possible cases for $t_1$ and $t_2$, we find the resulting next crossing time for each case as shown in \autoref{tab:crossing_times}.
 \begin{table}[h]
 \centering
 \begin{tabular}{c|c||c|c}
@@ -176,7 +176,7 @@ z & front & 4 & 4 \\
 \end{table}
 
 \subsubsection{\quad \textit{Scheduler::predictCollision()}}
-The prediction of collision times has already been discussed in \autoref{sec:EDMD}. The implementation in the program first calculates all necessary scalar products while accounting for the periodic boundary conditions and in a second step returns the collision time depending on the case at hand. While the here presented algorithm is only valid for single sized particles, it can be extended to polydisperse systems as is shown in \autoref{sec:extension_radius}.\\
+The prediction of collision times has already been discussed in \autoref{sec:EDMD}. The implementation in the program first calculates all necessary scalar products, while accounting for the periodic boundary conditions, and in a second step returns the collision time depending on the case at hand. The here presented algorithm is only valid for single sized particles but it can be extended to polydisperse systems as is shown in \autoref{sec:extension_radius}.\\
 
 As this routine is executed throughout the simulation multiple times, it has been tried to optimize its efficiency as far as possible. For example, calculating only necessary results for the next case differentiation has been tried but without significant increase in efficiency and for better readability the prior version has been used instead. In either case, if more efficient calculations are found, it is useful to implement them at this point. 
 
@@ -185,7 +185,7 @@ This routine fills the FEL of the simulation. For this purpose it iterates throu
 For the FEL only the top event of each particle's PEL is then used. Because other events from the PEL might move on to the FEL at later times the top event that was pushed to the FEL has to be erased from the PEL.
 
 \subsubsection{\quad \textit{Scheduler::executeTransfer()}}
-The execution of a transfer event is accomplished by the particle's \textit{MoveBetweenCells()} routine. The departure cell is taken as the event particles own cell while the information about the destination cell is contained in the event's \textit{partner} variable. It points to the address within the lookup table of the box where the index of the pointer to the destination cell, in the departure cell's neighbors array, is deposited.
+The execution of a transfer event is accomplished by the particle's \textit{MoveBetweenCells()} routine. The departure cell is taken as the event particle's own cell, while the information about the destination cell is contained in the event's \textit{partner} variable. It points to the address within the lookup table of the box where the index of the pointer to the destination cell, in the departure cell's neighbors array, is deposited.
 
 \subsubsection{\quad \textit{Scheduler::executeCollision()}}
 The velocity change after a collision between particles i and j of same mass, with corresponding velocities $\vec{v}_{i/j}$ and relative position $\vec{r}_{ij} = \vec{r}_{j} -\vec{r}_{i}$ is given by   
@@ -193,10 +193,10 @@ The velocity change after a collision between particles i and j of same mass, wi
 \label{eqn:collision_result}
 \vec{v}_i^{\,'} = \vec{v}_i + \left( \frac{rv}{rr} \right) \vec{r}_{ij} \; \text{,}
 \end{align}
-where the definitions from \autoref{eqn_delta_t_solution} of the scalar products, $rr$ and $rv$, for the relative positions and velocities are used. An own derivation, also for arbitrary masses, is given in \autoref{eqn:momentum_transfer}, as most textbooks only show the momentum transfer in the center of mass frame.
+where the definitions from \autoref{eqn_delta_t_solution} of the scalar products, $rr$ and $rv$, for the relative positions and velocities are used. An own derivation, also for arbitrary masses, is given in \autoref{sec:appendix}, as most textbooks only show the momentum transfer in the center of mass frame.
  
 \subsubsection{\quad \textit{Scheduler::executeEvent()}}
-The execution of an event works in multiple steps. At first the topmost \textit{Event} is copied from the FEL where it is deleted. Next the validity of the interaction counts of the particle (\textit{cond1}) and its partner (\textit{cond2}) are evaluated. The validation is nothing more than a comparison of the interaction count when the event was scheduled with the present interaction count. The conditions are stored in boolean variables as they are used in the following flow statements. Furthermore, in the case of a transfer event the validation of the partner is not necessary but for better readability performed either way.\\
+The execution of an event works in multiple steps. At first the topmost \textit{Event} is copied from the FEL where it is deleted. Next the validity of the interaction counts of the particle (\textit{cond1}) and its partner (\textit{cond2}) are evaluated. The validation is nothing more than a comparison of the interaction count when the event was scheduled with the present interaction count. The conditions are stored in boolean variables, as they are used in the following flow statements. Furthermore, the validation of the partner is not necessary in the case of a transfer event but for better readability performed either way.\\
 It follows a distinction between 5 cases which are given by:
 \begin{description}
 \item[Valid transfer (\textit{event\_type}==0 and \textit{cond1}) ] \hfill \\ The transfer is executed, the global time is evolved to the event time, the particle's PEL is rebuilt and its next event pushed to the FEL.
@@ -206,7 +206,7 @@ It follows a distinction between 5 cases which are given by:
 \item[Invalid collision due to partner (\textit{event\_type}==1 and not \textit{cond2})] \hfill \\  Only the partner had an interaction previously where a new event was scheduled for it, thus a new event for the particle is required. As the particle had no further interactions, the events in the backup are still valid and the first entry is pushed into the FEL. In case the \textit{backupEvents} array is empty, the PEL is rebuilt and its first entry pushed to the FEL instead.
 \end{description}
 
-The order of the cases might be exchanged except for the last two. This is because the last one indirectly assumes \textit{cond1} to be true which is guaranteed by the case before.\\
+The order of the cases might be exchanged except for the last two. This is, because the last one indirectly assumes \textit{cond1} to be true which is guaranteed by the case before.\\
 
 Furthermore, the routine counts the occurrence of each case, to monitor numbers of collisions, transfers and invalidated cases by type. This is not required by the simulation but can be helpful for understanding the system and simulation.
 
@@ -217,7 +217,7 @@ For the simulation to work, some more surrounding is required. This is briefly d
 As suggested by the names, the former comprises the read and write routines of the simulation while the latter one holds routines dealing with the h5md format.
 
 \subsubsection{Setup}
-The setup routines are called mainly at the beginning of a simulation to either set up a simulation from a file or to completely start a new simulation. So far only the \textit{FCC\_init()} routine is written which initially places all particles on a fcc lattice and assigns the amplitude of their starting velocities by the equipartition theorem to $|\vec{v}| = \sqrt{3}\frac{\sigma}{\delta t}$. The directions are chosen randomly under the constraint to keep the center of mass at rest.
+The setup routines are called mainly at the beginning of a simulation to either set up a simulation from a file or to completely start a new simulation. So far only the \textit{FCC\_init()} routine is written. It initially places all particles on a fcc lattice and assigns the amplitude of their starting velocities by the equipartition theorem to $|\vec{v}| = \sqrt{3}\frac{\sigma}{\delta t}$. The directions are chosen randomly under the constraint to keep the center of mass at rest.
 
 \subsubsection{Tools}
 This is the toolbox of the simulation holding routines to measure quantities like mean squared displacement, radial distribution functions and the cluster finding routine. Functions only used within the simulation like an overlap or minimal distance routine for the compression are included at this point as well.\\
@@ -257,7 +257,7 @@ In the equation, $D^S_L$ is the long time self-diffusion constant which will in 
 
 For the measurement, a reference position of all particles at one point of time and the set of unwrapped positions is used. The mean squared distance between the two estimates the ensemble average. Subsequently, we use the linear regression of $\langle x^2 \rangle (t)$ to find the diffusion constant $D_L$.\\
 
-The simulated testing systems are characterized in \autoref{tab:system_diffusion}. The equilibration phases have been carried out at the final volume fractions up to $\eta = 50\%$, while above this an initial volume fraction of $\eta_i = 45\%$ has been used to obtain a fluid rather than a solid during the equilibration phase. As some measurements are within the metastable regime, it has been checked that no clusters were present in the box during the measurement as they would reduce the averaged diffusion.\\
+The simulated testing systems are characterized in \autoref{tab:system_diffusion}. The equilibration  is done at the final volume fractions, up to $\eta = 50\%$, while above this an initial volume fraction of $\eta_i = 45\%$ is used to obtain a fluid rather than a solid during the equilibration phase. As some measurements are within the metastable regime, we check that no clusters are present in the box during the measurement as they would reduce the averaged diffusion.\\
 
 \begin{table}[h]
 \centering
@@ -286,7 +286,7 @@ As it can be seen, the EDMD simulation is capable of reproducing the diffusion c
 \FloatBarrier
 \subsection{Radial distribution function}
 \label{sec:RDF_prob}
-A further well known quantity for the hard sphere system is the radial distribution function. It can be described by the theoretical Percus-Yevick approximation which is used for comparison. In \autoref{fig:rdf_overview}, an overview for a range of volume fractions is shown from the same data sets used in \autoref{sec:diffusion_probe}. As expected, no particles come closer than the diameter of a sphere which verifies that no collisions are missed. Furthermore, the liquid shells become more visible for higher volume fractions. At very high volume fractions we also find a new peak at $r < 2 \sigma$ which indicates the local structuring on the path to nucleation.
+A further well known quantity for the hard sphere system is the radial distribution function. It can be described by the theoretical Percus-Yevick approximation, which is used for comparison. In \autoref{fig:rdf_overview}, an overview for a range of volume fractions is shown from the same data sets used in \autoref{sec:diffusion_probe}. As expected, no particles come closer than the diameter of a sphere which verifies that no collisions are missed. Furthermore, the liquid shells become more visible for higher volume fractions. At very high volume fractions, we also find a new peak at $r < 2 \sigma$ which indicates the local structuring on the path to nucleation.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7 \linewidth]{RDF.pdf}
@@ -301,7 +301,7 @@ By comparison to the Percus-Yevick approximation, the radial distribution functi
 \label{fig:rdf_py}
 \end{figure}
 
-As highlighted by Hansen and McDonald 2006\cite{Hansen2006}, the theoretical approximation has some flaws as can be seen with $g(r)|_{r=1\sigma}$ being too low for the Percus-Yevick approximation. However, the two radial distribution functions align closely which shows that the developed simulation code is capable of producing accurate data in other contexts as well.
+As highlighted by Hansen and McDonald 2006\cite{Hansen2006}, the theoretical approximation has some flaws as can be seen by observing, that $g(r)|_{r=1\sigma}$ is too low in the Percus-Yevick approximation. However, the two radial distribution functions align closely which shows that the developed simulation code is capable of producing accurate data in other contexts as well.
 
 \section{Estimate of required resources}
 \label{sec:resources}
@@ -435,7 +435,7 @@ A small caveat is given by the fact that the system with different masses requir
 \subsection{Single cluster tracking algorithm}
 \label{sec:tracking}
 Following trajectories of single metastable clusters within the fluid can be used to measure their mean lifetimes. Also, the nucleation time can be observed with higher precision as the precursor can be tracked back to only a few particles.\\ 
-To track individual clusters, they have to be identified in each measurement step because they form out of the liquid and are not numbered and easily distinguishable as the particles are. For this purpose we can either employ the clusters' participating particles or their center of mass positions. The latter one is used as it is easier to compare and to access in our case because a routine to calculate the center of mass of a cluster already is implemented. Furthermore, less data has to be written and compared. An algorithm based on maximum movement from one time step to the other is tested and yields reasonable results as can be seen in \autoref{fig:cluster_tracking_example}.\\
+To track individual clusters, they have to be identified in each measurement step because they form out of the liquid and are not numbered and easily distinguishable as the particles are. For this purpose, we can either employ the clusters' participating particles or their center of mass positions. The latter one is used as it is easier to compare and to access in our case because a routine to calculate the center of mass of a cluster already is implemented. Furthermore, less data has to be written and compared. An algorithm based on maximum movement from one time step to the other is tested and yields reasonable results as can be seen in \autoref{fig:cluster_tracking_example}.\\
 
 \begin{figure}[h]
 \centering

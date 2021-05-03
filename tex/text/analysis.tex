@@ -68,30 +68,31 @@ The logarithm is used because the distribution then can be interpreted as a quan
 
 \begin{figure}[h]
 \begin{center}
-\subfloat[$\eta = 53.1\%$]{\includegraphics[width = 0.45 \textwidth]{pnt_531_short.png}} \hspace{0.0cm}
-\subfloat[$\eta = 53.2\%$]{\includegraphics[width = 0.45 \textwidth]{pnt_532_short.png}}\\
-\subfloat[$\eta = 53.3\%$]{\includegraphics[width = 0.45 \textwidth]{pnt_533_short.png}} \hspace{0.0cm}
-\subfloat[$\eta = 53.4\%$]{\includegraphics[width = 0.45 \textwidth]{pnt_534_short.png}}
+\subfloat[$\eta = 53.1\%$]{\includegraphics[width = 0.42 \textwidth]{pnt_531_short.png}} \hspace{0.0cm}
+\subfloat[$\eta = 53.2\%$]{\includegraphics[width = 0.42 \textwidth]{pnt_532_short.png}}\\
+\subfloat[$\eta = 53.3\%$]{\includegraphics[width = 0.42 \textwidth]{pnt_533_short.png}} \hspace{0.0cm}
+\subfloat[$\eta = 53.4\%$]{\includegraphics[width = 0.42 \textwidth]{pnt_534_short.png}}
 \caption[Cluster size distributions over time shortly after the quench]{Decadic logarithm of cluster size distributions for different volume fractions in the initial phase after the quench. Clearly visible is the initial ordering process after which the distribution becomes mostly stable.}
 \label{fig:pnt_short}
 \end{center}
 \end{figure}
 
 In \autoref{fig:pnt_short}, we can see the initial phase after the quench. As the fluid before the quench was at a volume fraction of $\eta=45\%$ only very little local ordering is present directly after the quench. Depending on the volume fraction, this changes within the first $15 \delta t - 25 \delta t$ after which the distribution becomes stable. One possible explanation for the different duration is that more particles are required to find their ordering, as the clusters tend to be larger for higher volume fractions.\\
-To further compare the system time with the more intuitive number of collisions per particle, we can use that at the given volume fraction we find  $1\delta t \approx \frac{60 events}{particle}$. When further using a collision probability of about $40 \%$ for each executed event, we find that $1\delta t \approx \frac{25 collisions}{particle}$. As a result we can conclude that it takes a few hundred collisions for each particle to build up the local ordering.\\
+
+To compare the system time with the more intuitive number of collisions per particle, we can use that at the given volume fraction we find  $1\delta t \approx \frac{60 events}{particle}$. When further using a collision probability of about $40 \%$ for each executed event, we find that $1\delta t \approx \frac{25 collisions}{particle}$. As a result we can conclude that it takes a few hundred collisions for each particle to build up the local ordering.\\
 
 \begin{figure}[h]
 \begin{center}
-\subfloat[$\eta = 53.1\%$]{\includegraphics[width = 0.45 \textwidth]{pnt_531_long.png}} \hspace{0.0cm}
-\subfloat[$\eta = 53.2\%$]{\includegraphics[width = 0.45 \textwidth]{pnt_532_long.png}}\\
-\subfloat[$\eta = 53.3\%$]{\includegraphics[width = 0.45 \textwidth]{pnt_533_long.png}} \hspace{0.0cm}
-\subfloat[$\eta = 53.4\%$]{\includegraphics[width = 0.45 \textwidth]{pnt_534_long.png}}
+\subfloat[$\eta = 53.1\%$]{\includegraphics[width = 0.42 \textwidth]{pnt_531_long.png}} \hspace{0.0cm}
+\subfloat[$\eta = 53.2\%$]{\includegraphics[width = 0.42 \textwidth]{pnt_532_long.png}}\\
+\subfloat[$\eta = 53.3\%$]{\includegraphics[width = 0.42 \textwidth]{pnt_533_long.png}} \hspace{0.0cm}
+\subfloat[$\eta = 53.4\%$]{\includegraphics[width = 0.42 \textwidth]{pnt_534_long.png}}
 \caption[Cluster size distributions for long waiting times]{Decadic logarithm of cluster size distributions for different volume fractions during the waiting time. While the initial ordering process is only visible on the very left, the distribution in the metastable fluid is found to be mostly constant over prolonged periods of time. Only rare nucleation events leave the size range of the diagram.}
 \label{fig:pnt_long}
 \end{center}
 \end{figure}
 
-The diagrams in \autoref{fig:pnt_long} show a zoomed out version of the same data depicted already in \autoref{fig:pnt_short}. We see that the distribution that is reached at the end of the initial phase remains stable over prolonged periods of time. Only the nucleation events which account for most of the probability at largest cluster sizes indicate that this is not a stable process but only a metastable one. Nevertheless, this does not mean that it simply can be viewed as a stationary process because when considering the ensemble as a whole, at any point of time, phase transitions take place at various parts of the system.
+The diagrams in \autoref{fig:pnt_long} show a zoomed out version of the same data depicted already in \autoref{fig:pnt_short}. We see that the distribution that is reached at the end of the initial phase remains stable over prolonged periods of time. Only the nucleation events, which account for most of the probability at largest cluster sizes, indicate that this is not a stable process but only a metastable one. Nevertheless, this does not mean that it simply can be approximated as a stationary process because when considering the ensemble as a whole, at any point of time, phase transitions take place at various parts of the system.
 
 \section{Autocovariance functions of largest cluster in the metastable fluid}
 \label{sec:acf}
@@ -156,11 +157,11 @@ As the systems are able to accommodate clusters up to a few hundred thousand par
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6 \linewidth]{cluster_growth_example.pdf}
-\caption[Largest cluster trajectories from production data with constant attachment rates]{Trajectories of the third root of the number of particles within the largest cluster $(N_{\text{LC}})^{1/3}$ over time. The linear proportionality of the data sets is clearly visible and thus, linear regressions are shown along with the data. The cut of some data sets at $t \approx 300 \delta t $ is due to the trespassing of the maximum wall time of the NEMO computational cluster. Systems that hosted a nucleation event in the first simulation interval before $T \approx 300\delta t  $, contain a too large cluster in the next simulation interval leading to the breach of the wall time limit due to the quadratic effort required for the q6q6 cluster finding routine. It can be assumed that clusters forming just before $t \approx 300 \delta t$ might not have been recognized due to this flaw. But the number of trajectories concerned by this is small and the impact is not easy to recognize when looking at the induction time distributions in \autoref{fig:induction_distributions}.}
+\caption[Largest cluster trajectories from production data with constant attachment rates]{Trajectories of the third root of the number of particles within the largest cluster, $(N_{\text{LC}})^{1/3}$, over time. The linear proportionality of the data sets is clearly visible and thus, linear regressions are shown along with the data. The cut of some data sets at $t \approx 300 \delta t $ is due to the trespassing of the maximum wall time of the NEMO computational cluster. Systems that hosted a nucleation event in the first simulation interval before $T \approx 300\delta t  $, contain a too large cluster in the next simulation interval leading to the breach of the wall time limit due to the quadratic effort required for the q6q6 cluster finding routine. It can be assumed that clusters forming just before $t \approx 300 \delta t$ might not have been recognized due to this flaw. But the number of trajectories concerned by this is small and the impact is not easy to recognize when looking at the induction time distributions in \autoref{fig:induction_distributions}.}
 \label{fig:cluster_growth_example}
 \end{figure}
 
-Subsequently the slopes of the linear regressions have been collected in histograms shown in \autoref{fig:constant_growth_rates}. According to \autoref{eqn:constant_growth}, these slopes correspond to constant attachment rates with a prefactor depending on the density within the cluster but as the densities of concern are very close to each other they only introduce a relative difference of 0.5\% between the rates of lowest and highest volume fractions. For this reason, the dependence is neglected in the qualitative comparison and the constant attachment rate with its prefactor is defined as $ c \coloneqq k \left( \frac{4 \pi}{3 \rho_{\text{solid}}^2} \right)^\frac{1}{3} $. With this approximation, the equation for the number of particles in a cluster over time, given in \autoref{eqn:constant_growth}, simplifies to the one given before in \autoref{eqn:simple_growth}.\\ 
+Subsequently, the slopes of the linear regressions have been collected in histograms shown in \autoref{fig:constant_growth_rates}. According to \autoref{eqn:constant_growth}, these slopes correspond to constant attachment rates with a prefactor depending on the density within the cluster but as the densities of concern are very close to each other they only introduce a relative difference of 0.5\% between the rates of lowest and highest volume fractions. For this reason, the dependence is neglected in the qualitative comparison and the constant attachment rate with its prefactor is defined as $ c \coloneqq k \left( \frac{4 \pi}{3 \rho_{\text{solid}}^2} \right)^\frac{1}{3} $. With this approximation, the equation for the number of particles in a cluster over time, given in \autoref{eqn:constant_growth}, simplifies to the one given before in \autoref{eqn:simple_growth}.\\ 
 
 \begin{figure}[h]
 \begin{center}
@@ -171,7 +172,8 @@ Subsequently the slopes of the linear regressions have been collected in histogr
 \end{center}
 \end{figure}
 
-What we see from the histograms is that the distribution is rather spread out but not significantly depending on the volume fraction. An smaller growth rate is only found for $\eta = 53.1\%$. One possible explanation for this behavior could be that the growth by heterogeneous crystallization on the cluster surface leads to a higher growth rate for higher volume fractions as it is less likely for the lower volume fractions. Due to the low statistics at the lowest volume fraction, it is also possible that only a statistical fluctuation is observed.\\ 
+We see from the histograms in \autoref{fig:constant_growth_rates}, that the distribution is rather spread out but not significantly depending on the volume fraction. An smaller growth rate is only found for $\eta = 53.1\%$. One possible explanation for this behavior could be that the growth by heterogeneous crystallization on the cluster surface leads to a higher growth rate for higher volume fractions as it is less likely for the lower volume fractions. Due to the low statistics at the lowest volume fraction, it is also possible that only a statistical fluctuation is observed.\\ 
+
 To investigate if the attachment is diffusion or reaction controlled, we may note that the diffusion constants vary from $D=0.0081|_{\eta = 53.2\%}$ to $D=0.0075|_{\eta = 53.4\%}$. They span a difference of about 7.5\% but as the relative statistical uncertainty of the growth rates is of the order of 5\% it would require a larger number of samples to find a significant result.
 
 \section{Evaluation of shape descriptors}
@@ -232,7 +234,7 @@ To calculate induction times or average nucleation times, we will require a defi
 Many definitions can and have been used for this purpose. For example, a cluster can be defined to be crystalline as soon as it surpasses the CNT's critical size or a multiple of it. One can also use a committer analysis to find the size where a crystallite keeps growing with a 50:50 chance. The method to rewind a trajectory with a stable crystal back to the point where the cluster's size vanishes is also often applied. A further approach is to fit the growth during later times and extrapolate it to the time when the cluster vanishes.\\
 
 All these definitions differ only by a delay $\Delta_{\tau}$ which is a distribution holding the information of how long it takes for varying clusters to pass from the first criterion to the next.\\
-For example, we can take as a first point the time when a cluster, known to crystallize at later times, is not distinguishable from any other structural fluctuation in the liquid i.e. when the size of the cluster is below some threshold defined by the size of clusters which are regularly present in a given volume.\\
+For example, we can take as a first point the time when a cluster, known to crystallize at later times, is not distinguishable from any other structural fluctuation in the liquid i.e., when the size of the cluster is below some threshold defined by the size of clusters which are regularly present in a given volume.\\
 The second point we can set by either the critical size of CNT or by some other criterion when we are sure that the cluster has stabilized and will only continue to grow.\\
 At the first of these two points, the fluctuation leading to the crystallization occurs but it would be impossible to tell if this precursor is yet to melt or to grow, while at the second point, the crystal is stable. For this reason, the first might be called a precursor nucleation and the second crystal nucleation. Between these two points, we find the time difference to be the time it takes for the precursors to form a stable crystal. This includes also that some precursors might loiter for awhile before forming the stable phase while others pass this gap rather directly.\\
 
@@ -262,7 +264,7 @@ As highlighted in \autoref{sec:comparison}, induction times in simulation studie
 
 \subsection{CNT expectation of the induction time distribution}
 \label{sec:induction_time_expectation}
-In \autoref{sec:CNT} we introduced classical nucleation theory and its constant nucleation rate depending on the barrier height in the free energy landscape. Even if there are signs that CNT is not appropriate for describing nucleation process completely, we will use its prediction of a constant nucleation rate as an assumption to define a constant scalar nucleation rate as well as comparing it to other literature values.\\
+In \autoref{sec:CNT}, we introduced classical nucleation theory and its constant nucleation rate depending on the barrier height in the free energy landscape. Even if there are signs that CNT is not appropriate for describing nucleation process completely, we will use its prediction of a constant nucleation rate as an assumption to define a constant scalar nucleation rate as well as comparing it to other literature values.\\
 
 As mentioned before, in the discussion of the system sizes (\autoref{sec:system_choice}), the induction time of a system depends on the volume under consideration and for this reason it is commonly defined as a nucleation rate density $\kappa$. By also using the diffusion time $\tau_L = D_L^{-1}$ as a unit of time, the comparison to other systems with faster or slower dynamics is possible.\\
 
@@ -282,15 +284,16 @@ Moreover, taking the continuous limit $m \rightarrow \infty $ and defining $\tau
 The final result in \autoref{eqn:nuc_rate_result} is the well known stochastic exponential distribution. As the expectation value of the exponential distribution is given by its parameter $\tau$, the common approach of using the mean induction time when all simulations have nucleated yields an accurate result and precision can be obtained by taking a large number of simulations.
 \subsection{Maximum likelihood estimator of the induction time}
 \label{sec:ml_estimator}
-In case the simulation time is not accessible, we instead will have to deal with truncated exponential distributions. For this, we can use maximum likelihood (ML) estimators. The derivation follows the one by Deemer and Votaw 1955\cite{Deemer1955}.\\
+In case the simulation time is not accessible, we instead will have to deal with censored exponential distributions. For this, we can use maximum likelihood (ML) estimators. The derivation follows the one by Deemer and Votaw 1955\cite{Deemer1955}.\\
 
 Maximum likelihood estimators are based on the idea that we can write down the expression of the total probability, called likelihood $\mathcal{L}$, for a given set of measurements $x_i$ depending on the parameters of the assumed underlying distribution. For the exponential distribution, parameterized by the characteristic decay rate $\kappa$, it is given by
 \begin{align}
 \label{eqn:exponential_product}
 \mathcal{L}(\kappa) = \prod_{i=1}^N p(x_i) = \prod_{i=1}^N \kappa^N \exp\left( - \kappa x_i \right ) \; \text{.}
 \end{align}
-We continue by finding the maximum of this product. To simplify it and also to evade overflow problems on floating point machines, the logarithm of the likelihood is used and maximized yielding the same parameters because the logarithm is a monotonic function and thus does not shift the extrema.\\
-The maximum probability can then be found by usual means of analysis executed in \autoref{eqn:exponential_maximization} - \autoref{eqn:exponential_maximization_end}.
+We continue, by finding the maximum of this product. To simplify it and also to evade overflow problems on floating point machines, the logarithm of the likelihood is used and maximized yielding the same parameters because the logarithm is a monotonic function and thus does not shift the extrema.\\
+
+The maximum probability is found by usual means of analysis executed in \autoref{eqn:exponential_maximization} - \autoref{eqn:exponential_maximization_end}.
 \begin{align}
 \label{eqn:exponential_maximization}
 & 0 \stackrel{!}{=} \left. \frac{\partial \log (\mathcal{L})}{\partial \kappa} \right|_{\kappa=\hat{\kappa}}\\
@@ -299,8 +302,8 @@ The maximum probability can then be found by usual means of analysis executed in
 \label{eqn:exponential_maximization_end}
 \Leftrightarrow  \qquad & \!\!\!\!\!\!\!\!\: \hat{\kappa}^{-1} = \frac{1}{N} \sum_{i=1}^N t_i  
 \end{align}
-Through this, we have found that the maximum likelihood estimator of $\kappa$, for a set of samples drawn from an exponential distribution, is given by the inverse arithmetic mean of the samples. This result is neither new nor surprising but is shown to illustrate how the method of maximum likelihood works. In the following we then show how to handle censored and truncated distributions by the maximum likelihood method.\\
-Both distributions refer to sets of samples that are incomplete in the sense that they only include samples up to some threshold $t_i < T$. In the case of truncated distributions the number of samples larger than this threshold is unknown. For the censored distribution, however, it is known. Taking the example of time consuming nucleation events in computer simulations, we are in the case of censored distributions, as the total number of boxes is known but the simulation is just stopped at some point without all boxes having had a nucleation event. The probability of an event later than the censoring time $T$ is given by
+Through this, we have found that the maximum likelihood estimator of $\kappa$, for a set of samples drawn from an exponential distribution, is given by the inverse arithmetic mean of the samples. This result is neither new nor surprising but is shown to illustrate how the method of maximum likelihood works. In the following, we then show how to handle censored and truncated distributions by the maximum likelihood method.\\
+Both distributions refer to sets of samples that are incomplete in the sense that they only include samples up to some threshold $t_i < T$. In the case of truncated distributions, the number of samples larger than this threshold is unknown. For the censored distribution, however, it is known. Taking the example of time consuming nucleation events in computer simulations, we are in the case of censored distributions, as the total number of boxes is known but the simulation is just stopped at some point without all boxes having had a nucleation event. The probability of an event later than the censoring time $T$ is given by
 \begin{equation}
 \label{eqn:prob_t_larger_T}
 p(t_i>T) = \int_T^{\infty} \kappa \exp(-\kappa t) dt = \exp(-\kappa t) \; \text{.}
@@ -380,7 +383,7 @@ Finally, we are able to evaluate the induction time distribution to find the rat
 \label{fig:nucleation_comparison}
 \end{figure}
 
-From the diagram we can state that our measurements confirm the previous simulation results in a way that they still stand against the experimentally found ones. Further, the results are calculated together with their statistical uncertainty which is mostly visible for the data point at $\eta = 53.1 \%$. It is also indicated for the others but due to the logarithmic scaling the uncertainty is almost not visible.\\
+We can state that our measurements confirm the previous simulation results in a way that they still stand against the experimentally found ones from the diagram. Further, the results are calculated together with their statistical uncertainty, which is mostly visible for the data point at $\eta = 53.1 \%$. It is also indicated for the others but due to the logarithmic scaling the uncertainty is almost not visible.\\
 While uncertainties in the literature are often just very roughly given, the here presented method makes
 it possible to quantify the statistical uncertainty of the rates and the large number of simulations leads to the high precision.\\
 
@@ -391,7 +394,7 @@ In \autoref{sec:cluster_growth}, the cluster growth rate $c$ is found to be most
 \label{eqn:simple_growth}
 N(t) = c^3 (t-t_0)^3 \; \text{.}
 \end{align} 
-Furthermore, approximating the stochastic nucleation events with rate density $\kappa$ by just adding a new cluster after every $\Delta t = (\kappa V)^{-1}$, we can write the total number of solidified particles $N$ in a Volume $V$ at time step $m$ with the corresponding time $t_m = m \Delta t$ as the sum of all previously nucleated cluster sizes $N_i$. Reformulating then leads to the final result in \autoref{eqn:x_s_t_lim}.
+Furthermore, approximating the stochastic nucleation events with rate density $\kappa$ by just adding a new cluster after every $\Delta t = (\kappa V)^{-1}$, we can write the total number of solidified particles $N$ in a Volume $V$ at time step $m$ with the corresponding time $t_m = m \Delta t$ as the sum of all previously nucleated cluster sizes $N_i$. Reformulating leads to the final result in \autoref{eqn:x_s_t_lim}.
 \begin{align}
 \begin{split}
 N(t_m)&=\sum_{i=1}^m N_i\\
@@ -407,7 +410,7 @@ N(t_m)&=\sum_{i=1}^m N_i\\
 \Leftrightarrow \quad \; \: x_s(t)&= t^4 \frac{\kappa c^3}{4 \rho_{\text{melt}}}
 \end{split}
 \end{align}
-Here, the solid fraction is not the equilibrium solid fraction but rather the expected solid fraction of an infinitely large system at a time $t$ after some quench that suddenly takes the system into the metastable regime.\\ 
+Here, the solid fraction is not the equilibrium solid fraction but rather the expected solid fraction of an infinitely large system at a time $t$ after some quench, that suddenly takes the system into the metastable regime.\\ 
 For the derivation of \autoref{eqn:x_s_t_lim} the thermodynamic limit $V\rightarrow \infty$ is used to obtain the definition of an integral. Further, it neglects any interference between different clusters. This assumption is justified for $x_s \ll 1$ if no long range interference is present and heterogeneous nucleation is assumed to be part of the cluster growth process.\\
 
 With this we can calculate a characteristic nucleation time $t^*$ at which $x_s$ is not negligible anymore. As in simulations with periodic boundary conditions clusters begin to interfere with each other at a filling fraction of about $x_s=\frac{1}{8}$ which is also chosen as a threshold where interference can not be neglect any longer in the macroscopic system. Under this definition $t^*$ becomes
@@ -415,7 +418,7 @@ With this we can calculate a characteristic nucleation time $t^*$ at which $x_s$
 \label{eqn:nucleation_time_modified}
 t^* = \sqrt[4]{\frac{\rho_{\text{melt}}}{2 \kappa c^3 }} \; \text{.}
 \end{align}
-As we see the time $t^*$ actually depends only on the fourth root of the induction time $\tau_{\text{nucleation}} = \kappa^{-1}$. This might be an explanation for the huge discrepancy between experiment and simulation studies, as can be seen in \autoref{fig:nucleation_rate_comparison_modified}, where the inverse of $t^*$ is calculated from different simulation studies and depicted together with experimentally found nucleation rates.\\
+As we can see, the time $t^*$ actually depends only on the fourth root of the induction time $\tau_{\text{nucleation}} = \kappa^{-1}$. This might be an explanation for the huge discrepancy between experiment and simulation studies, as can be seen in \autoref{fig:nucleation_rate_comparison_modified}, where the inverse of $t^*$ is calculated from different simulation studies and depicted together with experimentally found nucleation rates.\\
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6 \linewidth]{mod_nucleation_comparison_v2.pdf}
@@ -429,7 +432,7 @@ While this is not a proof, it might be a hint that laboratory based experiments 
 
 \section{Memory kernel analysis of nucleating ensemble}
 \label{sec:memory_kernels}
-The approach by Hugues Meyer et al. 2019\cite{Meyer2019a}, to calculate memory kernels from an ensemble of trajectories, is used on the data discussed in the previous sections as well as on trajectories of a system characterized in \autoref{tab:system_16k_mem}. The second system is used because the first ensemble was neither simulated up to the point where most boxes contained a stable cluster nor until the boxes were fully crystallized as the transition width is large and takes long simulations to fill up the large box. The second system's parameters are chosen to fulfill both objections.\\
+The approach by Hugues Meyer et al. 2019\cite{Meyer2019a}, to calculate memory kernels from an ensemble of trajectories, is used on the data discussed in the previous sections as well as on trajectories of a system characterized in \autoref{tab:system_16k_mem}. The second system is used because the first ensemble was neither simulated up to the point where most boxes contained a stable cluster nor until the boxes were fully crystallized as the transition width is large and takes long simulations to fill up the box. The second system's parameters are chosen to fulfill both objections.\\
 \begin{table}[ht]
 \centering
 \begin{tabular}{c|c}
@@ -444,21 +447,20 @@ $\eta_f$ & 53.4 \% \\
 \label{tab:system_16k_mem}
 \end{table}
 
-The memory kernel of the large system has been calculated but except of the Markovian contribution only little was observed. This indicates that the sample is not sufficiently long or that the largest cluster is not an appropriate observable for quantifying nucleations in large systems.\\
+The memory kernel of the large system has been calculated but except for the Markovian contribution, only little was observed. This indicates that the sample is not sufficiently long or that the largest cluster is not an appropriate observable for quantifying nucleations in large systems.\\
 
-To compare the memory kernel with direct measurements, the evolution of the largest cluster for the ensemble is depicted in the top of \autoref{fig:cluster_growth_example2}. The trajectories have been normalized by the number of particles in the box and some statistical properties likes percentiles and arithmetic mean are also shown, as the large number of trajectories otherwise makes it hard to distinguish the actual density of lines at some points. At the bottom of the figure, the share of trajectories at different stages of the nucleation process is identified. For this, it is assumed that those below an normalized largest cluster of 0.1 can be identified as not nucleated. Such trajectories above 0.5 are considered as fully crystallized and all of them in between as in the process of crystallization.\\
+To compare the memory kernel of the smaller system with direct measurements, the evolution of the largest cluster for the ensemble is depicted in the top of \autoref{fig:cluster_growth_example2}. The trajectories have been normalized by the number of particles in the box and some statistical properties like percentiles and arithmetic mean are also shown, as the large number of trajectories otherwise makes it hard to distinguish the actual density of lines at some points. At the bottom of the figure, the share of trajectories at different stages of the nucleation process is identified. For this, it is assumed that those below a normalized largest cluster of 0.1 can be identified as not nucleated. Such trajectories above 0.5 are considered as fully crystallized and all of them in between as in the process of crystallization.\\
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.65 \linewidth]{cluster_growth_quantities.pdf}
+\includegraphics[width=0.62 \linewidth]{cluster_growth_quantities.pdf}
 \caption[Largest cluster trajectories of small system with percentiles and average]{Top: Normalized trajectories of largest cluster with percentiles and arithmetic mean indicated. It can be observed that some trajectories nucleate in more than one step. At first only about 60\% of the box is filled by the crystal and at later times they may crystallize completely. From \autoref{eqn:solid_fraction_result} we would expect an equilibrium solid fraction of 80\% by volume, closely corresponding to the expected solid fraction by particles.\\
-Bottom: Fraction of trajectories within intervals chosen to identify nucleated trajectories, momentary growing trajectories and fully nucleated trajectories. As the growth process is much faster than the distribution of nucleations, the orange curve roughly resembles the derivative of the other two curves.}
+Bottom: Fraction of trajectories within intervals chosen to identify nucleated trajectories, momentary growing trajectories and fully nucleated trajectories. As the transition is much faster than the distribution of nucleations, the orange curve roughly resembles the derivative of the other two curves.}
 \label{fig:cluster_growth_example2}
 \end{figure}
-
-While in the large system only little of the crystallites reach the box boundaries, in the smaller system almost all clusters fill the whole box at the end of the simulation.\\
+While in the large system only little of the crystallites reach the box boundaries, it can be observed that in the smaller system almost all clusters fill the whole box at the end of the simulation.\\
 Further, as there is no clear analysis yet on how the direct quantities and the memory kernel are related, the subdivision is an approach to show direct observables that are possibly related to properties of the memory kernel.\\
 
-We see on the left side of \autoref{fig:memory_kernel}, that the shape of a memory kernel slice at some reference time is rather simple. For this reason, we use a Gaussian fit to approximate the width and amplitude of the kernel. For this purpose, we neglect the Markovian part of the kernel at around $t_1-t_2 \approx 0$. To validate the fit results, we further use the FWHM whose the maximum is determined by the mean value of the peak's crest. As the properly normalized results for both methods are in good agreement, we can conclude that the shape of the memory kernel in this case is mostly defined by a width and an amplitude over time, which are depicted on the right of \autoref{fig:memory_kernel}.\\
+We see on the left side of \autoref{fig:memory_kernel}, that the shape of a memory kernel slice at some reference time is rather simple. For this reason, we use a Gaussian fit to approximate the width and amplitude of the kernel. For this purpose, we neglect the Markovian part of the kernel at around $t_1-t_2 \approx 0$. To validate the fit results, we further use the FWHM, with the maximum being determined by the mean value of the peak's crest. As the properly normalized results for both methods are in good agreement, we can conclude that the shape of the memory kernel in this case is mostly defined by a width and an amplitude over time, which are depicted on the right of \autoref{fig:memory_kernel}.\\
 \begin{figure}[h]
 \begin{center}
 \subfloat[Slice through memory kernel at the given reference time. The Markovian part is excluded from the analysis of the kernel width, that is depicted by the full width at half maximum (FWHM) and the Gaussian best fit. The FWHM is normalized to the value of a corresponding Gaussian curve.]{\includegraphics[width=0.32 \linewidth]{example_memory_kernel.pdf}} \hspace{0.5cm}
@@ -469,7 +471,7 @@ Bottom: Amplitude of the memory kernel slice on the one hand by using the mean v
 \end{center}
 \end{figure}
 The width of the memory kernel sections are mostly constant over the whole measurement with the exception that it becomes very noisy at the end. The amplitude in comparison increases at the beginning, remains over a prolonged period of time constant and then declines towards the end of the measurement.\\
-As published by Meyer et al. 2021\cite{Meyer2021}, the width of the memory kernel seems to depend on the phase transition time. In this case, the dependence does not seem related to the dynamics of the system because it is determined by the arbitrarily chosen box size. However, it may cover memory effects due to dynamics. To separate these memory effects, one could generate trajectories with a purely Markovian approach, like Brownian dynamics, with corresponding characteristic properties. Comparing the memory kernels of the purely Markovian ensemble with the a priori non-Markovian hard sphere ensemble may help to distinguish memory effects due to the system size from those related to the dynamics of the fluid.\\
+As published by Meyer et al. 2021\cite{Meyer2021}, the width of the memory kernel seems to depend on the phase transition time. However, the dependence does not seem related to the dynamics of the system because it is determined by the arbitrarily chosen box size. To separate the different memory effects, one could generate trajectories with a purely Markovian approach, like Brownian dynamics, with corresponding characteristic properties. Then, comparing the memory kernels of the purely Markovian ensemble with the a priori non-Markovian hard sphere ensemble may help to distinguish memory effects due to the system size from those related to the dynamics of the fluid.\\
 
 Another approach would be to use the committer probability of the largest cluster as an observable, as it would not include a direct system size dependence and by itself is already bounded between zero and one, which is a requirement for the memory kernel analysis.
 \FloatBarrier
