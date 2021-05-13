@@ -1,0 +1,188 @@
+% !TEX root = Protokoll.tex
+%Encoding
+\usepackage[utf8]{inputenc}
+
+%Formatierung Ränder (Optional)
+\usepackage[a4paper, left=2.4cm,right=2.4cm,top=2.4cm,bottom=2.4cm,includeheadfoot, bindingoffset=2mm]{geometry}
+%\usepackage[twoside, a4paper, bindingoffset=5mm, marginratio={4:6,5:7}, includeheadfoot]{geometry}
+%\usepackage{geometry}
+%\geometry{verbose,a4paper,tmargin=20mm,bmargin=20mm,lmargin=26mm,rmargin=20mm}
+%bmargin etx equivalent to bottom
+%inner outer equivalent to left / right
+
+%\usepackage{showframe}
+
+%Spracheinstellung
+\usepackage[english]{babel}
+\usepackage{setspace}
+\onehalfspacing
+%\addto\captionsngerman{
+%	\renewcommand{\figurename}{Abb.}
+%	\renewcommand{\tablename}{Tab.}
+%}
+
+%Glaettung von Text
+\usepackage{lmodern}
+
+%Font-Encoding 
+\usepackage[T1]{fontenc} 
+
+%Tabellen und Grafiken
+\usepackage{graphicx}
+
+
+\usepackage[caption = false]{subfig}
+%\usepackage[demo]{graphicx}
+
+
+%\usepackage{tabularx}
+\setlength{\tabcolsep}{18pt}%space between text and left/right border
+%\usepackage{dcolumn}
+%\usepackage{multicol}
+
+%\usepackage{scrhack}
+%\usepackage{float} %Leads to wrong hyperlinks within the document!
+%\floatstyle{boxed}
+%\restylefloat{figure}
+%\usepackage{floatflt}
+
+\usepackage{tocbasic}
+
+
+%\usepackage{here}
+%\usepackage{blindtext}
+%\newcolumntype{.}{D{.}{.}{7}}
+%\usepackage{wrapfig}
+%\usepackage{bigstrut}
+
+%\usepackage{subfig}
+
+%\usepackage{subfigure}
+%\usepackage{here}
+\usepackage[section]{placeins}
+
+%Ueberschrift mit Serifen (nur Inhaltsverzeichnis)
+\setkomafont{sectioning}{\normalfont\bfseries}
+
+%Caption
+\usepackage{caption}
+
+%Mathe, Physik und Chemiepakete
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage[version=3]{mhchem}
+
+%Units/Fraction
+\usepackage[output-decimal-marker={.}, per-mode=fraction]{siunitx}
+\usepackage{icomma}
+
+%Nummerierung Gleichungen bei mehreren Kapiteln
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+%Sonstiges
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{texdraw}
+\usepackage[T1]{fontenc}
+\usepackage[breaklinks,pdfborder={0 0 0},plainpages=false,pdfpagelabels]{hyperref}
+\usepackage{url}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{fit}
+
+%Definierte Wortsilbentrennung
+\hyphenation{Test}
+
+%Bilder Ordner
+\graphicspath{{../plots/}}
+
+%Titel
+\title{Dokumenttitel}
+\author{Autor}
+\usepackage[headsepline]{scrlayer-scrpage}
+%\pagestyle{scrheadings}
+%\clearscrheadfoot
+
+
+%WEll that took a while...
+%\lehead{\headmark}
+%\automark{chapter}
+%\rehead{Section}
+
+%\lohead{section}
+
+%\automark[chapter]{section}
+%\leftmark{section}
+%\rightmark{chapter}
+%\lehead{\headmark \hfill}
+%\lohead{\headmark}
+%\rehead{\headmark}
+%\rohead{\headmark}
+%\cehead{\headmark}
+%\cohead{\headmark}
+
+%\automark[chapter]{chapter}
+
+%\rehead{\headmark}
+%\automark[chapter]{section}
+
+%\lohead{\headmark}
+%\automark[section]{section}
+
+%\lohead{\headmark}
+%\automark[section]{section}
+
+%\ohead{Wilkin Wöhler}
+%\ihead{\headmark}
+\automark[section]{chapter}
+
+\rohead{\rightmark}
+%\lehead{Wilkin Wöhler}
+\lehead{\leftmark}
+\rehead{\rightmark}
+
+\ofoot{\pagemark} %Outerfooter (i-nner, c-enter + all three for head available)
+
+%\ohead{\headmark}
+%\automark[section]{section} %\automark[]{} gives as first argument left and second argument right side if two sided document
+
+
+
+
+
+%Bibliography
+%\usepackage{bibgerm}
+\usepackage[backend=biber, style = phys,maxnames=4,clearlang=true,doi=false]{biblatex}
+\usepackage{csquotes}
+%\DeclareRedundantLanguages{english,german,french,en,de}{english,german,french,en,de}
+\addbibresource{bibliography/library.bib}
+
+\defbibfilter{papers}{
+	type=article or
+	type=inproceedings or
+	type=incollection
+} 
+
+
+%Ueberschriften formatieren
+\addtokomafont{title}{\normalfont\bfseries}
+\addtokomafont{section}{\normalfont\bfseries\Large}
+\addtokomafont{subsection}{\normalfont\bfseries\large}
+\addtokomafont{subsubsection}{\normalfont\bfseries\normalsize}
+\addtokomafont{paragraph}{\normalfont\bfseries\normalsize}
+
+
+% Abstand nach math-Umgebungen
+\setlength\abovedisplayshortskip{0pt}
+\setlength\belowdisplayshortskip{0pt}
+\setlength\abovedisplayskip{0pt}
+\setlength\belowdisplayskip{0pt}
+
+%Neu
+\setlength{\parindent}{0pt}
+
+
+

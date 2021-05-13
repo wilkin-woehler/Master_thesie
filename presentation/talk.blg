@@ -1,0 +1,18 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'talk.blg'
+[24] biber:313> INFO - === Do Mai 13, 2021, 21:46:38
+[42] Biber.pm:371> INFO - Reading 'talk.bcf'
+[94] Biber.pm:857> INFO - Found 15 citekeys in bib section 0
+[108] Biber.pm:3981> INFO - Processing section 0
+[117] Biber.pm:4154> INFO - Looking for bibtex format file 'talk.bib' for section 0
+[127] bibtex.pm:1468> INFO - LaTeX decoding ...
+[238] bibtex.pm:1294> INFO - Found BibTeX data source 'talk.bib'
+[326] Utils.pm:169> WARN - BibTeX subsystem: /tmp/_Cmhn5nvoR/talk.bib_27296.utf8, line 2, warning: 6 characters of junk seen at toplevel
+[340] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[340] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[340] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[340] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[352] bbl.pm:617> INFO - Writing 'talk.bbl' with encoding 'latin1'
+[365] Utils.pm:169> WARN - The entry 'Pieprzyk2019' has characters which cannot be encoded in 'latin1'. Recoding problematic characters into macros.
+[366] bbl.pm:720> INFO - Output to talk.bbl
+[366] Biber.pm:110> INFO - WARNINGS: 2

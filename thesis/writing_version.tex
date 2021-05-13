@@ -1,0 +1,114 @@
+\documentclass[a4paper, twoside, 11pt]{scrreprt}
+
+\input{header/head.tex}
+\input{header/commands.tex}
+
+\makeatletter
+     \renewcommand*\l@figure{\@dottedtocline{1}{1em}{3.0em}}
+     \renewcommand*\l@table{\@dottedtocline{1}{1em}{3.2em}}
+\makeatother
+
+
+
+%88888888888888888888888888888888888888888888888888888888888888888888888888
+\begin{document}
+  %set language
+  \selectlanguage{english}
+	
+  %sections
+  \renewcommand{\subsectionautorefname}{section\negthinspace}
+  \renewcommand{\subsubsectionautorefname}{section\negthinspace}
+  \renewcommand{\figureautorefname}{fig.\negthinspace}
+  \renewcommand{\tableautorefname}{tab.\negthinspace}
+  \renewcommand{\equationautorefname}{eq.\negthinspace}
+	
+	
+  \newcommand{\vtitle}{Nucleation and Crystallization of the Metastable Hard Sphere Fluid}
+  \newcommand{\vinstitute}{Research group for complex systems and soft matter}
+  \newcommand{\vsupervision}{Prof. Dr. Tanja Schilling}
+  \newcommand{\vauthor}{Wilkin Wöhler}
+
+  \newcommand{\presummary}{
+The thesis at hand studies the nucleation process of the metastable hard sphere liquid. It focuses on understanding the discrepancy between experimentally and theoretically determined nucleation rates. Regarding it, a possible solution is proposed based on a broad analysis of the process. Further, the existance of non-Markovian effects are investigated. We find a mostly featurelss Gaussian memory kernel of constant width. However, a clear interpretation or relation to direct accessible quantities requires further research.\\
+Also, key features and testing of the employed event driven molecular dynamics (EDMD) simulation code are presented as well as an analysis of the produced simulation trajectories. The analysis includes measurements of the long time self-diffusion constant, the time scale on which local ordering processes take place and the attachement rate of particles to a growing cluster.\\
+Furthermore, shape descriptors for clusters at different stages are evaluated regarding their dependence on different quantities describing the growth process. In the analysis, however, no dependence is observed.\\
+The nucleation study is based on simulations with 2000 trajectories at $\eta \in [53.1\%,\,53.4\%]$ of which each contains about one million particles. The memory kernel analysis is based on about 500 trajectories at $\eta = 54.0\%$. In this case each simulation contains 16384 particles to reach complete crystallization.
+}
+
+
+  %Beginnig: Title, content, figure, tables
+  \pagenumbering{Roman} % Set front matter to roman numbering
+  \pagestyle{plain} % Set the pagestyle to exclude header in inital part
+  \renewcommand{\chapterpagestyle}{plain} %Also for chapter start page
+
+
+  \input{header/title_page.tex}
+
+  \tableofcontents 
+  \newpage
+
+  \listoffigures
+  \newpage
+
+  \listoftables
+  \newpage
+
+  \null\thispagestyle{empty}  %An empty page to start introduction at the right place
+  \newpage
+
+
+  \pagenumbering{arabic} % Reset the numbering to arabic numbering
+  \pagestyle{scrheadings} % Set the pagestyle back to header including style
+  \renewcommand{\chapterpagestyle}{plain} % Set the pagestyle of chapter page for body
+
+
+
+  %Body of the text
+  \chapter{Introduction and theory}
+    \input{text/theory.tex}
+  \newpage
+
+  \chapter{Simulation details and testing}
+    \input{text/simulation.tex}
+  \newpage
+
+  \null\thispagestyle{empty}  %An empty page to start introduction at the right place
+  \newpage
+
+  \chapter{Data Analysis}
+    \input{text/analysis.tex}
+  \newpage
+
+  
+
+  %Endpart: conclusion, appendix, acknowlegdment, bibliography
+  \chapter{Conclusion}
+    \pagestyle{plain} %Set the pagestyle to exclude headers in the back matter
+    \renewcommand{\chapterpagestyle}{plain} %Pagestyel for the chapter startpage
+    \input{text/conclusion.tex}
+  \newpage
+
+  \appendix
+    \input{text/appendix.tex}
+  \newpage
+
+  \chapter*{Acknowledgements}
+    \input{text/acknowlegment.tex}
+  \newpage
+
+  \printbibliography
+
+  \newpage
+  \null\thispagestyle{empty}  %An empty page to start introduction at the right place
+  %\newpage
+  %\null\thispagestyle{empty}  %An empty page to start introduction at the right place
+  %\newpage
+
+\end{document}
+
+
+
+
+
+
+
